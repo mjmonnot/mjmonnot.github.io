@@ -1,0 +1,21 @@
+title: "Matthew J. Monnot, PhD"
+description: "I-O Psychologist · People Scientist · OD Consultant"
+theme: minima
+
+url: "https://mjmonnot.github.io"
+baseurl: ""
+
+author:
+  name: "Matthew J. Monnot, PhD"
+  email: ""
+
+minima:
+  nav:
+    - title: "Home"
+      url: /
+    - title: "CV"
+      url: /cv.html
+    - title: "Publications"
+      url: /publications.html
+    - title: "Themes"
+      url: /themes/leadership-and-wellbeing.html"
