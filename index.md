@@ -1,7 +1,9 @@
 ---
-layout: home
+layout: page
 title: "Matthew J. Monnot, PhD"
+permalink: /
 ---
+
 
 # Matthew J. Monnot, PhD
 
