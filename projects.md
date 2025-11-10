@@ -18,6 +18,7 @@ For full code and technical details, visit my [GitHub profile](https://github.co
 
 **Overview:**  
 An ongoing project analyzing sentiment, valuation, and market momentum to estimate “bubble pressure” in the AI sector.  
+
 The AIBPS integrates multiple data layers—equity performance, ETF flows, and public news sentiment—to quantify how narrative intensity and capital inflows co-evolve across the AI hardware ecosystem.
 
 **Built With:**  
