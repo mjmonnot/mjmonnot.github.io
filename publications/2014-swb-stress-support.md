@@ -37,7 +37,7 @@ The study also develops and validates a **non-hedonic (meaningfulness) scale** a
 - **Analyses:**
   - **Item-level IRT** (graded response models in IRTPRO) to develop and refine the meaningfulness scale.
   - Confirmatory tests of the three-factor SWB structure.
-  - **Moderated structural equation models** (LISREL) to estimate source-specific paths from stress and support to each SWB dimension, including interactions between stress and support.²
+  - **Moderated structural equation models** (LISREL) to estimate source-specific paths from stress and support to each SWB dimension, including interactions between stress and support.
 
 ---
 
@@ -63,7 +63,7 @@ The models then disentangled **which source** predicts which aspect of well-bein
 - The three-factor model (enthusiasm, contentment, meaningfulness) fits well; meaningfulness behaves as a distinct, non-hedonic dimension of SWB at work.
 - **Supervisor role stress** has a particularly strong negative relationship with **meaningfulness**, beyond other sources of stress.
 - Positive coworker communication/support is associated with higher enthusiasm and can **buffer supervisor stress** to some extent.
-- Not all support is helpful: the broader literature (including Beehr’s work) shows that negative or ambivalent forms of “support” can sometimes worsen strain, which this study helps clarify by specifying **source and content**.³
+- Not all support is helpful: the broader literature (including Beehr’s work) shows that negative or ambivalent forms of “support” can sometimes worsen strain, which this study helps clarify by specifying **source and content**.²
 
 ---
 
@@ -100,5 +100,4 @@ The models then disentangled **which source** predicts which aspect of well-bein
 ## 6 · Endnotes (APA Style)
 
 1. Monnot, M. J., & Beehr, T. A. (2014). Subjective well-being at work: Disentangling source effects of stress and support on enthusiasm, contentment, and meaningfulness. *Journal of Vocational Behavior, 85*(2), 204–218. https://doi.org/10.1016/j.jvb.2014.07.005  
-2. Notes based on analytic summary in Monnot’s CV: Item-level IRT analyses conducted in IRTPRO; moderated structural equation modeling conducted in LISREL.  
-3. Beehr, T. A. (2014). Psychological stress in the workplace (and beyond): Theoretical and methodological advances. *Annual Review of Organizational Psychology and Organizational Behavior, 1*, 391–425.
+2. Beehr, T. A. (2014). Psychological stress in the workplace (and beyond): Theoretical and methodological advances. *Annual Review of Organizational Psychology and Organizational Behavior, 1*, 391–425.
