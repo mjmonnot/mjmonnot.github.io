@@ -9,7 +9,6 @@ baseurl: ""
 #   name: "Matthew J. Monnot, PhD"
 #   email: ""
 
-
 minima:
   nav:
     - title: "Home"
@@ -20,6 +19,10 @@ minima:
       url: /publications.html
     - title: "Themes"
       url: /themes/leadership-and-wellbeing.html
+    - title: "Media"
+      url: /press.html
+
+
 
 social_links:
   - platform: linkedin
