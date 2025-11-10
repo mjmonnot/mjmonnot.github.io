@@ -5,9 +5,10 @@ theme: minima
 url: "https://mjmonnot.github.io"
 baseurl: ""
 
-author:
-  name: "Matthew J. Monnot, PhD"
-  email: ""
+# author:
+#   name: "Matthew J. Monnot, PhD"
+#   email: ""
+
 
 minima:
   nav:
