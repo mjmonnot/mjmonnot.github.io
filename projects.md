@@ -7,6 +7,7 @@ permalink: /projects.html
 # Projects
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
+
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
 
 ---
