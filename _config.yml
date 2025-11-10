@@ -31,3 +31,6 @@ social_links:
     user_url: "https://x.com/Matt_Monnot"
   - platform: google-scholar
     user_url: "https://scholar.google.com/citations?user=BhmHT_UAAAAJ&hl=en"
+
+    show_excerpts: true
+
