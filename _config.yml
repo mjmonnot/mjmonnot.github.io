@@ -21,6 +21,8 @@ minima:
       url: /themes/leadership-and-wellbeing.html
     - title: "Media"
       url: /press.html
+    - title: "Projects"
+      url: /projects.html
 
 
 
