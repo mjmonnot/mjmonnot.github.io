@@ -1,5 +1,5 @@
 title: "Matthew J. Monnot, PhD"
-description: "Industrial-Organizational Psychologist | Organization Development Consultant | People and Workplace Researcher | Thought Leader | Athlete"
+description: "I-O Psychologist · People Scientist · OD Consultant"
 theme: minima
 
 url: "https://mjmonnot.github.io"
@@ -18,13 +18,12 @@ minima:
     - title: "Publications"
       url: /publications.html
     - title: "Themes"
-      url: /themes/leadership-and-wellbeing.html"
+      url: /themes/leadership-and-wellbeing.html
 
-# Social links (these will show in the footer by default)
 social_links:
   - platform: linkedin
     user_url: "https://www.linkedin.com/in/monnot"
-  - platform: twitter
+  - platform: x
     user_url: "https://x.com/Matt_Monnot"
   - platform: google-scholar
     user_url: "https://scholar.google.com/citations?user=BhmHT_UAAAAJ&hl=en"

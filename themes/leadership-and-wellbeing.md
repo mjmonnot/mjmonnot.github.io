@@ -6,8 +6,13 @@ permalink: /themes/leadership-and-wellbeing.html
 
 # Leadership, Well-Being, and Organizational Effectiveness
 
-This section highlights connections across several of my publications on stress, social support, meaningful work, change agency, motivation, and future-of-work skills.
+This theme page highlights connections across several of my publications on stress and support, meaningful work, organizational change, motivation, and future-of-work skills.
 
-Rather than a single program of studies, these papers reflect recurring interests in how people experience work and how organizations can design roles, leadership, and systems that support both effectiveness and well-being.
+The individual papers were not designed as a single program of research, but they share recurring interests in:
 
-See the individual publication summaries for details and applied implications.
+- How people experience well-being and meaning at work  
+- How supervisors and social context shape that experience  
+- How psychological resources and goal orientations relate to change, performance, and satisfaction  
+- How human and relational skills matter for the future of work
+
+For detailed methods and applied implications, see the individual publication summaries.

@@ -6,7 +6,7 @@ permalink: /publications.html
 
 # Publications
 
-Below is a selection of my peer-reviewed publications. Each title links to a short, practitioner-oriented summary.
+Below is a selection of peer-reviewed publications with short, practitioner-oriented summaries.
 
 {% assign pubs = site.data.publications | sort: "year" | reverse %}
 {% for pub in pubs %}
