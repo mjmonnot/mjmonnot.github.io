@@ -25,17 +25,3 @@ The site highlights my work as an I-O psychologist and organization development 
 The site uses the `minima` theme, configured in `_config.yml`, which also defines navigation and social links.
 
 ---
-
-## Editing or Adding Publications
-
-1. **Add or update metadata**
-
-   Edit `_data/publications.yml` and add a new entry:
-
-   ```yaml
-   - key: uniquekey2025_example
-     year: 2025
-     title: "Your Article Title"
-     authors: "Last, F. M., & Coauthor, A. B."
-     journal: "Journal Name"
-     summary_url: "/publications/2025-your-article-slug.html"
