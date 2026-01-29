@@ -37,6 +37,26 @@ Python · Pandas · NumPy · Matplotlib · Scikit-learn · GitHub Actions · CSV
 
 ---
 
+## SIOP Machine Learning Competitions (Post-Hoc Participation)
+
+[View on GitHub →](https://github.com/mjmonnot/siop-ml-competitions)
+
+**Overview:**  
+A reproducible, post-hoc walk-through of the SIOP Machine Learning Competition problems. I’ve completed the 2019 competition and plan to continue year-by-year. The goal is not just performance, but a transparent, job-relevant ML workflow that translates cleanly to real People Analytics and assessment problems.
+
+**What I’m Demonstrating:**  
+- End-to-end ML workflow: data screening → feature engineering → modeling → validation → interpretation  
+- Careful evaluation (including error analysis and model diagnostics)  
+- Reproducible code and results (scripts, notebooks, outputs)  
+- Practical framing for I-O / HR use cases (selection, performance prediction, text-as-data, etc.)
+
+**Methods & Tools:**  
+Python · Pandas/NumPy · scikit-learn pipelines · cross-validation · regularization/ensembles (as appropriate) · calibration/diagnostics · documentation-first GitHub workflow
+
+**Why this matters:**  
+The SIOP ML competitions are a rare “shared benchmark” for applied I-O data science. This repo shows how I approach modern ML problems with the same rigor I bring to validation, measurement, and decision support in organizational settings.
+
+
 ## Future Additions
 
 More technical and people-analytics projects will be added here, such as:
