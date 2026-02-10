@@ -5,83 +5,87 @@ title: Projects
 
 ## Projects
 
-A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.
+A curated set of applied analytics and machine learning projects at the intersection of **Industrial–Organizational Psychology**, **people analytics**, and **responsible AI**.  
+All projects emphasize methodological rigor, transparency, and alignment with professional standards.
 
-For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
+For full code and technical documentation, see my  
+[GitHub profile →](https://github.com/mjmonnot)
 
 ---
 
-## AI Bubble Pressure Score (AIBPS)
+## SIOP Machine Learning Competitions (Post-Hoc Participation & Teaching Cases)
+
+**Overview**  
+A structured, post-hoc reconstruction of Society for Industrial and Organizational Psychology (:contentReference[oaicite:0]{index=0}) Machine Learning Competition problems.  
+Rather than optimizing purely for leaderboard rank, these projects reframe the competitions as **auditable, standards-aligned case studies** suitable for graduate instruction, practitioner training, and applied research translation.
+
+Across competition years, the focus is on:
+- End-to-end ML workflows grounded in job-relevant prediction problems  
+- Transparent model diagnostics and error analysis  
+- Explicit treatment of **fairness, validity, and governance trade-offs**  
+- Reproducible, well-documented repositories designed for reuse  
+
+---
+
+### Competition Repositories
+
+**2019 — Personality Prediction from Text**  
+[View repository →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2019-personality-from-text)
+
+- Full reconstruction of the competition pipeline using interpretable ML baselines  
+- Scale-level and trait-level prediction diagnostics  
+- Distributional overlays, residual analyses, and calibration checks  
+- Emphasis on construct validity and generalization rather than leaderboard maximization  
+
+**2021 — Fairness-Aware Selection Pipeline (Teaching Case)**  
+[View repository →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2021-fairness-pipeline)
+
+- Decomposition of the official scoring function (accuracy vs. adverse impact)  
+- Reframing of the competition as a **fairness-in-the-pipeline** case study  
+- Alignment with professional standards for employee selection and assessment  
+- Designed explicitly for classroom and practitioner discussion  
+
+*(Subsequent competition years will be added as independent, self-contained repos.)*
+
+---
+
+### Methods & Tooling (Across SIOP Projects)
+
+Python · Pandas · NumPy · scikit-learn pipelines · cross-validation · regularization & ensembles · model diagnostics · fairness metrics (e.g., AIR) · documentation-first GitHub workflows
+
+---
+
+### Professional & Regulatory Reference Anchors (Selected)
+
+- **SIOP (2023)** — *Considerations & Recommendations for the Validation and Use of AI-Based Assessments for Employee Selection*  
+  https://www.siop.org/Portals/84/docs/White%20Papers/Considerations-and-Recommendations-for-the-Validation-and-Use-of-AI-Based-Assessments-for-Employee-Selection-January-2023.pdf
+
+- **NIST (2023)** — *AI Risk Management Framework (AI RMF 1.0)*  
+  https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf
+
+- **Standards for Educational and Psychological Testing (2014)**  
+  https://www.testingstandards.net/uploads/7/6/6/4/76643089/standards_2014edition.pdf
+
+- **Uniform Guidelines on Employee Selection Procedures (29 CFR Part 1607)**  
+  https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607
+
+- **EEOC** — Employment Tests & Selection Procedures  
+  https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures
+
+---
+
+## AI Bubble Pressure Score (Adjacent Research)
 
 [View on GitHub →](https://github.com/mjmonnot/ai-bubble-pressure-score-v0-1)
 
-**Overview:**  
-An ongoing project analyzing sentiment, valuation, and market momentum to estimate “bubble pressure” in the AI sector.
-
-The AIBPS integrates multiple data layers—equity performance, ETF flows, and public news sentiment—to quantify how narrative intensity and capital inflows co-evolve across the AI hardware ecosystem.
+**Overview**  
+An exploratory analytics project examining sentiment, valuation, and capital concentration dynamics in the AI sector.  
+This work is adjacent to my primary people-analytics focus and serves as a demonstration of applied data engineering, composite index construction, and automated reporting workflows.
 
 **Built With:**  
-Python · Pandas · NumPy · Matplotlib · Scikit-learn · GitHub Actions · CSV/REST data pipelines
+Python · Pandas · NumPy · Matplotlib · scikit-learn · GitHub Actions · CSV/REST pipelines
 
-**Key Features:**
-  * Automated ingestion of market and sentiment data
-  * Rolling z-score normalization and percentile tracking
-  * Composite pressure index visualized through time
-  * Daily automated updates via GitHub Actions and CSV output
+**Purpose:**  
+To illustrate how narrative intensity, market structure, and quantitative indicators can be integrated into a transpare
 
-**Use Cases:**
-  * Identify when enthusiasm and capital concentration approach “hype cycle” territory
-  * Compare AI-related funds and semiconductor equities
-  * Demonstrate applied data analytics skills for executive dashboards or investment strategy contexts
-
----
-
-## SIOP Machine Learning Competitions (Post-Hoc Participation)
-
-[View on GitHub →](https://github.com/mjmonnot/siop-ml-competitions)
-
-**Overview:**  
-A reproducible, post-hoc walk-through of the SIOP Machine Learning Competition problems. I’ve completed the 2019 competition and plan to continue year-by-year. The emphasis is not just leaderboard performance, but a transparent, job-relevant workflow that maps to real People Analytics and assessment settings—especially when validity, interpretability, and fairness constraints are in play.
-
-**What I’m Demonstrating:**
-  * End-to-end ML workflow: data screening → feature engineering → modeling → validation → interpretation  
-  * Diagnostics and error analysis (including calibration/stability checks where appropriate)  
-  * Reproducible code + results (scripts, notebooks, figures, and example outputs)  
-  * Fairness-aware evaluation and documentation that’s aligned with contemporary guidance for AI in selection  
-
-**Methods & Tools:**  
-Python · Pandas/NumPy · scikit-learn pipelines · cross-validation · regularization/ensembles · calibration/diagnostics · documentation-first GitHub workflow
-
-**Recent Standards & Guidance Anchors (selected):**
-  * SIOP (2023): AI-based assessments for employee selection (validation/use recommendations)  
-    https://www.siop.org/wp-content/uploads/2024/06/Considerations-and-Recommendations-for-the-Validation-and-Use-of-AI-Based-Assessments-for-Employee-Selection-January-2023.pdf  
-  * NIST (2023): AI Risk Management Framework (AI RMF 1.0)  
-    https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf  
-  * Standards for Educational and Psychological Testing (2014; open access)  
-    https://www.testingstandards.net/uploads/7/6/6/4/76643089/standards_2014edition.pdf  
-  * Uniform Guidelines on Employee Selection Procedures (UGESP; 29 CFR Part 1607)  
-    https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607  
-  * EEOC overview: Employment tests & selection procedures (UGESP context)  
-    https://www.eeoc.gov/laws/guidance/employment-tests-and-selection-procedures  
-
-**Why this matters:**  
-The SIOP ML competitions are a rare “shared benchmark” for applied I-O data science. This repo shows how I approach modern ML problems with the same rigor I bring to validation, measurement, and decision support—while treating fairness, transparency, and governance as first-class requirements rather than afterthoughts.
-
----
-
-## Future Additions
-
-More technical and people-analytics projects will be added here, such as:
-
-  * Leadership Development Analytics Toolkit – Modeling behavioral data from coaching programs
-  * Employee Well-Being Pulse Dashboards – Integrating affective and performance metrics
-  * Market Psychology Visualizations – Connecting investor sentiment and organizational behavior insights
-
----
-
-### Explore All Repositories
-
-[Browse all public GitHub repositories →](https://github.com/mjmonnot)
-
-_I-O Psychologist · People Scientist · OD Consultant_
 
