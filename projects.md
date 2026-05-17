@@ -23,7 +23,7 @@ A year-over-year, reproducible collection of solutions and teaching cases for th
 
 [View the 2026 project →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2026-meta-analysis)
 
-An end-to-end pipeline that extracts zero-order Pearson *r* correlations directly from published I-O psychology PDFs, using a four-tier cascade (pdfplumber → Docling table ML → qwen2.5-VL vision model → regex + phi4) running entirely on local models. Built as a solo-plus-AI-agents experiment — a one-person team competing against teams of researchers and graduate students. Dev-set MSE **0.013641** (6th of 10); test set submitted April 2026.
+An end-to-end pipeline that extracts zero-order Pearson *r* correlations directly from published I-O psychology PDFs, using a four-tier cascade (pdfplumber → Docling table ML → qwen2.5-VL vision model → regex + phi4) running entirely on local models. Built as a solo-plus-AI-agents experiment — a one-person team competing against teams of researchers and graduate students. Dev-set MSE **0.013641** (6th of 24); test set submitted April 2026.
 
 ---
 
