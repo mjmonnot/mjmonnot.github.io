@@ -6,7 +6,7 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** Completed the 2026 SIOP Machine Learning Competition as team *One Hot Key* — a solo-plus-AI-agents entry (dev-set MSE 0.013641, 6th of 10).
+> **Latest update:** Completed the 2026 SIOP Machine Learning Competition as team *One Hot Key* — a solo-plus-AI-agents entry (dev-set MSE 0.013641, 6th of 24).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
