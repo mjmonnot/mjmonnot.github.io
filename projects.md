@@ -6,7 +6,7 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** Completed the 2026 SIOP Machine Learning Competition as team *One Hot Key* — a solo-plus-AI-agents entry (dev-set MSE 0.013641, 6th of 10).
+> **Latest update:** Completed the 2026 SIOP Machine Learning Competition as team *One Hot Key* — a solo-plus-AI-agents entry (dev-set MSE 0.013641, 6th of 24).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
@@ -21,7 +21,7 @@ A year-over-year, reproducible collection of solutions and teaching cases for th
 
 ### 2026 — Automated Meta-Analytic Coding (team: *One Hot Key*)
 
-An end-to-end pipeline that extracts zero-order Pearson *r* correlations directly from published I-O psychology PDFs, using a four-tier cascade (pdfplumber → Docling table ML → qwen2.5-VL vision model → regex + phi4) running entirely on local models. Built as a solo-plus-AI-agents experiment — a one-person team competing against teams of researchers and graduate students. Dev-set MSE **0.013641** (6th of 10); test set submitted April 2026.
+An end-to-end pipeline that extracts zero-order Pearson *r* correlations directly from published I-O psychology PDFs, using a four-tier cascade (pdfplumber → Docling table ML → qwen2.5-VL vision model → regex + phi4) running entirely on local models. Built as a solo-plus-AI-agents experiment — a one-person team competing against teams of researchers and graduate students. Dev-set MSE **0.013641** (6th of 24); test set submitted April 2026.
 
 🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2026-meta-analysis) · [SIOP 2026 deck (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2026-meta-analysis/docs/one_hot_key_siop_2026.pdf)  
 *Relevant resources:* [Docling (document & table extraction)](https://github.com/docling-project/docling) · [PRISMA — systematic review & meta-analysis reporting](https://www.prisma-statement.org/)
