@@ -6,7 +6,7 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** Completed the 2026 SIOP Machine Learning Competition as team *One Hot Key* — a solo-plus-AI-agents entry (dev-set MSE 0.013641, 6th of 24).
+> **Latest update:** Published the narrated SIOP 2024 retrospective (video + deck) and recorded the measured synthetic-data end-to-end run (test composite **0.817**). Completed the 2026 SIOP Machine Learning Competition as team *One Hot Key* — a solo-plus-AI-agents entry (dev-set MSE 0.013641, 6th of 24).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
@@ -34,8 +34,9 @@ An end-to-end pipeline that extracts zero-order Pearson *r* correlations directl
 - One unified prompt-engineering harness spanning all four 2024 tasks — empathy, interview generation, item clarity, and fairness  
 - Shared format → call → parse flow with task-specific adapters, structured (constrained JSON) outputs, and similarity-based few-shot selection  
 - Final scorecard pitting a single unified pipeline against four separately hand-tuned winning teams, task by task  
+- Full end-to-end sweep on synthetic inputs recorded test composite **0.817** (dev **0.814**); not comparable to winner scores on official competition data  
 
-🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2024-evaluate-LLMs-via-benchmark) · [SIOP 2024 retrospective deck (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2024-evaluate-LLMs-via-benchmark/docs/SIOP-2024-ML-Retrospective.pdf)  
+🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2024-evaluate-LLMs-via-benchmark) · [SIOP 2024 retrospective deck (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2024-evaluate-LLMs-via-benchmark/docs/SIOP-2024-ML-Retrospective.pdf) · [SIOP 2024 retrospective video (MP4)](https://github.com/mjmonnot/siop-ml-competitions/raw/main/2024-evaluate-LLMs-via-benchmark/media/SIOP%202024%20Retrospective_%20ML%20Competition%20Analysis_1080p.mp4)  
 *Relevant resources:* [Original 2024 SIOP ML Competition](https://github.com/izk8/2024_SIOP_Machine_Learning_Competition) · [Sentence-Transformers (SBERT)](https://www.sbert.net/)
 
 #### 2023 — Decision Making from Text
