@@ -6,10 +6,12 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** Published the narrated SIOP 2024 retrospective (video + deck) and recorded the measured synthetic-data end-to-end run (test composite **0.817**). Completed the 2026 SIOP Machine Learning Competition as team *One Hot Key* — a solo-plus-AI-agents entry (dev-set MSE 0.013641, 6th of 24).
+> **Latest update:** Beat the 2019 SIOP ML Competition leaderboard post hoc — private-Test mean *r* **0.3215** vs. the original first-place **0.26021** (+0.061, ~23%) — with a leakage-safe stack of zero-shot LLM extractors. Poster, presentation deck, and video now published.
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
+
+Several of these projects extend my research themes in [leadership, well-being, and organizational effectiveness](/themes/leadership-and-wellbeing.html): measuring personality and well-being at scale (2019, MIDUS profiles), keeping selection systems fair (2021), and understanding human skills alongside AI in the future of work (2026).
 
 ---
 
@@ -25,6 +27,18 @@ An end-to-end pipeline that extracts zero-order Pearson *r* correlations directl
 
 🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2026-meta-analysis) · [SIOP 2026 deck (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2026-meta-analysis/docs/one_hot_key_siop_2026.pdf) · [SIOP 2026 presentation video (MP4)](https://github.com/mjmonnot/siop-ml-competitions/raw/main/2026-meta-analysis/media/One_Hot_Key_ML_Competition_Presentation_1080p.mp4)  
 *Relevant resources:* [Docling (document & table extraction)](https://github.com/docling-project/docling) · [PRISMA — systematic review & meta-analysis reporting](https://www.prisma-statement.org/)
+
+### 2019 — Personality Prediction from Text (Post-Hoc Winning Solution)
+
+A post-hoc solution to the 2019 competition — predicting Big Five trait scores from five short open-ended responses — that beats the original leaderboard by a wide margin under a strict, leakage-safe protocol (fit on Train only, select on Dev, touch the private Test once).
+
+- Private-Test mean Pearson *r* **0.3215** vs. the 2019 first-place **0.26021** — **+0.061 (~23% relative)**, roughly 2× the entire original top-four spread
+- Stacked generalization: zero-shot LLM extractors (multi-prompt trait scoring, a second-judge model, behavioral subfeatures, and a role-play BFI-2 questionnaire) combined with embedding-SVR, TF-IDF, and psycholinguistic bases under a per-trait Ridge meta-learner
+- Result sits at or above the 2025–2026 published frontier for personality inference from short text; full write-up, negative results, and literature review included
+- Directly extends my measurement research: construct validity, honest evaluation, and personality assessment at scale
+
+🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2019-personality-from-text) · [Poster (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2019-personality-from-text/docs/SIOP_2019_Poster_Landscape.pdf) · [Presentation deck (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2019-personality-from-text/docs/SIOP_Personality_From_Text.pdf) · [Presentation video (MP4)](https://github.com/mjmonnot/siop-ml-competitions/raw/main/2019-personality-from-text/media/Predicting_Personality_from_Text_MJMONNOT.mp4)  
+*Relevant resources:* [Solution write-up (SOLUTION.md)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2019-personality-from-text/SOLUTION.md) · [International Personality Item Pool (IPIP)](https://ipip.ori.org/)
 
 ---
 
@@ -55,21 +69,30 @@ An end-to-end pipeline that extracts zero-order Pearson *r* correlations directl
 🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2021-fairness-pipeline-case)  
 *Relevant resources:* [Uniform Guidelines on Employee Selection Procedures](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1607) · [SIOP Principles for Personnel Selection](https://www.apa.org/ed/accreditation/personnel-selection-procedures.pdf)
 
-#### 2019 — Personality Prediction from Text
-- Interpretable ML baselines and feature engineering  
-- Trait-level prediction diagnostics and residual analysis  
-- Emphasis on construct validity and generalization  
-
-🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2019-personality-from-text)  
-*Relevant resources:* [International Personality Item Pool (IPIP)](https://ipip.ori.org/) · [scikit-learn — text feature extraction](https://scikit-learn.org/stable/modules/feature_extraction.html)
-
 (Subsequent years will be added as independent modules.)
 
 ---
 
 ### Methods & Tooling
 
-Python · Pandas · NumPy · scikit-learn pipelines · cross-validation · regularization and ensembles · PDF extraction (PyMuPDF · pdfplumber · Docling) · local language and vision models (phi4 · qwen2.5-VL, served via Ollama) · model diagnostics · fairness metrics · reproducible GitHub workflows
+Python · Pandas · NumPy · scikit-learn pipelines · cross-validation · regularization and ensembles · stacked generalization (out-of-fold meta-learning) · zero-shot LLM feature extraction (Anthropic Claude) · sentence embeddings (E5, SBERT) · PDF extraction (PyMuPDF · pdfplumber · Docling) · local language and vision models (phi4 · qwen2.5-VL, served via Ollama) · model diagnostics · fairness metrics · reproducible GitHub workflows
+
+---
+
+## Big Five Latent Profiles & Work Outcomes (MIDUS)
+
+[View on GitHub →](https://github.com/mjmonnot/LPAmidus)
+
+**Overview:**  
+A fully reproducible latent profile analysis of Big Five personality using the MIDUS (Midlife in the United States) national survey, linking person-centered personality profiles to work outcomes — job attitudes, stress, supervisory/leadership roles, and economic indicators. Where the SIOP 2019 project predicts traits from text, this project asks what trait *configurations* mean for real-world outcomes — connecting directly to my research on [well-being and meaningful work](/themes/leadership-and-wellbeing.html).
+
+**Built With:**  
+R · latent profile analysis with BCH 3-step outcome modeling · GitHub Actions CI · devcontainer for a reproducible environment
+
+**Key Features:**  
+- Person-centered (profile-based) alternative to variable-centered trait models  
+- Principled profile enumeration (BIC, AIC, LMR/BLRT, entropy) with classification-error-adjusted outcome estimates  
+- Profile differences in work attitudes, stress, leadership roles, and income  
 
 ---
 
@@ -109,7 +132,7 @@ A companion data-visualization piece: an animated D3.js bar chart race tracking 
 Additional projects will be added over time, including:
 
 - Leadership and coaching analytics  
-- Employee well-being dashboards  
+- Employee well-being dashboards building on the MIDUS profile work  
 - Applied ML and measurement pipelines  
 - Visualization tools for organizational and market psychology  
 
