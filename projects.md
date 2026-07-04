@@ -34,7 +34,7 @@ A post-hoc solution to the 2019 competition — predicting Big Five trait scores
 
 - Private-Test mean Pearson *r* **0.3215** vs. the 2019 first-place **0.26021** — **+0.061 (~23% relative)**, roughly 2× the entire original top-four spread
 - Stacked generalization: zero-shot LLM extractors (multi-prompt trait scoring, a second-judge model, behavioral subfeatures, and a role-play BFI-2 questionnaire) combined with embedding-SVR, TF-IDF, and psycholinguistic bases under a per-trait Ridge meta-learner
-- Result sits at or above the 2025–2026 published frontier for personality inference from short text; full write-up, negative results, and literature review included
+- Result sits at or above the 2025–2026 published frontier for personality inference from short text ([e.g., Piastra & Catellani, 2025; Zhu et al., 2025](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2019-personality-from-text/SOLUTION.md#references)); full write-up, negative results, and literature review included
 - Directly extends my measurement research: construct validity, honest evaluation, and personality assessment at scale
 
 🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2019-personality-from-text) · [Poster (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2019-personality-from-text/docs/SIOP_2019_Poster_Landscape.pdf) · [Presentation deck (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2019-personality-from-text/docs/SIOP_Personality_From_Text.pdf) · [Presentation video (MP4)](https://github.com/mjmonnot/siop-ml-competitions/raw/main/2019-personality-from-text/media/Predicting_Personality_from_Text_MJMONNOT.mp4)  
