@@ -31,6 +31,8 @@ social_links:
     user_url: "https://www.linkedin.com/in/monnot"
   - platform: x
     user_url: "https://x.com/Matt_Monnot"
+  - platform: youtube
+    user_url: "https://www.youtube.com/@matthewjmonnot"
   - platform: google-scholar
     user_url: "https://scholar.google.com/citations?user=BhmHT_UAAAAJ&hl=en"
 
