@@ -97,7 +97,7 @@ R · latent profile analysis (LPA) and latent transition analysis via a joint la
 - **Purpose in life** predicted recovery- versus disengagement-oriented transitions (OR = 1.23 per SD, 95% CI [1.01, 1.50]).  
 - Event-sampled diary data (*N* = 2,314) corroborated the profile interpretations.  
 
-🔗 [Read the preprint (PsyArXiv) →](https://doi.org/10.31234/osf.io/9r6hd_v1)  
+🔗 [Read the preprint (PsyArXiv) →](https://osf.io/preprints/psyarxiv/9r6hd)  
 *Manuscript under review.*
 
 ---
