@@ -79,20 +79,25 @@ Python · Pandas · NumPy · scikit-learn pipelines · cross-validation · regul
 
 ---
 
-## Big Five Latent Profiles & Work Outcomes (MIDUS)
+## Afloat or Adrift: Latent Personality Profiles & Future-of-Work Skills (MIDUS)
 
 [View on GitHub →](https://github.com/mjmonnot/LPAmidus)
 
 **Overview:**  
-A fully reproducible latent profile analysis of Big Five personality using the MIDUS (Midlife in the United States) national survey, linking person-centered personality profiles to work outcomes — job attitudes, stress, supervisory/leadership roles, and economic indicators. Where the SIOP 2019 project predicts traits from text, this project asks what trait *configurations* mean for real-world outcomes — connecting directly to my research on [well-being and meaningful work](/themes/leadership-and-wellbeing.html).
+A fully reproducible, longitudinal study of person-centered Big Five personality profiles and how they relate to future-of-work skills across midlife, using the MIDUS (Midlife in the United States) national panel (*N* = 7,108 over ~20 years) with independent replication in the MIDUS Refresher (*N* = 3,577). Where the SIOP 2019 project predicts traits from text, this project asks what trait *configurations* mean — and, crucially, whether people move between them over two decades — connecting directly to my research on [well-being and meaningful work](/themes/leadership-and-wellbeing.html). Framed around self-determination theory and the psychological resources workers need to develop and retain AI-era skills.
 
 **Built With:**  
-R · latent profile analysis with BCH 3-step outcome modeling · GitHub Actions CI · devcontainer for a reproducible environment
+R · latent profile analysis (LPA) and latent transition analysis via a joint latent Markov model · BCH / 3-step outcome modeling · Mplus confirmation · GitHub Actions CI · devcontainer for a reproducible environment
 
-**Key Features:**  
-- Person-centered (profile-based) alternative to variable-centered trait models  
-- Principled profile enumeration (BIC, AIC, LMR/BLRT, entropy) with classification-error-adjusted outcome estimates  
-- Profile differences in work attitudes, stress, leadership roles, and income  
+**Key Findings:**  
+- Four replicated profiles: **Resilient** (36.4%), **Distressed** (29.5%), **Reserved** (29.0%), and **Antagonistic** (5.1%). Resilient members reported the highest psychosocial skills; Antagonistic members reported the highest income, prestige, and analytic performance.  
+- An honest **null on incremental validity**: profile membership added no predictive power beyond continuous traits.  
+- The Distressed profile shrank from **29.5% to 7.2%** across two decades through two distinct pathways — *recovery* (movement to Resilient) and *disengagement* (movement to Reserved).  
+- Leaving the Distressed profile was associated with lower health-related lost productive time (recovered movers −$3,049 per worker-year, 95% CI [−$5,038, −$1,060]).  
+- **Purpose in life** predicted recovery- versus disengagement-oriented transitions (OR = 1.23 per SD, 95% CI [1.01, 1.50]).  
+- Event-sampled diary data (*N* = 2,314) corroborated the profile interpretations.  
+
+*Manuscript under review; preprint forthcoming.*
 
 ---
 
