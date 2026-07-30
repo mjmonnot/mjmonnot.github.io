@@ -7,7 +7,7 @@ permalink: /
 <section class="hero">
   <h1>Matthew J. Monnot, PhD</h1>
   <p class="tagline">Industrial-Organizational Psychologist <span class="sep">&middot;</span> People Scientist <span class="sep">&middot;</span> OD Consultant</p>
-  <p class="lede">I partner with leaders and organizations to enhance performance, culture, and well-being &mdash; drawing on experience in academia, executive education, and corporate people analytics.</p>
+  <p class="lede">I partner with leaders and organizations to enhance performance, culture, and well-being &mdash; spanning executive education, Fortune&nbsp;100 people-insights consulting, and applied machine learning for I-O psychology.</p>
   <hr class="gold-rule">
 </section>
 
