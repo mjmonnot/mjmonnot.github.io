@@ -62,17 +62,25 @@ permalink: /
         <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title">Afloat or Adrift</p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
-          <p class="feature-desc">A longitudinal, person-centered study of Big Five profiles across midlife &mdash; and whether people move between them over two decades &mdash; linking trait configurations to psychosocial skills workers need in an AI-era labor market.</p>
+          <figure class="feature-figure">
+            <img src="{{ "/assets/images/midus-figure-1a.png" | relative_url }}" alt="Figure 1A from the MIDUS preprint: latent state means for four personality profiles across Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness, and Agency." width="880" height="420" loading="lazy">
+            <figcaption>Figure 1A &mdash; four replicated profiles (Resilient, Distressed, Reserved, Antagonistic)</figcaption>
+          </figure>
+          <p class="feature-desc">A longitudinal study of Big Five profile configurations across midlife &mdash; and whether people move between them over two decades &mdash; linking those patterns to future-of-work skills.</p>
           <div class="feature-stat">
             <span class="stat-value">N&nbsp;=&nbsp;7,108</span>
-            <span class="stat-note">Four replicated profiles across ~20 years; Distressed membership shrank from 29.5% to 7.2%</span>
+            <span class="stat-note">Distressed membership shrank from 29.5% to 7.2% across ~20 years</span>
           </div>
         </article>
 
         <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
           <p class="feature-title">Automated Meta-Analytic Coding</p>
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
-          <p class="feature-desc">An end-to-end local-model pipeline that extracts zero-order Pearson <em>r</em> correlations from published I-O PDFs via a four-tier cascade &mdash; a solo-plus-AI-agents experiment against full research teams.</p>
+          <figure class="feature-figure feature-figure--wide">
+            <img src="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" alt="Six-gate cascading pipeline from the SIOP 2026 presentation: PDF Acquisition, Layout Extraction, Regex plus phi4 Classifier, Vision Fallback, Structured LLM Extraction, and Imputation." width="1100" height="280" loading="lazy">
+            <figcaption>Gates 1&ndash;6 &mdash; cascading fallback from cheap precision to recovery</figcaption>
+          </figure>
+          <p class="feature-desc">An end-to-end local-model pipeline that extracts zero-order Pearson <em>r</em> correlations from published I-O PDFs &mdash; a solo-plus-AI-agents experiment against full research teams.</p>
           <div class="feature-stat">
             <span class="stat-value">MSE&nbsp;0.0136</span>
             <span class="stat-note">Dev-set rank 6th of 24; test set submitted April 2026</span>

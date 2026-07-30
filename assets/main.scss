@@ -388,6 +388,31 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 18px;
 }
 
+.feature-figure {
+  margin: 0 0 14px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  padding: 10px 10px 8px;
+}
+
+.feature-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.feature-figure figcaption {
+  margin-top: 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--faint);
+  line-height: 1.35;
+}
+
+.feature-figure--wide {
+  padding: 12px 8px 8px;
+}
+
 .feature-stat {
   display: flex;
   align-items: baseline;
