@@ -52,6 +52,10 @@ permalink: /
         <article class="feature-card feature-slide is-active" data-slide="0" aria-hidden="false">
           <p class="feature-title">Predicting Personality from Text</p>
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
+          <figure class="feature-figure">
+            <img src="{{ "/assets/images/siop2019-vs-top4.png" | relative_url }}" alt="Bar chart from the SIOP 2019 presentation: private-test mean r of 0.322 for this solution versus the 2019 top-four teams, led by Walmart at 0.260." width="900" height="620" loading="lazy">
+            <figcaption>Private-test mean <em>r</em> vs. the 2019 top-4</figcaption>
+          </figure>
           <p class="feature-desc">A leakage-safe stack of zero-shot LLM extractors and classical models predicting Big Five traits from five short open-ended responses &mdash; beating the original leaderboard by ~23%.</p>
           <div class="feature-stat">
             <span class="stat-value">Test&nbsp;r&nbsp;=&nbsp;0.3215</span>
