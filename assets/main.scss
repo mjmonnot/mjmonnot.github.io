@@ -395,10 +395,23 @@ img { max-width: 100%; height: auto; }
   padding: 10px 10px 8px;
 }
 
+.feature-figure-link {
+  display: block;
+  cursor: zoom-in;
+  text-decoration: none;
+  outline-offset: 2px;
+}
+
+.feature-figure-link:hover img,
+.feature-figure-link:focus-visible img {
+  opacity: 0.92;
+}
+
 .feature-figure img {
   display: block;
   width: 100%;
   height: auto;
+  transition: opacity 0.2s ease;
 }
 
 .feature-figure figcaption {
@@ -407,6 +420,11 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.02em;
   color: var(--faint);
   line-height: 1.35;
+}
+
+.feature-figure-hint {
+  color: var(--gold-dark);
+  white-space: nowrap;
 }
 
 .feature-figure--wide {

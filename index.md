@@ -53,8 +53,10 @@ permalink: /
           <p class="feature-title">Predicting Personality from Text</p>
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
           <figure class="feature-figure">
-            <img src="{{ "/assets/images/siop2019-vs-top4.png" | relative_url }}" alt="Bar chart from the SIOP 2019 presentation: private-test mean r of 0.322 for this solution versus the 2019 top-four teams, led by Walmart at 0.260." width="900" height="620" loading="lazy">
-            <figcaption>Private-test mean <em>r</em> vs. the 2019 top-4</figcaption>
+            <a class="feature-figure-link" href="{{ "/assets/images/siop2019-vs-top4.png" | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size chart: private-test mean r versus the 2019 top-4">
+              <img src="{{ "/assets/images/siop2019-vs-top4.png" | relative_url }}" alt="Bar chart from the SIOP 2019 presentation: private-test mean r of 0.322 for this solution versus the 2019 top-four teams, led by Walmart at 0.260." width="900" height="620" loading="lazy">
+            </a>
+            <figcaption>Private-test mean <em>r</em> vs. the 2019 top-4 <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A leakage-safe stack of zero-shot LLM extractors and classical models predicting Big Five traits from five short open-ended responses &mdash; beating the original leaderboard by ~23%.</p>
           <div class="feature-stat">
@@ -67,8 +69,10 @@ permalink: /
           <p class="feature-title">Afloat or Adrift</p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
           <figure class="feature-figure">
-            <img src="{{ "/assets/images/midus-figure-1a.png" | relative_url }}" alt="Figure 1A from the MIDUS preprint: latent state means for four personality profiles across Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness, and Agency." width="880" height="420" loading="lazy">
-            <figcaption>Figure 1A &mdash; four replicated profiles (Resilient, Distressed, Reserved, Antagonistic)</figcaption>
+            <a class="feature-figure-link" href="{{ "/assets/images/midus-figure-1a.png" | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Figure 1A from the MIDUS preprint">
+              <img src="{{ "/assets/images/midus-figure-1a.png" | relative_url }}" alt="Figure 1A from the MIDUS preprint: latent state means for four personality profiles across Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness, and Agency." width="880" height="420" loading="lazy">
+            </a>
+            <figcaption>Figure 1A &mdash; four replicated profiles (Resilient, Distressed, Reserved, Antagonistic) <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A longitudinal study of Big Five profile configurations across midlife &mdash; and whether people move between them over two decades &mdash; linking those patterns to future-of-work skills.</p>
           <div class="feature-stat">
@@ -81,8 +85,10 @@ permalink: /
           <p class="feature-title">Automated Meta-Analytic Coding</p>
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
-            <img src="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" alt="Six-gate cascading pipeline from the SIOP 2026 presentation: PDF Acquisition, Layout Extraction, Regex plus phi4 Classifier, Vision Fallback, Structured LLM Extraction, and Imputation." width="1100" height="280" loading="lazy">
-            <figcaption>Gates 1&ndash;6 &mdash; cascading fallback from cheap precision to recovery</figcaption>
+            <a class="feature-figure-link" href="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size six-gate pipeline diagram from the SIOP 2026 presentation">
+              <img src="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" alt="Six-gate cascading pipeline from the SIOP 2026 presentation: PDF Acquisition, Layout Extraction, Regex plus phi4 Classifier, Vision Fallback, Structured LLM Extraction, and Imputation." width="1100" height="280" loading="lazy">
+            </a>
+            <figcaption>Gates 1&ndash;6 &mdash; cascading fallback from cheap precision to recovery <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">An end-to-end local-model pipeline that extracts zero-order Pearson <em>r</em> correlations from published I-O PDFs &mdash; a solo-plus-AI-agents experiment against full research teams.</p>
           <div class="feature-stat">
