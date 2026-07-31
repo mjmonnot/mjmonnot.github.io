@@ -54,7 +54,7 @@ permalink: /
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
           <figure class="feature-figure">
             <a class="feature-figure-link" href="{{ "/assets/images/siop2019-roleplay-steps.png" | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size role-play questionnaire pipeline diagram">
-              <img src="{{ "/assets/images/siop2019-roleplay-steps.png" | relative_url }}" alt="Four-step role-play questionnaire pipeline: read five text answers, role-play the persona, answer 30 BFI-2 items in character, then reverse-score and aggregate to OCEAN trait scores." width="900" height="670" loading="lazy">
+              <img src="{{ "/assets/images/siop2019-roleplay-steps.png" | relative_url }}" alt="Four-step role-play questionnaire pipeline: read five text answers, role-play the persona, answer 30 BFI-2 items in character, then reverse-score and aggregate to OCEAN trait scores." width="900" height="665" loading="lazy">
             </a>
             <figcaption>Role-play pipeline: text &rarr; persona &rarr; BFI-2 items &rarr; OCEAN scores <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
