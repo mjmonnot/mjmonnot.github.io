@@ -18,14 +18,8 @@ permalink: /
     <ol class="pub-list">
       <li>
         <div>
-          <p class="pub-title"><a href="/publications/2014-swb-stress-support.html">Subjective Well-Being at Work: Disentangling Source Effects of Stress and Support</a></p>
-          <p class="pub-journal">Journal of Vocational Behavior</p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <p class="pub-title"><a href="/publications/2016-supervisor-riscs.html">Relational-Interdependent Self-Construal With Supervisor: Scale Development and Conditional Model of Meaningfulness at Work</a></p>
-          <p class="pub-journal">The Psychologist-Manager Journal</p>
+          <p class="pub-title"><a href="/publications/2026-afloat-or-adrift.html">Afloat or Adrift: Latent Personality Profiles and Future-of-Work Skills Across Midlife</a></p>
+          <p class="pub-journal">PsyArXiv (preprint)</p>
         </div>
       </li>
       <li>
@@ -38,6 +32,12 @@ permalink: /
         <div>
           <p class="pub-title"><a href="/publications/2019-core-skills.html">Getting to the CORE: Putting an End to the Term &ldquo;Soft Skills&rdquo;</a></p>
           <p class="pub-journal">Journal of Management Inquiry</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class="pub-title"><a href="/publications/2014-swb-stress-support.html">Subjective Well-Being at Work: Disentangling Source Effects of Stress and Support</a></p>
+          <p class="pub-journal">Journal of Vocational Behavior</p>
         </div>
       </li>
     </ol>
