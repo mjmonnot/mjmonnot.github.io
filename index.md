@@ -86,7 +86,7 @@ permalink: /
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
             <a class="feature-figure-link" href="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" data-lightbox aria-label="Enlarge six-gate pipeline diagram from the SIOP 2026 presentation">
-              <img src="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" alt="Six-gate cascading pipeline from the SIOP 2026 presentation: PDF Acquisition, Layout Extraction, Regex plus phi4 Classifier, Vision Fallback, Structured LLM Extraction, and Imputation." width="1100" height="251" loading="lazy">
+              <img src="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" alt="Six-gate cascading pipeline from the SIOP 2026 presentation: PDF Acquisition, Layout Extraction, Regex plus phi4 Classifier, Vision Fallback, Structured LLM Extraction, and Imputation." width="2400" height="530" loading="lazy">
             </a>
             <figcaption>Gates 1&ndash;6 &mdash; cascading fallback from cheap precision to recovery <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
