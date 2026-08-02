@@ -397,16 +397,18 @@ img { max-width: 100%; height: auto; }
   padding: 6px;
 }
 
-.feature-figure-link {
-  display: block;
+.feature-figure[data-lightbox] {
   cursor: zoom-in;
-  text-decoration: none;
   outline-offset: 2px;
 }
 
-.feature-figure-link:hover img,
-.feature-figure-link:focus-visible img {
+.feature-figure[data-lightbox]:hover img,
+.feature-figure[data-lightbox]:focus-visible img {
   opacity: 0.92;
+}
+
+.feature-figure[data-lightbox]:focus-visible {
+  outline: 2px solid var(--gold-dark);
 }
 
 .feature-figure img {
