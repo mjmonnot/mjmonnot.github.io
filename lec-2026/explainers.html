@@ -57,7 +57,7 @@
 
   <article class="term">
     <h3>Sealed holdout</h3>
-    <p class="plain">The test drawer is not “we will be good.” It is a file we did not score. After the one-shot on development failed, we did not open it. That is the result: no engineered prompt met the standard set for acceptance, and the holdout remains unused.</p>
+    <p class="plain">The test drawer is not “we will be good.” It is a file nobody scores while prompts are still being chosen. After the one-shot on development failed, no prompt was selected and the paper’s results were fixed on human codes. Only then was one descriptive look taken at a pre-registered 65-case slice of the drawer, with the arms, statistics, and reporting rule hashed before the first call; it is reported as a 65-case out-of-sample number, not as validation, and the other 128 cases stay sealed. The order matters: nothing upstream of that look could change because of it.</p>
     <p class="follow"><strong>Read next.</strong> Nosek, Ebersole, DeHaven, and Mellor (2018) on the preregistration revolution, <em>Proceedings of the National Academy of Sciences</em>. Used in the manuscript as the spirit of locking rules before numbers; not a claim that this study was a public OSF preregistration. It was an internal, git-timestamped specification.</p>
   </article>
 
@@ -149,8 +149,20 @@
   <h2 id="forum">The forum layer (different data, different rules)</h2>
 
   <article class="term">
+    <h3>Meaning event</h3>
+    <p class="plain">A passage in a post where one of the 13 facets is enacted, frustrated, or wished for, as read by one language model in one pass. Each event also records what the writer blames or credits (a named AI system, a system rollout, an optimization practice such as ratios or charting load, or nothing), what happened to the task, the emotion, and who is held responsible. This is how we found that nurses name the apparatus, not AI. No human coded forum posts, so an event rate is a rate of model-assigned codes; the false-positive rate on forum prose is unknown.</p>
+    <p class="follow"><strong>Read next.</strong> Rosso, Dekas, and Wrzesniewski (2010) for the facets. Törnberg (2024) for why a code that works on one text type can fail on another.</p>
+  </article>
+
+  <article class="term">
+    <h3>Same post is not “before”</h3>
+    <p class="plain">Posts that name the apparatus also carry quit-intent and lack-of-control flags more often. That is one coder reading one complaint: the same sentence can produce the object code and the flag. Read both directions. Fifteen percent of apparatus posts carry a quit flag; thirty percent of quit-flagged posts name an apparatus, so seventy percent do not. Neither number says what came first. “Precedes” needs the same writer, an earlier post and a later one, and real posting dates. We have not run that.</p>
+    <p class="follow"><strong>Read next.</strong> Any introductory treatment of conditional probability and base rates; the error is P(A|B) read as P(B|A).</p>
+  </article>
+
+  <article class="term">
     <h3>Dictionary hit rate</h3>
-    <p class="plain">A closed list of words and phrases. If a post contains one, it counts as a hit. Fast, auditable, and not a Rosso facet score. We used dictionaries for care talk, mastery talk, optimization, AI/automation mentions, and leaving or strain. They answer “did this language appear?” They do not answer “which of the 13 facets declined.”</p>
+    <p class="plain">A closed list of words and phrases. If a post contains one, it counts as a hit. Fast, auditable, and not a Rosso facet score. We used dictionaries for care talk, mastery talk, optimization, AI/automation mentions, and leaving or strain. On a nursing board the care list mostly fires on ordinary patient talk, so a hit says “this post is about nursing,” not “communion is present.” We keep dictionaries as archive description (how often does AI vocabulary appear at all: under 1% of posts in any year) and draw no year-trend conclusion from them.</p>
     <p class="follow"><strong>Read next.</strong> Nelson, Burk, Knudsen, and McCall (2021), “The future of coding,” <em>Sociological Methods &amp; Research</em>, compares hand coding with computer-assisted text analysis. Than et al. (2025) updates that paper for generative models.</p>
   </article>
 
@@ -162,13 +174,13 @@
 
   <article class="term">
     <h3>Transfer validation</h3>
-    <p class="plain">A codebook built on structured survey stories does not automatically work on messy forum posts. Transfer validation means humans code a fresh sample of those posts (here, 200 already drawn) and you compare the model to those humans before you trust a year contrast. That comparison has not been done. Draft model scores on 2019–2026 posts exist and are not confirmatory.</p>
+    <p class="plain">A codebook built on structured survey stories does not automatically work on messy forum posts. Transfer validation means humans code a fresh sample of those posts (here, 200 already drawn) and you compare the model to those humans before you trust a year contrast. That comparison has not been done; the sheet was drawn and, by PI decision, not coded. Every forum number in this packet is therefore a model-assigned code without a forum-specific human check.</p>
     <p class="follow"><strong>Read next.</strong> Törnberg (2024) on domain shift. Ziems et al. (2024) on when computational social science labels fail to travel.</p>
   </article>
 
   <article class="term">
     <h3>Item response theory (IRT), mentioned so you can ignore it</h3>
-    <p class="plain">A homemade 2PL model was fit to unvalidated, binarized draft salience scores. EAP reliability was about .45. That is not a meaning theta you can take to a client. It is in the board’s lower corner because the printed tiles had space, not because it is a finding.</p>
+    <p class="plain">A homemade 2PL model was fit to unvalidated, binarized draft salience scores, and another to the dictionary hits. Neither is a meaning theta you can take to a client: the dictionary version reproduces the hit count (rank correlation .99) with reliability near .20. Both were removed from the board and from this poster page; they are mentioned here only so nobody reconstructs them from the repository and calls them a finding.</p>
     <p class="follow"><strong>Read next.</strong> Skip it unless you are the measurement person. Embretson and Reise (2000) is the usual textbook if you are.</p>
   </article>
 

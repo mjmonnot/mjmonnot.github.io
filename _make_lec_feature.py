@@ -94,19 +94,13 @@ def main() -> None:
         ax.text(0.38, y, line, ha="left", va="center",
                 fontsize=9.8, color=INK, fontproperties=SANS)
 
-    facts = [
-        (4.55, "Care language is still present late in the series"),
-        (3.55, "Hit rates are noisy  ·  topic stems, thin cells"),
-        (2.55, "Parallel 2PL  ·  one latent score per post"),
-        (1.55, "2016 is the origin year  ·  not a 2023 cut"),
-    ]
     for y, (title, sub) in zip(
         (4.10, 3.10, 2.10, 1.10),
         (
-            ("Care talk remains", "Does not drop in the late window"),
-            ("Hit rates are noisy", "Topic stems and thin year cells"),
-            ("Parallel latent 2PL", "One occupational-talk score per post"),
-            ("Origin year is 2016", "Not a 2023 AI-start contrast"),
+            ("Nurses named the apparatus", "7 named-AI events in 7,709 posts, none since 2021"),
+            ("Ratios, metrics, charting: flat", "About one post in twenty, 2016 to 2026"),
+            ("Control moved, not skill", "Lack-of-control frustration +4 pp; competence held"),
+            ("Model codes, no human check", "Descriptive; capture year is not AI use"),
         ),
     ):
         box(ax, 5.78, y, 5.04, 0.88, WHITE, RULE, lw=0.85)
@@ -129,7 +123,7 @@ def main() -> None:
     ax.text(
         0.38,
         0.24,
-        "Study 2 is lexical and exploratory  ·  capture year is not AI use",
+        "Studies 2 and 3 are model-coded forum events, descriptive  ·  test-A 65-case look after results were fixed, 128 sealed",
         ha="left",
         va="center",
         fontsize=8.2,

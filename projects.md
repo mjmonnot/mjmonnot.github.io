@@ -26,11 +26,11 @@ Several of these projects extend my research themes in [leadership, well-being, 
   <figcaption>Study 1 pathways and locked tests beside Study 2 occupational talk, 2016–2026. Click through to the packet.</figcaption>
 </figure>
 
-Board session packet for *Shaping the Future of People Analytics*: how optimization can strip the meaning that keeps helping work staffed, and what it takes to measure that meaning without fooling yourself. Two-wave field study plus a locked language-model coding pipeline. Human codes stayed on the map; no engineered prompt met the acceptance bar; the sealed holdout was not opened.
+Board session packet for *Shaping the Future of People Analytics*: how optimization can strip the meaning that keeps helping work staffed, and what it takes to measure that meaning without fooling yourself. Two-wave field study, a locked language-model coding pipeline, and ten years of nurses' forum talk. Human codes stayed on the map; no engineered prompt met the acceptance bar; no prompt was chosen on test. In the forum, nurses named the apparatus (ratios, metrics, charting), not AI, and what moved was control over the work, not skill.
 
 <p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
 
-🔗 [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v3.pptx)
+🔗 [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v4.pptx)
 
 ---
 

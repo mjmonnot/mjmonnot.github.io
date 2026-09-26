@@ -22,7 +22,7 @@
 <header class="hero wrap">
   <p class="kicker">Color digital poster · one scrolling page · SIOP LEC 2026</p>
   <h1>The AI Paradox</h1>
-  <p class="lede">Organizations automate helping work to free people for meaningful care. That only works if someone already knows which tasks carry meaning. We mapped the meaning, then tested whether a language model could take over the mapping. The map was thinner than the efficiency story. The model did not qualify.</p>
+  <p class="lede">Organizations automate helping work to free people for meaningful care. That only works if someone already knows which tasks carry meaning. We mapped the meaning, then tested whether a language model could take over the mapping. The map was thinner than the efficiency story. The model did not qualify. Then we read a decade of nurses’ own talk: they never said “AI.” They named ratios, metrics, and charting, and what rose in that talk was a sense of lacking control over means.</p>
   <hr class="rule">
   <p>Matthew J. Monnot<sup>1</sup> · Isaac Thompson<sup>2</sup> · <sup>1</sup>Vocentive · <sup>2</sup>Amazon</p>
 </header>
@@ -76,7 +76,7 @@
   </figure>
 
   <h2>The design</h2>
-  <p>Time 1 (March 2016): critical-incident narratives and meaning surveys, helping-profession workers, healthcare-majority online panel, <em>N</em> ≈ 307. Time 2 (February–March 2017): well-being, engagement, burnout, and turnover, <em>n</em> = 144 complete longitudinal cases. Two trained humans coded 276 stories on all 13 facets (3,614 cells). Disagreements went to blinded adjudication. Language-model prompts were built only on a locked training slice, evaluated once on development, and never applied to the sealed confirmatory holdout.</p>
+  <p>Time 1 (March 2016): critical-incident narratives and meaning surveys, helping-profession workers, healthcare-majority online panel, <em>N</em> ≈ 307. Time 2 (February–March 2017): well-being, engagement, burnout, and turnover, <em>n</em> = 144 complete longitudinal cases. Two trained humans coded 276 stories on all 13 facets (3,614 cells). Disagreements went to blinded adjudication. Language-model prompts were built only on a locked training slice and evaluated once on development. After the paper’s results were fixed, one descriptive look at a pre-registered 65-case subsplit of the holdout was taken (two disqualified prompts; reported as a 65-case out-of-sample number, not as validation); the remaining 128 cases stay sealed.</p>
   <figure>
     <img src="assets/fig_timeline.png" alt="Four-step study design timeline" style="width:100%;height:auto">
     <figcaption>Locked split: train ~10% / development ~20% / sealed test ~70%.</figcaption>
@@ -113,8 +113,8 @@
   </figure>
 
   <h2>Finding 2. No engineered prompt met the standard set for acceptance</h2>
-  <p>Six frozen prompt architectures were scored once on the 55-case development partition against bars locked to the lower bound of the human–human interval: agency ≥ .910, others-directed ≥ .805. Communion and self carried no acceptance bar because human agreement was too low to validate against. Every prompt was disqualified on false positives over cells both humans had coded absent. Every prompt also missed the agency bar (range .750–.798). Study 1 analyses used the human composite codes. The sealed test set was never opened.</p>
-  <p>Prompts selected to match a human pair will carry that pair’s disagreements forward. Session 6 already specified the other test: an independent panel, not chosen on human PSA, scored against later well-being and retention. That is Tier 3. It was parked in September so the paper could ship on human gold. It is back on the table (ADR 0010). The sealed test set has not been opened for it.</p>
+  <p>Six frozen prompt architectures were scored once on the 55-case development partition against bars locked to the lower bound of the human–human interval: agency ≥ .910, others-directed ≥ .805. Communion and self carried no acceptance bar because human agreement was too low to validate against. Every prompt was disqualified on false positives over cells both humans had coded absent. Every prompt also missed the agency bar (range .750–.798). Study 1 analyses used the human composite codes. The test set was not opened for any prompt selection; the one later look (65 cases, descriptive) changed nothing upstream of it.</p>
+  <p>Prompts selected to match a human pair will carry that pair’s disagreements forward. Session 6 already specified the other test: an independent panel, not chosen on human PSA, scored against later well-being and retention. That is Tier 3. It was parked in September so the paper could ship on human gold. It is back on the table (ADR 0010) and has not touched the sealed 128.</p>
 
   <h2>Finding 3. The registered next-year tests were not supported</h2>
   <p>Others-directed, agency, and self-directed codes did not forecast Time 2 meaningfulness, exhaustion, or turnover intentions in the registered models (Table 2 in the manuscript; all one-tailed <em>p</em> ≥ .268; joint block Δ<em>R</em>² = .012, <em>p</em> = .534). For next-year meaningfulness the Bayes factor treats the null as decisive (BF<sub>01</sub> = 481.5). The same codes did track concurrent WAMI scores (others-directed <em>r</em> = .24; agency <em>r</em> = .20; contribution <em>r</em> = .23). The codebook was not empty. It was not incremental for next year.</p>
@@ -136,20 +136,21 @@
     <figcaption>Exploratory. Competence-anchored Time 1 narratives and later strain. Seventeen present-coded cases. Do not ship.</figcaption>
   </figure>
 
-  <h2>Occupational talk, 2016–2026</h2>
-  <p>Internet Archive snapshots of allnurses.com, 7,709 posts of at least 200 characters, capture years 2016–2026. Closed-form dictionaries marked care, mastery, optimization, AI/automation, and leaving or strain. The reference year is 2016, the start of the series. 2023 is not treated as the start of workplace tools; that talk was already in motion by 2022. Capture year is not use of an AI system. Dictionaries are not scored Rosso facets.</p>
+  <h2>Finding 4. Nurses named the apparatus, not AI</h2>
+  <p>Internet Archive snapshots of allnurses.com, 7,709 posts of at least 200 characters in 1,453 threads, capture years 2016–2026. One language model coded each post for <em>meaning events</em>: a Rosso facet enacted, frustrated, or wished for, plus the object implicated (a named AI system, a system rollout, an optimization practice such as ratios, productivity metrics, dashboards, or documentation load) and four post-level flags (quit intent, lack of control, anxious, depressed). No human coded forum text, so these are rates of model-assigned codes, not validated facet scores. Capture year is a proxy for posting year.</p>
+  <p>Seven events in 7,709 posts named an AI system; none after 2021. About one post in twenty named the optimization apparatus, and that share did not move across the decade (4.8% → 5.2%, 95% CI on the difference [−1.8, 2.4]). The phenomenon the AI-paradox literature describes was in nurses’ talk the whole time, under management’s vocabulary. If you measure “AI exposure” by whether workers say AI, you find nothing, and you are wrong about why.</p>
   <figure>
-    <img src="assets/fig_lexicon_year.png" alt="Dictionary hit rates by capture year 2016 to 2026">
-    <figcaption>Forum dictionaries by Wayback capture year. Care language does not drop in the late window. Not posted-at. Not Rosso gold.</figcaption>
+    <img src="assets/Study2_fig1_trend.png" alt="Object talk, frustrated events, and control-loss flags by capture year, 2016 to 2026">
+    <figcaption>Finding 4. Post-level shares by capture year, 95% thread-cluster intervals. Object talk flat; named AI near zero. The shaded band is a 2019–2021 page-template change that shortened posts; every series is read with that caveat.</figcaption>
   </figure>
+
+  <h2>Finding 5. What moved was control, not skill</h2>
+  <p>Half of all optimization events landed on Control/Autonomy; frustrated Control was the only facet cell that grew (9.6 → 12.7 events per 100 posts). The lack-of-control flag rose from 10.4% to 14.5% of posts (+4.0 points [1.2, 6.8]; unchanged after adjusting for post length). Competence stayed the most <em>enacted</em> facet in every period, and the communion facets were enacted far more often than frustrated. Quit, anxious, and depressed flags showed no trend. Within the badged posts, RN exposure was flat; advanced-practice exposure rose with an interval that includes zero; students and aides were too few after 2019 to estimate.</p>
   <figure>
-    <img src="assets/fig_onesided.png" alt="One-sided meaning scores versus a product of two poles">
-    <figcaption>Measurement note. The product of two 0–100 scores collapses when either pole is peripheral. That is arithmetic, not a complementarity test.</figcaption>
+    <img src="assets/Study2_fig5_roles.png" alt="Object exposure by career-point badge and capture period">
+    <figcaption>Finding 5. Role is read from the author-pane credential badge at capture, never from post text; 48% of posts carried a badge. Cells under 40 posts are marked.</figcaption>
   </figure>
-  <figure>
-    <img src="assets/fig_irt_itemmap.png" alt="Draft item map for forum salience">
-    <figcaption>Do not treat forum scores as one theta. Draft 2PL on unvalidated LLM salience. Transfer is still open.</figcaption>
-  </figure>
+  <p class="sidenote">What we do not claim from the forum: that AI is eroding meaning; that any Rosso facet declined after 2023; that optimization talk precedes quitting. Posts that name the apparatus also carry quit and control-loss flags more often, but that is one coder reading one complaint, and seven in ten quit-flagged posts name no apparatus at all. Communion vocabulary saturates the posts that carry any event yet rarely codes as a discrete episode; we read communion here as the standard against which control loss is judged, a hypothesis for a designed study.</p>
 
   <h2>What to do this quarter</h2>
   <div class="card navy">
@@ -161,8 +162,8 @@
     <p style="margin:0">The longer kit is in <a href="practice.html">Try this quarter</a>.</p>
   </div>
 
-  <p>Print tiles: hang slides 1–16. Slides 17–19 are extra letter pages (competence, concurrent WAMI, forum lexicon). Open <a href="assets/Monnot_Poster_v3.pptx">Monnot_Poster_v3.pptx</a>.</p>
-  <p class="note">Study 1 does not measure AI exposure. The paradox is read by placing the meaning map against the documented automation frontier. Forum results are lexical and exploratory.</p>
+  <p>Print tiles: hang slides 1–16. Slides 17–19 are extra letter pages (competence, concurrent WAMI, forum facets). Open <a href="assets/Monnot_Poster_v4.pptx">Monnot_Poster_v4.pptx</a>.</p>
+  <p class="note">Study 1 does not measure AI exposure. The paradox is read by placing the meaning map against the documented automation frontier. Forum results are single-model event codes, descriptive, and not transfer-validated against human coding of forum text.</p>
 </main>
 
 <footer class="site"><div class="wrap">
