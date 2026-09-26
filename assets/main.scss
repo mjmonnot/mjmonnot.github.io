@@ -394,6 +394,8 @@ img { max-width: 100%; height: auto; }
   font-size: 0.72rem;
   line-height: 1.4;
   color: var(--muted);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .apa-cite {
@@ -403,6 +405,8 @@ img { max-width: 100%; height: auto; }
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--ink);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .project-figure {

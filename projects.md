@@ -21,9 +21,9 @@ Several of these projects extend my research themes in [leadership, well-being, 
 
 <figure class="project-figure">
   <a href="/lec-2026/">
-    <img src="/assets/images/lec2026-ai-paradox-summary.png" alt="Summary figure for The AI Paradox: four Rosso meaning pathways beside locked-test results. Agency positive specific agreement was .93; communion was .48. No engineered prompt met the acceptance bar. The registered Time 2 meaning block favored the null, BF01 = 481.5. Concurrent WAMI tracked the human codes." width="1120" height="620">
+    <img src="/assets/images/lec2026-ai-paradox-summary.png" alt="Summary figure for The AI Paradox. Study 1, two-wave panel: four Rosso meaning pathways; agency positive specific agreement .93, communion .48; no engineered prompt met the acceptance bar; registered Time 2 null, BF01 = 481.5. Study 2, occupational talk on allnurses.com 2016 to 2026, 7,709 posts: care talk remains, hit rates are noisy, parallel latent 2PL score, 2016 origin year." width="1120" height="620">
   </a>
-  <figcaption>Four pathways and the locked tests. Click through to the packet.</figcaption>
+  <figcaption>Study 1 pathways and locked tests beside Study 2 occupational talk, 2016–2026. Click through to the packet.</figcaption>
 </figure>
 
 Board session packet for *Shaping the Future of People Analytics*: how optimization can strip the meaning that keeps helping work staffed, and what it takes to measure that meaning without fooling yourself. Two-wave field study plus a locked language-model coding pipeline. Human codes stayed on the map; no engineered prompt met the acceptance bar; the sealed holdout was not opened.
@@ -42,12 +42,26 @@ A year-over-year, reproducible collection of solutions and teaching cases for th
 
 ### 2026 — Automated Meta-Analytic Coding (team: *One Hot Key*)
 
+<figure class="project-figure">
+  <a href="https://github.com/mjmonnot/siop-ml-competitions/tree/main/2026-meta-analysis">
+    <img src="/assets/images/siop2026-six-gates.png" alt="Six-gate cascading pipeline from the SIOP 2026 presentation: PDF acquisition, layout extraction, regex plus phi4 classifier, vision fallback, structured LLM extraction, imputation." width="1024" height="230">
+  </a>
+  <figcaption>Six gates from PDF to correlation table. Each gate only fires when the cheaper one before it fails.</figcaption>
+</figure>
+
 An end-to-end pipeline that extracts zero-order Pearson *r* correlations directly from published I-O psychology PDFs, using a four-tier cascade (pdfplumber → Docling table ML → qwen2.5-VL vision model → regex + phi4) running entirely on local models. Built as a solo-plus-AI-agents experiment — a one-person team competing against teams of researchers and graduate students. Dev-set MSE **0.013641** (6th of 24); test set submitted April 2026.
 
 🔗 [Project folder →](https://github.com/mjmonnot/siop-ml-competitions/tree/main/2026-meta-analysis) · [SIOP 2026 deck (PDF)](https://github.com/mjmonnot/siop-ml-competitions/blob/main/2026-meta-analysis/docs/one_hot_key_siop_2026.pdf) · [SIOP 2026 presentation video (MP4)](https://github.com/mjmonnot/siop-ml-competitions/raw/main/2026-meta-analysis/media/One_Hot_Key_ML_Competition_Presentation_1080p.mp4)  
 *Relevant resources:* [Docling (document & table extraction)](https://github.com/docling-project/docling) · [PRISMA — systematic review & meta-analysis reporting](https://www.prisma-statement.org/)
 
 ### 2019 — Personality Prediction from Text (Post-Hoc Winning Solution)
+
+<figure class="project-figure">
+  <a href="https://github.com/mjmonnot/siop-ml-competitions/blob/main/2019-personality-from-text/SOLUTION.md">
+    <img src="/assets/images/siop2019-roleplay-steps.png" alt="Four-step role-play questionnaire pipeline: read the five text answers, role-play the persona, answer 30 BFI-2 items in character, reverse-score and aggregate to OCEAN." width="900" height="660">
+  </a>
+  <figcaption>Role-play scoring: the model answers a BFI-2 questionnaire as the respondent, then the items are scored like any inventory.</figcaption>
+</figure>
 
 A post-hoc solution to the 2019 competition — predicting Big Five trait scores from five short open-ended responses — that beats the original leaderboard by a wide margin under a strict, leakage-safe protocol (fit on Train only, select on Dev, touch the private Test once).
 
@@ -102,6 +116,13 @@ Python · Pandas · NumPy · scikit-learn pipelines · cross-validation · regul
 
 [View on GitHub →](https://github.com/mjmonnot/LPAmidus)
 
+<figure class="project-figure">
+  <a href="https://osf.io/preprints/psyarxiv/9r6hd">
+    <img src="/assets/images/midus-figure-1a.png" alt="Figure 1A from the MIDUS preprint: latent state means on anchored factor scores for four personality profiles across neuroticism, extraversion, openness, agreeableness, conscientiousness, and agency. Resilient 36 percent, Distressed 30 percent, Reserved 29 percent, Antagonistic 5 percent." width="880" height="460">
+  </a>
+  <figcaption>Figure 1A from the preprint: the four replicated profiles on six anchored trait scores.</figcaption>
+</figure>
+
 **Overview:**  
 A fully reproducible, longitudinal study of person-centered Big Five personality profiles and how they relate to future-of-work skills across midlife, using the MIDUS (Midlife in the United States) national panel (*N* = 7,108 over ~20 years) with independent replication in the MIDUS Refresher (*N* = 3,577). Where the SIOP 2019 project predicts traits from text, this project asks what trait *configurations* mean — and, crucially, whether people move between them over two decades — connecting directly to my research on [well-being and meaningful work](/themes/leadership-and-wellbeing.html). Framed around self-determination theory and the psychological resources workers need to develop and retain AI-era skills.
 
@@ -123,7 +144,14 @@ R · latent profile analysis (LPA) and latent transition analysis via a joint la
 
 ## AI Bubble Pressure Score (AIBPS)
 
-[View on GitHub →](https://github.com/mjmonnot/aibps-v0-1)
+[View on GitHub →](https://github.com/mjmonnot/aibps-v0-1) · [Live dashboard →](https://aibps-v0-1.streamlit.app)
+
+<figure class="project-figure">
+  <a href="https://github.com/mjmonnot/aibps-v0-1">
+    <img src="/assets/images/aibps-summary.png" alt="Summary figure for the AI Bubble Pressure Score: six pillars (market, credit, capex, infrastructure, adoption, sentiment) feed a four-step pipeline of ingest, normalize, aggregate, and interpret, producing a 0 to 100 composite with low, healthy, frothy, and critical bands." width="1120" height="620">
+  </a>
+  <figcaption>Six pillars, one 0–100 composite. Click through to the repository.</figcaption>
+</figure>
 
 **Overview:**  
 An ongoing project analyzing sentiment, valuation, and market momentum to estimate "bubble pressure" in the AI sector. The AIBPS integrates multiple data layers—equity performance, ETF flows, and public sentiment—to quantify how narrative intensity and capital inflows co-evolve across AI-related assets.
@@ -145,6 +173,13 @@ Python · Pandas · NumPy · Matplotlib · scikit-learn · GitHub Actions · CSV
 ---
 
 ## AI Hyperscaler Market-Cap Race
+
+<figure class="project-figure">
+  <a href="https://mjmonnot.github.io/ai-hyperscalers-marketcap-race/">
+    <img src="/assets/images/hyperscaler-race-2026-09.png" alt="Final frame of the AI hyperscalers market-cap bar chart race, September 2026: NVIDIA leads above 5 trillion dollars, followed by Alphabet 4,162 billion, Microsoft 3,833, Amazon 2,686, TSMC 2,337, Meta 1,915, and AMD 1,028." width="1730" height="990">
+  </a>
+  <figcaption>Final frame, September 2026. Click through to run the race.</figcaption>
+</figure>
 
 A companion data-visualization piece: an animated D3.js bar chart race tracking the monthly market capitalization of leading AI hyperscalers and infrastructure firms over time, auto-updated through a GitHub Actions pipeline with no backend.
 

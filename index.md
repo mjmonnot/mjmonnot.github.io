@@ -56,7 +56,7 @@ permalink: /
             <a class="feature-figure-link" href="{{ "/assets/images/lec2026-ai-paradox-summary.png" | relative_url }}" data-lightbox aria-label="Enlarge the AI Paradox summary figure">
               <img src="{{ "/assets/images/lec2026-ai-paradox-summary.png" | relative_url }}" alt="Summary figure for The AI Paradox: four Rosso meaning pathways beside locked-test results. Agency positive specific agreement was .93; communion was .48. No engineered prompt met the acceptance bar. The registered Time 2 meaning block favored the null, BF01 = 481.5. Concurrent WAMI tracked the human codes." width="1120" height="620" loading="lazy">
             </a>
-            <figcaption>Four pathways, four locked results &mdash; click the title for the packet <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+            <figcaption>Study 1 pathways and locked tests, Study 2 occupational talk 2016&ndash;2026 &mdash; click the title for the packet <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A two-wave helping-profession study and a locked language-model coding pipeline. Human codes stayed on the map. No engineered prompt met the acceptance bar. The sealed holdout was not opened. <a href="/lec-2026/">Open the digital goody bag &rarr;</a></p>
           <div class="feature-stat">
