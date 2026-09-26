@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bostock / D3 lineage — full legal readings — Design readings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bag.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a href="../index.html">Syllabus</a>
+  <a href="../poster.html">Digital poster</a>
+  <a href="../explainers.html">Lay explainers</a>
+  <a href="../methodology.html">Methods &amp; lessons</a>
+  <a href="../references.html">Annotated readings</a>
+  <a href="../practice.html">Try this quarter</a>
+  <a class="here" href="../design.html">Design notes</a>
+</div></nav><header class="hero wrap"><p class="kicker">Design reading notes</p><h1>Bostock / D3 lineage — full legal readings</h1></header><main class="wrap"><h1>Bostock / D3 lineage — full legal readings</h1>
+<p>Sources obtained only from author/lab OA PDFs and live (or Wayback-archived) pages. No Sci-Hub / LibGen. Extracted text copies live under <code>_extracted_text/</code>.</p>
+<p><strong>PDFs saved to</strong> this folder and mirrored to project <code>Literature/</code>.</p>
+<p>---</p>
+<h2>1. Bostock, Ogievetsky, &amp; Heer (2011). D³: Data-Driven Documents</h2>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>Citation</strong></td><td>Michael Bostock, Vadim Ogievetsky, and Jeffrey Heer. <em>IEEE Transactions on Visualization and Computer Graphics</em>, 17(12), 2301–2309. DOI <a href="https://doi.org/10.1109/TVCG.2011.185">10.1109/TVCG.2011.185</a>.</td></tr>
+<tr><td><strong>Legal PDF</strong></td><td><a href="http://vis.stanford.edu/files/2011-D3-InfoVis.pdf">http://vis.stanford.edu/files/2011-D3-InfoVis.pdf</a> (Stanford Vis Group author preprint)</td></tr>
+<tr><td><strong>Local file</strong></td><td><code>Bostock_Ogievetsky_Heer_2011_D3_DataDrivenDocuments.pdf</code></td></tr>
+<tr><td><strong>Page count</strong></td><td><strong>9 pages</strong> (pypdf; matches IEEE span 2301–2309)</td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong> — all 9 pages (title through acknowledgments/references).</td></tr>
+</tbody></table>
+<h3>Design principles / claims stated in the paper</h3>
+<ul class="clean">
+<li>- <strong>Representation transparency / native scenegraph.</strong> Do not hide the underlying scenegraph in a toolkit-specific abstraction; operate on the browser DOM. “The document is the scenegraph.”</li>
+<li>- <strong>Three refined goals (from Protovis experience):</strong> expressiveness, efficiency, accessibility — sharpened into:</li>
+</ul>
+<p>  - <strong>Compatibility</strong> with the web ecosystem (reuse standards, CSS, developer tools).</p>
+<p>  - <strong>Debugging</strong> via poking/prodding and immediate side-effects (avoid “impedance mismatch” when internal state violates the user’s mental model).</p>
+<p>  - <strong>Performance</strong> via focusing on <strong>transformation</strong> rather than regenerating an intermediate representation.</p>
+<ul class="clean">
+<li>- <strong>Kernel, not a full graphical grammar.</strong> D3’s core problem is “efficient manipulation of documents based on data”; closest analogues are document transformers (jQuery, CSS, XSLT), not Infovis frameworks.</li>
+<li>- <strong>Selection → operators → data join.</strong> Atomic operand is a <strong>selection</strong>. Data joins bind data to elements and produce <strong>enter / update / exit</strong> subselections (relational left/inner/right analogues). Key functions preserve <strong>object constancy</strong> across transitions. Data is “sticky” on nodes.</li>
+<li>- <strong>Immediate evaluation.</strong> Operators (e.g. <code>attr</code>) apply <strong>immediately</strong>, unlike Protovis’s deferred property evaluation — reduces hidden control flow, eases debugging, allows recursive/<code>each</code>-driven hierarchies.</li>
+<li>- <strong>Explicit transforms for dynamics.</strong> Designers specify <strong>scene changes</strong> (what to mutate/add/remove), not only scene descriptions — enables animation/interaction with less redundant work.</li>
+<li>- <strong>Modules without encapsulating the form.</strong> Optional helpers (scales, layouts, <code>d3.svg</code> shapes, behaviors) raise efficiency while still exposing native SVG/HTML. Quotes Tufte: <strong>“Don’t get it original, get it right.”</strong></li>
+<li>- <strong>Trade-offs acknowledged.</strong> Abandoning specialized marks loses Protovis-style prototypal inheritance / homogeneous properties; CSS and native tools compensate; slight loss of notational efficiency possible.</li>
+<li>- <strong>Empirical claim.</strong> Benchmarks: D3 ≥ ~2× Protovis on load/frame rate in their tests; Flash still faster on FPS at large <em>n</em>; browser SVG still has room to improve.</li>
+</ul>
+<p><strong>Not found in this text:</strong> the slogan “document as document,” or any rule that “interaction should not hide the number if print matters.”</p>
+<p>---</p>
+<h2>2. Heer &amp; Shneiderman (2012). Interactive Dynamics for Visual Analysis</h2>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>Citation</strong></td><td>Jeffrey Heer and Ben Shneiderman. <em>Communications of the ACM</em>, 55(4), 45–54. DOI <a href="https://doi.org/10.1145/2133806.2133821">10.1145/2133806.2133821</a>. (Also ACM Queue OA: <a href="https://queue.acm.org/detail.cfm?id=2146416">queue.acm.org/detail.cfm?id=2146416</a>.)</td></tr>
+<tr><td><strong>Legal PDF</strong></td><td><a href="https://idl.cs.washington.edu/files/2012-InteractiveDynamics-CACM.pdf">https://idl.cs.washington.edu/files/2012-InteractiveDynamics-CACM.pdf</a></td></tr>
+<tr><td><strong>Local file</strong></td><td><code>Heer_Shneiderman_2012_InteractiveDynamics_CACM.pdf</code></td></tr>
+<tr><td><strong>Page count</strong></td><td><strong>10 pages</strong></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong> — all 10 pages.</td></tr>
+</tbody></table>
+<h3>Design principles / taxonomy stated in the paper</h3>
+<p>Tools must support <strong>fluent and flexible</strong> use of visualizations “at rates resonant with the pace of human thought.” Taxonomy of <strong>12 task types</strong> in three categories:</p>
+<p><strong>Data and view specification</strong></p>
+<ol>
+<li>1. <strong>Visualize</strong> — choose encodings / chart type / grammar / shelves (Tableau).</li>
+<li>2. <strong>Filter</strong> — dynamic query widgets; rapid and reversible subsetting with real-time updates.</li>
+<li>3. <strong>Sort</strong> — expose patterns; seriation for matrices/networks.</li>
+<li>4. <strong>Derive</strong> — normalize, aggregate, model-fit, calculation languages.</li>
+</ol>
+<p><strong>View manipulation</strong></p>
+<ol>
+<li>5. <strong>Select</strong> — hover/click/lasso; selections as queries over data when possible.</li>
+<li>6. <strong>Navigate</strong> — cites Shneiderman mantra: <strong>“Overview first, zoom and filter, then details-on-demand”</strong>; also “Search, show context, expand on demand”; geometric vs <strong>semantic zoom</strong>; overview+detail; focus+context / DOI; caution that complex fisheye distortion often fails to beat simple zoom.</li>
+<li>7. <strong>Coordinate</strong> — brushing &amp; linking; linked navigation; small multiples (citing Tufte).</li>
+<li>8. <strong>Organize</strong> — tiled layouts, tabs, trellis, automatic layout of multi-view workspaces.</li>
+</ol>
+<p><strong>Process and provenance</strong></p>
+<ol>
+<li>9. <strong>Record</strong> — undo/redo and visual histories (timeline / comic-strip).</li>
+<li>10. <strong>Annotate</strong> — prefer <strong>data-aware</strong> annotations (selections/queries) over freeform graphics that break under filter/aggregate.</li>
+<li>11. <strong>Share</strong> — application bookmarking / URLs; publish interactive views; social discussion.</li>
+<li>12. <strong>Guide</strong> — guided analytics workflows; narrative visualization that leads then opens for exploration (news graphics).</li>
+</ol>
+<p>Also: confusing widgets / slow response <strong>curtail thorough deliberation and introduce errors</strong>.</p>
+<p>---</p>
+<h2>3. Heer, Card, &amp; Landay (2005). prefuse: a toolkit for interactive information visualization</h2>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>Citation</strong></td><td>Jeffrey Heer, Stuart K. Card, and James A. Landay. <em>CHI 2005</em>, 421–430.</td></tr>
+<tr><td><strong>Legal PDF</strong></td><td><a href="http://vis.stanford.edu/files/2005-prefuse-CHI.pdf">http://vis.stanford.edu/files/2005-prefuse-CHI.pdf</a></td></tr>
+<tr><td><strong>Local file</strong></td><td><code>Heer_Card_Landay_2005_prefuse_CHI.pdf</code></td></tr>
+<tr><td><strong>Page count</strong></td><td><strong>10 pages</strong></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong> — all 10 pages.</td></tr>
+</tbody></table>
+<h3>Design principles stated</h3>
+<ul class="clean">
+<li>- Infovis apps are hard to author and need <strong>domain-specific customization</strong> → toolkit of <strong>finer-grained building blocks</strong>, not only ready-made chart widgets.</li>
+<li>- Based on the <strong>information visualization reference model / data state model</strong> (Card/Mackinlay/Shneiderman; Chi): abstract data → filter to visualizable form → process visual analogues → interactive display.</li>
+<li>- <strong>Filtering</strong> maps abstract data to <code>VisualItem</code>s (location, color, size, …); supports scalability (working set / DOI / garbage collection) and multiple views of shared data.</li>
+<li>- <strong>Actions</strong> (filter, assignment, animator) composed into <strong>ActionLists</strong> / scheduled <strong>Activities</strong> — batch processing pipelines for layout, color, animation.</li>
+<li>- <strong>Renderer / RendererFactory / Display</strong> separate appearance from data; supports semantic zoom and overview+detail.</li>
+<li>- Library of layouts, distortion, force simulation, interactive controls, color maps, integrated search, event logging for studies.</li>
+<li>- Evaluation: coverage of classic techniques; DOITrees and Vizster; API usability study (filtering is the learning threshold; sample code is the real “UI” of a toolkit).</li>
+</ul>
+<p>---</p>
+<h2>4. Bostock &amp; Heer (2009). Protovis: A Graphical Toolkit for Visualization</h2>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>Citation</strong></td><td>Michael Bostock and Jeffrey Heer. <em>IEEE TVCG</em>, 15(6), 1121–1128.</td></tr>
+<tr><td><strong>Legal PDF</strong></td><td><a href="http://vis.stanford.edu/files/2009-Protovis-InfoVis.pdf">http://vis.stanford.edu/files/2009-Protovis-InfoVis.pdf</a></td></tr>
+<tr><td><strong>Local file</strong></td><td><code>Bostock_Heer_2009_Protovis.pdf</code></td></tr>
+<tr><td><strong>Page count</strong></td><td><strong>8 pages</strong></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong> — all 8 pages.</td></tr>
+</tbody></table>
+<h3>Design principles stated</h3>
+<ul class="clean">
+<li>- Gap between high-level chart systems (efficient but restrictive) and low-level graphics (expressive but tedious).</li>
+<li>- Balance <strong>expressiveness / efficiency / accessibility</strong>; tools bias designers toward what is easy (Maslow “hammer/nail”).</li>
+<li>- Prefer marks designers can think about concretely (bars, lines, labels) over foreign operator stacks — reduce <strong>gulf of execution</strong>.</li>
+<li>- Visualization = <strong>hierarchy of marks</strong> with properties as <strong>functions of data</strong>; inheritance/cascading for related marks; panels for small multiples; anchors for labels.</li>
+<li>- Marks know nothing about “charts”; charts emerge from composition.</li>
+<li>- Dot size “proportional to the area of the rendered glyph to encourage meaningful visual encodings.”</li>
+<li>- Data munging should be easy so users <strong>make the right visualization</strong> rather than compromise design to fit data format.</li>
+<li>- Critiques closed chart typologies (Wilkinson, Tufte cited on shortcomings / defaults).</li>
+</ul>
+<p>---</p>
+<h2>5. Heer &amp; Bostock (2010). Declarative Language Design for Interactive Visualization</h2>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>Citation</strong></td><td>Jeffrey Heer and Michael Bostock. <em>IEEE InfoVis / TVCG</em> (Protovis-on-Java paper).</td></tr>
+<tr><td><strong>Legal PDF</strong></td><td><a href="http://vis.stanford.edu/files/2010-Protovis-InfoVis.pdf">http://vis.stanford.edu/files/2010-Protovis-InfoVis.pdf</a></td></tr>
+<tr><td><strong>Local file</strong></td><td><code>Heer_Bostock_2010_DeclarativeLanguageDesign.pdf</code></td></tr>
+<tr><td><strong>Page count</strong></td><td><strong>8 pages</strong></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong> — all 8 pages (full extract read).</td></tr>
+</tbody></table>
+<h3>Design principles stated</h3>
+<ul class="clean">
+<li>- <strong>Declarative</strong> DSLs: specify <em>what</em>, separate from <em>how</em> — simplify development, allow optimization, retarget platforms.</li>
+<li>- Goals: declarative language design; <strong>cross-platform</strong> rendering/event abstraction (desktop → mobile); <strong>format-agnostic</strong> processing (no forced toolkit data model; bind via functions over arbitrary iterables); optimizations (compilation, parallelism, GPU).</li>
+<li>- Extends Protovis with declarative <strong>animated transitions</strong>; key values for <strong>object constancy</strong>.</li>
+<li>- Claim: order-of-magnitude scalability gains vs prefuse in their Java benchmarks.</li>
+</ul>
+<p>---</p>
+<h2>6. Bostock essays on bost.ocks.org (legal full texts)</h2>
+<h3>6a. Thinking with Joins (2012-02-05)</h3>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>URL</strong></td><td><a href="https://bost.ocks.org/mike/join/">https://bost.ocks.org/mike/join/</a></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong></td></tr>
+</tbody></table>
+<p><strong>Stated principles</strong></p>
+<ul class="clean">
+<li>- Tell D3 <strong>what you want</strong> (elements ↔ data), not how to loop-create nodes.</li>
+<li>- Data join yields <strong>enter / update / exit</strong>; declare the relationship, handle three states without branching/<code>for</code>.</li>
+<li>- Same pattern scales from static charts to realtime / transitions.</li>
+<li>- Target constant attrs on enter; minimize DOM work; animate enter/exit separately.</li>
+<li>- Key functions control data↔element assignment.</li>
+</ul>
+<h3>6b. Towards Reusable Charts (2012-02-27)</h3>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>URL</strong></td><td><a href="https://bost.ocks.org/mike/chart/">https://bost.ocks.org/mike/chart/</a></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong></td></tr>
+</tbody></table>
+<p><strong>Stated principles</strong></p>
+<ul class="clean">
+<li>- Reusable unit = <strong>configurable closure</strong> with <strong>getter-setter</strong> methods (same pattern as D3 scales/axes).</li>
+<li>- Charts take a <strong>selection</strong> (via <code>selection.call</code>) — rubber-stamp rendering; multi-element, moveable, transition-controllable.</li>
+<li>- Configuration ≠ data/DOM; those come from the selection.</li>
+<li>- Open questions left to authors: Grammar of Graphics modularity; whether to expose scales/axes; auto interaction/animation; how much users may “reach into” the chart.</li>
+</ul>
+<h3>6c. How To Scroll (2014-11-03)</h3>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>URL</strong></td><td><a href="https://bost.ocks.org/mike/scroll/">https://bost.ocks.org/mike/scroll/</a></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong></td></tr>
+</tbody></table>
+<p><strong>Five rules stated</strong></p>
+<ol>
+<li>1. <strong>Prefer scrolling to clicking</strong> — linear, low deliberation; don’t hide content behind clicks if scrolling can reveal it; avoid full-screen designs with no scroll affordance.</li>
+<li>2. <strong>Allow rapid, incremental, reversible scrolling</strong> — oppose scrolljacked swipe-paging; prefer adapting content (position-fixed “screens”) while preserving native scroll.</li>
+<li>3. <strong>Provide instantaneous, consistent feedback</strong> — keep some content scrolling normally (proportionally) at all times; don’t fix everything.</li>
+<li>4. <strong>Avoid unwanted disruptions</strong> — don’t autoplay video/audio as soon as it enters the large viewport; isolate fullscreen video if autoplay.</li>
+<li>5. <strong>Support standard keyboard controls</strong> — don’t break history navigation (cmd-left/right, delete), etc.</li>
+</ol>
+<h3>6d. Let’s Make a Bar Chart, I–III (2013)</h3>
+<p>Live <code>bost.ocks.org/mike/bar/</code> now redirects to Observable shells with little readable body. <strong>Full tutorial text recovered via Wayback</strong> (<code>id_</code> snapshots) and saved under <code>_extracted_text/bostock_bar_part{1,2,3}.txt</code>.</p>
+<table><thead><tr><th>Part</th><th>Wayback / original</th><th>Read in full?</th></tr></thead><tbody>
+<tr><td>I (2013-11-05)</td><td><a href="https://web.archive.org/web/20140102091534id_/http://bost.ocks.org/mike/bar/">web.archive.org/.../bost.ocks.org/mike/bar/</a></td><td><strong>Yes</strong></td></tr>
+<tr><td>II (2013-11-06)</td><td><code>.../mike/bar/2/</code></td><td><strong>Yes</strong></td></tr>
+<tr><td>III (2013-11-13)</td><td><code>.../mike/bar/3/</code></td><td><strong>Yes</strong></td></tr>
+<tr><td>IV</td><td>Announced (“interaction and transitions”) but <strong>not retrieved</strong> as a complete archived essay in this pass</td><td>—</td></tr>
+</tbody></table>
+<p><strong>Principles stated in I–III</strong></p>
+<ul class="clean">
+<li>- Selections + method chaining; indent convention (4 spaces preserve selection, 2 spaces change selection).</li>
+<li>- <strong>Data join</strong> as the single pattern for create/update/destroy; initial selection declares elements you <em>want</em> to exist (points to Thinking with Joins / object constancy).</li>
+<li>- Prefer <strong>scales</strong> over magic multipliers (domain → range).</li>
+<li>- HTML padding can <strong>distort bar accuracy</strong> — fix with <code>box-sizing</code> or move to SVG.</li>
+<li>- SVG: geometry as <strong>attributes</strong>, aesthetics preferably as <strong>styles</strong> (play nice with CSS).</li>
+<li>- Prefer styles for aesthetics; set chart size early so page doesn’t reflow after async data.</li>
+<li>- Async data: initialize before download finishes; coerce types (<code>+d.value</code>) — strings sort/add wrongly.</li>
+<li>- SVG y-axis inverted (<code>range([height,0])</code>); ordinal <code>rangeRoundBands</code> + padding for crisp bars.</li>
+<li>- Margin convention (<code>{top,right,bottom,left}</code>); axes via <code>selection.call</code>.</li>
+<li>- <strong>Communicating:</strong> “It doesn’t matter how good a chart looks if it doesn’t communicate anything!” Labels, captions, legends, titles, unit-appropriate formats are essential — don’t assume the reader shares your internalized context.</li>
+</ul>
+<p><strong>Not found:</strong> “interaction should not hide the number if print matters.”</p>
+<p>---</p>
+<h2>7. Observable / d3js.org documentation Bostock still maintains</h2>
+<h3>What is D3? (d3js.org)</h3>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>URL</strong></td><td><a href="https://d3js.org/what-is-d3">https://d3js.org/what-is-d3</a> · source <a href="https://github.com/d3/d3/blob/main/docs/what-is-d3.md">github.com/d3/d3/blob/main/docs/what-is-d3.md</a></td></tr>
+<tr><td><strong>Local copy</strong></td><td><code>_extracted_text/d3js_what_is_d3.md</code></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong></td></tr>
+</tbody></table>
+<p><strong>Stated principles</strong></p>
+<ul class="clean">
+<li>- D3 is a <strong>low-level toolbox</strong>, not a chart library with a “chart” concept — compose primitives (scales, shapes, layouts, selections).</li>
+<li>- <strong>Flexible</strong> / no default presentation — you write (or copy) the code.</li>
+<li>- <strong>Works with the web</strong> — no new graphical representation; name = <em>data-driven documents</em> (DOM). Immediate <code>selection.attr</code> mutates DOM → easier debugging.</li>
+<li>- <strong>For bespoke visualization</strong> — Cox paraphrase: use D3 if writing ~100 lines for a bar chart seems normal; otherwise prefer Observable Plot.</li>
+<li>- <strong>For dynamic visualization</strong> — data join (enter/update/exit) exists so you control exact updates and transitions; less needed for purely static charts.</li>
+</ul>
+<h3>D3 Workshop slides (VIZBI 2012)</h3>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td><strong>URL</strong></td><td><a href="https://bost.ocks.org/mike/d3/workshop/">https://bost.ocks.org/mike/d3/workshop/</a></td></tr>
+<tr><td><strong>Read in full?</strong></td><td><strong>Yes</strong> (full slide text fetched)</td></tr>
+</tbody></table>
+<p><strong>Stated tenets (Preface)</strong></p>
+<ul class="clean">
+<li>- <strong>“D3 provides transformation; no new representation.”</strong> Uses HTML/SVG standards → expressiveness, future-proofing, CSS/debugger compatibility.</li>
+<li>- Visualization = <strong>visual encoding: mapping data to elements</strong>; D3 maintains that mapping as data changes.</li>
+<li>- Learning D3 is largely learning web standards; prefer CSS classes for aesthetics over hard-coded JS colors.</li>
+</ul>
+<p>---</p>
+<h2>8. Related OA pointer (not required, noted)</h2>
+<p>Heer, Bostock, &amp; Ogievetsky, “A Tour through the Visualization Zoo,” <em>ACM Queue</em> — linked from the Interactive Dynamics article: <a href="https://queue.acm.org/detail.cfm?id=1805128">https://queue.acm.org/detail.cfm?id=1805128</a>. Not treated as a primary read for this note.</p>
+<p>---</p>
+<h2>Coverage checklist</h2>
+<table><thead><tr><th>Document</th><th>Legal source</th><th>Downloaded PDF?</th><th>Pages</th><th>Read in full</th></tr></thead><tbody>
+<tr><td>D3 2011 InfoVis</td><td>vis.stanford.edu</td><td>Yes</td><td><strong>9</strong></td><td>Yes</td></tr>
+<tr><td>Interactive Dynamics 2012</td><td>idl.cs.washington.edu</td><td>Yes</td><td>10</td><td>Yes</td></tr>
+<tr><td>prefuse CHI 2005</td><td>vis.stanford.edu</td><td>Yes</td><td>10</td><td>Yes</td></tr>
+<tr><td>Protovis 2009</td><td>vis.stanford.edu</td><td>Yes</td><td>8</td><td>Yes</td></tr>
+<tr><td>Declarative Lang. Design 2010</td><td>vis.stanford.edu</td><td>Yes</td><td>8</td><td>Yes</td></tr>
+<tr><td>Thinking with Joins</td><td>bost.ocks.org</td><td>n/a (HTML)</td><td>—</td><td>Yes</td></tr>
+<tr><td>Towards Reusable Charts</td><td>bost.ocks.org</td><td>n/a</td><td>—</td><td>Yes</td></tr>
+<tr><td>How To Scroll</td><td>bost.ocks.org</td><td>n/a</td><td>—</td><td>Yes</td></tr>
+<tr><td>Let’s Make a Bar Chart I–III</td><td>Wayback of bost.ocks.org</td><td>HTML extracts</td><td>—</td><td>Yes</td></tr>
+<tr><td>What is D3?</td><td>d3js.org / GitHub</td><td>md copy</td><td>—</td><td>Yes</td></tr>
+<tr><td>D3 Workshop</td><td>bost.ocks.org</td><td>n/a</td><td>—</td><td>Yes</td></tr>
+</tbody></table>
+<h3>Phrases checked and <strong>not</strong> found as stated slogans in these texts</h3>
+<ul class="clean">
+<li>- “document as document” — <strong>not</strong> used; closest: “the document is the scenegraph” (D3 2011) and “data-driven documents” / DOM (What is D3?).</li>
+<li>- “interaction should not hide the number if print matters” — <strong>not</strong> found in any document above.</li>
+</ul></main><footer class="site"><div class="wrap">Design notes · SIOP LEC 2026 · <a href="../design.html">Back to design notes</a></div></footer></body></html>

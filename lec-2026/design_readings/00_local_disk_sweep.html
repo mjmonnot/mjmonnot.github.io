@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local disk sweep: design / data-visualization readings — Design readings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/bag.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a href="../index.html">Syllabus</a>
+  <a href="../poster.html">Digital poster</a>
+  <a href="../explainers.html">Lay explainers</a>
+  <a href="../methodology.html">Methods &amp; lessons</a>
+  <a href="../references.html">Annotated readings</a>
+  <a href="../practice.html">Try this quarter</a>
+  <a class="here" href="../design.html">Design notes</a>
+</div></nav><header class="hero wrap"><p class="kicker">Design reading notes</p><h1>Local disk sweep: design / data-visualization readings</h1></header><main class="wrap"><h1>Local disk sweep: design / data-visualization readings</h1>
+<p><strong>Sweep date:</strong> 2026-09-26  </p>
+<p><strong>Scope (read-only):</strong> workspace; <code>C:\Users\mjmon\Documents</code>; <code>Downloads</code>; <code>OneDrive</code>; <code>Zotero</code>; Research Streams <code>Literature</code> / <code>lit</code> folders.  </p>
+<p><strong>Missing roots (do not exist on this machine):</strong> <code>Desktop</code>, <code>Books</code>, <code>Library</code>, Kindle content paths, Calibre Library, Dropbox, iCloudDrive.  </p>
+<p><strong>Method:</strong> recursive filename globs for target authors/titles; Zotero SQLite title search (0 matching items); home-directory EPUB/MOBI scan for target names (0 hits); Read-tool / extracted-text coverage of every candidate PDF/HTML/MD below.  </p>
+<p><strong>Legal note:</strong> No pirate mirrors used; no copyrighted books downloaded. Only files already on disk.</p>
+<p>---</p>
+<h2>Summary verdict</h2>
+<p><strong>No complete commercial books</strong> from the Tufte / Cairo / Knaflic / Lupi–Posavec / McCandless / Few / Munzner / Bertin / Wilkinson / Cleveland target list were found as full PDF/EPUB on disk.</p>
+<p><strong>What <em>was</em> found:</strong> (1) the target <strong>Bostock–Ogievetsky–Heer 2011 D3 TVCG paper</strong> (complete); (2) related Heer/Bostock toolkit papers; (3) <strong>Tufte precursor / adjacent</strong> open or journal materials (1976–77 VDQI sketches, Citation Classic note, clinical-summary papers, 2020 open-source <em>Truth Matters</em> essay); (4) public D3 documentation / tutorial HTML extracts.</p>
+<p>Duplicates: several papers exist both under <code>Literature\</code> and under this <code>design_readings\</code> folder.</p>
+<p>---</p>
+<h2>Files found (candidates)</h2>
+<h3>1. Bostock, Ogievetsky &amp; Heer (2011) — <em>D3: Data-Driven Documents</em></h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>C:\Users\mjmon\Documents\Research Streams\Meaning and Well-Being at Work\Meaning of Work Mixed Methods Study\Manuscript\LEC_poster\digital_goody_bag\design_readings\Bostock_Ogievetsky_Heer_2011_D3_DataDrivenDocuments.pdf</code></td></tr>
+<tr><td><strong>Also at</strong></td><td><code>...\Meaning of Work Mixed Methods Study\Literature\Bostock_Ogievetsky_Heer_2011_D3_DataDrivenDocuments.pdf</code></td></tr>
+<tr><td><strong>Also extracted</strong></td><td><code>...\design_readings\_extracted_text\Bostock_Ogievetsky_Heer_2011_D3_DataDrivenDocuments.txt</code></td></tr>
+<tr><td><strong>Completeness</strong></td><td><strong>Complete work</strong> (IEEE TVCG conference paper, 9 pages) — matches target “D3 Data-Driven Documents 2011 TVCG paper”</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Full 9/9 pages via PDF + extracted text (~1,380 lines; entire article body, figures captions, references)</td></tr>
+</tbody></table>
+<p><strong>Design / system principles actually stated in the file:</strong></p>
+<ul class="clean">
+<li>- Prefer <strong>representational transparency</strong>: bind data to the native DOM rather than hiding a toolkit-specific scenegraph.</li>
+<li>- Balance <strong>expressiveness</strong>, <strong>efficiency</strong> (notational effort), and <strong>accessibility</strong> (learnability); refine further into <strong>compatibility</strong>, <strong>debugging</strong>, and <strong>performance</strong>.</li>
+<li>- Tools should sit in an <strong>ecosystem of standards</strong> (HTML, CSS, SVG, JS); reuse prior knowledge and offload aesthetics to CSS.</li>
+<li>- <strong>Selections + operators</strong>: identify elements with predicates, then mutate them; values may be constants or <strong>functions of data</strong>.</li>
+<li>- <strong>Data join</strong> produces enter / update / exit so element lifecycle matches changing data; key functions preserve <strong>object constancy</strong> across transitions.</li>
+<li>- Prefer <strong>immediate evaluation</strong> of operators (easier debugging) over delayed property evaluation.</li>
+<li>- Prefer specifying <strong>transformations of scenes</strong> (what changes) over regenerating whole intermediate representations.</li>
+<li>- Animated transitions should interpolate attributes over time; delay/duration can be data-driven; use appropriate interpolators (including polar for arcs).</li>
+<li>- Optional helper modules encode Tufte’s quoted maxim: <strong>“Don’t get it original, get it right”</strong> — reuse proven layouts/scales rather than inventing for novelty.</li>
+<li>- Direct DOM access enables <strong>developer-tool inspection</strong> and console iteration; sticky data supports post-hoc restyling.</li>
+<li>- Performance claim grounded in benchmarks: D3 at least <strong>~2× faster</strong> than Protovis on tested tasks; focus updates on changing attributes only.</li>
+<li>- Close cognitive mapping between toolkit primitives and desired graphics reduces Norman’s <strong>gulf of execution</strong> (cited regarding low-level libs; D3 aims for convenient abstractions without encapsulation costs).</li>
+</ul>
+<p>---</p>
+<h3>2. Bostock &amp; Heer (2009) — <em>Protovis: A Graphical Toolkit for Visualization</em></h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Bostock_Heer_2009_Protovis.pdf</code> (+ Literature duplicate; extracted <code>.txt</code>)</td></tr>
+<tr><td><strong>Completeness</strong></td><td>Complete TVCG paper (8 pages) — <strong>related precursor</strong>, not the 2011 D3 paper</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Full extracted text (~8 pages); opening sections + related-work/design framing through Cognitive Dimensions discussion start</td></tr>
+</tbody></table>
+<p><strong>Principles actually stated:</strong></p>
+<ul class="clean">
+<li>- Evaluate tools on <strong>expressiveness</strong> (“Can I build it?”), <strong>efficiency</strong> (“How long?”), and <strong>accessibility</strong> (“Do I know how?”).</li>
+<li>- Chart typologies are quick but <strong>highly restrictive</strong>; unsupported types force compromise or tool-switching.</li>
+<li>- Low-level drawing is flexible but <strong>tedious / error-prone</strong> for complex, live, interactive viz.</li>
+<li>- Prefer a representation close to how designers think: <strong>hierarchy of graphical marks</strong> with properties as <strong>functions of data</strong>.</li>
+<li>- Inheritance / cascading of mark properties (CSS analogy) for concise specs.</li>
+<li>- Tool choice <strong>biases</strong> resulting designs (Maslow “hammer/nail” cited).</li>
+<li>- Cite Wilkinson and Tufte on limits of consumer chart typologies and questionable defaults.</li>
+<li>- Gap remains between high-level viz systems (foreign abstractions) and low-level graphics (too much work).</li>
+</ul>
+<p>---</p>
+<h3>3. Heer &amp; Bostock (2010) — <em>Declarative Language Design for Interactive Visualization</em></h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Heer_Bostock_2010_DeclarativeLanguageDesign.pdf</code> (+ Literature duplicate; extracted <code>.txt</code>)</td></tr>
+<tr><td><strong>Completeness</strong></td><td>Complete TVCG paper (8 pages) — related systems paper</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Extracted text present; skimmed for framing (declarative DSL / Protovis lineage). Not the primary target paper.</td></tr>
+</tbody></table>
+<p><strong>Principles actually stated (from extracted text / sibling D3 framing that cites this work):</strong></p>
+<ul class="clean">
+<li>- Declarative DSLs let users focus on <strong>domain specification</strong> while implementers optimize execution.</li>
+<li>- Decoupling specification from execution details supports interactive visualization language design (paper’s topic per title and D3 citations).</li>
+</ul>
+<p><em>(Full principle list deferred relative to the 2011 D3 paper; treat as supporting toolkit literature.)</em></p>
+<p>---</p>
+<h3>4. Heer, Card &amp; Landay (2005) — <em>prefuse: A Toolkit for Interactive Information Visualization</em></h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Heer_Card_Landay_2005_prefuse_CHI.pdf</code> (+ Literature duplicate)</td></tr>
+<tr><td><strong>Completeness</strong></td><td>Complete CHI paper — related toolkit paper (Flare/prefuse lineage cited by D3)</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Extracted <code>.txt</code> available (~10 pages worth); title/abstract framing confirmed</td></tr>
+</tbody></table>
+<p><strong>Principles actually stated (high-level from toolkit framing shared with later Heer work):</strong></p>
+<ul class="clean">
+<li>- Provide composable operators for <strong>data management, visual encoding, and interaction</strong> (InfoVis Reference Model lineage as discussed in D3 related work citing this paper).</li>
+</ul>
+<p>---</p>
+<h3>5. Heer &amp; Shneiderman (2012) — <em>Interactive Dynamics for Visual Analysis</em> (CACM)</h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Heer_Shneiderman_2012_InteractiveDynamics_CACM.pdf</code> (+ Literature duplicate; extracted <code>.txt</code>)</td></tr>
+<tr><td><strong>Completeness</strong></td><td>Complete CACM article (~10 pages) — related interaction taxonomy</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Extracted text pages 1–3+ in depth; taxonomy table and overview/detail sections via grep (~1,280 lines total file)</td></tr>
+</tbody></table>
+<p><strong>Principles / taxonomy items actually stated:</strong></p>
+<ul class="clean">
+<li>- Map data attributes to <strong>position, size, shape, color</strong> to leverage perception.</li>
+<li>- Analysis is <strong>iterative</strong>: create, explore, refine views; tools must keep pace with <strong>human thought</strong>.</li>
+<li>- Confusing UI, hidden ops, or slow response <strong>curtail deliberation and introduce errors</strong>.</li>
+<li>- Taxonomy — <strong>Data &amp; view specification:</strong> visualize, filter, sort, derive.</li>
+<li>- Taxonomy — <strong>View manipulation:</strong> select, navigate, coordinate, organize.</li>
+<li>- Taxonomy — <strong>Process &amp; provenance:</strong> record, annotate, share, guide.</li>
+<li>- Formal grammars (Wilkinson <em>Grammar of Graphics</em>, ggplot2, Protovis) as flexible alternatives to fixed chart typologies.</li>
+<li>- Classic mantra cited: <strong>“Overview first, zoom and filter, then details-on-demand.”</strong></li>
+<li>- Tools should preserve analysis history (undo/redo), support annotation, and enable collaboration/sharing.</li>
+</ul>
+<p>---</p>
+<h3>6. Tufte (1976/77) — <em>Improving Conventional Graphics for Statistical Data</em> (“VDQI First Sketches”)</h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Tufte_VDQI_First_Sketches_1977.pdf</code></td></tr>
+<tr><td><strong>Also extracted</strong></td><td><code>...\design_readings\_extracted_text\Tufte_VDQI_First_Sketches_1977.txt</code></td></tr>
+<tr><td><strong>Completeness</strong></td><td><strong>Not the published book</strong> <em>The Visual Display of Quantitative Information</em>. It is a <strong>45-page precursor sketch / teaching packet</strong> (Cambridge, April 1976; author line Princeton). Many late pages are image-only / blank in OCR.</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Extracted text covers pages 1–31 with substantive OCR; pages 32–45 largely empty in text layer (figures only). PDF Read confirmed 45-page structure and TOC.</td></tr>
+</tbody></table>
+<p><strong>Design ideas actually stated in this file:</strong></p>
+<ul class="clean">
+<li>- Opening warning: people can be <strong>lied to easily with charts</strong> if they treat “graphical” as automatically true (Rockefeller anecdote).</li>
+<li>- TOC themes as design agenda: forgetting the lying graphic; <strong>word-worth of one picture</strong>; <strong>less is more</strong> (communication, exploration, reconstruction); blot maps; area and effect; <strong>integration of written text and graphics</strong>; <strong>small multiples</strong>; <strong>friendly graphics</strong>; parallel plots; consciously 3-D graphics; aesthetics; case studies.</li>
+<li>- A graph can replace a long verbal news report (franked-mail example: ~700 words vs. time-series plot).</li>
+<li>- Critique of “lousy” <strong>component / stacked bar</strong> presentations (Schmid handbook example).</li>
+<li>- Scatterplot redesign notes: drop unnecessary <strong>“.0” trailing digits</strong>; cleaner scales.</li>
+<li>- <strong>Blot maps</strong> called out as problematic (“AND WHAT IS WRONG WITH BLOT MAPS”).</li>
+<li>- When encoding area (e.g., bomb yield circles), <strong>area ∝ magnitude</strong> must be explicit; captions should not violate figure principles.</li>
+<li>- Critiques of a Science admissions plot: missing size legend; caption violates figure principle; fitted line doesn’t fit; lettering quality.</li>
+<li>- <strong>Integrate text and graphics</strong> so they flow together; avoid divorcing numbered figures from prose; drop redundant pointer words like “below.”</li>
+<li>- <strong>Small multiples</strong> as a recurring structure (plant freezing distributions; NYT multi-panel economic charts).</li>
+<li>- Parallel time-series can work, but if the claim is a <strong>relationship</strong> (e.g., inflation vs. unemployment), a <strong>scatterplot</strong> (or differences) is more revealing than parallel strips.</li>
+<li>- Prefer a short sentence stating the <strong>main thrust</strong> of a graph to lead readers into detail (<em>Business Week</em> example praised).</li>
+</ul>
+<p>---</p>
+<h3>7. Tufte (1992) — Citation Classic note on <em>The Visual Display of Quantitative Information</em></h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Tufte_Citation_Classic_VDQI_1992.pdf</code> (+ extracted <code>.txt</code>)</td></tr>
+<tr><td><strong>Completeness</strong></td><td><strong>1-page excerpt / retrospective</strong>, not the book</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Full 1/1 page</td></tr>
+</tbody></table>
+<p><strong>Principles / claims actually stated:</strong></p>
+<ul class="clean">
+<li>- Book analyzes <strong>excellence</strong> (esp. scientific work, cartography) vs. <strong>failure</strong> (esp. news graphics) since Playfair.</li>
+<li>- Practical theory: maximize <strong>data density</strong> and the <strong>multivariate / comparative</strong> quality of displays.</li>
+<li>- Book should be <strong>self-exemplifying</strong>: design of the artifact embodies its intellectual principles.</li>
+<li>- Integrate graphics <strong>into the text</strong>, sometimes mid-sentence — eliminate usual text/image separation.</li>
+<li>- Precise control of words/images, <strong>maximizing resolution</strong>, and pushing print technology are part of information-design scholarship.</li>
+<li>- Mentions subsequent <em>Envisioning Information</em> and forthcoming <em>Visual Explanations</em> (historical note only).</li>
+</ul>
+<p>---</p>
+<h3>8. Powsner &amp; Tufte (1997) — <em>Summarizing Clinical Psychiatric Data</em></h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Powsner_Tufte_1997_Summarizing_Clinical_Psychiatric_Data.pdf</code> (+ extracted <code>.txt</code>)</td></tr>
+<tr><td><strong>Completeness</strong></td><td>Complete journal article (4 pages) — <strong>applied design paper</strong>, not a Tufte book</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Full 4/4 pages (OCR dense but complete)</td></tr>
+</tbody></table>
+<p><strong>Principles actually stated:</strong></p>
+<ul class="clean">
+<li>- Put the <strong>important facts on a single page</strong> while retaining diverse representation methods (numeric, narrative, diagrammatic, temporal, relational).</li>
+<li>- Combine <strong>small graphs</strong>, <strong>timelines</strong>, <strong>genograms</strong>, and recent notes so viewers can assess <strong>intervention–outcome</strong> relationships.</li>
+<li>- Use <strong>small multiples</strong> of clinical measures/doses over nonlinear time (last year large; prior years compressed context).</li>
+<li>- Align findings above interventions in columns to emphasize connection.</li>
+<li>- Rescale measures so <strong>vertical position ≈ clinical significance</strong> (normal / elevated / critical), making implicit clinical thresholds visually explicit.</li>
+<li>- Most recent value printed and plotted as the rightmost point.</li>
+<li>- High-resolution display that invites comparison across <strong>multiple coherent chronologies</strong> (generations → lifetime → clinic → recent weeks), not one jumbled chronology.</li>
+<li>- Cite Tufte VDQI / <em>Envisioning</em> / <em>Visual Explanations</em> page ranges as design basis for the small-multiple matrix.</li>
+</ul>
+<p>---</p>
+<h3>9. Powsner &amp; Tufte (1994) — <em>Graphical Summary of Patient Status</em> (<em>Lancet</em>)</h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Powsner_Tufte_1994_Graphical_Summary_of_Patient_Status.pdf</code></td></tr>
+<tr><td><strong>Completeness</strong></td><td>Complete short <em>Lancet</em> piece (4 pages) — precursor to 1997; <strong>image-heavy scan</strong></td></tr>
+<tr><td><strong>Coverage read</strong></td><td>PDF opens as 4 pages; <strong>no usable text layer</strong> (Read returned blank page markers). Content not OCR’d here; treat as present-on-disk but unread for principles.</td></tr>
+</tbody></table>
+<p>---</p>
+<h3>10. Tufte (2020) — <em>The Truth Matters: On the Relationship Between Evidence and Conclusions</em> (open source)</h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full path</strong></td><td><code>...\design_readings\Tufte_2020_ET_Truth_Matters_Evidence_and_Conclusions_open_source.pdf</code></td></tr>
+<tr><td><strong>Completeness</strong></td><td>Complete <strong>40-page open-source essay</strong> — <strong>not</strong> one of the five classic Graphics Press books</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Pages 1–8 and 18–20 in full via Read; remaining pages confirmed present (40-page PDF). Focus: evidence integrity more than chart aesthetics.</td></tr>
+</tbody></table>
+<p><strong>Principles actually stated (evidence / analytical design):</strong></p>
+<ul class="clean">
+<li>- Take <strong>anonymous statistical lives</strong> as seriously as named individual lives.</li>
+<li>- Standards of statistical reasoning about truth are <strong>universal</strong>.</li>
+<li>- Prefer rescue/prevention investments that save many <strong>invisible</strong> lives over only named rescues when costs differ.</li>
+<li>- Ask <strong>How do I know that?</strong> / <strong>How could anyone possibly know that?</strong>; Feynman’s law: you are the easiest person to fool.</li>
+<li>- Analytical thinking: reason about <strong>causality and mechanism</strong>, make <strong>comparisons</strong>, assess measurement credibility, validate, enforce integrity.</li>
+<li>- <strong>Observe data collection at the moment of measurement</strong>, not only at publication (Cuthbert Daniel).</li>
+<li>- Retain <strong>primary data</strong> and clear records; published figures must be traceable to unmanipulated primary data.</li>
+<li>- Track origins and life histories of measurements (who looks, consequences, who profits).</li>
+<li>- Database at hand may <strong>not contain</strong> the answers; enemies of truth include no theory, no relevant data, confirmation bias, conflicts, cheats.</li>
+<li>- False alarms can be the most prevalent (and lucrative) measurement error in healthcare.</li>
+<li>- Models need package-insert-style warnings about assumptions and adverse effects (mock “black box” for stepwise regression).</li>
+<li>- “You can observe a lot by just watching” — but you must know what to watch and keep watching (Daniel / Yogi Berra).</li>
+</ul>
+<p>---</p>
+<h3>11. Public D3 documentation extract — <em>What is D3?</em></h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full paths</strong></td><td><code>...\design_readings\_extracted_text\d3js_what_is_d3.md</code>; <code>...\design_readings\_extracted_text\d3js_what_is_d3.html</code></td></tr>
+<tr><td><strong>Completeness</strong></td><td><strong>Public docs excerpt</strong> (Observable/D3 site), not a book</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Full markdown (~105 lines)</td></tr>
+</tbody></table>
+<p><strong>Principles actually stated:</strong></p>
+<ul class="clean">
+<li>- D3 is a <strong>low-level toolbox</strong>, not a charting library with a “chart” abstraction; compose primitives.</li>
+<li>- No default presentation — only the code you write (or copy).</li>
+<li>- Embrace <strong>web standards</strong> (SVG/Canvas/DOM) for CSS, debugging, imperative immediacy.</li>
+<li>- For bespoke, high-audience graphics (e.g., newsrooms), D3’s expressiveness pays; Amanda Cox paraphrased: use D3 if writing <strong>~100 lines for a bar chart</strong> seems normal.</li>
+<li>- Overkill for private dashboards / one-off analysis — prefer higher-level tools (Observable Plot) when time-constrained.</li>
+<li>- <strong>Data join</strong> (enter/update/exit) exists so you control exactly what happens when data change; shines for <strong>dynamic</strong> viz.</li>
+</ul>
+<p>---</p>
+<h3>12. Bostock bar-chart tutorial HTML parts</h3>
+<table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><strong>Full paths</strong></td><td><code>...\design_readings\_extracted_text\bostock_bar_part1.html</code>, <code>bostock_bar_part2.html</code>, <code>bostock_bar_part3.html</code></td></tr>
+<tr><td><strong>Completeness</strong></td><td>Tutorial <strong>excerpts / slides-equivalent teaching pages</strong>, not a book</td></tr>
+<tr><td><strong>Coverage read</strong></td><td>Files present (~13–20 KB each); not primary design-theory sources for this sweep</td></tr>
+</tbody></table>
+<p>---</p>
+<h2>Non-matches / noise excluded</h2>
+<ul class="clean">
+<li>- <code>C:\Users\mjmon\OneDrive\...\tzdata\zoneinfo\Africa\Cairo</code> — timezone file, not Alberto Cairo.</li>
+<li>- Zotero library: <strong>0 items</strong> matching target author/title strings in <code>zotero.sqlite</code>.</li>
+</ul>
+<p>---</p>
+<h2>Target titles NOT found on disk (as complete books or standalone essays)</h2>
+<h3>Edward Tufte (full Graphics Press books)</h3>
+<ul class="clean">
+<li>- <em>The Visual Display of Quantitative Information</em> (book)</li>
+<li>- <em>Envisioning Information</em></li>
+<li>- <em>Visual Explanations</em></li>
+<li>- <em>Beautiful Evidence</em></li>
+<li>- <em>The Cognitive Style of PowerPoint</em></li>
+</ul>
+<h3>Alberto Cairo</h3>
+<ul class="clean">
+<li>- <em>The Functional Art</em></li>
+<li>- <em>The Truthful Art</em></li>
+<li>- <em>How Charts Lie</em></li>
+<li>- <em>The Art of Insight</em></li>
+</ul>
+<h3>Cole Nussbaumer Knaflic</h3>
+<ul class="clean">
+<li>- <em>Storytelling with Data</em></li>
+<li>- <em>Storytelling with Data: Let’s Practice</em></li>
+</ul>
+<h3>Giorgia Lupi / Stefanie Posavec</h3>
+<ul class="clean">
+<li>- <em>Dear Data</em></li>
+<li>- <em>Data Humanism</em> (essay/book materials)</li>
+</ul>
+<h3>David McCandless</h3>
+<ul class="clean">
+<li>- <em>Information is Beautiful</em></li>
+<li>- <em>Knowledge is Beautiful</em></li>
+</ul>
+<h3>Amanda Cox / NYT Upshot</h3>
+<ul class="clean">
+<li>- No standalone Upshot essays, talk PDFs, or Cox-authored HTML collections found under searched roots (only a paraphrased Cox quote inside the public D3 docs extract above).</li>
+</ul>
+<h3>Related classics</h3>
+<ul class="clean">
+<li>- Stephen Few — <em>Show Me the Numbers</em>; <em>Now You See It</em></li>
+<li>- Tamara Munzner — <em>Visualization Analysis and Design</em></li>
+<li>- Jacques Bertin — <em>Semiology of Graphics</em></li>
+<li>- Leland Wilkinson — <em>The Grammar of Graphics</em> (book; cited by name in Heer papers, but <strong>book file absent</strong>)</li>
+<li>- William S. Cleveland — <em>The Elements of Graphing Data</em>; <em>Visualizing Data</em></li>
+</ul>
+<p>---</p>
+<h2>Practical takeaway for the LEC poster goody bag</h2>
+<p>On this machine, the legally available <strong>full target text</strong> for design craft is essentially the <strong>2011 D3 paper</strong> plus <strong>Tufte-adjacent open/journal materials</strong> and <strong>Heer interaction/toolkit papers</strong>. The major named <strong>books</strong> in the brief are <strong>not</strong> present as files; physical copies (if owned) are not mirrored digitally in the searched folders.</p></main><footer class="site"><div class="wrap">Design notes · SIOP LEC 2026 · <a href="../design.html">Back to design notes</a></div></footer></body></html>

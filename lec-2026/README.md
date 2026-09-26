@@ -2,4 +2,4 @@
 
 Live at <https://mjmonnot.github.io/lec-2026/>.
 
-Public packet only. Presenter-only notes and design-reading extracts are not published here.
+Public packet only. Presenter-only notes and copyrighted extracts are not published here. Design reading notes are HTML.
