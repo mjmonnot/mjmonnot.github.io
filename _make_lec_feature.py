@@ -67,7 +67,7 @@ def main() -> None:
 
     ax.text(5.78, 5.92, "Study 2  ·  Occupational talk", ha="left", va="center",
             fontsize=11.2, color=NAVY, fontproperties=SANS_BOLD)
-    ax.text(5.78, 5.62, "allnurses.com   ·   capture years 2016–2026   ·   7,709 posts",
+    ax.text(5.78, 5.62, "allnurses.com   ·   captures Jan 2016 – Sep 2026   ·   7,709 posts",
             ha="left", va="center", fontsize=8.8, color=MUTED, fontproperties=SANS)
 
     cells = [
@@ -98,7 +98,7 @@ def main() -> None:
         (4.10, 3.10, 2.10, 1.10),
         (
             ("Nurses named the apparatus", "7 named-AI events in 7,709 posts, none since 2021"),
-            ("Ratios, metrics, charting: flat", "About one post in twenty, 2016 to 2026"),
+            ("Ratios, metrics, charting: flat", "About one post in twenty, 2016 through Sep 2026"),
             ("Control moved, not skill", "Lack-of-control frustration +4 pp; competence held"),
             ("Model codes, no human check", "Descriptive; capture year is not AI use"),
         ),

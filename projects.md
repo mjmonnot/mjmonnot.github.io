@@ -21,9 +21,9 @@ Several of these projects extend my research themes in [leadership, well-being, 
 
 <figure class="project-figure">
   <a href="/lec-2026/">
-    <img src="/assets/images/lec2026-ai-paradox-summary.png" alt="Summary figure for The AI Paradox. Study 1, two-wave panel: four Rosso meaning pathways; agency positive specific agreement .93, communion .48; no engineered prompt met the acceptance bar; registered Time 2 null, BF01 = 481.5. Study 2, occupational talk on allnurses.com 2016 to 2026, 7,709 posts: care talk remains, hit rates are noisy, parallel latent 2PL score, 2016 origin year." width="1120" height="620">
+    <img src="/assets/images/lec2026-ai-paradox-summary.png" alt="Summary figure for The AI Paradox. Study 1, two-wave panel: four Rosso meaning pathways; agency positive specific agreement .93, communion .48; no engineered prompt met the acceptance bar; registered Time 2 null, BF01 = 481.5. Study 2, occupational talk on allnurses.com, captures January 2016 to September 2026, 7,709 posts: nurses named the apparatus, not AI; apparatus talk flat at one post in twenty; control moved, not skill; model codes with no human check." width="1120" height="620">
   </a>
-  <figcaption>Study 1 pathways and locked tests beside Study 2 occupational talk, 2016–2026. Click through to the packet.</figcaption>
+  <figcaption>Study 1 pathways and locked tests beside Study 2 occupational talk, captures Jan 2016 – Sep 2026. Click through to the packet.</figcaption>
 </figure>
 
 Board session packet for *Shaping the Future of People Analytics*: how optimization can strip the meaning that keeps helping work staffed, and what it takes to measure that meaning without fooling yourself. Two-wave field study, a locked language-model coding pipeline, and ten years of nurses' forum talk. Human codes stayed on the map; no engineered prompt met the acceptance bar; no prompt was chosen on test. In the forum, nurses named the apparatus (ratios, metrics, charting), not AI, and what moved was control over the work, not skill.
