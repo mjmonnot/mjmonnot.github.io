@@ -6,12 +6,22 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** Beat the 2019 SIOP ML Competition leaderboard post hoc — private-Test mean *r* **0.3215** vs. the original first-place **0.26021** (+0.061, ~23%) — with a leakage-safe stack of zero-shot LLM extractors. Poster, presentation deck, and video now published.
+> **Latest update:** SIOP Leading Edge Consortium 2026 digital goody bag is live — [The AI Paradox](/lec-2026/). Poster, figures, methods, readings, and the quarter kit. QR on the board points here.
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
 
 Several of these projects extend my research themes in [leadership, well-being, and organizational effectiveness](/themes/leadership-and-wellbeing.html): measuring personality and well-being at scale (2019, MIDUS profiles), keeping selection systems fair (2021), and understanding human skills alongside AI in the future of work (2026).
+
+---
+
+## The AI Paradox (SIOP LEC 2026)
+
+[Open the digital goody bag →](/lec-2026/)
+
+Board session packet for *Shaping the Future of People Analytics*: how optimization can strip the meaning that keeps helping work staffed, and what it takes to measure that meaning without fooling yourself. Two-wave field study plus a locked language-model coding pipeline. Human codes stayed on the map; no engineered prompt met the acceptance bar; the sealed holdout was not opened.
+
+🔗 [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v3.pptx)
 
 ---
 

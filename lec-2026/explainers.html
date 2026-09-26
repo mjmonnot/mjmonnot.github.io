@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lay explainers — The AI Paradox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bag.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a href="index.html">Syllabus</a>
+  <a href="poster.html">Digital poster</a>
+  <a class="here" href="explainers.html">Lay explainers</a>
+  <a href="methodology.html">Methods &amp; lessons</a>
+  <a href="references.html">Annotated readings</a>
+  <a href="practice.html">Try this quarter</a>
+  <a href="design.html">Design notes</a>
+</div></nav>
+
+<header class="hero wrap">
+  <p class="kicker">For scientists who do not live in machine learning</p>
+  <h1>Lay explainers</h1>
+  <p class="lede">This project uses ordinary panel regression plus a coding pipeline borrowed from machine learning. If you know OLS, confirmatory factor analysis, and interrater reliability, you already have the hard parts. The new vocabulary is mostly about when you are allowed to look at the data.</p>
+  <hr class="rule">
+  <p>Each card is the same shape: the term as we used it, a plain sentence, why it mattered here, and one or two things to read next. Citations marked with a local PDF are in the project corpus. Others are standard sources used in the manuscript; visualization books in the design note are flagged separately because those PDFs are not in the corpus.</p>
+</header>
+
+<main class="wrap">
+  <p class="jump">
+    <a href="#start">Where to start</a>
+    <a href="#split">Splits and peeking</a>
+    <a href="#models">Models and prompts</a>
+    <a href="#agree">Agreement</a>
+    <a href="#infer">Inference</a>
+    <a href="#forum">Forum layer</a>
+  </p>
+
+  <h2 id="start">If you read only four things</h2>
+  <ol>
+    <li>Törnberg (2024) on how to annotate text with a language model without fooling yourself. Local PDF.</li>
+    <li>Gilardi, Alizadeh, and Kubli (2023) for the claim that models can beat crowd workers — and then our result that they still failed a human ceiling set in advance. Local PDF.</li>
+    <li>Koenig et al. (2023) in <em>Personnel Psychology</em> for ML in an I-O voice. Local PDF.</li>
+    <li>Rosso, Dekas, and Wrzesniewski (2010) for the 2 × 2 itself. Local PDF.</li>
+  </ol>
+  <p class="sidenote">A fifth, if you want the correction we specified and then did not use: Egami, Hinck, Stewart, and Wei (2023) on design-based supervised learning. Local PDF. We did not apply it because the Study 1 predictors are human codes, not machine labels.</p>
+
+  <h2 id="split">Splits and peeking</h2>
+
+  <article class="term" id="split-roles">
+    <h3>Train, development, and test</h3>
+    <p class="plain">Imagine you lock three drawers before anyone codes. The small drawer (train, about 10%) is the sandbox: try wordings, try examples. The middle drawer (development, about 20%) is opened once, to pick among frozen candidates. The large drawer (test, about 70%) stays sealed until the method is frozen. You do not improve the recipe after tasting the confirmatory meal.</p>
+    <p class="plain">That is ordinary machine-learning hygiene. We ported it to survey narratives so a language model could not be tuned on the same cases used to claim success.</p>
+    <p class="follow"><strong>Read next.</strong> Koenig et al. (2023), <em>Personnel Psychology</em>, on prediction and leakage in personnel research. Yarkoni and Westfall (2017), <em>Perspectives on Psychological Science</em>, “Choosing prediction over explanation,” is the broader psychology argument. The Yarkoni paper is not in the local corpus; the Koenig paper is.</p>
+  </article>
+
+  <article class="term">
+    <h3>Sealed holdout</h3>
+    <p class="plain">The test drawer is not “we will be good.” It is a file we did not score. After the one-shot on development failed, we did not open it. That is the result: no engineered prompt met the standard set for acceptance, and the holdout remains unused.</p>
+    <p class="follow"><strong>Read next.</strong> Nosek, Ebersole, DeHaven, and Mellor (2018) on the preregistration revolution, <em>Proceedings of the National Academy of Sciences</em>. Used in the manuscript as the spirit of locking rules before numbers; not a claim that this study was a public OSF preregistration. It was an internal, git-timestamped specification.</p>
+  </article>
+
+  <article class="term">
+    <h3>One-shot evaluation</h3>
+    <p class="plain">You freeze the instructions. You run them once on the development cases. You do not rewrite the instructions after seeing the score. If you do, development has become a second training set and the number is no longer a test.</p>
+    <p class="follow"><strong>Read next.</strong> Törnberg (2024), “Best practices for text annotation with large language models,” <em>Sociologica</em>. Local PDF. Pangakis, Wolken, and Fasching (2023), <em>Automated annotation with generative AI requires validation</em> (arXiv:2306.00176), is the blunt version of the same warning.</p>
+  </article>
+
+  <h2 id="models">Models and prompts</h2>
+
+  <article class="term">
+    <h3>Large language model (LLM)</h3>
+    <p class="plain">A text system trained to continue and classify language. Here it was asked to apply a codebook, not to chat. It is a coder with no memory of your theory unless you put the theory in the instructions.</p>
+    <p class="follow"><strong>Read next.</strong> Ziems et al. (2024), “Can large language models transform computational social science?” <em>Computational Linguistics</em>. Local PDF. Gilardi et al. (2023), <em>Proceedings of the National Academy of Sciences</em>. Local PDF.</p>
+  </article>
+
+  <article class="term">
+    <h3>Engineered prompt (what we used to call an arm)</h3>
+    <p class="plain">The written instruction given to the model: the codebook, the output format, and any examples. Six architectures were frozen: decision-first, a revision of that, per-facet (thirteen calls per story), reason-first, decision plus evidence, and an alternate codebook. None met the acceptance standard.</p>
+    <p class="follow"><strong>Read next.</strong> Same Törnberg (2024) paper. For the older few-shot idea in language models, Brown et al. (2020), “Language models are few-shot learners,” is the source everyone cites; it is a methods landmark, not a license to skip a human bar.</p>
+  </article>
+
+  <article class="term">
+    <h3>Human composite gold</h3>
+    <p class="plain">Two trained people coded each story. Disagreements went to a third, blinded pass. A facet is present if the composite says present. Dimensions are present if any of their facets are present (logical OR). After the model test failed, these human codes were the Study 1 predictors.</p>
+    <p class="follow"><strong>Read next.</strong> Flanagan (1954) on the critical incident technique, <em>Psychological Bulletin</em>. O’Connor and Joffe (2020) on intercoder reliability debates, if you want the qualitative-methods side of the same problem.</p>
+  </article>
+
+  <article class="term">
+    <h3>Design-based supervised learning (DSL)</h3>
+    <p class="plain">If you regress an outcome on noisy machine labels, the slope is biased. Egami and colleagues describe a design that uses a small set of human labels to correct that bias. We specified the procedure in case machine labels were used. They were not. DSL was not applied. Mentioning it is a disclosure, not a method we ran.</p>
+    <p class="follow"><strong>Read next.</strong> Egami, Hinck, Stewart, and Wei (2023), NeurIPS. Local PDF. Read the abstract and the social-science examples first; the proofs can wait.</p>
+  </article>
+
+  <h2 id="agree">Agreement, bars, and why communion was sidelined</h2>
+
+  <article class="term">
+    <h3>Positive specific agreement (PSA), also F1</h3>
+    <p class="plain">Kappa can look terrible when a code is rare, even if both people mostly say “absent.” PSA asks a narrower question: when someone says the facet is present, how often does the other person agree? That is the same arithmetic as F1 on a binary code. We used it because the coding target is categorical presence, not a correlation.</p>
+    <p class="follow"><strong>Read next.</strong> Cicchetti and Feinstein (1990), “High agreement but low kappa: II,” <em>Journal of Clinical Epidemiology</em>. Feinstein and Cicchetti (1990) is part I. van Rijsbergen (1979), <em>Information Retrieval</em>, is the F1 source. Hayes and Krippendorff (2007) is the usual communication-science alternative if your reviewers ask for alpha instead.</p>
+  </article>
+
+  <article class="term">
+    <h3>Acceptance standard / acceptance bar</h3>
+    <p class="plain">A prompt met the standard only if its PSA with the human composite reached the lower bound of the human–human 95% CI: ≥ .910 for agency, ≥ .805 for others-directed meaning. Communion (human .48) and self (human .52) had no bar, because you cannot validate a model against a human pair that does not agree. False positives on cells both humans coded absent were an automatic disqualifier.</p>
+    <p class="plain">In one sentence: we would only replace the humans if the model was at least as good as the worse end of what those humans already do, on the dimensions they can see.</p>
+    <p class="follow"><strong>Read next.</strong> Törnberg (2024) again, on reporting confusion structure rather than a single accuracy number. Our practice note is simpler: one global F1 is a marketing statistic.</p>
+  </article>
+
+  <article class="term">
+    <h3>Salience and ICC</h3>
+    <p class="plain">Humans made present/absent calls. A 0–100 “how central is this?” rating was attempted with the models. Intraclass correlation (ICC) measures whether those ratings agree. Three prompts reached only an exploratory band (ICC(2,1) = .58–.62). We do not report salience as a graded Study 1 measure.</p>
+    <p class="follow"><strong>Read next.</strong> Any standard ICC chapter will do; we used the usual Shrout and Fleiss (1979) language. The number that matters for this project is the pre-declared rule: reportable ≥ .75, exploratory ≥ .50, otherwise drop.</p>
+  </article>
+
+  <h2 id="infer">The regression layer (you already know most of this)</h2>
+
+  <article class="term">
+    <h3>OLS with HC3</h3>
+    <p class="plain">Ordinary least squares, with a standard-error correction that does not assume equal residual variance. Same models you would run in R or SPSS. Age, work centrality, occupation block, and the Time 1 baseline of the outcome when it existed.</p>
+    <p class="follow"><strong>Read next.</strong> Long and Ervin (2000), “Using heteroscedasticity consistent standard errors in the linear regression model,” <em>The American Statistician</em>.</p>
+  </article>
+
+  <article class="term">
+    <h3>One-tailed tests, two-sided intervals</h3>
+    <p class="plain">Registered directional predictions were tested in the predicted direction at α = .05. The printed 95% confidence intervals are still two-sided. If the interval includes zero, a one-tailed <em>p</em> above .05 is not a surprise.</p>
+    <p class="follow"><strong>Read next.</strong> The confirmatory section of the manuscript methods. No special citation required beyond ordinary APA reporting.</p>
+  </article>
+
+  <article class="term">
+    <h3>Equivalence tests (TOST) and Bayes factors</h3>
+    <p class="plain">A nonsignificant <em>p</em> can mean “we did not have enough data” or “the effect is small.” Two one-sided tests (TOST) ask whether you can reject effects as large as a chosen bound (here |β| = .20 and .30). A Bayes factor BF<sub>01</sub> is a rough odds ratio favoring the null over the focal predictor. For the three-dimension block over Time 1 self-reported meaning, BF<sub>01</sub> = 481.5. That is the sentence “the codes add nothing next year beyond asking people how meaningful the work already felt.”</p>
+    <p class="follow"><strong>Read next.</strong> Lakens (2017), “Equivalence tests,” <em>Social Psychological and Personality Science</em> — the most readable TOST explainer in psychology. Wagenmakers (2007), “A practical solution to the pervasive problems of <em>p</em> values,” <em>Psychonomic Bulletin &amp; Review</em>, for the BIC approximation we used. These supplements were not preregistered; the decision rules were fixed before the numbers were computed.</p>
+  </article>
+
+  <article class="term">
+    <h3>Benjamini–Hochberg screening</h3>
+    <p class="plain">After the registered tests returned null, we searched about 1,600 tests. Each declared family was screened so the expected fraction of false discoveries among the survivors is 10% (<em>q</em> = .10). Survivors are exploratory. They are not a second confirmatory family.</p>
+    <p class="follow"><strong>Read next.</strong> Benjamini and Hochberg (1995), <em>Journal of the Royal Statistical Society: Series B</em>. If you want the “why we still explore” essay rather than the algorithm, Tukey (1980) and Scheel, Tiokhin, Isager, and Lakens (2021).</p>
+  </article>
+
+  <article class="term">
+    <h3>Quantile regression</h3>
+    <p class="plain">Ordinary regression describes the mean. Quantile regression describes a percentile. The code–WAMI association was larger at the 25th percentile of meaningfulness than at the 75th. We treat the shape as the finding, not the exact slopes. WAMI is ceiling-compressed.</p>
+    <p class="follow"><strong>Read next.</strong> Koenker and Bassett (1978), <em>Econometrica</em>, is the original. You do not need it to use the poster sentence.</p>
+  </article>
+
+  <h2 id="forum">The forum layer (different data, different rules)</h2>
+
+  <article class="term">
+    <h3>Dictionary hit rate</h3>
+    <p class="plain">A closed list of words and phrases. If a post contains one, it counts as a hit. Fast, auditable, and not a Rosso facet score. We used dictionaries for care talk, mastery talk, optimization, AI/automation mentions, and leaving or strain. They answer “did this language appear?” They do not answer “which of the 13 facets declined.”</p>
+    <p class="follow"><strong>Read next.</strong> Nelson, Burk, Knudsen, and McCall (2021), “The future of coding,” <em>Sociological Methods &amp; Research</em>, compares hand coding with computer-assisted text analysis. Than et al. (2025) updates that paper for generative models.</p>
+  </article>
+
+  <article class="term">
+    <h3>Capture year versus posted date</h3>
+    <p class="plain">The Internet Archive stamps when it photographed the page, not when the nurse wrote the post. A 2024 snapshot can contain an older thread. We say “capture year” on purpose. It is not an exposure measure and it is not a panel of the same writers.</p>
+    <p class="follow"><strong>Read next.</strong> The methods page in this bag. No extra citation needed; the error is conceptual, not statistical.</p>
+  </article>
+
+  <article class="term">
+    <h3>Transfer validation</h3>
+    <p class="plain">A codebook built on structured survey stories does not automatically work on messy forum posts. Transfer validation means humans code a fresh sample of those posts (here, 200 already drawn) and you compare the model to those humans before you trust a year contrast. That comparison has not been done. Draft model scores on 2019–2026 posts exist and are not confirmatory.</p>
+    <p class="follow"><strong>Read next.</strong> Törnberg (2024) on domain shift. Ziems et al. (2024) on when computational social science labels fail to travel.</p>
+  </article>
+
+  <article class="term">
+    <h3>Item response theory (IRT), mentioned so you can ignore it</h3>
+    <p class="plain">A homemade 2PL model was fit to unvalidated, binarized draft salience scores. EAP reliability was about .45. That is not a meaning theta you can take to a client. It is in the board’s lower corner because the printed tiles had space, not because it is a finding.</p>
+    <p class="follow"><strong>Read next.</strong> Skip it unless you are the measurement person. Embretson and Reise (2000) is the usual textbook if you are.</p>
+  </article>
+
+  <h2>A 10-minute path through the citations</h2>
+  <table>
+    <thead><tr><th>You already know…</th><th>Open this</th></tr></thead>
+    <tbody>
+      <tr><td>Interrater reliability, not ML</td><td>Cicchetti and Feinstein (1990); then Törnberg (2024)</td></tr>
+      <tr><td>OLS and <em>p</em> values, suspicious of “n.s.”</td><td>Lakens (2017); Wagenmakers (2007)</td></tr>
+      <tr><td>I-O selection / ML hype</td><td>Koenig et al. (2023)</td></tr>
+      <tr><td>Meaningful work, not methods</td><td>Rosso et al. (2010); Bunderson and Thompson (2009); Bankins and Formosa (2023)</td></tr>
+      <tr><td>Vendor demo tomorrow</td><td><a href="practice.html">Try this quarter</a> and the PSA card above</td></tr>
+    </tbody>
+  </table>
+
+  <p class="note">Full bibliographic entries sit on the <a href="references.html">annotated readings</a> page. Visualization sources for how the digital poster was drawn are on the <a href="design.html">design notes</a> page and are not in the local PDF corpus.</p>
+</main>
+
+<footer class="site"><div class="wrap">
+  If a term on the board is not here, it is either ordinary APA statistics or it is in <a href="methodology.html">Methods and lessons</a>.
+</div></footer>
+</body>
+</html>

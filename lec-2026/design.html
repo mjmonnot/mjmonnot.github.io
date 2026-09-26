@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design notes — The AI Paradox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bag.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a href="index.html">Syllabus</a>
+  <a href="poster.html">Digital poster</a>
+  <a href="explainers.html">Lay explainers</a>
+  <a href="methodology.html">Methods &amp; lessons</a>
+  <a href="references.html">Annotated readings</a>
+  <a href="practice.html">Try this quarter</a>
+  <a class="here" href="design.html">Design notes</a>
+</div></nav>
+
+<header class="hero wrap">
+  <p class="kicker">How the digital poster was drawn</p>
+  <h1>From Tufte to the modern bench</h1>
+  <p class="lede">The printed board is sixteen tiles because a 4 × 8 ft board has to hang. The digital poster is one scrolling color page. The choices below follow texts we hold locally: author PDFs, extracted essays, and the reading notes in <a href="design_readings/00_local_disk_sweep.md">design_readings/</a>.</p>
+  <hr class="rule">
+</header>
+
+<main class="wrap">
+  <h2>Tufte first</h2>
+  <p>Tufte’s 1992 Citation Classic note states the program as maximizing data density and the comparative quality of a display, and as putting a graphic in the sentence rather than in a box across the room. Powsner and Tufte (1997) put a 30-year clinical history on one page as a matrix of small graphs so recent values sit in a longer path. The PSA bars are the high-density object on this page. The 2 × 2 is a table wearing color. Uncertainty sits on the same line as the estimate.</p>
+
+  <h2>Then the people who moved the medium</h2>
+  <table>
+    <thead><tr><th>Person</th><th>What the local text says</th><th>What we did with the poster</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Mike Bostock</td>
+        <td>Bostock, Ogievetsky, and Heer (2011): “the document is the scenegraph.” Aesthetics go in CSS. Optional modules quote Tufte, “Don’t get it original, get it right.”</td>
+        <td>The digital poster is an HTML document. Bars are CSS so they print. No D3 showpiece: hotel Wi-Fi and a PDF export still have to work.</td>
+      </tr>
+      <tr>
+        <td>David McCandless</td>
+        <td>Absolute figures mislead without a relative frame. Interesting, easy, beautiful, and true: missing the fourth tends to fail. Those points are in the Information is Beautiful FAQ, the IEBT essay, and the TED transcript.</td>
+        <td>Four pathway colors a non-statistician can hold: navy for agency, teal for communion. One idea per band.</td>
+      </tr>
+      <tr>
+        <td>Cole Nussbaumer Knaflic</td>
+        <td>Audience first; a one-sentence Big Idea; declutter; takeaway titles, not “Findings.” Decide whether you are writing a document or a slide. Those rules are in her storytellingwithdata.com posts.</td>
+        <td>Section titles state the finding (“the human ceiling is not one number”). Action sits at the end. No dashboard chrome.</td>
+      </tr>
+      <tr>
+        <td>Alberto Cairo</td>
+        <td>Charts lie by cropping and by undefined “worst.” Readers finish causal stories the data do not support. Tufte’s rules are guidance within reason, not a checklist. Those points are in the 2019–2022 Functional Art posts.</td>
+        <td>Confidence intervals stay on the bars. The communion interval is wide on purpose. We do not “clean” it.</td>
+      </tr>
+      <tr>
+        <td>Giorgia Lupi</td>
+        <td><em>Data Humanism</em> (Print, 2017): numbers stand in for people; complexity is not a pictogram problem; show that the data are imperfect.</td>
+        <td>Seventeen people, not a heat map. Communion disagreement as a human fact, not only a reliability coefficient. No portraits of respondents.</td>
+      </tr>
+      <tr>
+        <td>Amanda Cox</td>
+        <td>News graphics that feel like homework fail. Put an annotation layer on the graphic: show the pattern, leave some detail. Prefer “Huh? Wow!” over “Wow! Huh?” Those lines are in the 2012 Simply Statistics interview and the OpenVis / Eyeo notes.</td>
+        <td>The page order is what we thought, what the registered tests did, what the codes then showed. Words sit next to the number. No scrollytelling animation.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Also used</h2>
+  <p>Stephen Few’s Perceptual Edge papers (<em>Common Pitfalls</em>, <em>Communicating Numbers</em>, <em>Visual Communication</em>) sit next to Tufte on clutter. They did not change a layout already fixed by the Tufte and Knaflic texts.</p>
+
+  <h2>Sources</h2>
+  <ul class="clean">
+    <li>Tufte, E. R. (1992). Citation Classic commentary on <em>The visual display of quantitative information</em>. Local extract: <a href="design_readings/_extracted_text/Tufte_Citation_Classic_VDQI_1992.txt">Tufte_Citation_Classic_VDQI_1992.txt</a>.</li>
+    <li>Powsner, S. M., &amp; Tufte, E. R. (1997). Summarizing clinical psychiatric data. <em>Psychiatric Services, 48</em>(11), 1458–1461. Local extract: <a href="design_readings/_extracted_text/Powsner_Tufte_1997_Summarizing_Clinical_Psychiatric_Data.txt">Powsner_Tufte_1997_Summarizing_Clinical_Psychiatric_Data.txt</a>.</li>
+    <li>Bostock, M., Ogievetsky, V., &amp; Heer, J. (2011). D³: Data-Driven Documents. <em>IEEE Transactions on Visualization and Computer Graphics, 17</em>(12), 2301–2309. <a href="https://doi.org/10.1109/TVCG.2011.185">https://doi.org/10.1109/TVCG.2011.185</a>. Local extract: <a href="design_readings/_extracted_text/Bostock_Ogievetsky_Heer_2011_D3_DataDrivenDocuments.txt">Bostock_Ogievetsky_Heer_2011_D3_DataDrivenDocuments.txt</a>.</li>
+    <li>Lupi, G. (2017, January 30). Data humanism, the revolution will be visualized. <em>Print</em>. Notes: <a href="design_readings/03_lupi_full_readings.md">03_lupi_full_readings.md</a>.</li>
+    <li>Cox, A. (2012, June 1). Interview with Amanda Cox. <em>Simply Statistics</em>. Notes: <a href="design_readings/05_cox_full_readings.md">05_cox_full_readings.md</a>.</li>
+    <li>Knaflic, C. N. (2017, August 9). My guiding principles. <em>storytellingwithdata.com</em>. Notes: <a href="design_readings/06_knaflic_full_readings.md">06_knaflic_full_readings.md</a>.</li>
+    <li>Cairo, A. (2019–2022). Selected posts at thefunctionalart.blogspot.com. Notes: <a href="design_readings/04_cairo_full_readings.md">04_cairo_full_readings.md</a>.</li>
+    <li>McCandless, D. (2010, July). The beauty of data visualization [TED talk]. Notes: <a href="design_readings/07_mccandless_full_readings.md">07_mccandless_full_readings.md</a>.</li>
+    <li>Few, S. Perceptual Edge white papers. Notes: <a href="design_readings/08_few_full_readings.md">08_few_full_readings.md</a>.</li>
+  </ul>
+</main>
+
+<footer class="site"><div class="wrap">Design notes · SIOP LEC 2026 digital goody bag</div></footer>
+</body>
+</html>

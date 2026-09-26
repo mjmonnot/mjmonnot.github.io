@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methods and lessons — The AI Paradox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bag.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a href="index.html">Syllabus</a>
+  <a href="poster.html">Digital poster</a>
+  <a href="explainers.html">Lay explainers</a>
+  <a class="here" href="methodology.html">Methods &amp; lessons</a>
+  <a href="references.html">Annotated readings</a>
+  <a href="practice.html">Try this quarter</a>
+  <a href="design.html">Design notes</a>
+</div></nav>
+
+<header class="hero wrap">
+  <p class="kicker">What we ran · what held · what broke</p>
+  <h1>Methods and lessons</h1>
+  <p class="lede">A postmortem for scientists and analysts, not a second Method section. Terms are defined on the <a href="explainers.html">lay explainers</a> page.</p>
+  <hr class="rule">
+</header>
+
+<main class="wrap">
+  <h2>What we actually did</h2>
+  <p>Study 1 is a two-wave critical-incident panel. Time 1 narratives (March 2016) were dual-coded on 13 Rosso facets. Time 2 (February–March 2017) carried well-being, engagement, burnout, and turnover. The interval is about one year (<em>M</em> = 11.58 months). Completers were older and higher in work centrality than noncompleters.</p>
+  <p>Before any outcome model, we tested whether a language-model panel could replace the human pair. Prompts were written only on the training slice, hashed, and evaluated once on development. The confirmatory holdout was never scored. No engineered prompt met the standard set for acceptance. Predictors stayed human.</p>
+  <p>Studies 2 and 3 use Internet Archive snapshots of allnurses.com, 2016–2026. Dictionaries cover the full window. A one-model salience draft exists for 2016–2018 and, separately, a 2019–2026 draft (5,289 of 5,290 posts). Neither draft is transfer-validated. A 200-post human transfer sheet is drawn and not yet coded by humans.</p>
+
+  <h2>What worked</h2>
+  <ul class="clean">
+    <li><strong>Locking the drawers.</strong> Train / development / test, with development as a single selection pass, stopped us from turning a failed substitution into a quiet retune.</li>
+    <li><strong>Dimension-specific bars.</strong> Agency and others-directed meaning have human ceilings high enough to test against. Communion and self do not. Writing that down before the run was the difference between a failed test and a moving target.</li>
+    <li><strong>False-positive disqualifiers on agreed-absent cells.</strong> Every prompt “found” control/autonomy or identity affirmation where both humans had said absent. That is the failure mode that matters for employee text: over-calling meaning.</li>
+    <li><strong>Saying the registered tests were not supported, then screening the rest.</strong> The competence–strain association would have been easy to promote. Labeling it exploratory, and putting the ~1,600-test ledger in the supplement, is what makes it usable later.</li>
+    <li><strong>Internet Archive rather than a live crawl.</strong> The site’s terms forbid systematic retrieval. Snapshots are a completed historical corpus, with capture year stated as the time axis.</li>
+    <li><strong>Parser repair as a data problem, not a collection problem.</strong> 2024–2025 posts looked empty because later pages store comments in a different HTML tag. Fixing the extractor recovered the years. No new live collection was added.</li>
+  </ul>
+
+  <h2>What did not work</h2>
+  <ul class="clean">
+    <li><strong>Substitution.</strong> Six frozen prompts. All disqualified. Agency PSA peaked at .798 against a .910 bar.</li>
+    <li><strong>Communal meaning as a confirmatory predictor.</strong> Human PSA = .48. We excluded it from the confirmatory family before estimation. Unadjusted Time 2 associations were not robust to unresolved cells.</li>
+    <li><strong>The dark-side density tests.</strong> Only 4 of 276 people narrated three or more pathways. There is no interior turning point. Hypothesis 4 was not adjudicable. That is a design fact, not a null.</li>
+    <li><strong>Agency × communion.</strong> Sixteen people carried both. The interaction was not estimable.</li>
+    <li><strong>Registered next-year prediction.</strong> Six tests, all unsupported. The joint block added Δ<em>R</em>² = .012. BF<sub>01</sub> = 481.5 on next-year meaningfulness.</li>
+    <li><strong>Using later URL paths to recover board names.</strong> Newer allnurses links drop the forum slug. Hundreds of threads are unlabeled. Student boards leaked into a working-nurse frame.</li>
+    <li><strong>Treating a one-model forum draft as transfer.</strong> It is a draft. The 200-post human sheet is the gate, and a person has to code it.</li>
+  </ul>
+
+  <h2>Lessons we would hand to another lab</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>On measurement</h3>
+      <p>Do not set one acceptance number for “meaning.” Agency and belonging are not the same coding problem. If humans cannot see a dimension, a model fitted to those humans will inherit the blindness and look confident.</p>
+    </div>
+    <div class="card">
+      <h3>On models</h3>
+      <p>A published paper that says models beat crowd workers is not a validation of your codebook. The bar is your human pair, on your facets, on your text type. Forum text is a new validation, not a free extra <em>N</em>.</p>
+    </div>
+    <div class="card">
+      <h3>On outcomes</h3>
+      <p>Concurrent convergence (codes with WAMI in the same wave) is not prospective prediction. We had the first and not the second. Report both or you will overclaim the map.</p>
+    </div>
+    <div class="card">
+      <h3>On time</h3>
+      <p>Capture year is not posted date. Posted date is not AI exposure. Hospital adoption is not this writer. The 2023–2026 dictionary nulls are lexical description. They are not a causal AI test.</p>
+    </div>
+  </div>
+
+  <h2>The independent panel (Session 6, Tier 3)</h2>
+  <p>This was specified on 11 June 2026, not invented after the one-shot failed. Tier 1 is cells both humans agreed on. Tier 2 is the blinded sample of disagreements. Tier 3 is the panel scored against Time 1 WAMI and Time 2 strain and retention — a criterion no coder, human or model, has seen. Communion human PSA is .48. A prompt selected to match that pair will carry the disagreement forward. A panel that is not selected on human agreement, and is judged on later outcomes, is a different test.</p>
+  <p>It was not run because ADR 0006 parked all further LLM scoring of the split after every engineered prompt missed the human-agreement bars and the manuscript had a deadline. The park was a shipping decision. The June design still stands. ADR 0010 puts Tier 3 back on the table. The sealed test set is the only unused text; it has not been opened. Train was the prompt sandbox. Dev is spent. Twenty-nine narratives sit outside the split (eight with Time 2) and can be scored without an unseal; that is a mechanics check, not the powered test.</p>
+
+  <p class="note">No respondent text is in this packet. The locked split remains locked. If you want the term definitions, use <a href="explainers.html">Lay explainers</a>.</p>
+</main>
+
+<footer class="site"><div class="wrap">Methods postmortem · SIOP LEC 2026 digital goody bag</div></footer>
+</body>
+</html>
