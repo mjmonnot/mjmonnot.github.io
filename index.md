@@ -50,6 +50,23 @@ permalink: /
     <div class="feature-carousel" data-feature-carousel data-interval="10000" aria-roledescription="carousel" aria-label="Featured projects">
       <div class="feature-carousel-track">
         <article class="feature-card feature-slide is-active" data-slide="0" aria-hidden="false">
+          <p class="feature-title"><a href="/lec-2026/">The AI Paradox</a></p>
+          <p class="feature-sub">SIOP Leading Edge Consortium 2026 &mdash; digital goody bag</p>
+          <figure class="feature-figure">
+            <a class="feature-figure-link" href="{{ "/assets/images/lec2026-ai-paradox-summary.png" | relative_url }}" data-lightbox aria-label="Enlarge the AI Paradox summary figure">
+              <img src="{{ "/assets/images/lec2026-ai-paradox-summary.png" | relative_url }}" alt="Summary figure for The AI Paradox: four Rosso meaning pathways beside locked-test results. Agency positive specific agreement was .93; communion was .48. No engineered prompt met the acceptance bar. The registered Time 2 meaning block favored the null, BF01 = 481.5. Concurrent WAMI tracked the human codes." width="1120" height="620" loading="lazy">
+            </a>
+            <figcaption>Four pathways, four locked results &mdash; click the title for the packet <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+          </figure>
+          <p class="feature-desc">A two-wave helping-profession study and a locked language-model coding pipeline. Human codes stayed on the map. No engineered prompt met the acceptance bar. The sealed holdout was not opened. <a href="/lec-2026/">Open the digital goody bag &rarr;</a></p>
+          <div class="feature-stat">
+            <span class="stat-value">BF<sub>01</sub>&nbsp;=&nbsp;481.5</span>
+            <span class="stat-note">Registered next-year meaning block favored the null; concurrent WAMI tracked the codes</span>
+          </div>
+          <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
+        </article>
+
+        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title">Predicting Personality from Text</p>
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
           <figure class="feature-figure">
@@ -65,7 +82,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
           <p class="feature-title">Afloat or Adrift</p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
           <figure class="feature-figure">
@@ -81,7 +98,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
           <p class="feature-title">Automated Meta-Analytic Coding</p>
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
@@ -100,9 +117,10 @@ permalink: /
 
       <div class="feature-carousel-footer">
         <div class="feature-dots" role="tablist" aria-label="Choose featured project">
-          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 3: Predicting Personality from Text"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 3: Afloat or Adrift (MIDUS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 3: SIOP 2026 Meta-Analytic Coding"></button>
+          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 4: The AI Paradox (LEC 2026)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 4: Predicting Personality from Text"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 4: Afloat or Adrift (MIDUS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 4: SIOP 2026 Meta-Analytic Coding"></button>
         </div>
         <a class="view-all" href="/projects.html">View projects &rarr;</a>
       </div>

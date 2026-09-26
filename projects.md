@@ -19,7 +19,16 @@ Several of these projects extend my research themes in [leadership, well-being, 
 
 [Open the digital goody bag →](/lec-2026/)
 
+<figure class="project-figure">
+  <a href="/lec-2026/">
+    <img src="/assets/images/lec2026-ai-paradox-summary.png" alt="Summary figure for The AI Paradox: four Rosso meaning pathways beside locked-test results. Agency positive specific agreement was .93; communion was .48. No engineered prompt met the acceptance bar. The registered Time 2 meaning block favored the null, BF01 = 481.5. Concurrent WAMI tracked the human codes." width="1120" height="620">
+  </a>
+  <figcaption>Four pathways and the locked tests. Click through to the packet.</figcaption>
+</figure>
+
 Board session packet for *Shaping the Future of People Analytics*: how optimization can strip the meaning that keeps helping work staffed, and what it takes to measure that meaning without fooling yourself. Two-wave field study plus a locked language-model coding pipeline. Human codes stayed on the map; no engineered prompt met the acceptance bar; the sealed holdout was not opened.
+
+<p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
 
 🔗 [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v3.pptx)
 

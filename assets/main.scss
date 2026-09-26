@@ -378,6 +378,53 @@ img { max-width: 100%; height: auto; }
   margin: 0 0 2px;
 }
 
+.feature-card .feature-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.feature-card .feature-title a:hover {
+  color: var(--gold-dark);
+}
+
+.feature-cite {
+  margin: 8px 0 0;
+  padding-left: 1.15em;
+  text-indent: -1.15em;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.apa-cite {
+  margin: 0.4em 0 1.2em;
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.project-figure {
+  margin: 0 0 1.2em;
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  padding: 8px;
+}
+
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-figure figcaption {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
 .feature-card .feature-sub {
   font-size: 0.92rem;
   color: var(--faint);
