@@ -92,7 +92,7 @@
     </div>
     <div class="bar-row">
       <strong>Others</strong>
-      <div class="bar-track"><div class="bar-fill" style="width:84%;background:var(--navy)"></div><div class="bar-ci" style="left:80%;width:8%"></div></div>
+      <div class="bar-track"><div class="bar-fill" style="width:84%;background:var(--grey)"></div><div class="bar-ci" style="left:80%;width:8%"></div></div>
       <span>.84 [.80, .88]</span>
     </div>
     <div class="bar-row">
@@ -102,18 +102,19 @@
     </div>
     <div class="bar-row">
       <strong>Self</strong>
-      <div class="bar-track"><div class="bar-fill" style="width:52%;background:var(--teal)"></div><div class="bar-ci" style="left:43%;width:16%"></div></div>
+      <div class="bar-track"><div class="bar-fill" style="width:52%;background:var(--grey)"></div><div class="bar-ci" style="left:43%;width:16%"></div></div>
       <span>.52 [.43, .59]</span>
     </div>
   </div>
   <p class="sidenote">Dashed vendor claim: “we measure belonging from text at .90.” The human pair in this codebook does not reach that on communion. Ask which ceiling the product beat, on which dimension.</p>
-  <figure>
-    <img src="assets/fig_benchmarks.png" alt="Human coder agreement by meaning dimension with 95 percent intervals">
-    <figcaption>Finding 1. Positive specific agreement, two trained humans, 276 cases. Navy bars reach a strong ceiling; teal bars do not.</figcaption>
-  </figure>
+  <p class="sidenote">Color is the pathway dimension: navy agency, teal communion, grey for the Self–Others orientation axis. Whether a bar clears .90 is read from its length, not its color.</p>
 
   <h2>Finding 2. No engineered prompt met the standard set for acceptance</h2>
   <p>Six frozen prompt architectures were scored once on the 55-case development partition against bars locked to the lower bound of the human–human interval: agency ≥ .910, others-directed ≥ .805. Communion and self carried no acceptance bar because human agreement was too low to validate against. Every prompt was disqualified on false positives over cells both humans had coded absent. Every prompt also missed the agency bar (range .750–.798). Study 1 analyses used the human composite codes. The test set was not opened for any prompt selection. One later look at a pre-registered 65-case test slice, taken after the results were fixed, put the two top prompts at agency .81 / .80 and others-directed .746 / .770 against composite gold, alongside dev’s .75–.80 and .76–.82; both again carried disqualifying false positives, and the pre-set screen for scoring the remaining 128 cases (both ≥ .75) missed on others-directed (.746). Those 128 stay sealed. Nothing upstream of that look could change because of it.</p>
+  <figure>
+    <img src="assets/fig_prompts.png" alt="Six frozen prompts: agency and others-directed agreement against the two locked acceptance bars">
+    <figcaption>Finding 2. Six frozen prompts on the 55-case development set. Filled dots are agency PSA, open dots others-directed PSA; dashed lines are the locked bars. The closest agency miss was .798 against .910. No intervals were computed for the development pass, so none are drawn.</figcaption>
+  </figure>
   <p>Prompts selected to match a human pair will carry that pair’s disagreements forward. Session 6 already specified the other test: an independent panel, not chosen on human PSA, scored against later well-being and retention. That is Tier 3. It was parked in September so the paper could ship on human gold. It is back on the table (ADR 0010) and has not touched the sealed 128.</p>
 
   <h2>Finding 3. The registered next-year estimates came in near zero</h2>
@@ -132,8 +133,8 @@
     <p>When Time 1 stories grounded meaning in competence or mastery, Time 2 turnover intentions were higher (<em>b</em> = 1.40, 95% CI [0.58, 2.22], <em>p</em> = .0008, <em>n</em> = 100) and so was emotional exhaustion (<em>b</em> = 0.95 [0.20, 1.70], <em>p</em> = .014, <em>n</em> = 94). Seventeen of 140 matched cases carried the code. The association survived a joint Time 1 survey battery. It is a candidate for a designed test. It is not a product finding.</p>
   </div>
   <figure>
-    <img src="assets/fig_competence.png" alt="Competence-coded Time 1 stories and Time 2 strain">
-    <figcaption>Exploratory. Competence-anchored Time 1 narratives and later strain. Seventeen present-coded cases. A candidate for a designed test.</figcaption>
+    <img src="assets/fig_competence.png" alt="Seventeen of 140 matched respondents whose Time 1 story grounded meaning in competence, with Time 2 turnover intention and exhaustion group means and 95 percent intervals">
+    <figcaption>Exploratory. One mark per matched respondent (17 of 140 present-coded; counts only, no scores are drawn). Group means with 95% CIs for Time 2 turnover intentions and emotional exhaustion; adjusted estimates are in Table 4 of the manuscript. A candidate for a designed test.</figcaption>
   </figure>
 
   <h2>Finding 4. Nurses named the apparatus, not AI</h2>
