@@ -674,4 +674,67 @@ body.feature-lightbox-open {
   .home-grid { grid-template-columns: 1fr; gap: 44px; }
   .site-header .wrapper { flex-direction: column; align-items: flex-start; }
   .site-nav { gap: 4px 18px; }
+
+  .feature-card {
+    padding: 14px 14px 12px;
+  }
+
+  .feature-card .feature-title {
+    font-size: 1.18rem;
+    line-height: 1.25;
+  }
+
+  .feature-card .feature-sub {
+    font-size: 0.88rem;
+  }
+
+  .feature-card .feature-desc {
+    font-size: 0.92rem;
+  }
+
+  .feature-figure {
+    padding: 4px;
+  }
+
+  .feature-figure figcaption {
+    font-size: 0.68rem;
+  }
+
+  .feature-figure-hint {
+    white-space: normal;
+  }
+
+  .feature-stat .stat-value {
+    font-size: 1.35rem;
+    white-space: normal;
+  }
+
+  .feature-cite {
+    font-size: 0.68rem;
+    line-height: 1.45;
+  }
+
+  .feature-carousel-footer {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .feature-lightbox {
+    padding: 16px 12px;
+    align-items: flex-start;
+  }
+
+  .feature-lightbox-figure {
+    max-height: calc(100vh - 32px);
+    padding: 10px 10px 8px;
+  }
+
+  .feature-lightbox-img {
+    max-height: calc(100vh - 140px);
+  }
+
+  .feature-lightbox-close {
+    top: 8px;
+    right: 8px;
+  }
 }
