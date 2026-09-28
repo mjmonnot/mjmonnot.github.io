@@ -4,16 +4,15 @@
 
   var slides = Array.prototype.slice.call(root.querySelectorAll(".feature-slide"));
   var dots = Array.prototype.slice.call(root.querySelectorAll(".feature-dot"));
-  if (slides.length < 2) return;
-
   var intervalMs = parseInt(root.getAttribute("data-interval"), 10) || 10000;
   var index = 0;
   var timer = null;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var lightboxOpen = false;
+  var carouselEnabled = slides.length >= 2 && dots.length === slides.length;
 
   function show(next) {
-    if (next === index) return;
+    if (!carouselEnabled || next === index) return;
     slides[index].classList.remove("is-active");
     slides[index].setAttribute("aria-hidden", "true");
     dots[index].classList.remove("is-active");
@@ -32,7 +31,7 @@
   }
 
   function start() {
-    if (reduceMotion || timer || lightboxOpen) return;
+    if (!carouselEnabled || reduceMotion || timer || lightboxOpen) return;
     timer = window.setInterval(next, intervalMs);
   }
 
@@ -42,28 +41,29 @@
     timer = null;
   }
 
-  dots.forEach(function (dot, i) {
-    dot.addEventListener("click", function () {
-      show(i);
-      stop();
-      start();
+  if (carouselEnabled) {
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () {
+        show(i);
+        stop();
+        start();
+      });
     });
-  });
 
-  root.addEventListener("mouseenter", stop);
-  root.addEventListener("mouseleave", start);
-  root.addEventListener("focusin", stop);
-  root.addEventListener("focusout", function (event) {
-    if (!root.contains(event.relatedTarget)) start();
-  });
+    root.addEventListener("mouseenter", stop);
+    root.addEventListener("mouseleave", start);
+    root.addEventListener("focusin", stop);
+    root.addEventListener("focusout", function (event) {
+      if (!root.contains(event.relatedTarget)) start();
+    });
 
-  document.addEventListener("visibilitychange", function () {
-    if (document.hidden) stop();
-    else start();
-  });
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) stop();
+      else start();
+    });
+  }
 
-  // --- Lightbox popout for featured figures ---
-  var links = Array.prototype.slice.call(root.querySelectorAll("[data-lightbox]"));
+  // --- Lightbox popout for featured figures (never navigates away) ---
   var lastFocus = null;
   var overlay = document.createElement("div");
   overlay.className = "feature-lightbox";
@@ -83,13 +83,18 @@
   var lbCaption = overlay.querySelector(".feature-lightbox-caption");
   var lbClose = overlay.querySelector(".feature-lightbox-close");
 
-  function openLightbox(link) {
-    var img = link.querySelector("img");
-    var figure = link.closest("figure");
-    var caption = figure ? figure.querySelector("figcaption") : null;
+  function openLightbox(trigger) {
+    var img = trigger.querySelector("img");
+    var caption = trigger.querySelector("figcaption");
+    var src =
+      trigger.getAttribute("data-fullsrc") ||
+      (img && (img.getAttribute("src") || img.currentSrc)) ||
+      "";
+
+    if (!src) return;
 
     lastFocus = document.activeElement;
-    lbImg.src = link.getAttribute("href");
+    lbImg.src = src;
     lbImg.alt = img ? img.getAttribute("alt") || "" : "";
     lbCaption.textContent = caption
       ? caption.textContent.replace(/\s*·\s*click to enlarge\s*$/i, "").trim()
@@ -112,22 +117,41 @@
     start();
   }
 
-  links.forEach(function (link) {
-    link.addEventListener("click", function (event) {
+  // Capture phase: intercept before any default navigation can run.
+  document.addEventListener(
+    "click",
+    function (event) {
+      var trigger = event.target.closest("[data-lightbox]");
+      if (!trigger || !root.contains(trigger)) return;
       event.preventDefault();
-      openLightbox(link);
-    });
+      event.stopPropagation();
+      openLightbox(trigger);
+    },
+    true
+  );
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && !overlay.hidden) {
+      event.preventDefault();
+      closeLightbox();
+      return;
+    }
+
+    if (
+      (event.key === "Enter" || event.key === " ") &&
+      event.target &&
+      event.target.hasAttribute &&
+      event.target.hasAttribute("data-lightbox") &&
+      root.contains(event.target)
+    ) {
+      event.preventDefault();
+      openLightbox(event.target);
+    }
   });
 
   lbClose.addEventListener("click", closeLightbox);
   overlay.addEventListener("click", function (event) {
     if (event.target === overlay) closeLightbox();
-  });
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && !overlay.hidden) {
-      event.preventDefault();
-      closeLightbox();
-    }
   });
 
   start();
