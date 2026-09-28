@@ -61,7 +61,7 @@ permalink: /
           <p class="feature-desc">A two-wave helping-profession study and a locked language-model coding pipeline. Human codes stayed on the map. No engineered prompt met the acceptance bar; no prompt was chosen on test. Ten years of nurses' forum talk named the apparatus, not AI: seven named-AI events in 7,709 posts, and what moved was control over the work, not skill. <a href="/lec-2026/">Open the digital goody bag &rarr;</a></p>
           <div class="feature-stat">
             <span class="stat-value">BF<sub>01</sub>&nbsp;=&nbsp;481.5</span>
-            <span class="stat-note">Registered next-year meaning block favored the null; concurrent WAMI tracked the codes</span>
+            <span class="stat-note">BIC approx.: incremental T2 meaning from three coded dimensions after T1 self-report — not a global study null; competence–strain is exploratory</span>
           </div>
           <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
         </article>
