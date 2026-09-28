@@ -30,7 +30,7 @@ Board session packet for *Shaping the Future of People Analytics*: how optimizat
 
 <p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
 
-🔗 [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v4.pptx)
+🔗 [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v5.pptx)
 
 ---
 
