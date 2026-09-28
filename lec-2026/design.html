@@ -21,54 +21,101 @@
 
 <header class="hero wrap">
   <p class="kicker">Why the charts look the way they do</p>
-  <h1>From Tufte to the modern bench</h1>
-  <p class="lede">The printed board is sixteen tiles because a 4 × 8 ft board has to hang. The digital poster is one scrolling color page. The choices below follow texts we hold locally. Reading notes are in <a href="design_readings/00_local_disk_sweep.html">design_readings/</a>.</p>
+  <h1>One rule: color means pathway</h1>
+  <p class="lede">The first board was a Microsoft template with Tufte citations attached: navy banners, rounded cards, thick bars. This pass takes the local readings at their word. Reading notes are in <a href="design_readings/00_local_disk_sweep.html">design_readings/</a>.</p>
   <hr class="rule">
 </header>
 
 <main class="wrap">
-  <h2>Tufte first</h2>
-  <p>Tufte’s 1992 Citation Classic note states the program as maximizing data density and the comparative quality of a display, and as putting a graphic in the sentence rather than in a box across the room. Powsner and Tufte (1997) put a 30-year clinical history on one page as a matrix of small graphs so recent values sit in a longer path. The PSA bars are the high-density object on this page. The 2 × 2 is a table wearing color. Uncertainty sits on the same line as the estimate.</p>
+  <h2>The rule</h2>
+  <p>Navy is agency. Teal is communion. Grey is the Self–Others axis. Nothing else is colored. Titles are type, not banners. The one inverted tile is the action closer. Tufte’s short form: <em>max[data], min[design]</em>.</p>
 
-  <h2>Then the people who moved the medium</h2>
+  <h2>What changed</h2>
   <table>
-    <thead><tr><th>Person</th><th>What the local text says</th><th>What we did with the poster</th></tr></thead>
+    <thead><tr><th>Tile</th><th>Was</th><th>Now</th></tr></thead>
     <tbody>
       <tr>
-        <td>Mike Bostock</td>
-        <td>Bostock, Ogievetsky, and Heer (2011): “the document is the scenegraph.” Aesthetics go in CSS. Optional modules quote Tufte, “Don’t get it original, get it right.”</td>
-        <td>The digital poster is an HTML document. Bars are CSS so they print. No D3 showpiece: hotel Wi-Fi and a PDF export still have to work.</td>
+        <td>Every tile</td>
+        <td>1.12 in navy band, teal stripe, 18-pt footer</td>
+        <td>Georgia takeaway on paper, a hairline, 12-pt grey footer</td>
       </tr>
       <tr>
-        <td>David McCandless</td>
-        <td>Absolute figures mislead without a relative frame. Interesting, easy, beautiful, and true: missing the fourth tends to fail. Those points are in the Information is Beautiful FAQ, the IEBT essay, and the TED transcript.</td>
-        <td>Two pathway colors a non-statistician can hold: navy for agency, teal for communion; the Self–Others axis is grey, so color never doubles as a verdict. One idea per band.</td>
+        <td>Framework</td>
+        <td>Four rounded tinted boxes</td>
+        <td>A coordinate cross. No boxes. Facets sit in the quadrants as type</td>
       </tr>
       <tr>
-        <td>Cole Nussbaumer Knaflic</td>
-        <td>Audience first; a one-sentence Big Idea; declutter; takeaway titles, not “Findings.” Decide whether you are writing a document or a slide. Those rules are in her storytellingwithdata.com posts.</td>
-        <td>Section titles state the finding (“the human ceiling is not one number”), on the printed tiles as well as here; the tile number is a small kicker, not the headline. Action sits at the end. No dashboard chrome.</td>
+        <td>Design</td>
+        <td>Four equal cards on a numbered rail</td>
+        <td>Three dated ticks (2016, 2017, 2026). Dual coding sits on the span between T1 and T2</td>
       </tr>
       <tr>
-        <td>Alberto Cairo</td>
-        <td>Charts lie by cropping and by undefined “worst.” Readers finish causal stories the data do not support. Tufte’s rules are guidance within reason, not a checklist. Those points are in the 2019–2022 Functional Art posts.</td>
-        <td>Confidence intervals stay on the bars. The communion interval is wide on purpose. We do not “clean” it.</td>
+        <td>Finding 1</td>
+        <td>Thick bars, a titled dashed line</td>
+        <td>Cleveland dot + interval on 0–1. The number is a dataword. Communion’s wide interval is the loudest mark</td>
       </tr>
       <tr>
-        <td>Giorgia Lupi</td>
-        <td><em>Data Humanism</em> (Print, 2017): numbers stand in for people; complexity is not a pictogram problem; show that the data are imperfect.</td>
-        <td>Seventeen people, not a heat map: the competence tile draws one mark per matched respondent (counts only, no scores) beside the group means. Communion disagreement as a human fact, not only a reliability coefficient. No portraits of respondents.</td>
+        <td>Finding 2</td>
+        <td>Colliding pass-mark labels, crop undeclared</td>
+        <td>Same slopegraph; pass marks as ticks; axis labeled “from .70”</td>
       </tr>
       <tr>
-        <td>Amanda Cox</td>
-        <td>News graphics that feel like homework fail. Put an annotation layer on the graphic: show the pattern, leave some detail. Prefer “Huh? Wow!” over “Wow! Huh?” Those lines are in the 2012 Simply Statistics interview and the OpenVis / Eyeo notes.</td>
-        <td>The page order is what we thought, what the registered tests did, what the codes then showed. Words sit next to the number: the prompt tile shows six prompts against the two bars with the closest miss labeled where it happens, instead of a paragraph of PSA values. No scrollytelling animation.</td>
+        <td>Thesis / take-home</td>
+        <td>Rounded quote and card fills</td>
+        <td>A left rule; hairlines between rows</td>
       </tr>
     </tbody>
   </table>
 
-  <h2>Also used</h2>
-  <p>Stephen Few’s Perceptual Edge papers (<em>Common Pitfalls</em>, <em>Communicating Numbers</em>, <em>Visual Communication</em>) sit next to Tufte on clutter. They did not change a layout already fixed by the Tufte and Knaflic texts.</p>
+  <h2>Who the rule comes from</h2>
+  <table>
+    <thead><tr><th>Person</th><th>What the local text says</th><th>What we kept or dropped</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Edward Tufte</td>
+        <td><em>max[data], min[design]</em>; graphics as words, not boxes across the room; no data frames; smallest effective difference; Powsner and Tufte’s one-page clinical matrix.</td>
+        <td>Killed the banners and the rounded cards. Color is spent once. Did not merge Framework and Finding 1 onto one tile — the 4 × 4 hang still needs both.</td>
+      </tr>
+      <tr>
+        <td>Stephen Few</td>
+        <td>Length and 2-D position encode quantity. Bars need a zero baseline; dots do not. Tables for lookup, graphs for shape. No decoration that is not data.</td>
+        <td>Finding 1 is a Cleveland dot, not a bar. Finding 2 already was.</td>
+      </tr>
+      <tr>
+        <td>Cole Nussbaumer Knaflic</td>
+        <td>Takeaway titles, not “Findings.” One thing on stage. Audience first.</td>
+        <td>Titles stay as sentences. The filled banner went; the sentence did not. The action tile is still the one loud exception.</td>
+      </tr>
+      <tr>
+        <td>Alberto Cairo</td>
+        <td>Tufte’s rules are guidance within reason. Charts lie by cropping. Keep the interval you would rather hide.</td>
+        <td>Communion’s CI stays wide. Finding 2’s crop is declared on the axis.</td>
+      </tr>
+      <tr>
+        <td>Amanda Cox</td>
+        <td>Put an annotation layer on the graphic. Prefer “Huh? Wow!” over “Wow! Huh?” News graphics that feel like homework fail.</td>
+        <td>The closest miss is labeled on the mark. The timeline uses years, not step numbers.</td>
+      </tr>
+      <tr>
+        <td>Giorgia Lupi</td>
+        <td>Numbers stand in for people. Show that the data are imperfect.</td>
+        <td>Finding 3 still draws one mark per matched respondent (counts only). Untouched.</td>
+      </tr>
+      <tr>
+        <td>David McCandless</td>
+        <td>Interesting, easy, beautiful, and true. Missing the fourth tends to fail.</td>
+        <td>Two pathway colors a non-statistician can hold. Color never doubles as a verdict.</td>
+      </tr>
+      <tr>
+        <td>Mike Bostock</td>
+        <td>“Don’t get it original, get it right.” The document is the scenegraph.</td>
+        <td>Still HTML + CSS on the site, matplotlib + type on the tiles. No D3 showpiece.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Left for a later pass</h2>
+  <p>Finding 4 and 5 still come from the Study 2 script (poster-mode renders). They already drop the in-image headline; they have not yet been redrawn in this language. Manuscript figures stay on the APA track (no in-image titles; notes carry the legend).</p>
 
   <h2>Sources</h2>
   <ul class="clean">
