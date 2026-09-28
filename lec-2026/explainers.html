@@ -10,21 +10,21 @@
 </head>
 <body>
 <nav class="nav"><div class="wrap">
-  <a href="index.html">Syllabus</a>
+  <a href="index.html">Start here</a>
   <a href="poster.html">Digital poster</a>
-  <a class="here" href="explainers.html">Lay explainers</a>
+  <a class="here" href="explainers.html">Plain-English glossary</a>
   <a href="methodology.html">Methods &amp; lessons</a>
-  <a href="references.html">Annotated readings</a>
+  <a href="references.html">Reading list</a>
   <a href="practice.html">Try this quarter</a>
   <a href="design.html">Design notes</a>
 </div></nav>
 
 <header class="hero wrap">
-  <p class="kicker">For scientists who do not live in machine learning</p>
-  <h1>Lay explainers</h1>
-  <p class="lede">This project uses ordinary panel regression plus a coding pipeline borrowed from machine learning. If you know OLS, confirmatory factor analysis, and interrater reliability, you already have the hard parts. The new vocabulary is mostly about when you are allowed to look at the data.</p>
+  <p class="kicker">Every term from the board, one plain sentence each</p>
+  <h1>Plain-English glossary</h1>
+  <p class="lede">If a word on the board or in the paper sounded like another field, it is here. Most of the machine-learning vocabulary comes down to one idea: when you are allowed to look at the data. The statistics are the ordinary kind. Dip in where you need to; nobody reads this straight through.</p>
   <hr class="rule">
-  <p>Each card is the same shape: the term as we used it, a plain sentence, why it mattered here, and one or two things to read next. Citations marked with a local PDF are in the project corpus. Others are standard sources used in the manuscript; visualization books in the design note are flagged separately because those PDFs are not in the corpus.</p>
+  <p>Each card has the same shape: the term as we used it, a plain sentence, why it mattered here, and one or two things to read if you want more. Citations marked with a local PDF are in the project corpus. Others are standard sources used in the manuscript; visualization books in the design note are flagged separately because those PDFs are not in the corpus.</p>
 </header>
 
 <main class="wrap">
@@ -47,23 +47,24 @@
   <p class="sidenote">A fifth, if you want the correction we specified and then did not use: Egami, Hinck, Stewart, and Wei (2023) on design-based supervised learning. Local PDF. We did not apply it because the Study 1 predictors are human codes, not machine labels.</p>
 
   <h2 id="split">Splits and peeking</h2>
+  <p class="sidenote">The poster and the rest of this site use plain words; the manuscript uses the machine-learning ones. Same thing, two names: <em>practice cases</em> = training set; <em>try-out cases, looked at once</em> = development set; <em>set-aside cases</em> = sealed holdout / test set; <em>locked instructions</em> = frozen prompt; <em>pass mark</em> = acceptance bar; <em>agreement score</em> = positive specific agreement (PSA); <em>a false present call</em> = false positive on an agreed-absent cell; <em>dated record of the run</em> = provenance (model pin, prompt hash, git SHA).</p>
 
   <article class="term" id="split-roles">
-    <h3>Train, development, and test</h3>
-    <p class="plain">Imagine you lock three drawers before anyone codes. The small drawer (train, about 10%) is the sandbox: try wordings, try examples. The middle drawer (development, about 20%) is opened once, to pick among frozen candidates. The large drawer (test, about 70%) stays sealed until the method is frozen. You do not improve the recipe after tasting the confirmatory meal.</p>
+    <h3>Train, development, and test (practice, try-out, set-aside)</h3>
+    <p class="plain">Imagine you lock three drawers before anyone codes. The small drawer (train, about 10%) is the sandbox: try wordings, try examples. The middle drawer (development, about 20%) is opened once, to pick among candidates whose instructions were already locked. The large drawer (test, about 70%) stays shut until the method is final. You do not improve the recipe after tasting the confirmatory meal.</p>
     <p class="plain">That is ordinary machine-learning hygiene. We ported it to survey narratives so a language model could not be tuned on the same cases used to claim success.</p>
     <p class="follow"><strong>Read next.</strong> Koenig et al. (2023), <em>Personnel Psychology</em>, on prediction and leakage in personnel research. Yarkoni and Westfall (2017), <em>Perspectives on Psychological Science</em>, “Choosing prediction over explanation,” is the broader psychology argument. The Yarkoni paper is not in the local corpus; the Koenig paper is.</p>
   </article>
 
   <article class="term">
-    <h3>Sealed holdout</h3>
-    <p class="plain">The test drawer is not “we will be good.” It is a file nobody scores while prompts are still being chosen. After no prompt met the development bars, none was selected and the paper’s results were fixed on human codes. Only then was one descriptive look taken at a pre-registered 65-case slice of the drawer, with the arms, statistics, and reporting rule hashed before the first call; it is reported as a 65-case out-of-sample number, not as validation: agency PSA .81 and .80, others-directed .75 and .77 for the two top prompts, in the range of the development pass, with disqualifying false positives again. The pre-set screen for scoring the other 128 cases was not met, so they stay sealed. The order matters: nothing upstream of that look could change because of it.</p>
+    <h3>Sealed holdout (the set-aside file)</h3>
+    <p class="plain">The test drawer is not “we will be good.” It is a file nobody scores while the instructions are still being chosen. After no set of instructions reached the pass mark on the try-out cases, none was selected and the paper’s results were fixed on human codes. Only then was one descriptive look taken at 65 cases from the drawer, with the setups, statistics, and reporting rule written down and time-stamped before the first call; it is reported as a number on cases the models had never seen, not as validation: agreement on agency .81 and .80, on others-directed meaning .75 and .77 for the two top setups, in the range of the try-out run, again with false present calls. The pre-set rule for scoring the other 128 cases was not met, so they stay untouched. The order matters: nothing upstream of that look could change because of it.</p>
     <p class="follow"><strong>Read next.</strong> Nosek, Ebersole, DeHaven, and Mellor (2018) on the preregistration revolution, <em>Proceedings of the National Academy of Sciences</em>. Used in the manuscript as the spirit of locking rules before numbers; not a claim that this study was a public OSF preregistration. It was an internal, git-timestamped specification.</p>
   </article>
 
   <article class="term">
-    <h3>One-shot evaluation</h3>
-    <p class="plain">You freeze the instructions. You run them once on the development cases. You do not rewrite the instructions after seeing the score. If you do, development has become a second training set and the number is no longer a test.</p>
+    <h3>One-shot evaluation (one look)</h3>
+    <p class="plain">You lock the instructions. You run them once on the try-out cases. You do not rewrite the instructions after seeing the score. If you do, development has become a second training set and the number is no longer a test.</p>
     <p class="follow"><strong>Read next.</strong> Törnberg (2024), “Best practices for text annotation with large language models,” <em>Sociologica</em>. Local PDF. Pangakis, Wolken, and Fasching (2023), <em>Automated annotation with generative AI requires validation</em> (arXiv:2306.00176), is the blunt version of the same warning.</p>
   </article>
 
@@ -76,14 +77,14 @@
   </article>
 
   <article class="term">
-    <h3>Engineered prompt (what we used to call an arm)</h3>
-    <p class="plain">The written instruction given to the model: the codebook, the output format, and any examples. Six architectures were frozen: decision-first, a revision of that, per-facet (thirteen calls per story), reason-first, decision plus evidence, and an alternate codebook. None met the acceptance standard.</p>
+    <h3>Engineered prompt (a set of model instructions; what we used to call an arm)</h3>
+    <p class="plain">The written instruction given to the model: the codebook, the output format, and any examples. Six sets were locked: decision-first, a revision of that, per-facet (thirteen calls per story), reason-first, decision plus evidence, and an alternate codebook. None reached the pass mark.</p>
     <p class="follow"><strong>Read next.</strong> Same Törnberg (2024) paper. For the older few-shot idea in language models, Brown et al. (2020), “Language models are few-shot learners,” is the source everyone cites; it is a methods landmark, not a license to skip a human bar.</p>
   </article>
 
   <article class="term">
-    <h3>Human composite gold</h3>
-    <p class="plain">Two trained people coded each story. Disagreements went to a third, blinded pass. A facet is present if the composite says present. Dimensions are present if any of their facets are present (logical OR). With no prompt admitted, these human codes were the Study 1 predictors.</p>
+    <h3>Human composite gold (the human answer key)</h3>
+    <p class="plain">Two trained people coded each story. Disagreements went to a third, blinded pass. A facet is present if the composite says present. Dimensions are present if any of their facets are present (logical OR). With no model setup accepted, these human codes were the Study 1 predictors.</p>
     <p class="follow"><strong>Read next.</strong> Flanagan (1954) on the critical incident technique, <em>Psychological Bulletin</em>. O’Connor and Joffe (2020) on intercoder reliability debates, if you want the qualitative-methods side of the same problem.</p>
   </article>
 
@@ -93,17 +94,17 @@
     <p class="follow"><strong>Read next.</strong> Egami, Hinck, Stewart, and Wei (2023), NeurIPS. Local PDF. Read the abstract and the social-science examples first; the proofs can wait.</p>
   </article>
 
-  <h2 id="agree">Agreement, bars, and why communion was sidelined</h2>
+  <h2 id="agree">Agreement, pass marks, and why communion was sidelined</h2>
 
   <article class="term">
-    <h3>Positive specific agreement (PSA), also F1</h3>
+    <h3>Positive specific agreement (PSA), also F1: the agreement score</h3>
     <p class="plain">Kappa can look terrible when a code is rare, even if both people mostly say “absent.” PSA asks a narrower question: when someone says the facet is present, how often does the other person agree? That is the same arithmetic as F1 on a binary code. We used it because the coding target is categorical presence, not a correlation.</p>
     <p class="follow"><strong>Read next.</strong> Cicchetti and Feinstein (1990), “High agreement but low kappa: II,” <em>Journal of Clinical Epidemiology</em>. Feinstein and Cicchetti (1990) is part I. van Rijsbergen (1979), <em>Information Retrieval</em>, is the F1 source. Hayes and Krippendorff (2007) is the usual communication-science alternative if your reviewers ask for alpha instead.</p>
   </article>
 
   <article class="term">
-    <h3>Acceptance standard / acceptance bar</h3>
-    <p class="plain">A prompt met the standard only if its PSA with the human composite reached the lower bound of the human–human 95% CI: ≥ .910 for agency, ≥ .805 for others-directed meaning. Communion (human .48) and self (human .52) had no bar, because you cannot validate a model against a human pair that does not agree. False positives on cells both humans coded absent were an automatic disqualifier.</p>
+    <h3>Acceptance standard / acceptance bar (the pass mark)</h3>
+    <p class="plain">A set of instructions passed only if its agreement score with the human answer key reached the lower bound of the human–human 95% CI: ≥ .910 for agency, ≥ .805 for others-directed meaning. Communion (human .48) and self (human .52) had no pass mark, because you cannot validate a model against a human pair that does not agree. Finding meaning in cells both humans had marked absent was an automatic fail.</p>
     <p class="plain">In one sentence: we would only replace the humans if the model was at least as good as the worse end of what those humans already do, on the dimensions they can see.</p>
     <p class="follow"><strong>Read next.</strong> Törnberg (2024) again, on reporting confusion structure rather than a single accuracy number. Our practice note is simpler: one global F1 is a marketing statistic.</p>
   </article>

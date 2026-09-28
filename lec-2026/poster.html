@@ -10,11 +10,11 @@
 </head>
 <body>
 <nav class="nav"><div class="wrap">
-  <a href="index.html">Syllabus</a>
+  <a href="index.html">Start here</a>
   <a class="here" href="poster.html">Digital poster</a>
-  <a href="explainers.html">Lay explainers</a>
+  <a href="explainers.html">Plain-English glossary</a>
   <a href="methodology.html">Methods &amp; lessons</a>
-  <a href="references.html">Annotated readings</a>
+  <a href="references.html">Reading list</a>
   <a href="practice.html">Try this quarter</a>
   <a href="design.html">Design notes</a>
 </div></nav>
@@ -45,12 +45,12 @@
     </div>
     <div class="card">
       <h3>3. Meaning can be measured at scale once the ceiling is known</h3>
-      <p>People analytics will be asked to score meaning from text, and this study supplies the working method: establish the human ceiling for each dimension first, lock the acceptance bars and a sealed holdout before any model is chosen, and admit a model only where it clears the bar. Agency and others-directed meaning already have ceilings high enough to test against; communion needs better human agreement before any model can be judged on it. That map is what turns text scoring at scale from a vendor claim into an auditable measurement.</p>
+      <p>People analytics will be asked to score meaning from text, and this study supplies the working method: find out how well two trained humans agree on each kind of meaning first, write the pass marks down and set aside a file of cases before any model is chosen, and accept a model only where it clears the mark. Agency and others-directed meaning already have ceilings high enough to test against; communion needs better human agreement before any model can be judged on it. That map is what turns text scoring at scale from a vendor claim into an auditable measurement.</p>
     </div>
   </div>
 
   <h2>The 2 × 2 we coded</h2>
-  <p>Thirteen binary facets nest in four pathways. A pathway is present if any of its facets is present. We do not score Rosso’s seven mechanisms as a middle layer; they cross-cut the 2 × 2.</p>
+  <p>Thirteen present/absent facets nest in four pathways. A pathway counts as present if any of its facets is. We do not score Rosso’s seven mechanisms as a middle layer; they cut across the 2 × 2.</p>
   <div class="grid grid-2">
     <div class="card quad" style="background:var(--soft-navy)">
       <h3>Individuation · Agency × Self</h3>
@@ -76,14 +76,14 @@
   </figure>
 
   <h2>The design</h2>
-  <p>Time 1 (March 2016): critical-incident narratives and meaning surveys, helping-profession workers, healthcare-majority online panel, <em>N</em> ≈ 307. Time 2 (February–March 2017): felt meaningfulness, emotional exhaustion, and turnover intentions, <em>n</em> = 144 complete longitudinal cases. Two trained humans coded 276 stories on all 13 facets (3,614 cells). Disagreements went to blinded adjudication. Language-model prompts were built only on a locked training slice and evaluated once on development. After the paper’s results were fixed, one descriptive look at a pre-registered 65-case subsplit of the holdout was taken (two disqualified prompts; reported as a 65-case out-of-sample number, not as validation); the remaining 128 cases stay sealed.</p>
+  <p>Time 1 (March 2016): critical-incident narratives and meaning surveys, helping-profession workers, healthcare-majority online panel, <em>N</em> ≈ 307. Time 2 (February–March 2017): felt meaningfulness, emotional exhaustion, and turnover intentions, <em>n</em> = 144 complete longitudinal cases. Two trained humans coded 276 stories on all 13 facets (3,614 cells). Disagreements went to blinded adjudication. Model instructions were written only on a practice slice of the stories and scored once on a try-out slice. After the paper’s results were fixed, one descriptive look at 65 of the set-aside cases was taken under rules written down beforehand (two setups that had already missed the mark; reported as a number on cases the models had never seen, not as validation); the remaining 128 cases stay untouched.</p>
   <figure>
     <img src="assets/fig_timeline.png" alt="Four-step study design timeline" style="width:100%;height:auto">
-    <figcaption>Locked split: train ~10% / development ~20% / sealed test ~70%.</figcaption>
+    <figcaption>How the stories were split: practice ~10% / try-out, looked at once ~20% / set aside ~70%.</figcaption>
   </figure>
 
   <h2>Finding 1. The human ceiling is not one number</h2>
-  <p>Positive specific agreement, case-level bootstrap 95% CIs, <em>n</em> = 276.</p>
+  <p>How often the two coders agreed a kind of meaning was present when either saw it, with 95% intervals; <em>n</em> = 276 stories.</p>
   <div class="card">
     <div class="bar-row">
       <strong>Agency</strong>
@@ -107,18 +107,18 @@
     </div>
   </div>
   <p class="sidenote">Dashed vendor claim: “we measure belonging from text at .90.” The human pair in this codebook does not reach that on communion. Ask which ceiling the product beat, on which dimension.</p>
-  <p class="sidenote">Color is the pathway dimension: navy agency, teal communion, grey for the Self–Others orientation axis. Whether a bar clears .90 is read from its length, not its color.</p>
+  <p class="sidenote">Color is the pathway dimension: navy agency, teal communion, grey for the Self–Others orientation axis. Whether a bar reaches .90 is read from its length, not its color.</p>
 
-  <h2>Finding 2. The acceptance protocol caught six prompts that looked precise</h2>
-  <p>Six frozen prompt architectures were scored once on the 55-case development partition against bars locked to the lower bound of the human–human interval: agency ≥ .910, others-directed ≥ .805. They reached agency .750–.798 and each over-called meaning on cells both humans had coded absent, so none was admitted and Study 1 ran on the human composite codes. A later 65-case out-of-sample look at the two best prompts landed in the same range (agency .81 / .80, others-directed .746 / .770), and the 128 remaining test cases stay sealed for the next instrument. The protocol is the deliverable: dimension-specific bars, a sealed holdout, and a false-positive disqualifier are what let a people-analytics team say yes or no to a text scorer with evidence.</p>
+  <h2>Finding 2. The pass mark caught six model setups that looked precise</h2>
+  <p>Six sets of model instructions were locked, then scored once on 55 try-out stories against pass marks set from the low end of human agreement: agency ≥ .910, others-directed ≥ .805. They reached agency .750–.798, and each found meaning in cells both humans had marked absent, so none was accepted and Study 1 ran on the human codes. A later look at 65 stories the models had never seen landed in the same range for the two best setups (agency .81 / .80, others-directed .746 / .770), and the 128 remaining set-aside stories stay untouched for the next attempt. The procedure is the deliverable: a pass mark per kind of meaning written down first, a set-aside file, and an automatic fail when the model sees meaning the humans did not are what let a people-analytics team say yes or no to a text scorer with evidence.</p>
   <figure>
     <img src="assets/fig_prompts.png" alt="Six frozen prompts: agency and others-directed agreement against the two locked acceptance bars">
-    <figcaption>Finding 2. Six frozen prompts on the 55-case development set. Filled dots are agency PSA, open dots others-directed PSA; dashed lines are the locked bars. The closest agency miss was .798 against .910. No intervals were computed for the development pass, so none are drawn.</figcaption>
+    <figcaption>Finding 2. Six locked model setups on the 55 try-out stories. Filled dots are agreement with the human coders on agency, open dots on others-directed meaning; dashed lines are the pass marks. The closest agency miss was .798 against .910. No intervals were computed for this run, so none are drawn.</figcaption>
   </figure>
-  <p>Prompts selected to match a human pair carry that pair’s disagreements forward. The next test, specified in June, is an independent panel judged against later well-being and retention rather than against human agreement (Tier 3, ADR 0010); it has not touched the sealed 128.</p>
+  <p>A model chosen because it matches one human pair inherits that pair’s disagreements. The next test, designed in June, judges a panel of models against later well-being and retention rather than against human agreement (ADR 0010); it has not touched the 128 set-aside stories.</p>
 
   <h2>Finding 3. Meaning narrated as competence reached next year’s strain</h2>
-  <p>When Time 1 stories grounded meaning in competence or mastery, Time 2 turnover intentions were higher (<em>b</em> = 1.40, 95% CI [0.58, 2.22], <em>p</em> = .0008, <em>n</em> = 100) and so was emotional exhaustion (<em>b</em> = 0.95 [0.20, 1.70], <em>p</em> = .014, <em>n</em> = 94). Seventeen of 140 matched cases carried the code, and the association held against a joint Time 1 survey battery that itself forecast Time 2 meaning strongly. The pre-specified next-year paths from the three meaning dimensions were estimated near zero (three of five equivalent to zero at |β| = .30; Table 2 in the manuscript), which is what singles out the competence code as the prospective signal. It is the lead for the next designed study and should be read as a lead, not a rule.</p>
+  <p>When Time 1 stories grounded meaning in competence or mastery, Time 2 turnover intentions were higher (<em>b</em> = 1.40, 95% CI [0.58, 2.22], <em>p</em> = .0008, <em>n</em> = 100) and so was emotional exhaustion (<em>b</em> = 0.95 [0.20, 1.70], <em>p</em> = .014, <em>n</em> = 94). Seventeen of 140 matched cases carried the code, and the association held after adjusting for the full Time 1 survey set, which itself forecast Time 2 meaning strongly. The planned next-year paths from the three broad meaning dimensions came in near zero (three of five inside the band we treat as no effect; Table 2 in the manuscript), which is what singles out competence as the signal that reached next year. It is the lead for the next designed study and should be read as a lead, not a rule.</p>
   <figure>
     <img src="assets/fig_competence.png" alt="Seventeen of 140 matched respondents whose Time 1 story grounded meaning in competence, with Time 2 turnover intention and exhaustion group means and 95 percent intervals">
     <figcaption>Finding 3. One mark per matched respondent (17 of 140 present-coded; counts only, no scores are drawn). Group means with 95% CIs for Time 2 turnover intentions and emotional exhaustion; adjusted estimates are in Table 4 of the manuscript.</figcaption>
@@ -126,36 +126,36 @@
   <p>Concurrently, the same codes track self-reported meaningfulness: others-directed <em>r</em> = .24, agency <em>r</em> = .20, contribution <em>r</em> = .23. Felt meaning rises with the number of pathways a person narrates up to two, then levels.</p>
   <figure>
     <img src="assets/fig_density_wami_quadratic.png" alt="Pathway density and concurrent WAMI">
-    <figcaption>Time 1. Code density tracks WAMI, then flattens.</figcaption>
+    <figcaption>Time 1. The more pathways a story carries, the higher the same person’s survey meaning score, up to two; then it levels.</figcaption>
   </figure>
 
   <h2>Finding 4. Nurses named the apparatus, not AI</h2>
-  <p>Internet Archive snapshots of allnurses.com, 7,709 posts of at least 200 characters in 1,453 threads, capture dates 1 January 2016 to 8 September 2026 (2026 is a partial year, 147 posts). One language model coded each post for <em>meaning events</em>: a Rosso facet enacted, frustrated, or wished for, plus the object implicated (a named AI system, a system rollout, an optimization practice such as ratios, productivity metrics, dashboards, or documentation load) and four post-level flags (quit intent, lack of control, anxious, depressed). Rates are model-assigned codes; capture year is the time axis.</p>
+  <p>Internet Archive snapshots of allnurses.com, 7,709 posts of at least 200 characters in 1,453 threads, capture dates 1 January 2016 to 8 September 2026 (2026 is a partial year, 147 posts). One language model coded each post for <em>meaning events</em>: a Rosso facet enacted, frustrated, or wished for, plus what the post blamed or credited (a named AI system, a system rollout, or a management practice such as ratios, productivity metrics, dashboards, or documentation load) and four post-level flags (quit intent, lack of control, anxious, depressed). Every rate is a label one model assigned with no human check, and the year is when the archive copy was taken.</p>
   <p>Seven events in 7,709 posts named an AI system; none after 2021. About one post in twenty named the optimization apparatus, and that share did not move across the decade (4.8% → 5.2%, 95% CI on the difference [−1.8, 2.4]). The phenomenon the AI-paradox literature describes was in nurses’ talk the whole time, under management’s vocabulary. Measuring “AI exposure” by whether workers say AI would miss it; the exposure that matters is the metrics-and-scheduling apparatus that AI now powers.</p>
   <figure>
     <img src="assets/Study2_fig1_trend.png" alt="Object talk, frustrated events, and control-loss flags by capture year, 2016 through September 2026">
-    <figcaption>Finding 4. Post-level shares by capture year, 95% thread-cluster intervals. Object talk flat; named AI near zero. The shaded band is a 2019–2021 page-template change that shortened posts; every series is read with that caveat.</figcaption>
+    <figcaption>Finding 4. Share of posts by archive year, with 95% intervals. Talk about ratios, metrics, and charting is flat; named AI near zero. The shaded band is a 2019–2021 site redesign that shortened posts; every line is read with that caveat.</figcaption>
   </figure>
 
   <h2>Finding 5. What moved was control, not skill</h2>
-  <p>Half of all optimization events landed on Control/Autonomy; frustrated Control was the only facet cell that grew (9.6 → 12.7 events per 100 posts; permutation <em>p</em> = .028, but it does not survive multiplicity screening across the 20 facet cells). The lack-of-control flag rose from 10.4% to 14.5% of posts (+4.0 points [1.2, 6.8]; unchanged after adjusting for post length; the only one of eight post-level shares to survive screening, <em>q</em> = .028). Competence stayed the most <em>enacted</em> facet in every period, and the communion facets were enacted far more often than frustrated. Within the badged posts, RN exposure was flat and advanced-practice exposure rose with an interval that includes zero.</p>
+  <p>Half of the posts naming ratios, metrics, or charting landed on control over how the work is done; frustrated control was the only category that grew (9.6 → 12.7 events per 100 posts; <em>p</em> = .028, but not once we correct for testing 20 categories). Posts flagged for lack of control rose from 10.4% to 14.5% (+4.0 points [1.2, 6.8]; unchanged after adjusting for post length; the only one of eight post-level shares that holds up after correction, <em>q</em> = .028). Competence stayed the most often <em>expressed</em> source of meaning in every period, and belonging and connection were expressed far more often than frustrated. Within the badged posts, RN exposure was flat and advanced-practice exposure rose with an interval that includes zero.</p>
   <figure>
     <img src="assets/Study2_fig5_roles.png" alt="Object exposure by career-point badge and capture period">
     <figcaption>Finding 5. Role is read from the author-pane credential badge at capture, never from post text; 48% of posts carried a badge. Cells under 40 posts are marked.</figcaption>
   </figure>
-  <p class="sidenote">Posts that name the apparatus also carry quit and control-loss flags more often (same post, same coder). Communion vocabulary saturates the posts that carry any event yet rarely codes as a discrete episode; we read communion here as the standard against which control loss is judged, a hypothesis for a designed study.</p>
+  <p class="sidenote">Posts that name ratios, metrics, or charting also carry quit and lack-of-control flags more often (same post, same model). The language of belonging runs through nearly every post that carries any event yet rarely shows up as a separate episode; we read it as the standard nurses judge lost control against, a hypothesis for a designed study.</p>
 
   <h2>What to do this quarter</h2>
   <div class="card navy">
     <ol>
-      <li>Seal a holdout before anyone iterates a prompt on employee text.</li>
-      <li>Write the human agreement bar down first, by dimension. Do not use one global F1.</li>
-      <li>Automate leakage and direct-identifier checks in the scoring job, not in a slide appendix.</li>
+      <li>Set aside a file of comments nobody scores until the model is final.</li>
+      <li>Write the pass mark down first, one per kind of meaning, from how well two trained humans agree. Do not accept one overall accuracy number.</li>
+      <li>Make the scoring job check itself: no set-aside comments in the practice pile, no names or identifying details in the output.</li>
     </ol>
     <p style="margin:0">The longer kit is in <a href="practice.html">Try this quarter</a>.</p>
   </div>
 
-  <p>Print tiles: hang slides 1–16. Slides 17–18 are extra letter pages (concurrent WAMI, forum facets). Open <a href="assets/Monnot_Poster_v5.pptx">Monnot_Poster_v5.pptx</a>.</p>
+  <p>Print tiles: hang slides 1–16. Slides 17–18 are extra letter pages (survey meaning by number of pathways; forum categories). Open <a href="assets/Monnot_Poster_v5.pptx">Monnot_Poster_v5.pptx</a>.</p>
   <p class="note">Study 1 maps meaning; AI exposure is read from the documented automation frontier, not measured per person. Forum results are single-model event codes, descriptive.</p>
 </main>
 

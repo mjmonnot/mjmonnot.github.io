@@ -10,26 +10,26 @@
 </head>
 <body>
 <nav class="nav"><div class="wrap">
-  <a href="index.html">Syllabus</a>
+  <a href="index.html">Start here</a>
   <a href="poster.html">Digital poster</a>
-  <a href="explainers.html">Lay explainers</a>
+  <a href="explainers.html">Plain-English glossary</a>
   <a class="here" href="methodology.html">Methods &amp; lessons</a>
-  <a href="references.html">Annotated readings</a>
+  <a href="references.html">Reading list</a>
   <a href="practice.html">Try this quarter</a>
   <a href="design.html">Design notes</a>
 </div></nav>
 
 <header class="hero wrap">
-  <p class="kicker">What we ran · what held · what broke</p>
+  <p class="kicker">What we ran · what held up · what we would change</p>
   <h1>Methods and lessons</h1>
-  <p class="lede">A postmortem for scientists and analysts, not a second Method section. Terms are defined on the <a href="explainers.html">lay explainers</a> page.</p>
+  <p class="lede">The behind-the-scenes account for analysts: what we ran, what held up, and what we would do differently. Any unfamiliar term is in the <a href="explainers.html">plain-English glossary</a>.</p>
   <hr class="rule">
 </header>
 
 <main class="wrap">
   <h2>What we actually did</h2>
   <p>Study 1 is a two-wave critical-incident panel. Time 1 narratives (March 2016) were dual-coded on 13 Rosso facets. Time 2 (February–March 2017) measured felt meaningfulness, emotional exhaustion, and turnover intentions, the three outcomes the registered tests used, alongside other scales. The interval is about one year (<em>M</em> = 11.58 months). Completers were older and higher in work centrality than noncompleters.</p>
-  <p>Before any outcome model, we tested whether a language-model panel could replace the human pair. Prompts were written only on the training slice, hashed, and evaluated once on development. No test case was scored while any prompt could still be chosen. No engineered prompt met the standard set for acceptance. Predictors stayed human. The one later test look is described below.</p>
+  <p>Before any outcome model, we tested whether a language-model panel could replace the human pair. Model instructions were written only on the practice slice, locked (hash-recorded), and scored once on the try-out slice. No set-aside case was scored while any set of instructions could still be chosen. None reached the pass mark. Predictors stayed human. The one later test look is described below.</p>
   <p>Studies 2 and 3 use Internet Archive snapshots of allnurses.com, captures January 2016 through 8 September 2026: 7,709 posts, 1,453 threads, 4,443 accounts. One model coded every post for meaning events (facet × enacted/frustrated/wished × object named × task fate × emotion × attribution) and four post-level flags; 5,435 events, two-thirds of posts with none. The instrument was written for prompted critical incidents and applied to forum prose without a forum-specific human check: the 200-post transfer sheet was drawn and, by PI decision, not coded. Calls ran at the provider’s default temperature (the lock in the protocol was not applied). Dictionaries cover the full window as archive description. Intervals cluster on thread; account-level resampling was the same or tighter.</p>
   <p><strong>Ethics and provenance.</strong> Study 1 ran under expedited review by the University of San Francisco IRBPHS (#611); the Time 2 wave was authorized by a modification signed December 27, 2016. The consent form did not address quotation, so no verbatim narrative leaves the private repository; exemplars are paraphrased. Studies 2 and 3 analyzed publicly available forum pages compiled from Internet Archive snapshots: no contact with the site’s servers, no interaction with posters, no private identifiable information, author identifiers hashed at ingest, no post text reproduced. Under 45 CFR 46.102(e) that activity is not human-subjects research and was not submitted for IRB review (PI determination, September 25, 2026). Forum text is handled like respondent microdata: scripts read it, people read aggregates.</p>
 
@@ -37,7 +37,7 @@
   <ul class="clean">
     <li><strong>Locking the drawers.</strong> Train / development / test, with development as a single selection pass, kept the substitution test a test: when the prompts missed, there was no path to a quiet retune.</li>
     <li><strong>Dimension-specific bars.</strong> Agency and others-directed meaning have human ceilings high enough to test against. Communion and self do not. Writing that down before the run was the difference between a clean verdict and a moving target.</li>
-    <li><strong>False-positive disqualifiers on agreed-absent cells.</strong> Every prompt “found” control/autonomy or identity affirmation where both humans had said absent. That is the failure mode that matters for employee text: over-calling meaning.</li>
+    <li><strong>An automatic fail for meaning the humans did not see.</strong> Every set of instructions “found” control/autonomy or identity affirmation where both humans had said absent. That is the failure mode that matters for employee text: over-calling meaning.</li>
     <li><strong>Reporting the registered estimates as they came in, then screening the rest.</strong> The competence–strain association would have been easy to promote. Labeling it exploratory, and putting the ~1,600-test ledger in the supplement, is what makes it usable later.</li>
     <li><strong>Internet Archive rather than a live crawl.</strong> The site’s terms forbid systematic retrieval. Snapshots are a completed historical corpus, with capture year stated as the time axis.</li>
     <li><strong>Parser repair as a data problem, not a collection problem.</strong> 2024–2025 posts looked empty because later pages store comments in a different HTML tag. Fixing the extractor recovered the years. No new live collection was added.</li>
@@ -45,12 +45,12 @@
 
   <h2>What we would do differently</h2>
   <ul class="clean">
-    <li><strong>Substitution on this codebook.</strong> Six frozen prompts peaked at agency PSA .798 against a .910 bar and over-called on agreed-absent cells; the next instrument is a panel judged on outcomes, not on matching one human pair.</li>
-    <li><strong>Communal meaning as a confirmatory predictor.</strong> Human PSA = .48. We excluded it from the confirmatory family before estimation. Unadjusted Time 2 associations were not robust to unresolved cells.</li>
+    <li><strong>Substitution on this codebook.</strong> Six locked sets of instructions peaked at agency agreement .798 against a .910 pass mark and found meaning the humans had not; the next instrument is a panel judged on outcomes, not on matching one human pair.</li>
+    <li><strong>Communal meaning as a confirmatory predictor.</strong> Human agreement = .48. We excluded it from the confirmatory family before estimation. Unadjusted Time 2 associations were not robust to unresolved cells.</li>
     <li><strong>Using later URL paths to recover board names.</strong> Newer allnurses links drop the forum slug. Hundreds of threads are unlabeled. Student boards leaked into a working-nurse frame.</li>
-    <li><strong>Treating a one-model forum draft as transfer.</strong> It is a first-pass instrument. The 200-post human sheet was the gate and was waived. Every forum rate is a model-assigned code.</li>
+    <li><strong>Treating a one-model forum draft as transfer.</strong> It is a first-pass instrument. The 200-post human sheet was the gate and was waived. Every forum rate is a label one model assigned.</li>
     <li><strong>Reading a same-post co-occurrence as a lead indicator.</strong> Apparatus posts carry quit flags at 15% versus 2%. The reverse conditional is 30%: most quit-flagged posts name no apparatus. One coder, one complaint; not “precedes.”</li>
-    <li><strong>Trusting a series across a template change.</strong> The site’s HTML changed in 2019–2021; posts got shorter and codable events dropped. Any year slope through that band carries the caveat, and the frustration slope does not survive it.</li>
+    <li><strong>Trusting a trend across a site redesign.</strong> The site’s page template changed in 2019–2021; posts got shorter and codable events dropped. Any year slope through that band carries the caveat, and the frustration slope does not survive it.</li>
   </ul>
 
   <h2>Lessons we would hand to another lab</h2>
@@ -74,10 +74,10 @@
   </div>
 
   <h2>The independent panel (Session 6, Tier 3)</h2>
-  <p>This was specified on 11 June 2026, not invented after the development pass missed the bars. Tier 1 is cells both humans agreed on. Tier 2 is the blinded sample of disagreements. Tier 3 is the panel scored against Time 1 WAMI and Time 2 strain and retention — a criterion no coder, human or model, has seen. Communion human PSA is .48. A prompt selected to match that pair will carry the disagreement forward. A panel that is not selected on human agreement, and is judged on later outcomes, is a different test.</p>
-  <p>It was not run because ADR 0006 parked all further LLM scoring of the split after every engineered prompt missed the human-agreement bars and the manuscript had a deadline. The park was a shipping decision. The June design still stands. ADR 0010 puts Tier 3 back on the table. After the manuscript results were fixed, one descriptive look at a pre-registered 65-case test subsplit was taken under a hashed protocol (ADR 0012), on PI decision with coauthor deferral; it scored two disqualified prompts and is reported as a 65-case number at development-level precision, not as validation: agency .81 / .80, others-directed .746 / .770, both prompts again disqualified on false positives, salience ICC in the drop band. Same-case human-pair agreement on those 65 was .95 / .84, so the slice was not unusually hard. The pre-registered screen for a later single look at the remaining 128 cases (agency and others-directed both ≥ .75) missed on others-directed at .746; the 128 remain sealed and refused by code. Train was the prompt sandbox. Dev is spent. Twenty-nine narratives sit outside the split (eight with Time 2) and can be scored without an unseal; that is a mechanics check, not the powered test.</p>
+  <p>This was specified on 11 June 2026, not invented after the try-out run missed the pass marks. Tier 1 is cells both humans agreed on. Tier 2 is the blinded sample of disagreements. Tier 3 is the panel scored against Time 1 WAMI and Time 2 strain and retention — a criterion no coder, human or model, has seen. Human agreement on communion is .48. A model chosen to match that pair will carry the disagreement forward. A panel that is not selected on human agreement, and is judged on later outcomes, is a different test.</p>
+  <p>It was not run because ADR 0006 parked all further LLM scoring of the split after every set of instructions missed the human-agreement pass marks and the manuscript had a deadline. The park was a shipping decision. The June design still stands. ADR 0010 puts Tier 3 back on the table. After the manuscript results were fixed, one descriptive look at 65 set-aside cases was taken under a protocol written and hash-recorded beforehand (ADR 0012), on PI decision with coauthor deferral; it scored the two best of the rejected setups and is reported as a 65-case number at try-out precision, not as validation: agency .81 / .80, others-directed .746 / .770, both again failing on meaning the humans had not seen, salience reliability in the drop band. Same-case human-pair agreement on those 65 was .95 / .84, so the slice was not unusually hard. The pre-set rule for a later single look at the remaining 128 cases (agency and others-directed both ≥ .75) missed on others-directed at .746; the 128 remain sealed and refused by code. Train was the prompt sandbox. Dev is spent. Twenty-nine narratives sit outside the split (eight with Time 2) and can be scored without an unseal; that is a mechanics check, not the powered test.</p>
 
-  <p class="note">No respondent text or forum post text is in this packet. The 128-case test remainder stays sealed. If you want the term definitions, use <a href="explainers.html">Lay explainers</a>.</p>
+  <p class="note">No respondent text or forum post text is in this packet. The 128-case test remainder stays sealed. If you want the term definitions, use <a href="explainers.html">Plain-English glossary</a>.</p>
 </main>
 
 <footer class="site"><div class="wrap">Methods postmortem · SIOP LEC 2026 digital goody bag</div></footer>
