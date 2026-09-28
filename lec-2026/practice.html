@@ -22,48 +22,96 @@
 <header class="hero wrap">
   <p class="kicker">One quarter · no software purchase required</p>
   <h1>Try this quarter</h1>
-  <p class="lede">Three moves to make before anyone scores employee text with a language model, six questions to ask a vendor, and a one-page meaning map you can fill in during a staff meeting.</p>
+  <p class="lede">Two situations bring people-analytics teams to this board: someone wants to score employee comments with a language model, or someone wants to automate part of a helping job to “free people for care.” Each gets three moves, a twelve-week plan, and the questions to ask. All of it is drawn from the studies on the board and from the work-design and algorithmic-management literature listed at the bottom.</p>
   <hr class="rule">
 </header>
 
 <main class="wrap">
+  <h2>If you are about to score employee text with a model</h2>
   <div class="card navy">
     <ol>
-      <li>Set aside a file of comments nobody scores until the model is final. Ten percent, locked, never used as examples.</li>
-      <li>Write the pass mark down first, one per kind of meaning, from how well two trained people agree. Agency and belonging will not share a mark. If two trained people cannot see it, do not buy a model that claims it.</li>
-      <li>Make the scoring job check itself: no set-aside comments in the practice pile, no names or identifying details in the output. A slide that says “we take privacy seriously” is not a check.</li>
+      <li><strong>Set aside a file of comments nobody scores until the model is final.</strong> Ten percent, locked, never used as examples. Every look at it spends it. Validation done on comments that were also used to improve the instructions reports a precision that does not exist (Törnberg, 2024); this is the same discipline selection researchers use when they hold out test data and swap it only once (Koenig et al., 2023).</li>
+      <li><strong>Write the pass mark down first, one per kind of meaning, from how well two trained people agree.</strong> In our data two coders agreed .93 on agency and .48 on belonging. Agency and belonging will not share a mark. If two trained people cannot see it, do not buy a model that claims it.</li>
+      <li><strong>Make the scoring job check itself.</strong> No set-aside comments in the practice pile, no names or identifying details in the output, and an automatic fail when the model finds meaning in comments both humans said had none. That last check is what caught all six of our setups.</li>
     </ol>
   </div>
+
+  <h2>If you are about to automate part of a helping job</h2>
+  <div class="card teal">
+    <ol>
+      <li><strong>Map the meaning before you pick the tool.</strong> List the tasks the tool will touch and, for each, ask whose meaning it carries and which of three things the tool does to it: replaces it, leaves a person tending the machine, or amplifies what the person can do (Bankins &amp; Formosa, 2023). Work-design choices made at implementation, not after, are what decide whether autonomy, skill use, and feedback survive the rollout (Parker &amp; Grote, 2022). The worksheet below is for this step.</li>
+      <li><strong>Keep the decision with the person, and make the tool explainable to whoever follows it.</strong> In nurses’ own talk, what rose over a decade was not skill loss but loss of control over how the work is done. Critical-care staff asked for the same thing when interviewed about AI: keep decision-making local and keep the system transparent and predictable (Bienefeld et al., 2025). Recommendations workers cannot see the basis of are complied with symbolically, not followed (Kellogg et al., 2020); people should be held accountable only for processes they can understand, predict, and influence (Parker &amp; Grote, 2022).</li>
+      <li><strong>Pilot small, with the workers, and measure meaning, not only minutes.</strong> The ambient-scribe rollouts that went well ran a two-week pilot with a few dozen clinicians before scaling, named clinical champions, and built a feedback loop (Tierney et al., 2024); the ones that reported burnout measured it before and after, not just documentation time (Shah et al., 2025). Add two items to your pre/post survey: control over how I do my work, and chance to use my skills. If those fall while minutes improve, you have found the paradox in your own building.</li>
+    </ol>
+  </div>
+
+  <h2>Twelve weeks</h2>
+  <table>
+    <thead>
+      <tr><th>Weeks</th><th>Text scoring track</th><th>Automation track</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1–2</td><td>Pull the comment set. Set aside 10% in a locked file with a dated note of who may open it and when. Decide which kinds of meaning you actually need scored.</td><td>List the six tasks the tool will touch. Fill in the meaning map with the team that does the work, not for them.</td></tr>
+      <tr><td>3–4</td><td>Two trained people code 100 comments from the practice pile, per kind of meaning. Compute agreement per kind. Write the pass marks down and date them.</td><td>For each task, decide: replace, tend, or amplify. Name the decisions that stay with the person. Draft the two pre/post survey items.</td></tr>
+      <tr><td>5–8</td><td>Build or buy. Tune only on the practice pile. Log every run: model version, instructions, date.</td><td>Two-week pilot with volunteers and one named champion per unit. Pre-survey first. Collect what people work around, not only what they praise.</td></tr>
+      <tr><td>9–10</td><td>One look at the try-out cases against the written pass marks. No edits to the instructions after seeing the numbers.</td><td>Post-survey. Compare minutes saved against control and skill-use items. Review what the champions heard.</td></tr>
+      <tr><td>11–12</td><td>Decide: accept where the mark is cleared, keep humans where it is not. Write the one-page record. The set-aside file stays shut unless you accepted.</td><td>Decide: scale, redesign, or stop, task by task. Write down which decisions stayed with the person and why.</td></tr>
+    </tbody>
+  </table>
 
   <h2>Ask the vendor</h2>
   <ul class="clean">
     <li>Which two humans did the model get compared to, and on which kinds of meaning?</li>
     <li>When the model says a kind of meaning is present, how often did the humans agree? Overall accuracy hides this, because most comments carry nothing.</li>
     <li>How often did the model find meaning in comments both humans said had none?</li>
-    <li>Were the set-aside comments ever used to rewrite the instructions?</li>
+    <li>Was the check done after the instructions were final, on comments that were never used to write them? How many comments?</li>
+    <li>Could the model have seen the check data before? Public datasets do not count (Törnberg, 2024).</li>
     <li>Does the product report belonging or authenticity? How well did two humans agree on those?</li>
     <li>If the model is wrong, how does that error enter the dashboard that managers see?</li>
   </ul>
   <p class="sidenote">If they answer with one accuracy number and a crowd-worker paper, send them Gilardi et al. (2023) and Törnberg (2024) together. The first is their citation. The second is the standard.</p>
 
+  <h2>Ask the tool vendor</h2>
+  <ul class="clean">
+    <li>Which decisions does the tool make, which does it recommend, and which does it leave alone? Show me the list.</li>
+    <li>Can the person using it see why it recommended what it did, in their own terms?</li>
+    <li>What does it record about the worker, who sees that, and is any of it used for performance review?</li>
+    <li>Which sites piloted it, for how long, and what did they measure besides time saved?</li>
+    <li>What can the worker override, and does overriding get logged against them?</li>
+  </ul>
+
   <h2>A 20-minute meaning map</h2>
-  <p>In a team that is about to adopt a documentation or monitoring tool, list six tasks. For each, mark: whose meaning does it carry (self, other, both, unclear)? Is it on the automation list? If yes, what occasion for meaning disappears, and what is the replacement? This is a discussion device, not a validated instrument. In our data the broad meaning dimensions did not forecast next-year strain; stories anchored in competence did, in 17 cases, and that lead is exploratory.</p>
+  <p>In a team that is about to adopt a documentation or monitoring tool, list six tasks. For each, mark: whose meaning does it carry (self, other, both, unclear)? What does the tool do to it (replace, tend, amplify)? If it replaces the task, what occasion for meaning disappears, and what is the replacement? This is a discussion device, not a validated instrument. In our data the broad meaning dimensions did not forecast next-year strain; stories anchored in competence did, in 17 cases, and that lead is exploratory. Treat the column “what is lost” as the hypothesis you will test in the pilot survey.</p>
 
   <table>
     <thead>
-      <tr><th>Task</th><th>Meaning source (if any)</th><th>On the automation list?</th><th>What is lost if it goes?</th></tr>
+      <tr><th>Task</th><th>Meaning source (if any)</th><th>Replace / tend / amplify</th><th>Decision stays with the person?</th><th>What is lost if it goes?</th></tr>
     </thead>
     <tbody>
-      <tr><td></td><td></td><td></td><td></td></tr>
-      <tr><td></td><td></td><td></td><td></td></tr>
-      <tr><td></td><td></td><td></td><td></td></tr>
-      <tr><td></td><td></td><td></td><td></td></tr>
-      <tr><td></td><td></td><td></td><td></td></tr>
-      <tr><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
     </tbody>
   </table>
 
-  <p class="note">Print this page. The empty rows are the point. Plain definitions of the set-aside file, the agreement score, and a false present call sit in <a href="explainers.html">Plain-English glossary</a>.</p>
+  <p class="note">Print this page. The empty rows are the point. Plain definitions of the set-aside file, the agreement score, and a false present call sit in the <a href="explainers.html">Plain-English glossary</a>.</p>
+
+  <h2>Where this comes from</h2>
+  <p class="sidenote">All of these are in the project’s literature folder and were read for this page. The two trade pieces on ambient scribes are implementation reports, not trials; take their numbers as early experience.</p>
+  <ul class="clean refs">
+    <li>Bankins, S., &amp; Formosa, P. (2023). The ethical implications of artificial intelligence (AI) for meaningful work. <em>Journal of Business Ethics, 185</em>(4), 725–740. <a href="https://doi.org/10.1007/s10551-023-05339-7">https://doi.org/10.1007/s10551-023-05339-7</a></li>
+    <li>Bienefeld, N., Keller, E., &amp; Grote, G. (2025). AI interventions to alleviate healthcare shortages and enhance work conditions in critical care: Qualitative analysis. <em>Journal of Medical Internet Research, 27</em>, e50852. <a href="https://doi.org/10.2196/50852">https://doi.org/10.2196/50852</a></li>
+    <li>Gilardi, F., Alizadeh, M., &amp; Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. <em>Proceedings of the National Academy of Sciences, 120</em>(30), Article e2305016120. <a href="https://doi.org/10.1073/pnas.2305016120">https://doi.org/10.1073/pnas.2305016120</a></li>
+    <li>Kellogg, K. C., Valentine, M. A., &amp; Christin, A. (2020). Algorithms at work: The new contested terrain of control. <em>Academy of Management Annals, 14</em>(1), 366–410. <a href="https://doi.org/10.5465/annals.2018.0174">https://doi.org/10.5465/annals.2018.0174</a></li>
+    <li>Koenig, N., Tonidandel, S., Thompson, I., Albritton, B., Koohifar, F., Yankov, G., . . . Newton, C. (2023). Improving measurement and prediction in personnel selection through the application of machine learning. <em>Personnel Psychology, 76</em>(4), 1061–1123. <a href="https://doi.org/10.1111/peps.12608">https://doi.org/10.1111/peps.12608</a></li>
+    <li>Parker, S. K., &amp; Grote, G. (2022). Automation, algorithms, and beyond: Why work design matters more than ever in a digital world. <em>Applied Psychology, 71</em>(4), 1171–1204. <a href="https://doi.org/10.1111/apps.12241">https://doi.org/10.1111/apps.12241</a></li>
+    <li>Shah, S. J., Devon-Sand, A., Ma, S. P., Jeong, Y., Crowell, T., Smith, M., Liang, A. S., Delahaie, C., Hsia, C., Shanafelt, T., Pfeffer, M. A., Sharp, C., Lin, S., &amp; Garcia, P. (2025). Ambient artificial intelligence scribes: Physician burnout and perspectives on usability and documentation burden. <em>Journal of the American Medical Informatics Association, 32</em>(2), 375–380. <a href="https://doi.org/10.1093/jamia/ocae295">https://doi.org/10.1093/jamia/ocae295</a></li>
+    <li>Tierney, A. A., Gayre, G., Hoberman, B., Mattern, B., Ballesca, M., Kipnis, P., Liu, V., &amp; Lee, K. (2024). Ambient artificial intelligence scribes to alleviate the burden of clinical documentation. <em>NEJM Catalyst Innovations in Care Delivery, 5</em>(3). <a href="https://doi.org/10.1056/CAT.23.0404">https://doi.org/10.1056/CAT.23.0404</a></li>
+    <li>Törnberg, P. (2024). <em>Best practices for text annotation with large language models</em> (arXiv:2402.05129). arXiv. <a href="https://doi.org/10.48550/arXiv.2402.05129">https://doi.org/10.48550/arXiv.2402.05129</a></li>
+  </ul>
 </main>
 
 <footer class="site"><div class="wrap">Practice kit · SIOP LEC 2026 digital goody bag</div></footer>
