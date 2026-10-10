@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code &amp; deck — The AI Paradox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/bag.css">
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a href="index.html">Start here</a>
+  <a href="poster.html">Digital poster</a>
+  <a href="explainers.html">Plain-English glossary</a>
+  <a href="methodology.html">Methods &amp; lessons</a>
+  <a href="references.html">Reading list</a>
+  <a href="practice.html">Try this quarter</a>
+  <a href="design.html">Design notes</a>
+  <a class="here" href="code.html">Code &amp; deck</a>
+</div></nav>
+
+<header class="hero wrap">
+  <p class="kicker">Downloads and starting points · SIOP LEC 2026</p>
+  <h1>Code &amp; deck</h1>
+  <p class="lede">The print deck, and the few pieces of code that make this study different from a standard text-classification project. Each excerpt is preceded by a note on what it does and why it mattered here. Nothing on this page lets anyone rerun the rejected model setups on new employee data: the prompts themselves are not published, and no respondent or forum text appears.</p>
+  <hr class="rule">
+</header>
+
+<main class="wrap">
+  <h2>Download the deck</h2>
+  <div class="pull">
+    <p><a href="assets/Monnot_Poster_v5.pptx" download>Monnot_Poster_v5.pptx</a> (1.5 MB). Slides 1–16 are the board tiles; slides 17–18 are extra letter pages (survey meaning by number of pathways; forum categories). Print at 100% on letter landscape, or as one 46 × 36 inch board.</p>
+    <p style="margin:0" class="small">Cite as: Monnot, M. J., &amp; Thompson, I. (2026, September 30–October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States.</p>
+  </div>
+
+  <h2>What is on this page and what is not</h2>
+  <p>Most of the analysis is ordinary: OLS with robust errors, bootstrap intervals, Benjamini–Hochberg. That code is not here. What is here is the scaffolding that let the study make claims a reviewer could check: how the Internet Archive became a ten-year time axis without crawling a live site, how one model read a decade of posts against a human-built codebook under a frozen instruction, how a change in the forum's page template was kept from masquerading as a trend, and how a set-aside file of cases was kept set aside by code rather than by promise. Excerpts are trimmed from the working scripts; paths, logging, and error handling are cut. Python 3.12+, NumPy, pandas, and the Anthropic SDK.</p>
+
+  <h2>Starting points for a longitudinal LLM analysis</h2>
+  <p>If you want to run the forum design on another public archive, this is the order the pieces go in. Each row is one step: the note says what the step does and why it is not optional; the code is the smallest working piece of it.</p>
+
+  <table class="code-table">
+    <thead>
+      <tr><th style="width:38%">What it does, and why it matters here</th><th>Excerpt</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p class="kicker">1 · Time axis</p>
+          <p><strong>Build the sampling frame from the Internet Archive's CDX index, one year at a time, keeping metadata only.</strong> The year on every chart is the year the archive captured the page, never a scraped posting date. That is a limitation and it is stated as one, but it is also what let the study cover 2016–2026 without touching the live site. The query is domain-wide, collapsed on URL key so one capture per page per year survives, filtered to thread pages and HTTP 200. The identified user agent and the three-second sleep are not politeness theater; they are the terms of using a public archive for research.</p>
+        </td>
+        <td>
+<pre><code># wayback_enumerate.py (excerpt)
+CDX = "https://web.archive.org/cdx/search/cdx"
+UA = {"User-Agent": "MoW-research-corpus (academic study; contact: matt@vocentive.com)"}
+
+def fetch_batch(year, resume_key=None):
+    params = {
+        "url": "allnurses.com", "matchType": "domain",
+        "from": f"{year}0101", "to": f"{year}1231",
+        "fl": "timestamp,original,digest,statuscode",
+        "collapse": "urlkey", "limit": "5000",
+        "showResumeKey": "true", "output": "json",
+    }
+    q = CDX + "?" + urllib.parse.urlencode(params)
+    if resume_key:
+        q += "&amp;resumeKey=" + urllib.parse.quote(resume_key)
+    rows = json.loads(urllib.request.urlopen(
+        urllib.request.Request(q, headers=UA), timeout=180).read())
+    ...  # peel the trailing resumeKey row, return (body, next_key)
+
+for ts, original, digest, status in body:
+    if status != "200" or not is_thread_url(original):
+        continue
+    frame.write(json.dumps({"ts": ts, "url": original, "digest": digest}) + "\n")
+time.sleep(3.0)   # between batches; resumable per year via a .resume file</code></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p class="kicker">2 · Who is speaking</p>
+          <p><strong>Read role from the author-pane credential badge, never from the post body.</strong> A post that says "as a new grad" is text; a title line reading "BSN, RN" is a badge the forum rendered at capture. Only the badge is used, so the career-point stratifier in Finding 5 cannot be contaminated by what the person wrote. Forty-eight percent of posts carried a badge; the rest are "unclear" and stay in the denominators. The regex runs over a window of HTML before the post body on the old template and inside the comment wrapper on the new one.</p>
+        </td>
+        <td>
+<pre><code># wayback_role_extract.py (excerpt)
+CRED_TOKEN = re.compile(
+    r"\b(RN|BSN|MSN|DNP|LPN|LVN|ADN|CNA|PCT|NP|APRN|CRNA|CNS|CNM|FNP|"
+    r"PMHNP|CCRN|Student|Nursing Student|Pre-Nursing|Educator|"
+    r"Nurse Manager|Manager|Director|Professor|Instructor)\b")
+
+def classify(creds: set[str], pane_text: str) -> str:
+    c = {x.upper() for x in creds}
+    if c &amp; {"CRNA", "CNM", "CNS", "NP", "APRN", "FNP", "PMHNP", "DNP"}:
+        return "aprn"
+    if c &amp; {"EDUCATOR", "NURSE MANAGER", "MANAGER", "DIRECTOR",
+             "PROFESSOR", "INSTRUCTOR"}:
+        return "educator_mgmt"
+    if c &amp; {"RN", "BSN", "MSN", "ADN", "CCRN"}:
+        return "rn"
+    if c &amp; {"LPN", "LVN"}:
+        return "lpn_lvn"
+    if c &amp; {"CNA", "PCT"}:
+        return "cna_tech"
+    if c &amp; {"STUDENT", "NURSING STUDENT", "PRE-NURSING"}:
+        return "student"
+    return "unclear"
+
+# applied to the author pane only; the post body is never passed in</code></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p class="kicker">3 · Periods</p>
+          <p><strong>Cut time by external history, not by the year a chatbot became famous.</strong> The contrast of interest is 2023–2026 against 2016–2019, with 2020–2022 as its own window. The warrant for the AI window is when hospital EHR vendors shipped machine-learning features and when national surveys began asking about them, not November 2022. Writing the periods down as a function makes the choice auditable and keeps the analyst from sliding the boundary after seeing a result.</p>
+        </td>
+        <td>
+<pre><code># MoW_phase2_period_contrasts_v1.py / history_periods (excerpt)
+PERIODS = ("preAI", "COVID", "AI")
+LABEL = {"preAI": "2016–2019", "COVID": "2020–2022", "AI": "2023–2026"}
+
+def period_of(capture_year: int) -> str:
+    if capture_year &lt;= 2019:
+        return "preAI"
+    if capture_year &lt;= 2022:
+        return "COVID"
+    return "AI"
+
+# finer history cuts used as a sensitivity check, same idea:
+#   2016-2019 pre_ai | 2020-2021 pandemic | 2022-2023 ai_start
+#   2024 ai_mid      | 2025-2026 recent
+# Capture year, not posted_at. Thin 2026 (147 posts) is coverage,
+# not a finding.</code></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p class="kicker">4 · One model, one frozen instruction, a closed vocabulary</p>
+          <p><strong>Score every post for <em>meaning events</em> and refuse any output that is not in the schema.</strong> An event is one of the 13 Rosso facets from the human codebook, marked as lived out (enacted), blocked (frustrated), or longed for (wished for), plus what the post blamed or credited (a named AI system, a system rollout, or an optimization practice such as ratios, metrics, dashboards, or charting load), and four yes/no flags for the post as a whole. The instruction file is hashed before the run and the hash is written into every scored record, so a later reader can prove no prompt edit happened mid-stream. The static instruction is cached server-side; only the post travels each call. The model's own words are never accepted as a category: a value outside the closed sets raises, and the post is logged as an error, not coerced.</p>
+        </td>
+        <td>
+<pre><code># forum_texture_v1.py (excerpt; the instruction text is not published)
+POLARITY = {"enacted", "frustrated", "wished_for"}
+OBJECT   = {"named_ai", "implementation", "optimization", "none"}
+ATTRIB   = {"tool", "management", "staffing", "patient", "self", "unclear"}
+FLAGS    = ("quit_intent", "depressed", "anxious", "lack_of_control")
+
+def prompt_sha() -> str:
+    return hashlib.sha256(PROMPT_PATH.read_bytes()).hexdigest()
+
+def validate(parsed: dict) -> dict:
+    clean = []
+    for ev in parsed["events"]:
+        if ev["facet"] not in FACETS:        raise ValueError("bad facet")
+        if ev["polarity"] not in POLARITY:   raise ValueError("bad polarity")
+        if ev["object"] not in OBJECT:       raise ValueError("bad object")
+        if ev["attribution"] not in ATTRIB:  raise ValueError("bad attribution")
+        clean.append(ev)
+    flags = {k: int(parsed.get("outcomes", {}).get(k, 0)) for k in FLAGS}
+    if any(v not in (0, 1) for v in flags.values()): raise ValueError("bad flag")
+    return {"events": clean, "outcomes": flags}
+
+def score_once(client, system: str, text: str):
+    resp = client.messages.create(
+        model="claude-sonnet-5", max_tokens=2048,
+        system=[{"type": "text", "text": system,
+                 "cache_control": {"type": "ephemeral", "ttl": "1h"}}],
+        messages=[{"role": "user",
+                   "content": f"FORUM POST:\n{text[:4000]}\n\nReturn the events JSON only."}],
+    )
+    return validate(json.loads(first_json_object(resp)))
+
+rec = {"post_id": pid, "thread_id": tid, "year": year,
+       "prompt_sha256": prompt_sha(), "model": MODEL, **scored}</code></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p class="kicker">5 · Inference that respects threads and page templates</p>
+          <p><strong>Treat the thread as the cluster, test with a permutation of period labels, and rerun everything per 1,000 words.</strong> Posts in one thread are not independent, so intervals come from resampling threads, and the <em>p</em> value comes from shuffling which threads sit in which period. Then the one thing that could manufacture a trend here: in 2019–2021 the forum changed software and posts got shorter, so events per post fell for reasons that have nothing to do with nurses. Every rate is therefore recomputed per 1,000 words as a sensitivity family. A rise that survives both denominators is reported; a rise that survives only one is named as fragile. Twenty categories are tested per family, so <em>q</em> is reported beside <em>p</em>.</p>
+        </td>
+        <td>
+<pre><code># MoW_phase2_period_contrasts_v1.py (excerpt)
+class ThreadTable:
+    """Per-thread numerators and denominators for a set of outcomes."""
+    def contrast(self, a, b, scale):
+        ma, mb = self.period == a, self.period == b
+        ra, rb = self.rate(ma, scale), self.rate(mb, scale)
+        diff = ra - rb
+        ia, ib = np.flatnonzero(ma), np.flatnonzero(mb)
+        boots = np.empty((B_BOOT, len(self.names)))          # B_BOOT = 2000
+        for s in range(B_BOOT):                               # resample THREADS
+            sa, sb = rng.choice(ia, len(ia)), rng.choice(ib, len(ib))
+            boots[s] = (scale * self.num[:, sa].sum(1) / self.den[sa].sum()
+                        - scale * self.num[:, sb].sum(1) / self.den[sb].sum())
+        lo, hi = np.percentile(boots, [2.5, 97.5], axis=0)
+        pool, na = np.concatenate([ia, ib]), len(ia)
+        cnt = np.zeros(len(self.names))
+        for _ in range(B_PERM):                               # B_PERM = 4000
+            perm = rng.permutation(pool); pa, pb = perm[:na], perm[na:]
+            d = (scale * self.num[:, pa].sum(1) / self.den[pa].sum()
+                 - scale * self.num[:, pb].sum(1) / self.den[pb].sum())
+            cnt += np.abs(d) &gt;= np.abs(diff) - 1e-12
+        return ra, rb, diff, lo, hi, (cnt + 1) / (B_PERM + 1)
+
+# Family A: events per 100 posts        denom = 1 per post
+# Family S: events per 1,000 words      denom = n_words per post
+ttA = make_table(denom=lambda u: 1)
+ttS = make_table(denom=lambda u: u["n_words"])   # the template-change check
+
+def bh(p):   # Benjamini–Hochberg q within each family and contrast
+    n = len(p); order = np.argsort(p)
+    ranked = p[order] * n / (np.arange(n) + 1)
+    q = np.minimum.accumulate(ranked[::-1])[::-1]
+    out = np.empty(n); out[order] = np.minimum(q, 1.0); return out</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>The holdout machinery from Study 1 that carries over</h2>
+  <p>Three pieces of the Study 1 scoring harness are what made "set aside until the model is final" a property of the code rather than a sentence in a method section. They apply to any project that scores employee text with a model and wants the number it reports to mean something.</p>
+
+  <table class="code-table">
+    <thead>
+      <tr><th style="width:38%">What it does, and why it matters here</th><th>Excerpt</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p class="kicker">6 · The pass mark comes from the humans</p>
+          <p><strong>Compute the human-pair ceiling with the same rollup and the same agreement statistic the model will face, with a bootstrap interval.</strong> Proportion of specific agreement on "present" is the right statistic for sparse binary codes; kappa punishes rare facets. The ceiling is computed per dimension, not once overall, which is how the study found that agency (.93) and communion (.48) are different measurement problems. The lower bound of the interval became the model's bar, written down before any model was scored.</p>
+        </td>
+        <td>
+<pre><code># mow_human_psa_benchmarks.py (excerpt)
+from mow_train_common import FACETS, or_2x2, or_pathways, psa
+DIMS = ("Agency", "Communion", "Self", "Others")
+B, SEED = 10_000, 20260916
+
+def case_dims(df, coder_col):
+    rows = {}
+    for sid, g in df.groupby("StudyID"):
+        facets = dict(zip(g["facet"], g[coder_col].astype(int)))
+        rows[sid] = or_2x2(or_pathways(facets))   # facet -&gt; pathway -&gt; 2x2, by OR
+    return pd.DataFrame.from_dict(rows, orient="index").sort_index()
+
+def boot_ci(a, b, rng):
+    stats = []
+    for _ in range(B):
+        idx = rng.integers(0, len(a), len(a))     # resample CASES
+        v, *_ = psa(a[idx], b[idx])
+        if not np.isnan(v): stats.append(v)
+    return np.percentile(stats, [2.5, 97.5])
+
+for d in DIMS:
+    v, tp, fp, fn = psa(coder1[d].to_numpy(), coder2[d].to_numpy())
+    lo, hi = boot_ci(coder1[d].to_numpy(), coder2[d].to_numpy(), rng)
+    # Agency .935 [.910, .956]  -&gt; model bar .910
+    # Others .844 [.805, .879]  -&gt; model bar .805
+    # Communion .48 [.34, .60], Self .52 [.43, .59] -&gt; no bar set</code></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p class="kicker">7 · A seeded partition with a hash on the ID list</p>
+          <p><strong>When a holdout has to be split, draw once with a recorded seed, stratify on what makes cases hard, and publish the hash of the ID list, not the IDs.</strong> The tracked file carries IDs and the subsplit label only; the stratum columns that would reveal label structure go to a git-ignored companion. The assertions are guards, not a loop that re-seeds until the draw looks good; the record states that the first seed satisfied both constraints.</p>
+        </td>
+        <td>
+<pre><code># MoW_test_partition_v1.py (excerpt)
+SEED, N_A, PA_B_MIN = 20260926, 65, 49
+rng = np.random.default_rng(SEED)
+t["stratum"] = (t["has_both_present"].astype(int).astype(str) + "|"
+                + t["occupation_block"].astype(str) + "|"
+                + t["in_tier2_gold"].astype(int).astype(str))
+t["subsplit"] = "test-B"
+alloc = largest_remainder(t.groupby("stratum").size(), N_A / len(t))
+for s, g in t.groupby("stratum"):
+    pick = rng.choice(g.index.to_numpy(), size=alloc[s], replace=False)
+    t.loc[pick, "subsplit"] = "test-A"
+
+assert (t["subsplit"] == "test-A").sum() == N_A        # guard, not a re-seed loop
+assert t.loc[t.subsplit == "test-B", "has_both_present"].sum() &gt;= PA_B_MIN
+
+t[["StudyID", "split", "subsplit"]].to_csv(OUT, index=False)   # tracked
+t.to_csv(OUT_FULL, index=False)                                # git-ignored strata
+ids_b = ",".join(sorted(t.loc[t.subsplit == "test-B", "StudyID"]))
+print("test-B id-list sha256", hashlib.sha256(ids_b.encode()).hexdigest())</code></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p class="kicker">8 · The scorer refuses to mix prompts or splits</p>
+          <p><strong>Every folder of scored cases records the hash of the instruction it was scored under; a resume under a different hash is a hard error.</strong> Split membership is checked per case, and holdout IDs are refused unless a dated decision record's own hash matches a constant compiled into the runner. This is the difference between "we did not look" and "the code would not let us look." It also means a crashed run can be resumed without re-buying scored cases, because the cache is verifiable.</p>
+        </td>
+        <td>
+<pre><code># mow_dev_runner.py (excerpt)
+def guard_case_dir(case_dir: Path, prompt_sha: str) -> None:
+    """Refuse resuming a case dir scored under a different frozen prompt."""
+    sha_fp = case_dir / "PROMPT_SHA.txt"
+    existing = list(case_dir.glob("*.json"))
+    if sha_fp.exists():
+        if sha_fp.read_text().strip() != prompt_sha:
+            raise RuntimeError(
+                f"{case_dir} was scored under {sha_fp.read_text()[:12]}… "
+                f"but the loaded freeze is {prompt_sha[:12]}…. "
+                "Refusing to mix outputs from two prompts in one selection.")
+    elif existing:
+        raise RuntimeError(
+            f"{case_dir} has {len(existing)} case JSON(s) and no PROMPT_SHA.txt; "
+            "provenance unverifiable. Use a fresh --outdir.")
+    else:
+        sha_fp.write_text(prompt_sha + "\n")
+
+# split scope (schematic of the runner's check): every case id is matched
+# against the locked split index; holdout ids are refused unless the gate
+# manifest for a dated decision record hashes to a constant compiled in.
+if sid in HOLDOUT_IDS and gate_manifest_sha() != COMPILED_GATE_SHA:
+    raise RuntimeError(f"{sid} is in the sealed split; no authorization on file.")</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>If you are starting tomorrow</h2>
+  <ol>
+    <li>Pick the public archive and write down, before you query it, what the time variable will mean (capture date, posting date, or something else) and what you will not be able to say because of that.</li>
+    <li>Get a human codebook that already has a measured ceiling. Scoring posts against a scheme two humans could not agree on gives you a model that agrees with no one.</li>
+    <li>Freeze the instruction, hash it, and write the hash into every output record. Treat any later edit as a new instrument with a new name.</li>
+    <li>Define a closed output vocabulary and reject anything outside it. Do not let the model invent a category.</li>
+    <li>Cut time by documented external events and write the boundaries as a function before the first result.</li>
+    <li>Cluster on the unit that actually repeats (thread, author, site), and rerun every rate under a second denominator that would expose a format change.</li>
+    <li>Report <em>q</em> beside <em>p</em>, name the number of tests, and label the whole thing descriptive if no human has checked the model on that text. Draw the human check sample at the start, even if it waits.</li>
+  </ol>
+
+  <p class="note">Scripts are from the project repository; function and file names are real, bodies are trimmed. Numbers in comments are the study's reported values. Study 1 narratives, forum post text, StudyIDs, and the model instruction files are not part of this packet.</p>
+</main>
+
+<footer class="site"><div class="wrap">
+  Digital goody bag · SIOP LEC 2026 · Questions: matt@vocentive.com
+</div></footer>
+</body>
+</html>

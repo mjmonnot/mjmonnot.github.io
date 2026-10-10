@@ -161,6 +161,28 @@ figure img {
 }
 .jump a { text-decoration: none; color: var(--muted); border-bottom: 1px solid var(--rule); padding: 0; background: none; }
 .jump a:hover { color: var(--ink); }
+.code-table td { vertical-align: top; }
+.code-table td p { margin: 0 0 .6rem; }
+.code-table td p.kicker { margin-bottom: .35rem; }
+.code-table pre {
+  margin: 0;
+  padding: .75rem .85rem;
+  background: #fffdf8;
+  border: 1px solid var(--rule);
+  overflow-x: auto;
+  font-family: "Cascadia Code", Consolas, "SF Mono", Menlo, monospace;
+  font-size: .76rem;
+  line-height: 1.45;
+  color: var(--ink);
+  tab-size: 4;
+}
+.code-table code { font-family: inherit; }
+@media (max-width: 800px) {
+  .code-table thead { display: none; }
+  .code-table tr, .code-table td { display: block; width: 100%; }
+  .code-table td { border-bottom: 0; padding-left: 0; padding-right: 0; }
+  .code-table tr { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; }
+}
 .path-agency { color: var(--navy); }
 .path-communion { color: var(--teal); }
 .path-axis { color: var(--grey); }
