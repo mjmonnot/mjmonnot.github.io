@@ -70,11 +70,12 @@ def fetch_batch(year, resume_key=None):
         urllib.request.Request(q, headers=UA), timeout=180).read())
     ...  # peel the trailing resumeKey row, return (body, next_key)
 
-for ts, original, digest, status in body:
+for row in body:
+    ts, original, digest, status = row
     if status != "200" or not is_thread_url(original):
         continue
-    frame.write(json.dumps({"ts": ts, "url": original, "digest": digest}) + "\n")
-time.sleep(3.0)   # between batches; resumable per year via a .resume file</code></pre>
+    f.write(json.dumps({"ts": ts, "url": original, "digest": digest}) + "\n")
+time.sleep(3.0)   # between batches; a .resume file restarts an interrupted year</code></pre>
         </td>
       </tr>
 
@@ -86,28 +87,33 @@ time.sleep(3.0)   # between batches; resumable per year via a .resume file</code
         <td>
 <pre><code># wayback_role_extract.py (excerpt)
 CRED_TOKEN = re.compile(
-    r"\b(RN|BSN|MSN|DNP|LPN|LVN|ADN|CNA|PCT|NP|APRN|CRNA|CNS|CNM|FNP|"
-    r"PMHNP|CCRN|Student|Nursing Student|Pre-Nursing|Educator|"
-    r"Nurse Manager|Manager|Director|Professor|Instructor)\b")
+    r"\b(RN|BSN|MSN|DNP|PhD|EdD|LPN|LVN|ADN|ASN|CNA|STNA|PCT|NP|APRN|CRNA|"
+    r"CNS|CNM|FNP|AGNP|PMHNP|NNP|ACNP|CCRN|CEN|CPN|CMSRN|PCCN|Student|"
+    r"Nursing Student|Pre-Nursing|Pre-Student|Educator|Nurse Manager|"
+    r"Manager|Director|Professor|Instructor)\b")
+STUDENT_WORDS = re.compile(
+    r"\b(?:nursing\s+student|pre-?nursing|student\s+nurse|SN|GN|new\s+grad)\b", re.I)
 
-def classify(creds: set[str], pane_text: str) -> str:
+def classify(creds: set[str], text_pane: str) -> str:
     c = {x.upper() for x in creds}
-    if c &amp; {"CRNA", "CNM", "CNS", "NP", "APRN", "FNP", "PMHNP", "DNP"}:
+    if c &amp; {"CRNA", "CNM", "CNS", "NP", "APRN", "FNP", "AGNP", "PMHNP", "NNP", "ACNP", "DNP"}:
         return "aprn"
-    if c &amp; {"EDUCATOR", "NURSE MANAGER", "MANAGER", "DIRECTOR",
-             "PROFESSOR", "INSTRUCTOR"}:
+    if c &amp; {"EDUCATOR", "NURSE MANAGER", "MANAGER", "DIRECTOR", "PROFESSOR", "INSTRUCTOR"}:
         return "educator_mgmt"
-    if c &amp; {"RN", "BSN", "MSN", "ADN", "CCRN"}:
+    if c &amp; {"RN", "BSN", "MSN", "ADN", "ASN", "CCRN", "CEN", "CPN", "CMSRN", "PCCN"}:
         return "rn"
     if c &amp; {"LPN", "LVN"}:
         return "lpn_lvn"
-    if c &amp; {"CNA", "PCT"}:
+    if c &amp; {"CNA", "STNA", "PCT"}:
         return "cna_tech"
-    if c &amp; {"STUDENT", "NURSING STUDENT", "PRE-NURSING"}:
+    if c &amp; {"STUDENT", "NURSING STUDENT", "PRE-NURSING", "PRE-STUDENT"} \
+            or STUDENT_WORDS.search(text_pane):
         return "student"
+    if c &amp; {"PHD", "EDD"}:
+        return "other_licensed"
     return "unclear"
 
-# applied to the author pane only; the post body is never passed in</code></pre>
+# pane_fields() runs this on the author pane only; the post body is never passed in</code></pre>
         </td>
       </tr>
 
@@ -117,22 +123,20 @@ def classify(creds: set[str], pane_text: str) -> str:
           <p><strong>Cut time by external history, not by the year a chatbot became famous.</strong> The contrast of interest is 2023–2026 against 2016–2019, with 2020–2022 as its own window. The warrant for the AI window is when hospital EHR vendors shipped machine-learning features and when national surveys began asking about them, not November 2022. Writing the periods down as a function makes the choice auditable and keeps the analyst from sliding the boundary after seeing a result.</p>
         </td>
         <td>
-<pre><code># MoW_phase2_period_contrasts_v1.py / history_periods (excerpt)
+<pre><code># MoW_phase2_period_contrasts_v1.py — the contrasts that are reported
 PERIODS = ("preAI", "COVID", "AI")
 LABEL = {"preAI": "2016–2019", "COVID": "2020–2022", "AI": "2023–2026"}
+# period is assigned at scoring from the capture timestamp, then consumed here.
+# The finer history cuts live in MoW_phase2_history_periods_v1.py:
 
-def period_of(capture_year: int) -> str:
-    if capture_year &lt;= 2019:
-        return "preAI"
-    if capture_year &lt;= 2022:
-        return "COVID"
-    return "AI"
+def period_of(year: int) -> str:
+    if year &lt;= 2019: return "pre_ai"      # EHR-saturated, pre-pandemic
+    if year &lt;= 2021: return "pandemic"
+    if year &lt;= 2023: return "ai_start"    # hospital ML enters national measurement
+    if year == 2024: return "ai_mid"      # ambient-scribe / operational-ML year
+    return "recent"                       # 2025-2026; 2026 is thin coverage
 
-# finer history cuts used as a sensitivity check, same idea:
-#   2016-2019 pre_ai | 2020-2021 pandemic | 2022-2023 ai_start
-#   2024 ai_mid      | 2025-2026 recent
-# Capture year, not posted_at. Thin 2026 (147 posts) is coverage,
-# not a finding.</code></pre>
+# Capture year, not posted_at. Neither file treats 2022 as the invention year.</code></pre>
         </td>
       </tr>
 
@@ -145,43 +149,52 @@ def period_of(capture_year: int) -> str:
 <pre><code># forum_texture_v1.py (excerpt; the instruction text is not published)
 POLARITY = {"enacted", "frustrated", "wished_for"}
 OBJECT   = {"named_ai", "implementation", "optimization", "none"}
+STANCE   = {"dissatisfied", "mixed", "endorsed", "mention", "na"}
+TASK     = {"taken", "added", "reconfigured", "unchanged", "na"}
+EMOTION  = {"frustration", "moral_distress", "anxiety", "relief", "none"}
 ATTRIB   = {"tool", "management", "staffing", "patient", "self", "unclear"}
-FLAGS    = ("quit_intent", "depressed", "anxious", "lack_of_control")
+OUTCOME_KEYS = ("quit_intent", "depressed", "anxious", "lack_of_control")
 
 def prompt_sha() -> str:
     return hashlib.sha256(PROMPT_PATH.read_bytes()).hexdigest()
 
 def validate(parsed: dict) -> dict:
+    events = parsed.get("events")
+    if not isinstance(events, list):
+        raise ValueError("no events list")
     clean = []
-    for ev in parsed["events"]:
-        if ev["facet"] not in FACETS:        raise ValueError("bad facet")
-        if ev["polarity"] not in POLARITY:   raise ValueError("bad polarity")
-        if ev["object"] not in OBJECT:       raise ValueError("bad object")
-        if ev["attribution"] not in ATTRIB:  raise ValueError("bad attribution")
+    for ev in events:
+        if ev.get("facet") not in FACETS:          raise ValueError("bad facet")
+        if ev.get("polarity") not in POLARITY:     raise ValueError("bad polarity")
+        sal = ev.get("salience")
+        if not isinstance(sal, int) or not 0 &lt;= sal &lt;= 100:
+            raise ValueError("bad salience")
+        if ev.get("object") not in OBJECT:         raise ValueError("bad object")
+        if ev.get("stance") not in STANCE:         raise ValueError("bad stance")
+        if ev.get("task_fate") not in TASK:        raise ValueError("bad task_fate")
+        if ev.get("emotion") not in EMOTION:       raise ValueError("bad emotion")
+        if ev.get("attribution") not in ATTRIB:    raise ValueError("bad attribution")
         clean.append(ev)
-    flags = {k: int(parsed.get("outcomes", {}).get(k, 0)) for k in FLAGS}
-    if any(v not in (0, 1) for v in flags.values()): raise ValueError("bad flag")
-    return {"events": clean, "outcomes": flags}
+    outcomes = {}
+    for k in OUTCOME_KEYS:
+        v = (parsed.get("outcomes") or {}).get(k, 0)
+        if v not in (0, 1):
+            raise ValueError("bad outcome")
+        outcomes[k] = int(v)
+    return {"events": clean, "outcomes": outcomes}
 
-def score_once(client, system: str, text: str):
-    resp = client.messages.create(
-        model="claude-sonnet-5", max_tokens=2048,
-        system=[{"type": "text", "text": system,
-                 "cache_control": {"type": "ephemeral", "ttl": "1h"}}],
-        messages=[{"role": "user",
-                   "content": f"FORUM POST:\n{text[:4000]}\n\nReturn the events JSON only."}],
-    )
-    return validate(json.loads(first_json_object(resp)))
-
-rec = {"post_id": pid, "thread_id": tid, "year": year,
-       "prompt_sha256": prompt_sha(), "model": MODEL, **scored}</code></pre>
+# score_once sends only the post (capped at 4,000 characters) and caches the
+# instruction for one hour. A value outside the sets above raises; the post
+# is logged as an error and is not coerced into a category.
+rec = {"post_id": p["post_id"], "thread_id": p["thread_id"], "year": p["year"],
+       "prompt_sha256": prompt_sha(), "model": MODEL, "ok": True, **parsed}</code></pre>
         </td>
       </tr>
 
       <tr>
         <td>
           <p class="kicker">5 · Inference that respects threads and page templates</p>
-          <p><strong>Treat the thread as the cluster, test with a permutation of period labels, and rerun everything per 1,000 words.</strong> Posts in one thread are not independent, so intervals come from resampling threads, and the <em>p</em> value comes from shuffling which threads sit in which period. Then the one thing that could manufacture a trend here: in 2019–2021 the forum changed software and posts got shorter, so events per post fell for reasons that have nothing to do with nurses. Every rate is therefore recomputed per 1,000 words as a sensitivity family. A rise that survives both denominators is reported; a rise that survives only one is named as fragile. Twenty categories are tested per family, so <em>q</em> is reported beside <em>p</em>.</p>
+          <p><strong>Treat the thread as the cluster, test with a permutation of period labels, and rerun everything per 1,000 words.</strong> Posts in one thread are not independent, so intervals come from resampling threads, and the <em>p</em> value comes from shuffling which threads sit in which period. Then the one thing that could manufacture a trend here: in 2019–2021 the forum changed software and posts got shorter, so events per post fell for reasons that have nothing to do with nurses. Every rate is therefore reported a second time as events per 1,000 words. Benjamini–Hochberg <em>q</em> is computed inside each family and contrast, beside the permutation <em>p</em>. One of those families is the 20-category screen named on the poster.</p>
         </td>
         <td>
 <pre><code># MoW_phase2_period_contrasts_v1.py (excerpt)
@@ -207,10 +220,9 @@ class ThreadTable:
             cnt += np.abs(d) &gt;= np.abs(diff) - 1e-12
         return ra, rb, diff, lo, hi, (cnt + 1) / (B_PERM + 1)
 
-# Family A: events per 100 posts        denom = 1 per post
-# Family S: events per 1,000 words      denom = n_words per post
-ttA = make_table(denom=lambda u: 1)
-ttS = make_table(denom=lambda u: u["n_words"])   # the template-change check
+# Family A: events per 100 posts. Family S: the same events per 1,000 words.
+ttA = make_A("posts")    # denom = 1 per post
+ttS = make_A("words")    # denom = n_words per post; the template-change check
 
 def bh(p):   # Benjamini–Hochberg q within each family and contrast
     n = len(p); order = np.argsort(p)
@@ -251,24 +263,29 @@ def case_dims(df, coder_col):
 def boot_ci(a, b, rng):
     stats = []
     for _ in range(B):
-        idx = rng.integers(0, len(a), len(a))     # resample CASES
+        idx = rng.integers(0, len(a), len(a))     # resample cases
         v, *_ = psa(a[idx], b[idx])
-        if not np.isnan(v): stats.append(v)
-    return np.percentile(stats, [2.5, 97.5])
+        if not np.isnan(v):
+            stats.append(v)
+    return float(np.percentile(stats, 2.5)), float(np.percentile(stats, 97.5))
 
+mjm = case_dims(linked, "MJM")    # first author
+dd  = case_dims(linked, "DD")     # second coder
 for d in DIMS:
-    v, tp, fp, fn = psa(coder1[d].to_numpy(), coder2[d].to_numpy())
-    lo, hi = boot_ci(coder1[d].to_numpy(), coder2[d].to_numpy(), rng)
-    # Agency .935 [.910, .956]  -&gt; model bar .910
-    # Others .844 [.805, .879]  -&gt; model bar .805
-    # Communion .48 [.34, .60], Self .52 [.43, .59] -&gt; no bar set</code></pre>
+    a, b = mjm[d].to_numpy(), dd[d].to_numpy()
+    v, tp, fp, fn = psa(a, b)
+    lo, hi = boot_ci(a, b, rng)
+# Reported ceilings, primary scope (276 StudyID-linked cases):
+# Agency .935 [.910, .956] -&gt; model bar .910
+# Others .844 [.805, .879] -&gt; model bar .805
+# Communion .48 [.34, .60], Self .52 [.43, .59] -&gt; no bar set</code></pre>
         </td>
       </tr>
 
       <tr>
         <td>
           <p class="kicker">7 · A seeded partition with a hash on the ID list</p>
-          <p><strong>When a holdout has to be split, draw once with a recorded seed, stratify on what makes cases hard, and publish the hash of the ID list, not the IDs.</strong> The tracked file carries IDs and the subsplit label only; the stratum columns that would reveal label structure go to a git-ignored companion. The assertions are guards, not a loop that re-seeds until the draw looks good; the record states that the first seed satisfied both constraints.</p>
+          <p><strong>When a holdout has to be split, draw once with a recorded seed and stratify on what makes cases hard.</strong> The analysis file stores the IDs. What is published is the SHA-256 of that ID list. The tracked file carries IDs and the subsplit label only; the stratum columns that would reveal label structure go to a git-ignored companion. The assertions are guards, not a loop that re-seeds until the draw looks good; the record states that the first seed satisfied both constraints.</p>
         </td>
         <td>
 <pre><code># MoW_test_partition_v1.py (excerpt)
@@ -277,18 +294,29 @@ rng = np.random.default_rng(SEED)
 t["stratum"] = (t["has_both_present"].astype(int).astype(str) + "|"
                 + t["occupation_block"].astype(str) + "|"
                 + t["in_tier2_gold"].astype(int).astype(str))
+frac = N_A / len(t)
 t["subsplit"] = "test-B"
-alloc = largest_remainder(t.groupby("stratum").size(), N_A / len(t))
+alloc, rem = {}, []
+for s, g in t.groupby("stratum"):                 # largest-remainder allocation
+    raw = len(g) * frac
+    alloc[s] = int(np.floor(raw))
+    rem.append((raw - alloc[s], s))
+for _, s in sorted(rem, reverse=True)[: N_A - sum(alloc.values())]:
+    alloc[s] += 1
 for s, g in t.groupby("stratum"):
     pick = rng.choice(g.index.to_numpy(), size=alloc[s], replace=False)
     t.loc[pick, "subsplit"] = "test-A"
 
-assert (t["subsplit"] == "test-A").sum() == N_A        # guard, not a re-seed loop
-assert t.loc[t.subsplit == "test-B", "has_both_present"].sum() &gt;= PA_B_MIN
+nA = int((t["subsplit"] == "test-A").sum())
+paB = int(t.loc[t["subsplit"] == "test-B", "has_both_present"].sum())
+assert nA == N_A          # guards on the single recorded draw, not a re-seed loop
+assert paB &gt;= PA_B_MIN
 
-t[["StudyID", "split", "subsplit"]].to_csv(OUT, index=False)   # tracked
-t.to_csv(OUT_FULL, index=False)                                # git-ignored strata
-ids_b = ",".join(sorted(t.loc[t.subsplit == "test-B", "StudyID"]))
+full = t[["StudyID", "split", "subsplit", "has_both_present",
+          "occupation_block", "in_tier2_gold"]]
+full.to_csv(OUT_FULL, index=False)                              # git-ignored
+full[["StudyID", "split", "subsplit"]].to_csv(OUT, index=False) # tracked IDs
+ids_b = ",".join(sorted(full.loc[full.subsplit == "test-B", "StudyID"]))
 print("test-B id-list sha256", hashlib.sha256(ids_b.encode()).hexdigest())</code></pre>
         </td>
       </tr>
@@ -303,25 +331,36 @@ print("test-B id-list sha256", hashlib.sha256(ids_b.encode()).hexdigest())</code
 def guard_case_dir(case_dir: Path, prompt_sha: str) -> None:
     """Refuse resuming a case dir scored under a different frozen prompt."""
     sha_fp = case_dir / "PROMPT_SHA.txt"
-    existing = list(case_dir.glob("*.json"))
+    existing = [p for p in case_dir.glob("*.json")]
     if sha_fp.exists():
-        if sha_fp.read_text().strip() != prompt_sha:
+        recorded = sha_fp.read_text(encoding="utf-8").strip()
+        if recorded != prompt_sha:
             raise RuntimeError(
-                f"{case_dir} was scored under {sha_fp.read_text()[:12]}… "
-                f"but the loaded freeze is {prompt_sha[:12]}…. "
-                "Refusing to mix outputs from two prompts in one selection.")
+                f"Case cache {case_dir} was scored under freeze SHA "
+                f"{recorded[:12]}… but the loaded freeze is {prompt_sha[:12]}…. "
+                "Refusing to mix outputs from two prompts in one selection. "
+                "Use a fresh --outdir (or delete the stale case dir).")
     elif existing:
         raise RuntimeError(
-            f"{case_dir} has {len(existing)} case JSON(s) and no PROMPT_SHA.txt; "
-            "provenance unverifiable. Use a fresh --outdir.")
+            f"Case cache {case_dir} contains {len(existing)} case JSON(s) but "
+            "no PROMPT_SHA.txt, so their prompt provenance is unverifiable. "
+            "Use a fresh --outdir; do not resume unverifiable caches.")
     else:
-        sha_fp.write_text(prompt_sha + "\n")
+        sha_fp.write_text(prompt_sha + "\n", encoding="utf-8")
 
-# split scope (schematic of the runner's check): every case id is matched
-# against the locked split index; holdout ids are refused unless the gate
-# manifest for a dated decision record hashes to a constant compiled in.
-if sid in HOLDOUT_IDS and gate_manifest_sha() != COMPILED_GATE_SHA:
-    raise RuntimeError(f"{sid} is in the sealed split; no authorization on file.")</code></pre>
+# The holdout gate, as the runner actually calls it (mow_dev_runner.py).
+# ADR0013_GATE_SHA is compiled into the runner. verify13 re-derives the
+# manifest and refuses on any drift; refuse_test_a blocks the 65 spent cases.
+if args.adr0012_subsplit == "test-A":
+    raise SystemExit("ADR 0012 gate: test-A is spent. ADR 0013 scores test-B only.")
+if set(arms) != {"v14", "arm1b"}:
+    raise SystemExit("ADR 0013 s4.1 pins --arm v14 and --arm arm1b only.")
+test_a_ids, test_b_ids = adr0013_verify(ADR0013_GATE_SHA)
+adr0012_verify(ADR0012_GATE_SHA)
+ids = list(test_b_ids)
+if not set(ids) &lt;= test_set or len(ids) != 128:
+    raise SystemExit("ADR 0013 gate: test-B list is not a 128-case subset of the test split.")
+refuse_test_a(ids, test_a_ids)</code></pre>
         </td>
       </tr>
     </tbody>
@@ -338,7 +377,7 @@ if sid in HOLDOUT_IDS and gate_manifest_sha() != COMPILED_GATE_SHA:
     <li>Report <em>q</em> beside <em>p</em>, name the number of tests, and label the whole thing descriptive if no human has checked the model on that text. Draw the human check sample at the start, even if it waits.</li>
   </ol>
 
-  <p class="note">Scripts are from the project repository; function and file names are real, bodies are trimmed. Numbers in comments are the study's reported values. Study 1 narratives, forum post text, StudyIDs, and the model instruction files are not part of this packet.</p>
+  <p class="note">File names, function names, constants, and the checks shown are from the project scripts. Bodies are trimmed (imports, logging, and the retry loop around the archive query are cut). Numbers in comments are the study's reported values. Study 1 narratives, forum post text, StudyIDs, and the model instruction files are not part of this packet.</p>
 </main>
 
 <footer class="site"><div class="wrap">
