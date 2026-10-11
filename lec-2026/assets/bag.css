@@ -196,8 +196,8 @@ figure img {
 @media (max-width: 800px) {
   .grid-2, .grid-3, .dot-row { grid-template-columns: 1fr; }
 }
-.trend { position: relative; max-width: 52rem; }
-.trend svg { width: 100%; height: auto; display: block; }
+.trend { position: relative; max-width: 100%; }
+.trend svg { width: 100%; max-width: 100%; height: auto; display: block; overflow: visible; }
 .trend-tip {
   position: absolute; pointer-events: none; z-index: 2;
   background: #fffdf8; border: 1px solid var(--ink);

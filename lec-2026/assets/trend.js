@@ -10,9 +10,11 @@
     { id: "ai", label: "AI named", color: "#a8a29e" }
   ];
   var on = { frustrated: true, apparatus: true, ai: true };
-  var W = 920, H = 400, L = 44, R = 196, T = 18, B = 52;
-  var yMax = 34;
+  var W = 920, H = 420, L = 48, R = 24, T = 36, B = 56;
+  var yMax = 42;
   var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img" });
+  svg.setAttribute("width", String(W));
+  svg.setAttribute("height", String(H));
   svg.setAttribute("aria-label", "Share of nurses' posts by capture year, 2016 to 2026");
   host.insertBefore(svg, host.querySelector(".trend-fallback"));
 
@@ -75,10 +77,6 @@
       }).join("") + "Z", fill: k.color, opacity: "0.12" });
       layer.appendChild(ribbon);
       layer.appendChild(el("path", { d: pathOf(k.id, "mid"), fill: "none", stroke: k.color, "stroke-width": "2" }));
-      var last = rows[rows.length - 1];
-      var lab = el("text", { x: x(last.year) + 10, y: y(last[k.id][0]) + 4, fill: k.color, "font-size": "13", "font-family": "Source Sans 3, Calibri, sans-serif" });
-      lab.textContent = k.label;
-      marks.appendChild(lab);
     });
   }
   draw();
