@@ -196,8 +196,22 @@ figure img {
 @media (max-width: 800px) {
   .grid-2, .grid-3, .dot-row { grid-template-columns: 1fr; }
 }
+.trend { position: relative; max-width: 52rem; }
+.trend svg { width: 100%; height: auto; display: block; }
+.trend-tip {
+  position: absolute; pointer-events: none; z-index: 2;
+  background: #fffdf8; border: 1px solid var(--ink);
+  padding: .45rem .6rem; font-family: "Source Sans 3", Calibri, sans-serif;
+  font-size: .82rem; line-height: 1.35; color: var(--ink);
+  min-width: 13rem;
+}
+.trend-tip strong { font-weight: 650; }
+.trend-fallback { display: block; }
+.trend.is-live .trend-fallback { display: none; }
 @media print {
   .nav { position: static; }
   body { background: white; }
   .card, .block, .cta, .term { break-inside: avoid; }
+  .trend svg, .trend-tip { display: none !important; }
+  .trend.is-live .trend-fallback { display: block !important; }
 }
