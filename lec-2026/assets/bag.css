@@ -196,6 +196,12 @@ figure img {
 @media (max-width: 800px) {
   .grid-2, .grid-3, .dot-row { grid-template-columns: 1fr; }
 }
+.live-fig {
+  background: #fff;
+  border-left: 3px solid var(--navy);
+  padding: .15rem 0 .15rem 1rem;
+}
+.live-fig .kicker { margin: 0 0 .35rem; }
 .trend { position: relative; max-width: 100%; }
 .trend svg { width: 100%; max-width: 100%; height: auto; display: block; overflow: visible; }
 .trend-tip {
