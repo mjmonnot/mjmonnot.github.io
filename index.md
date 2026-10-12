@@ -113,14 +113,32 @@ permalink: /
             <span class="stat-note">Dev-set rank 6th of 24; test set submitted April 2026</span>
           </div>
         </article>
+
+        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
+          <p class="feature-title">What Faking Costs a Hiring Funnel</p>
+          <p class="feature-sub">Monte Carlo simulation fit to meta-analytic applicant estimates</p>
+          <figure class="feature-figure feature-figure--wide">
+            <a class="feature-figure-link" href="{{ "/assets/images/gma-faking-mechanism-explainer.png" | relative_url }}" data-lightbox aria-label="Enlarge the trait-driven faking mechanism figure">
+              <img src="{{ "/assets/images/gma-faking-mechanism-explainer.png" | relative_url }}" alt="Three-panel mechanism figure. Panel A: fakers' Conscientiousness inflation declines with general mental ability, turning the applicant-pool correlation negative. Panel B: composite scores under honest versus faked responding, with faked-in and displaced applicants crossing the selection cutoff and 31% of hires changing. Panel C: mean true job performance bars showing displaced hires at 0.51 SD versus faked-in hires at 0.19 SD, roughly $9,100 per swapped seat per year." width="3877" height="1294" loading="lazy">
+            </a>
+            <figcaption>Panel A: ability-linked inflation &middot; Panel B: rank-order churn at the cutoff &middot; Panel C: the cost of each swapped seat <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+          </figure>
+          <p class="feature-desc">A Monte Carlo model whose parameters are solved to reproduce the meta-analytic applicant evidence, then read for hiring consequences. Faking changes a fifth to a third of top-down hiring decisions even where the intercorrelation barely moves &mdash; and under trait-driven faking the applicants who gain seats run 0.3&ndash;0.8 <em>SD</em> lower in integrity than those they displace, while adverse-impact audits see nothing.</p>
+          <div class="feature-stat">
+            <span class="stat-value">22%&ndash;36%&nbsp;of&nbsp;hires&nbsp;change</span>
+            <span class="stat-note">Mean hire performance 8%&ndash;19% lower than honest responding in the same applicant pool</span>
+          </div>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven faking simulations</em> [Manuscript in preparation].</p>
+        </article>
       </div>
 
       <div class="feature-carousel-footer">
         <div class="feature-dots" role="tablist" aria-label="Choose featured project">
-          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 4: The AI Paradox (LEC 2026)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 4: Predicting Personality from Text"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 4: Afloat or Adrift (MIDUS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 4: SIOP 2026 Meta-Analytic Coding"></button>
+          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 5: The AI Paradox (LEC 2026)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 5: Predicting Personality from Text"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 5: Afloat or Adrift (MIDUS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 5: SIOP 2026 Meta-Analytic Coding"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 5: What Faking Costs a Hiring Funnel"></button>
         </div>
         <a class="view-all" href="/projects.html">View projects &rarr;</a>
       </div>
