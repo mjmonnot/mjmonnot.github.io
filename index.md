@@ -123,7 +123,7 @@ permalink: /
             </a>
             <figcaption>Panel A: ability-linked inflation &middot; Panel B: rank-order churn at the cutoff &middot; Panel C: the cost of each swapped seat <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A Monte Carlo model whose parameters are solved to reproduce the meta-analytic applicant evidence, then read for hiring consequences. Faking changes a fifth to a third of top-down hiring decisions even where the intercorrelation barely moves &mdash; and under trait-driven faking the applicants who gain seats run 0.3&ndash;0.8 <em>SD</em> lower in integrity than those they displace, while adverse-impact audits see nothing.</p>
+          <p class="feature-desc">A Monte Carlo model whose parameters are solved to reproduce the meta-analytic applicant evidence, then read for hiring consequences. Faking changes a fifth to a third of top-down hiring decisions even where the intercorrelation barely moves &mdash; and under trait-driven faking the applicants who gain seats run 0.2&ndash;0.8 <em>SD</em> lower in integrity than those they displace, while adverse-impact audits see nothing.</p>
           <div class="feature-stat">
             <span class="stat-value">22%&ndash;36%&nbsp;of&nbsp;hires&nbsp;change</span>
             <span class="stat-note">Mean hire performance 8%&ndash;19% lower than honest responding in the same applicant pool</span>
