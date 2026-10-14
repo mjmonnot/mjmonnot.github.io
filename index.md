@@ -115,7 +115,7 @@ permalink: /
         </article>
 
         <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
-          <p class="feature-title">What Faking Costs a Hiring Funnel</p>
+          <p class="feature-title"><a href="/faking-costs/">What Faking Costs a Hiring Funnel</a></p>
           <p class="feature-sub">Monte Carlo simulation fit to meta-analytic applicant estimates</p>
           <figure class="feature-figure feature-figure--wide">
             <a class="feature-figure-link" href="{{ "/assets/images/gma-faking-mechanism-explainer.png" | relative_url }}" data-lightbox aria-label="Enlarge the trait-driven faking mechanism figure">
@@ -123,12 +123,13 @@ permalink: /
             </a>
             <figcaption>Panel A: ability-linked inflation &middot; Panel B: rank-order churn at the cutoff &middot; Panel C: the cost of each swapped seat <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A Monte Carlo model whose parameters are solved to reproduce the meta-analytic applicant evidence, then read for hiring consequences. Faking changes a fifth to a third of top-down hiring decisions even where the intercorrelation barely moves &mdash; and under trait-driven faking the applicants who gain seats run 0.2&ndash;0.8 <em>SD</em> lower in integrity than those they displace, while adverse-impact audits see nothing.</p>
+          <p class="feature-desc">A Monte Carlo model whose parameters are solved to reproduce the meta-analytic applicant evidence, then read for hiring consequences. Faking changes a fifth to a third of top-down hiring decisions even where the intercorrelation barely moves &mdash; and under trait-driven faking the applicants who gain seats run 0.2&ndash;0.8 <em>SD</em> lower in integrity than those they displace, while adverse-impact audits see nothing. <a href="/faking-costs/">Open the companion site &rarr;</a></p>
+          <p class="feature-links"><a href="/faking-costs/">Interactive cost calculator</a> &middot; <a href="/faking-costs/evidence.html">The evidence</a> &middot; <a href="/faking-costs/playbook.html">Playbook</a> &middot; <a href="/faking-costs/references.html">Key references</a></p>
           <div class="feature-stat">
             <span class="stat-value">22%&ndash;36%&nbsp;of&nbsp;hires&nbsp;change</span>
             <span class="stat-note">Mean hire performance 8%&ndash;19% lower than honest responding in the same applicant pool</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven faking simulations</em> [Manuscript in preparation].</p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Compensatory faking and the relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven simulations</em> [Manuscript in preparation]. Companion site: <a href="https://mjmonnot.github.io/faking-costs/">https://mjmonnot.github.io/faking-costs/</a></p>
         </article>
       </div>
 
