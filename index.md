@@ -18,6 +18,12 @@ permalink: /
     <ol class="pub-list">
       <li>
         <div>
+          <p class="pub-title"><a href="/publications/2026-compensatory-faking.html">Compensatory Faking and the Relationship Between Cognitive Ability and Personality in Personnel Selection</a></p>
+          <p class="pub-journal">SSRN (preprint)</p>
+        </div>
+      </li>
+      <li>
+        <div>
           <p class="pub-title"><a href="/publications/2026-afloat-or-adrift.html">Afloat or Adrift: Latent Personality Profiles and Future-of-Work Skills Across Midlife</a></p>
           <p class="pub-journal">PsyArXiv (preprint)</p>
         </div>
@@ -129,7 +135,7 @@ permalink: /
             <span class="stat-value">22%&ndash;36%&nbsp;of&nbsp;hires&nbsp;change</span>
             <span class="stat-note">Mean hire performance 8%&ndash;19% lower than honest responding in the same applicant pool</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Compensatory faking and the relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven simulations</em> [Manuscript in preparation]. Companion site: <a href="https://mjmonnot.github.io/faking-costs/">https://mjmonnot.github.io/faking-costs/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Compensatory faking and the relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven simulations</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7611561">https://doi.org/10.2139/ssrn.7611561</a> &middot; Companion site: <a href="https://mjmonnot.github.io/faking-costs/">https://mjmonnot.github.io/faking-costs/</a></p>
         </article>
       </div>
 
