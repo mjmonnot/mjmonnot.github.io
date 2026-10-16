@@ -18,6 +18,12 @@ permalink: /
     <ol class="pub-list">
       <li>
         <div>
+          <p class="pub-title"><a href="/publications/2026-wellbeing-spirals.html">Upward and Downward Spirals in Employee Well-Being: Personality Profiles and Psychological Resources Under AI-Related Workplace Change</a></p>
+          <p class="pub-journal">SSRN (preprint)</p>
+        </div>
+      </li>
+      <li>
+        <div>
           <p class="pub-title"><a href="/publications/2026-compensatory-faking.html">Compensatory Faking and the Relationship Between Cognitive Ability and Personality in Personnel Selection</a></p>
           <p class="pub-journal">SSRN (preprint)</p>
         </div>
@@ -56,6 +62,24 @@ permalink: /
     <div class="feature-carousel" data-feature-carousel data-interval="10000" aria-roledescription="carousel" aria-label="Featured projects">
       <div class="feature-carousel-track">
         <article class="feature-card feature-slide is-active" data-slide="0" aria-hidden="false">
+          <p class="feature-title"><a href="/wellbeing-spirals/">Upward and Downward Spirals in Employee Well-Being</a></p>
+          <p class="feature-sub">Personality profiles &amp; psychological resources under AI-related change (LISS, 2008&ndash;2025)</p>
+          <figure class="feature-figure feature-figure--wide">
+            <a class="feature-figure-link" href="{{ "/assets/images/liss-spirals-figure-8.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 8: within-person resource-distress spirals">
+              <img src="{{ "/assets/images/liss-spirals-figure-8.png" | relative_url }}" alt="Figure 8 from the LISS preprint. Panel A: random-intercept cross-lagged paths. Lagged distress to self-esteem is minus 0.14 and self-esteem to distress is minus 0.08, loss-primacy asymmetry p less than .001; lagged negative affect to optimism is minus 0.06 and optimism to negative affect is minus 0.05, asymmetry not supported. Panel B: expected displacement in SD units over five years after a one-time 1-SD change. Self-esteem after a rise in distress peaks near 0.14 and falls more slowly than distress after an equal gain in self-esteem, which peaks near 0.08. Measurement-error-corrected curves run higher." width="3364" height="1347" loading="lazy">
+            </a>
+            <figcaption>Figure 8 &mdash; Panel A: reciprocal within-person cross-lags &middot; Panel B: model-implied aftermath of a one-time 1-<em>SD</em> change <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+          </figure>
+          <p class="feature-desc">Eighteen annual waves of Dutch employees (<em>N</em> = 72,433 person-waves). The four MIDUS personality profiles re-emerged on a different instrument. Employees who felt replaceable by AI or exhausted by technology-paced work in 2020 reported lower job and life satisfaction in 2025 &mdash; appraised replaceability, not an occupation's exposure score, carried the cost. Among distressed employees, optimism, self-esteem, and work meaning predicted recovery rather than disengagement, and within persons a rise in distress depleted self-esteem more than an equal gain relieved distress. <a href="/wellbeing-spirals/">Open the companion site &rarr;</a></p>
+          <p class="feature-links"><a href="/wellbeing-spirals/">Spiral explorer</a> &middot; <a href="/wellbeing-spirals/evidence.html">The evidence</a> &middot; <a href="/wellbeing-spirals/playbook.html">What to watch</a> &middot; <a href="/wellbeing-spirals/references.html">Key references</a></p>
+          <div class="feature-stat">
+            <span class="stat-value">OR&nbsp;=&nbsp;1.6&ndash;1.8&nbsp;per&nbsp;<em>SD</em></span>
+            <span class="stat-note">Odds of recovery (Distressed &rarr; Resilient) over disengagement (Distressed &rarr; Reserved) per SD of optimism, self-esteem, or work meaning; loss-primacy asymmetry LR <em>p</em> &lt; .001</span>
+          </div>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/wellbeing-spirals/">https://mjmonnot.github.io/wellbeing-spirals/</a></p>
+        </article>
+
+        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/lec-2026/">The AI Paradox</a></p>
           <p class="feature-sub">SIOP Leading Edge Consortium 2026 &mdash; digital goody bag</p>
           <figure class="feature-figure">
@@ -72,7 +96,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
           <p class="feature-title">Predicting Personality from Text</p>
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
           <figure class="feature-figure">
@@ -88,7 +112,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
           <p class="feature-title">Afloat or Adrift</p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
           <figure class="feature-figure">
@@ -104,7 +128,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
           <p class="feature-title">Automated Meta-Analytic Coding</p>
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
@@ -120,7 +144,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">
           <p class="feature-title"><a href="/faking-costs/">What Faking Costs a Hiring Funnel</a></p>
           <p class="feature-sub">Monte Carlo simulation fit to meta-analytic applicant estimates</p>
           <figure class="feature-figure feature-figure--wide">
@@ -141,11 +165,12 @@ permalink: /
 
       <div class="feature-carousel-footer">
         <div class="feature-dots" role="tablist" aria-label="Choose featured project">
-          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 5: The AI Paradox (LEC 2026)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 5: Predicting Personality from Text"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 5: Afloat or Adrift (MIDUS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 5: SIOP 2026 Meta-Analytic Coding"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 5: What Faking Costs a Hiring Funnel"></button>
+          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 6: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 6: The AI Paradox (LEC 2026)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 6: Predicting Personality from Text"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 6: Afloat or Adrift (MIDUS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 6: SIOP 2026 Meta-Analytic Coding"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 6: What Faking Costs a Hiring Funnel"></button>
         </div>
         <a class="view-all" href="/projects.html">View projects &rarr;</a>
       </div>
