@@ -8,7 +8,7 @@ permalink: /publications.html
 
 Below is a selection of publications with short, practitioner-oriented summaries.
 
-{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign pubs = site.data.publications | sort: "date" | reverse %}
 {% for pub in pubs %}
 ### {{ pub.title }} ({{ pub.year }})
 
