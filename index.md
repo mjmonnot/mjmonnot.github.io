@@ -18,6 +18,12 @@ permalink: /
     <ol class="pub-list">
       <li>
         <div>
+          <p class="pub-title"><a href="/publications/2026-buffer-or-baseline.html">Buffer or Baseline? Trait Self-Compassion and Employee Well-Being Across Disruption, Telework, and Digital Demands in a National Probability Panel</a></p>
+          <p class="pub-journal">SSRN (preprint)</p>
+        </div>
+      </li>
+      <li>
+        <div>
           <p class="pub-title"><a href="/publications/2026-wellbeing-spirals.html">Upward and Downward Spirals in Employee Well-Being: Personality Profiles and Psychological Resources Under AI-Related Workplace Change</a></p>
           <p class="pub-journal">SSRN (preprint)</p>
         </div>
@@ -62,6 +68,24 @@ permalink: /
     <div class="feature-carousel" data-feature-carousel data-interval="10000" aria-roledescription="carousel" aria-label="Featured projects">
       <div class="feature-carousel-track">
         <article class="feature-card feature-slide is-active" data-slide="0" aria-hidden="false">
+          <p class="feature-title"><a href="/buffer-or-baseline/">Buffer or Baseline?</a></p>
+          <p class="feature-sub">Trait self-compassion in the GESIS Panel.pop (employed adults, 2018)</p>
+          <figure class="feature-figure feature-figure--wide">
+            <a class="feature-figure-link" href="{{ "/assets/images/gesis-fig2-ls-trajectories.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 2: life-satisfaction trajectories and trait coefficients">
+              <img src="{{ "/assets/images/gesis-fig2-ls-trajectories.png" | relative_url }}" alt="Figure 2 from the GESIS preprint. Panel A: implied life-satisfaction trajectories at high, average, and low trait self-compassion from 2014 to 2025. The 2020 to 2022 decline is shared. Panel B: trait coefficients. The 2020 level is 2.16; the disruption slope is minus 0.10." width="2280" height="1350" loading="lazy">
+            </a>
+            <figcaption>Figure 2 &mdash; Panel A: shared decline &middot; Panel B: higher 2020 level, no reliable disruption slope <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+          </figure>
+          <p class="feature-desc">A probability panel of German adults employed in 2018 (<em>N</em> = 3,052). Self-compassion was measured before COVID-19. It marked who was better off later. It did not slow the 2020&ndash;2021 drop in life satisfaction (6.22 points on a 0&ndash;100 metric at the same rate across the trait). The 2018 score was associated with lower 2024 loneliness (<em>r</em> = &minus;.36) and less digital overwhelm, and those associations ran through the self-critical items, not the self-caring ones. <a href="/buffer-or-baseline/">Open the companion site &rarr;</a></p>
+          <p class="feature-links"><a href="/buffer-or-baseline/">Overview</a> &middot; <a href="/buffer-or-baseline/evidence.html">The evidence</a> &middot; <a href="/buffer-or-baseline/playbook.html">What to watch</a> &middot; <a href="/buffer-or-baseline/references.html">Key references</a></p>
+          <div class="feature-stat">
+            <span class="stat-value"><em>BF</em><sub>01</sub>&nbsp;=&nbsp;51.5</span>
+            <span class="stat-note">Against a buffering path on the disruption slope; 2024 loneliness <em>r</em> = &minus;.36 ran through self-critical items (&beta; = &minus;.30)</span>
+          </div>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a> &middot; Companion site: <a href="https://mjmonnot.github.io/buffer-or-baseline/">https://mjmonnot.github.io/buffer-or-baseline/</a></p>
+        </article>
+
+        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/wellbeing-spirals/">Upward and Downward Spirals in Employee Well-Being</a></p>
           <p class="feature-sub">Personality profiles &amp; psychological resources under AI-related change (LISS, 2008&ndash;2025)</p>
           <figure class="feature-figure feature-figure--wide">
@@ -79,7 +103,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/wellbeing-spirals/">https://mjmonnot.github.io/wellbeing-spirals/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
           <p class="feature-title"><a href="/lec-2026/">The AI Paradox</a></p>
           <p class="feature-sub">SIOP Leading Edge Consortium 2026 &mdash; digital goody bag</p>
           <figure class="feature-figure">
@@ -96,7 +120,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
           <p class="feature-title">Predicting Personality from Text</p>
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
           <figure class="feature-figure">
@@ -112,7 +136,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
           <p class="feature-title">Afloat or Adrift</p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
           <figure class="feature-figure">
@@ -128,7 +152,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">
           <p class="feature-title">Automated Meta-Analytic Coding</p>
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
@@ -144,7 +168,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="6" aria-hidden="true">
           <p class="feature-title"><a href="/faking-costs/">What Faking Costs a Hiring Funnel</a></p>
           <p class="feature-sub">Monte Carlo simulation fit to meta-analytic applicant estimates</p>
           <figure class="feature-figure feature-figure--wide">
@@ -165,12 +189,13 @@ permalink: /
 
       <div class="feature-carousel-footer">
         <div class="feature-dots" role="tablist" aria-label="Choose featured project">
-          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 6: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 6: The AI Paradox (LEC 2026)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 6: Predicting Personality from Text"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 6: Afloat or Adrift (MIDUS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 6: SIOP 2026 Meta-Analytic Coding"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 6: What Faking Costs a Hiring Funnel"></button>
+          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 7: Buffer or Baseline (GESIS Panel.pop)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 7: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 7: The AI Paradox (LEC 2026)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 7: Predicting Personality from Text"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 7: Afloat or Adrift (MIDUS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 7: SIOP 2026 Meta-Analytic Coding"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 7 of 7: What Faking Costs a Hiring Funnel"></button>
         </div>
         <a class="view-all" href="/projects.html">View projects &rarr;</a>
       </div>
