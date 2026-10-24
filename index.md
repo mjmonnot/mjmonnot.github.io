@@ -18,6 +18,12 @@ permalink: /
     <ol class="pub-list">
       <li>
         <div>
+          <p class="pub-title"><a href="/publications/2026-stress-turnover-headstart.html">Stress and Turnover in Helping Professions: A Randomized Controlled Longitudinal Study of Head Start Employees</a></p>
+          <p class="pub-journal">SSRN (preprint)</p>
+        </div>
+      </li>
+      <li>
+        <div>
           <p class="pub-title"><a href="/publications/2026-buffer-or-baseline.html">Buffer or Baseline? Trait Self-Compassion and Employee Well-Being Across Disruption, Telework, and Digital Demands in a National Probability Panel</a></p>
           <p class="pub-journal">SSRN (preprint)</p>
         </div>
@@ -68,6 +74,22 @@ permalink: /
     <div class="feature-carousel" data-feature-carousel data-interval="10000" aria-roledescription="carousel" aria-label="Featured projects">
       <div class="feature-carousel-track">
         <article class="feature-card feature-slide is-active" data-slide="0" aria-hidden="false">
+          <p class="feature-title"><a href="/stress-turnover-headstart/">Stress and Turnover in Head Start</a></p>
+          <p class="feature-sub">Six-month prediction from an intake survey in a randomized trial (<em>N</em> = 4,054)</p>
+          <figure class="feature-figure feature-figure--wide">
+            <a class="feature-figure-link" href="{{ "/assets/images/headstart-fig4-roc-pr.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 4: test-partition ROC and precision-recall curves">
+              <img src="{{ "/assets/images/headstart-fig4-roc-pr.png" | relative_url }}" alt="Figure 4 from the preprint, four panels for the final 11-predictor model on the test partition. Panel a: ROC curve for elevated six-month stress bowing above the diagonal, AUROC .72. Panel b: ROC curve for low six-month intention to remain, AUROC .70. Panel c: precision-recall curve for stress, AUPRC .52, above a base-rate line near .28. Panel d: precision-recall curve for intention to remain, AUPRC .26, above a base-rate line near .14. Grey shading shows pointwise bootstrap 95% bands." width="1166" height="1166" loading="lazy">
+            </a>
+            <figcaption>Figure 4 &mdash; ROC (a, b) and precision&ndash;recall (c, d) curves on the test partition <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+          </figure>
+          <p class="feature-desc">An 11-predictor intake equation (stress, burnout, anxiety, depressive symptoms, job satisfaction, hope, reappraisal beliefs, demographics) predicted elevated stress six months later better than the base rate (log loss 0.532 vs. 0.596) and predicted low intention to remain (0.386 vs. 0.417), scored once on a held-out test partition of a randomized longitudinal trial. Baseline stress and younger age carried the most weight for stress; lower job satisfaction for intention to remain. <a href="/stress-turnover-headstart/">Open the companion site &rarr;</a></p>
+          <div class="feature-stat">
+            <span class="stat-value">AUC&nbsp;.72</span>
+            <span class="stat-note">Elevated six-month stress on the test partition (462 labeled, 129 events); calibration slope 0.92</span>
+          </div>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Stress and turnover in helping professions: A randomized controlled longitudinal study of Head Start employees</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7637538">https://doi.org/10.2139/ssrn.7637538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/stress-turnover-headstart/">https://mjmonnot.github.io/stress-turnover-headstart/</a></p>
+        </article>
+        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/buffer-or-baseline/">Buffer or Baseline?</a></p>
           <p class="feature-sub">Trait self-compassion in the GESIS Panel.pop (employed adults, 2018)</p>
           <figure class="feature-figure feature-figure--wide">
@@ -85,7 +107,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a> &middot; Companion site: <a href="https://mjmonnot.github.io/buffer-or-baseline/">https://mjmonnot.github.io/buffer-or-baseline/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
           <p class="feature-title"><a href="/wellbeing-spirals/">Upward and Downward Spirals in Employee Well-Being</a></p>
           <p class="feature-sub">Personality profiles &amp; psychological resources under AI-related change (LISS, 2008&ndash;2025)</p>
           <figure class="feature-figure feature-figure--wide">
@@ -103,7 +125,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/wellbeing-spirals/">https://mjmonnot.github.io/wellbeing-spirals/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
           <p class="feature-title"><a href="/lec-2026/">The AI Paradox</a></p>
           <p class="feature-sub">SIOP Leading Edge Consortium 2026 &mdash; digital goody bag</p>
           <figure class="feature-figure">
@@ -120,7 +142,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
           <p class="feature-title">Predicting Personality from Text</p>
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
           <figure class="feature-figure">
@@ -136,7 +158,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">
           <p class="feature-title">Afloat or Adrift</p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
           <figure class="feature-figure">
@@ -152,7 +174,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="6" aria-hidden="true">
           <p class="feature-title">Automated Meta-Analytic Coding</p>
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
@@ -168,7 +190,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="6" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="7" aria-hidden="true">
           <p class="feature-title"><a href="/faking-costs/">What Faking Costs a Hiring Funnel</a></p>
           <p class="feature-sub">Monte Carlo simulation fit to meta-analytic applicant estimates</p>
           <figure class="feature-figure feature-figure--wide">
@@ -189,13 +211,14 @@ permalink: /
 
       <div class="feature-carousel-footer">
         <div class="feature-dots" role="tablist" aria-label="Choose featured project">
-          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 7: Buffer or Baseline (GESIS Panel.pop)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 7: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 7: The AI Paradox (LEC 2026)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 7: Predicting Personality from Text"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 7: Afloat or Adrift (MIDUS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 7: SIOP 2026 Meta-Analytic Coding"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 7 of 7: What Faking Costs a Hiring Funnel"></button>
+          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 8: Stress and Turnover in Head Start"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 8: Buffer or Baseline (GESIS Panel.pop)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 8: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 8: The AI Paradox (LEC 2026)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 8: Predicting Personality from Text"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 8: Afloat or Adrift (MIDUS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 7 of 8: SIOP 2026 Meta-Analytic Coding"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 8 of 8: What Faking Costs a Hiring Funnel"></button>
         </div>
         <a class="view-all" href="/projects.html">View projects &rarr;</a>
       </div>
