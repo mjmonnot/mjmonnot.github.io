@@ -11,6 +11,11 @@ permalink: /publications/2026-ai-paradox-meaningful-work.html
 **Link:** [Read the preprint →](https://osf.io/preprints/psyarxiv/jzngq_v1)  
 **Companion site:** [Poster, figures, methods, readings, and code →](https://mjmonnot.github.io/lec-2026/)
 
+<figure>
+  <a href="/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png"><img src="/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png" alt="Figure 4 from the preprint: forest plot of the five prespecified year-ahead coefficients with 95% confidence intervals and Bayes factors favoring the null." width="1600" height="775" style="max-width:100%;height:auto;"></a>
+  <figcaption><em>Figure 4.</em> Five prespecified year-ahead coefficients with 95% confidence intervals; every interval includes zero, and the Bayes factors favor the null. Click to enlarge.</figcaption>
+</figure>
+
 ---
 
 ## 1 · TL;DR
