@@ -20,17 +20,19 @@ Several of these projects extend my research themes in [leadership, well-being, 
 [Open the digital goody bag →](/lec-2026/)
 
 <figure class="project-figure">
-  <a href="/lec-2026/">
-    <img src="/assets/images/lec2026-ai-paradox-summary.png" alt="Summary figure for The AI Paradox. Study 1, two-wave panel: four Rosso meaning pathways; agency positive specific agreement .93, communion .48; no engineered prompt met the acceptance bar; registered Time 2 null, BF01 = 481.5. Study 2, occupational talk on allnurses.com, captures January 2016 to September 2026, 7,709 posts: nurses named the apparatus, not AI; apparatus talk flat at one post in twenty; control moved, not skill; model codes with no human check." width="1120" height="620">
+  <a href="https://osf.io/preprints/psyarxiv/jzngq_v1">
+    <img src="/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png" alt="Figure 4 from the preprint: forest plot of the five prespecified year-ahead coefficients with 95% confidence intervals; every interval includes zero. Others-directed meaning to felt meaningfulness: b = minus 0.02, interval minus 0.53 to 0.49, BF01 = 11.6. Others-directed meaning to turnover intentions: b = 0.22, interval minus 0.65 to 1.09, BF01 = 9.9. Agency to emotional exhaustion: b = minus 0.29, interval minus 1.20 to 0.62, BF01 = 8.2. Agency to felt meaningfulness: b = 0.05, interval minus 0.47 to 0.57, BF01 = 11.5. Self-directed meaning to felt meaningfulness: b = minus 0.31, interval minus 0.73 to 0.12, BF01 = 4.7." width="1600" height="775">
   </a>
-  <figcaption>Study 1 pathways and locked tests beside Study 2 occupational talk, captures Jan 2016 – Sep 2026. Click through to the packet.</figcaption>
+  <figcaption>Figure 4 from the preprint: the five prespecified year-ahead coefficients with 95% confidence intervals and Bayes factors favoring the null.</figcaption>
 </figure>
 
-Board session packet for *Shaping the Future of People Analytics*: how optimization can strip the meaning that keeps helping work staffed, and what it takes to measure that meaning without fooling yourself. Two-wave field study, a locked language-model coding pipeline, and ten years of nurses' forum talk. Human codes stayed on the map; no engineered prompt met the acceptance bar; no prompt was chosen on test. In the forum, nurses named the apparatus (ratios, metrics, charting), not AI, and what moved was control over the work, not skill.
+A preprint (PsyArXiv, with Isaac Thompson) and the board session packet for *Shaping the Future of People Analytics*: how optimization can strip the meaning that keeps helping work staffed, and what it takes to measure that meaning without fooling yourself. A two-wave critical-incident panel of helping-profession workers (*N* = 307; 144 followed one year later) and 7,695 nursing-forum posts captured 2016–2026. The six prespecified year-ahead predictions were estimated near zero. One association that was not prespecified survived multiplicity screening: narratives grounding meaning in competence were associated with higher turnover intentions and exhaustion a year later (β = .29 and .30, adjusting for six survey measures). No engineered prompt met the acceptance bar; no prompt was chosen on test; humans coded all predictors. Nurses named AI in seven events; about one post in twenty in every period named an optimization or implementation object instead (ratios, metrics, dashboards, documentation load), and the facet at issue was control over means.
+
+<p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em>. PsyArXiv. <a href="https://osf.io/preprints/psyarxiv/jzngq_v1">https://osf.io/preprints/psyarxiv/jzngq_v1</a></p>
 
 <p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
 
-🔗 [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v4.pptx)
+🔗 [Preprint (PsyArXiv)](https://osf.io/preprints/psyarxiv/jzngq_v1) · [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v5.pptx)
 
 ---
 

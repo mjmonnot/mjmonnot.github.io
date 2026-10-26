@@ -18,6 +18,12 @@ permalink: /
     <ol class="pub-list">
       <li>
         <div>
+          <p class="pub-title"><a href="/publications/2026-ai-paradox-meaningful-work.html">The AI Paradox: How Optimization May Undermine Meaningful Work in Helping Professions</a></p>
+          <p class="pub-journal">PsyArXiv (preprint)</p>
+        </div>
+      </li>
+      <li>
+        <div>
           <p class="pub-title"><a href="/publications/2026-stress-turnover-headstart.html">Stress and Turnover in Helping Professions: A Randomized Controlled Longitudinal Study of Head Start Employees</a></p>
           <p class="pub-journal">SSRN (preprint)</p>
         </div>
@@ -127,19 +133,20 @@ permalink: /
 
         <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
           <p class="feature-title"><a href="/lec-2026/">The AI Paradox</a></p>
-          <p class="feature-sub">SIOP Leading Edge Consortium 2026 &mdash; digital goody bag</p>
-          <figure class="feature-figure">
-            <a class="feature-figure-link" href="{{ "/assets/images/lec2026-ai-paradox-summary.png" | relative_url }}" data-lightbox aria-label="Enlarge the AI Paradox summary figure">
-              <img src="{{ "/assets/images/lec2026-ai-paradox-summary.png" | relative_url }}" alt="Summary figure for The AI Paradox: four Rosso meaning pathways beside locked-test results. Agency positive specific agreement was .93; communion was .48. No engineered prompt met the acceptance bar. The registered Time 2 meaning block favored the null, BF01 = 481.5. Four forum cards: nurses named the apparatus, not AI; apparatus talk flat at one post in twenty; control moved, not skill; model codes with no human check." width="1120" height="620" loading="lazy">
+          <p class="feature-sub">PsyArXiv preprint &amp; SIOP Leading Edge Consortium 2026 digital goody bag</p>
+          <figure class="feature-figure feature-figure--wide">
+            <a class="feature-figure-link" href="{{ "/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 4: prespecified year-ahead estimates and Bayes factors">
+              <img src="{{ "/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png" | relative_url }}" alt="Figure 4 from the preprint: forest plot of the five prespecified year-ahead coefficients with 95% confidence intervals; every interval includes zero. Others-directed meaning to felt meaningfulness: b = minus 0.02, interval minus 0.53 to 0.49, BF01 = 11.6. Others-directed meaning to turnover intentions: b = 0.22, interval minus 0.65 to 1.09, BF01 = 9.9. Agency to emotional exhaustion: b = minus 0.29, interval minus 1.20 to 0.62, BF01 = 8.2. Agency to felt meaningfulness: b = 0.05, interval minus 0.47 to 0.57, BF01 = 11.5. Self-directed meaning to felt meaningfulness: b = minus 0.31, interval minus 0.73 to 0.12, BF01 = 4.7." width="1600" height="775" loading="lazy">
             </a>
-            <figcaption>Study 1 pathways and locked tests, Study 2 occupational talk 2016&ndash;2026 &mdash; click the title for the packet <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+            <figcaption>Figure 4 &mdash; five prespecified year-ahead coefficients with 95% confidence intervals &middot; Bayes factors favor the null <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A two-wave helping-profession study and a locked language-model coding pipeline. Human codes stayed on the map. No engineered prompt met the acceptance bar; no prompt was chosen on test. Ten years of nurses' forum talk named the apparatus, not AI: seven named-AI events in 7,709 posts, and what moved was control over the work, not skill. <a href="/lec-2026/">Open the digital goody bag &rarr;</a></p>
+          <p class="feature-desc">A two-wave critical-incident panel of helping-profession workers (<em>N</em> = 307; 144 followed one year later) and 7,695 nursing-forum posts captured 2016&ndash;2026. The six prespecified year-ahead predictions were estimated near zero. One association that was not prespecified survived multiplicity screening: narratives grounding meaning in competence were associated with higher turnover intentions and exhaustion a year later (&beta; = .29 and .30, adjusting for six survey measures). Nurses named AI in seven events; about one post in twenty in every period named an optimization or implementation object instead, and the facet at issue was control over means. <a href="/lec-2026/">Open the digital goody bag &rarr;</a></p>
+          <p class="feature-links"><a href="https://osf.io/preprints/psyarxiv/jzngq_v1">Preprint (PsyArXiv)</a> &middot; <a href="/lec-2026/">Digital goody bag</a> &middot; <a href="/lec-2026/poster.html">Digital poster</a> &middot; <a href="/lec-2026/code.html">Code &amp; deck</a></p>
           <div class="feature-stat">
             <span class="stat-value">BF<sub>01</sub>&nbsp;=&nbsp;481.5</span>
-            <span class="stat-note">Registered next-year meaning block favored the null; concurrent WAMI tracked the codes</span>
+            <span class="stat-note">Prespecified next-year meaning block favored the null; concurrent WAMI tracked the codes</span>
           </div>
-          <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em>. PsyArXiv. <a href="https://osf.io/preprints/psyarxiv/jzngq_v1">https://osf.io/preprints/psyarxiv/jzngq_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
         </article>
 
         <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
