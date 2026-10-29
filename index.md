@@ -188,7 +188,7 @@ permalink: /
         </article>
 
         <article class="feature-card feature-slide" data-slide="6" aria-hidden="true">
-          <p class="feature-title">Afloat or Adrift</p>
+          <p class="feature-title"><a href="/afloat-or-adrift/">Afloat or Adrift</a></p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
           <figure class="feature-figure">
             <a class="feature-figure-link" href="{{ "/assets/images/midus-figure-1a.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 1A from the MIDUS preprint">
@@ -196,7 +196,7 @@ permalink: /
             </a>
             <figcaption>Figure 1A &mdash; four replicated profiles (Resilient, Distressed, Reserved, Antagonistic) <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A longitudinal study of Big Five profile configurations across midlife &mdash; and whether people move between them over two decades &mdash; linking those patterns to future-of-work skills.</p>
+          <p class="feature-desc">A longitudinal study of Big Five profile configurations across midlife &mdash; and whether people move between them over two decades &mdash; linking those patterns to future-of-work skills. Distressed membership fell from 29.5% to 7.2%; purpose predicted recovery-oriented transitions (OR = 1.23). <a href="/afloat-or-adrift/">Open the companion site &rarr;</a></p>
           <div class="feature-stat">
             <span class="stat-value">N&nbsp;=&nbsp;7,108</span>
             <span class="stat-note">Distressed membership shrank from 29.5% to 7.2% across ~20 years</span>

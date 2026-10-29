@@ -116,7 +116,8 @@ Python · Pandas · NumPy · scikit-learn pipelines · cross-validation · regul
 
 ## Afloat or Adrift: Latent Personality Profiles & Future-of-Work Skills (MIDUS)
 
-[View on GitHub →](https://github.com/mjmonnot/LPAmidus)
+[View on GitHub →](https://github.com/mjmonnot/LPAmidus)  
+[Companion site →](https://mjmonnot.github.io/afloat-or-adrift/)
 
 <figure class="project-figure">
   <a href="https://osf.io/preprints/psyarxiv/9r6hd">
