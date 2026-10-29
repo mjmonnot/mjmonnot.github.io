@@ -8,6 +8,7 @@ permalink: /
   <h1>Matthew J. Monnot, PhD</h1>
   <p class="tagline">Industrial-Organizational Psychologist <span class="sep">&middot;</span> People Scientist <span class="sep">&middot;</span> OD Consultant</p>
   <p class="lede">I partner with leaders and organizations to enhance performance, culture, and well-being &mdash; drawing on experience in academia, executive education, and corporate people analytics.</p>
+  <p class="skills"><strong>Technical skills.</strong> Alteryx; R (lavaan, LMest, mclust, quantreg, sandwich, mice, ggplot2, brms, cmdstanr); Python (pandas, NumPy, SciPy, statsmodels, scikit-learn); Stan; Mplus; Git and GitHub Pages; Jekyll; HTML, CSS, and JavaScript.</p>
   <hr class="gold-rule">
 </section>
 
