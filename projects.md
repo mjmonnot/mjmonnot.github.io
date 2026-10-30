@@ -6,7 +6,7 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** SIOP Leading Edge Consortium 2026 digital goody bag is live — [The AI Paradox](/lec-2026/). Poster, figures, methods, readings, and the quarter kit. QR on the board points here.
+> **Latest update:** All eight posted preprints are listed below with companion links. Newest: [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
@@ -33,6 +33,101 @@ A preprint (PsyArXiv, with Isaac Thompson) and the board session packet for *Sha
 <p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
 
 🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/jzngq_v1) · [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v5.pptx)
+
+---
+
+## Active Recovery Is Not Just for Athletes
+
+[Companion site →](/recovery-training-2026/)
+
+<figure class="project-figure">
+  <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">
+    <img src="/assets/images/recovery-training-fig2-quantile-effects.png" alt="Figure 2 from the preprint: differences from control in posttest detachment quantiles at .10, .25, .50, .75, and .90, with pointwise 95% bootstrap confidence intervals." width="1600" height="788">
+  </a>
+  <figcaption>Figure 2 from the preprint: quantile treatment effects on posttest detachment, with pointwise 95% bootstrap confidence intervals.</figcaption>
+</figure>
+
+A SocArXiv preprint: a prespecified reanalysis of a randomized recovery-training trial among German employees (*N* = 393; 247 with posttest data). Cognitive-behavioral and mindfulness-based 6-week trainings raised psychological detachment at the mean baseline by 0.89 and 0.98 scale points. The design asked who gained more — employees who detached least (compensation) or those who already detached well (accumulation). The baseline × condition interactions were −0.21 (CBT) and 0.04 (MBT); both 95% intervals included zero, so the data support neither account and bound how large either pattern could be in a trial of this size.
+
+<p class="apa-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">https://doi.org/10.31235/osf.io/cz5g4_v1</a></p>
+
+🔗 [Preprint (SocArXiv)](https://doi.org/10.31235/osf.io/cz5g4_v1) · [Companion site](/recovery-training-2026/) · [Publication summary](/publications/2026-recovery-training.html)
+
+---
+
+## Stress and Turnover in Helping Professions (Head Start)
+
+[Companion site →](/stress-turnover-headstart/)
+
+<figure class="project-figure">
+  <a href="https://doi.org/10.2139/ssrn.7637538">
+    <img src="/assets/images/headstart-fig4-roc-pr.png" alt="Figure 4 from the preprint, four panels for the final 11-predictor model on the test partition: ROC and precision-recall curves for elevated six-month stress and low six-month intention to remain." width="1166" height="1166">
+  </a>
+  <figcaption>Figure 4 from the preprint: ROC and precision–recall curves on the held-out test partition.</figcaption>
+</figure>
+
+An SSRN preprint from a randomized controlled longitudinal study of Head Start employees (*N* = 4,054). An 11-predictor intake equation predicted elevated stress six months later better than the base rate (AUC .72; calibration slope 0.92) and predicted low intention to remain (AUC .70), scored once on a held-out test partition. Baseline stress and younger age carried the most weight for stress; lower job satisfaction for intention to remain.
+
+<p class="apa-cite">Monnot, M. J. (2026). <em>Stress and turnover in helping professions: A randomized controlled longitudinal study of Head Start employees</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7637538">https://doi.org/10.2139/ssrn.7637538</a></p>
+
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7637538) · [Companion site](/stress-turnover-headstart/) · [Publication summary](/publications/2026-stress-turnover-headstart.html)
+
+---
+
+## Buffer or Baseline? (GESIS Panel.pop)
+
+[Companion site →](/buffer-or-baseline/)
+
+<figure class="project-figure">
+  <a href="https://doi.org/10.2139/ssrn.7622018">
+    <img src="/assets/images/gesis-fig2-ls-trajectories.png" alt="Figure 2 from the GESIS preprint. Panel A: implied life-satisfaction trajectories at high, average, and low trait self-compassion from 2014 to 2025. Panel B: trait coefficients." width="2280" height="1350">
+  </a>
+  <figcaption>Figure 2 from the preprint: shared life-satisfaction decline with a higher 2020 level at higher trait scores.</figcaption>
+</figure>
+
+An SSRN preprint in the GESIS Panel.pop probability sample of German adults employed in 2018 (*N* = 3,052). Self-compassion was measured before COVID-19. The 2018 score was associated with lower 2024 loneliness (*r* = −.36) and less digital overwhelm (β = −.20); those associations ran through the self-critical items. Life satisfaction fell 6.22 points (0–100) across the 2020–2021 disruption at the same rate across levels of the trait (*BF*<sub>01</sub> = 51.52 against a buffering path on the disruption slope).
+
+<p class="apa-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a></p>
+
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7622018) · [Companion site](/buffer-or-baseline/) · [Evidence](/buffer-or-baseline/evidence.html) · [Publication summary](/publications/2026-buffer-or-baseline.html)
+
+---
+
+## Upward and Downward Spirals in Employee Well-Being (LISS)
+
+[Companion site →](/wellbeing-spirals/)
+
+<figure class="project-figure">
+  <a href="https://doi.org/10.2139/ssrn.7617538">
+    <img src="/assets/images/liss-spirals-figure-8.png" alt="Figure 8 from the LISS preprint: within-person resource-distress spirals with loss-primacy asymmetry." width="3364" height="1347">
+  </a>
+  <figcaption>Figure 8 from the preprint: reciprocal within-person cross-lags and the aftermath of a one-time 1-SD change.</figcaption>
+</figure>
+
+An SSRN preprint following Dutch employees in the LISS panel for 18 years (2008–2025; *N* = 72,433 person-waves). The four MIDUS personality profiles reappeared on a different instrument (Tucker congruence = .96). Employees who in 2020 felt replaceable by AI or exhausted by technology-intensified work reported lower job and life satisfaction five years later — perceived replaceability, not an occupation's exposure score, carried the cost. Among Distressed leavers, optimism, self-esteem, and work meaning predicted recovery rather than disengagement (OR ≈ 1.6–1.8 per SD), and within persons a rise in distress depleted self-esteem more than an equal gain relieved distress.
+
+<p class="apa-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a></p>
+
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7617538) · [Spiral explorer](/wellbeing-spirals/) · [Evidence](/wellbeing-spirals/evidence.html) · [Publication summary](/publications/2026-wellbeing-spirals.html)
+
+---
+
+## Compensatory Faking in Personnel Selection
+
+[Companion site →](/faking-costs/)
+
+<figure class="project-figure">
+  <a href="https://doi.org/10.2139/ssrn.7611561">
+    <img src="/assets/images/gma-faking-mechanism-explainer.png" alt="Three-panel mechanism figure for trait-driven faking: ability-linked Conscientiousness inflation, rank-order churn at the cutoff, and the cost of each swapped seat." width="3877" height="1294">
+  </a>
+  <figcaption>Trait-driven faking mechanism: ability-linked inflation, hiring churn at the cutoff, and the performance cost of swapped seats.</figcaption>
+</figure>
+
+An SSRN preprint combining a second-order meta-analysis with Monte Carlo simulations fit to published applicant evidence. The Conscientiousness–cognitive ability correlation reverses sign in genuine applicant samples relative to incumbents — a trait-specific signature consistent with compensatory faking. At 40% faking prevalence, 22%–36% of top-down hiring decisions change and mean hire performance drops 8%–19%, while monitored psychometric and adverse-impact statistics stay essentially undisturbed.
+
+<p class="apa-cite">Monnot, M. J. (2026). <em>Compensatory faking and the relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven simulations</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7611561">https://doi.org/10.2139/ssrn.7611561</a></p>
+
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7611561) · [Interactive calculator](/faking-costs/) · [Evidence](/faking-costs/evidence.html) · [Publication summary](/publications/2026-compensatory-faking.html)
 
 ---
 
@@ -140,8 +235,9 @@ R · latent profile analysis (LPA) and latent transition analysis via a joint la
 - **Purpose in life** predicted recovery- versus disengagement-oriented transitions (OR = 1.23 per SD, 95% CI [1.01, 1.50]).  
 - Event-sampled diary data (*N* = 2,314) corroborated the profile interpretations.  
 
-🔗 [Read the preprint (PsyArXiv) →](https://osf.io/preprints/psyarxiv/9r6hd)  
-*Manuscript under review.*
+<p class="apa-cite">Monnot, M. J. (2026). <em>Afloat or adrift: A longitudinal study of latent personality profiles and future-of-work skills across midlife</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">https://doi.org/10.31234/osf.io/9r6hd_v1</a></p>
+
+🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/9r6hd_v1) · [Companion site](https://mjmonnot.github.io/afloat-or-adrift/) · [Publication summary](/publications/2026-afloat-or-adrift.html)
 
 ---
 

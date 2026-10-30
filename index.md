@@ -203,6 +203,7 @@ permalink: /
             <span class="stat-value">N&nbsp;=&nbsp;7,108</span>
             <span class="stat-note">Distressed membership shrank from 29.5% to 7.2% across ~20 years</span>
           </div>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Afloat or adrift: A longitudinal study of latent personality profiles and future-of-work skills across midlife</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">https://doi.org/10.31234/osf.io/9r6hd_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/afloat-or-adrift/">https://mjmonnot.github.io/afloat-or-adrift/</a></p>
         </article>
 
         <article class="feature-card feature-slide" data-slide="7" aria-hidden="true">
