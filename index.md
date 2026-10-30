@@ -20,6 +20,12 @@ permalink: /
     <ol class="pub-list">
       <li>
         <div>
+          <p class="pub-title"><a href="/publications/2026-meditation-self-compassion-diary.html">Does Daily Meditation Increase Self-Compassion? A Bayesian Multilevel Diary Study</a></p>
+          <p class="pub-journal">PsyArXiv (preprint)</p>
+        </div>
+      </li>
+      <li>
+        <div>
           <p class="pub-title"><a href="/publications/2026-recovery-training.html">Active Recovery Is Not Just for Athletes: Employees Need to Train for Recovery to Enhance Work</a></p>
           <p class="pub-journal">SocArXiv (preprint)</p>
         </div>
@@ -88,6 +94,22 @@ permalink: /
     <div class="feature-carousel" data-feature-carousel data-interval="10000" aria-roledescription="carousel" aria-label="Featured projects">
       <div class="feature-carousel-track">
         <article class="feature-card feature-slide is-active" data-slide="0" aria-hidden="false">
+          <p class="feature-title"><a href="/meditation-diary-2026/">Does Daily Meditation Increase Self-Compassion?</a></p>
+          <p class="feature-sub">PsyArXiv preprint: a Bayesian multilevel reanalysis of a 28-day employee diary (<em>N</em> = 65; 910 person-days)</p>
+          <figure class="feature-figure feature-figure--wide">
+            <a class="feature-figure-link" href="{{ "/assets/images/meditation-diary-fig2-posterior-slopes.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 2: posterior distributions of the within-person meditation slope across models">
+              <img src="{{ "/assets/images/meditation-diary-fig2-posterior-slopes.png" | relative_url }}" alt="Figure 2 from the preprint: posterior distributions of the within-person meditation slope for the primary models and each sensitivity model, with medians and 95% credible intervals; every interval spans zero. Panel b shows the implied distribution of person-specific slopes and the random-slope SD." width="1600" height="1034" loading="lazy">
+            </a>
+            <figcaption>Figure 2. Posterior distributions of the within-person meditation slope across the primary and sensitivity models, with medians and 95% credible intervals <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+          </figure>
+          <p class="feature-desc">A secondary analysis of an archival 28-day diary of 65 employees in a two-week online self-compassion meditation program. The original report compared program phases; this one asks whether a person&rsquo;s meditation days differ from their nonmeditation days. A prespecified Bayesian two-level model treated each person&rsquo;s meditation tendency as latent, because nonmeditation days were few (12 participants had none). Same-day self-compassion on meditation days: 0.00 SD, 95% CrI [&minus;0.09, 0.09]. Next-day emotional exhaustion, adjusting for same-day exhaustion: &minus;0.03 SD, 95% CrI [&minus;0.16, 0.11]. Both intervals spanned zero, and the estimates held across priors, missing-data shifts, and observed versus latent centering. <a href="/meditation-diary-2026/">Open the companion site &rarr;</a></p>
+          <div class="feature-stat">
+            <span class="stat-value">0.00&nbsp;SD</span>
+            <span class="stat-note">Within-person difference in same-day self-compassion between meditation and nonmeditation days; 95% CrI [&minus;0.09, 0.09], P(b &gt; 0) = .48</span>
+          </div>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. Preprint: PsyArXiv, <a href="https://osf.io/preprints/psyarxiv/986ht_v1">https://osf.io/preprints/psyarxiv/986ht_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/meditation-diary-2026/">https://mjmonnot.github.io/meditation-diary-2026/</a></p>
+        </article>
+        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/recovery-training-2026/">Active Recovery Is Not Just for Athletes</a></p>
           <p class="feature-sub">SocArXiv preprint: a prespecified reanalysis of a randomized recovery-training trial</p>
           <figure class="feature-figure feature-figure--wide">
@@ -103,7 +125,7 @@ permalink: /
           </div>
           <p class="feature-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. Preprint: SocArXiv, <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">https://doi.org/10.31235/osf.io/cz5g4_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/recovery-training-2026/">https://mjmonnot.github.io/recovery-training-2026/</a></p>
         </article>
-        <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
           <p class="feature-title"><a href="/stress-turnover-headstart/">Stress and Turnover in Head Start</a></p>
           <p class="feature-sub">Six-month prediction from an intake survey in a randomized trial (<em>N</em> = 4,054)</p>
           <figure class="feature-figure feature-figure--wide">
@@ -119,7 +141,7 @@ permalink: /
           </div>
           <p class="feature-cite">Monnot, M. J. (2026). <em>Stress and turnover in helping professions: A randomized controlled longitudinal study of Head Start employees</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7637538">https://doi.org/10.2139/ssrn.7637538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/stress-turnover-headstart/">https://mjmonnot.github.io/stress-turnover-headstart/</a></p>
         </article>
-        <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
           <p class="feature-title"><a href="/buffer-or-baseline/">Buffer or Baseline?</a></p>
           <p class="feature-sub">Trait self-compassion in the GESIS Panel.pop (employed adults, 2018)</p>
           <figure class="feature-figure feature-figure--wide">
@@ -137,7 +159,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a> &middot; Companion site: <a href="https://mjmonnot.github.io/buffer-or-baseline/">https://mjmonnot.github.io/buffer-or-baseline/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
           <p class="feature-title"><a href="/wellbeing-spirals/">Upward and Downward Spirals in Employee Well-Being</a></p>
           <p class="feature-sub">Personality profiles &amp; psychological resources under AI-related change (LISS, 2008&ndash;2025)</p>
           <figure class="feature-figure feature-figure--wide">
@@ -155,7 +177,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/wellbeing-spirals/">https://mjmonnot.github.io/wellbeing-spirals/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">
           <p class="feature-title"><a href="/lec-2026/">The AI Paradox</a></p>
           <p class="feature-sub">PsyArXiv preprint &amp; SIOP Leading Edge Consortium 2026 digital goody bag</p>
           <figure class="feature-figure feature-figure--wide">
@@ -173,7 +195,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/jzngq_v1">https://doi.org/10.31234/osf.io/jzngq_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="6" aria-hidden="true">
           <p class="feature-title">Predicting Personality from Text</p>
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
           <figure class="feature-figure">
@@ -189,7 +211,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="6" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="7" aria-hidden="true">
           <p class="feature-title"><a href="/afloat-or-adrift/">Afloat or Adrift</a></p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
           <figure class="feature-figure">
@@ -206,7 +228,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J. (2026). <em>Afloat or adrift: A longitudinal study of latent personality profiles and future-of-work skills across midlife</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">https://doi.org/10.31234/osf.io/9r6hd_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/afloat-or-adrift/">https://mjmonnot.github.io/afloat-or-adrift/</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="7" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="8" aria-hidden="true">
           <p class="feature-title">Automated Meta-Analytic Coding</p>
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
@@ -222,7 +244,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="8" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="9" aria-hidden="true">
           <p class="feature-title"><a href="/faking-costs/">What Faking Costs a Hiring Funnel</a></p>
           <p class="feature-sub">Monte Carlo simulation fit to meta-analytic applicant estimates</p>
           <figure class="feature-figure feature-figure--wide">
@@ -243,15 +265,16 @@ permalink: /
 
       <div class="feature-carousel-footer">
         <div class="feature-dots" role="tablist" aria-label="Choose featured project">
-          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 9: Active Recovery Is Not Just for Athletes"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 9: Stress and Turnover in Head Start"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 9: Buffer or Baseline (GESIS Panel.pop)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 9: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 9: The AI Paradox (LEC 2026)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 9: Predicting Personality from Text"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 7 of 9: Afloat or Adrift (MIDUS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 8 of 9: SIOP 2026 Meta-Analytic Coding"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 9 of 9: What Faking Costs a Hiring Funnel"></button>
+          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 10: Does Daily Meditation Increase Self-Compassion?"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 10: Active Recovery Is Not Just for Athletes"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 10: Stress and Turnover in Head Start"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 10: Buffer or Baseline (GESIS Panel.pop)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 10: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 10: The AI Paradox (LEC 2026)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 7 of 10: Predicting Personality from Text"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 8 of 10: Afloat or Adrift (MIDUS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 9 of 10: SIOP 2026 Meta-Analytic Coding"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 10 of 10: What Faking Costs a Hiring Funnel"></button>
         </div>
         <a class="view-all" href="/projects.html">View projects &rarr;</a>
       </div>

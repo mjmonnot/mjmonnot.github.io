@@ -6,7 +6,7 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** All seven posted preprints are listed below with companion links. Newest: [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
+> **Latest update:** All eight posted preprints are listed below with companion links. Newest: [Does Daily Meditation Increase Self-Compassion?](/meditation-diary-2026/) (PsyArXiv), [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
@@ -33,6 +33,25 @@ A preprint (PsyArXiv, with Isaac Thompson) and the board session packet for *Sha
 <p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
 
 🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/jzngq_v1) · [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v5.pptx)
+
+---
+
+## Does Daily Meditation Increase Self-Compassion?
+
+[Companion site →](/meditation-diary-2026/)
+
+<figure class="project-figure">
+  <a href="https://osf.io/preprints/psyarxiv/986ht_v1">
+    <img src="/assets/images/meditation-diary-fig2-posterior-slopes.png" alt="Figure 2 from the preprint: posterior distributions of the within-person meditation slope for the primary models and each sensitivity model, with medians and 95% credible intervals; every interval spans zero. Panel b shows the implied distribution of person-specific slopes and the random-slope SD." width="1600" height="1034">
+  </a>
+  <figcaption>Figure 2 from the preprint: posterior distributions of the within-person meditation slope across the primary and sensitivity models, with medians and 95% credible intervals.</figcaption>
+</figure>
+
+A PsyArXiv preprint: a secondary analysis of an archival 28-day diary of 65 employees in a two-week online self-compassion meditation program (*N* = 65; 910 person-days). The original report compared program phases; this analysis asks whether a person's meditation days differ from their nonmeditation days. A prespecified Bayesian two-level model treated each person's meditation tendency as latent, because nonmeditation days were few. Same-day self-compassion on meditation days: 0.00 SD, 95% CrI [−0.09, 0.09]. Next-day emotional exhaustion, adjusting for same-day exhaustion: −0.03 SD, 95% CrI [−0.16, 0.11]. Both intervals spanned zero, so the program's changes were not concentrated on the days on which employees actually practiced.
+
+<p class="apa-cite">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. <a href="https://osf.io/preprints/psyarxiv/986ht_v1">https://osf.io/preprints/psyarxiv/986ht_v1</a></p>
+
+🔗 [Preprint (PsyArXiv)](https://osf.io/preprints/psyarxiv/986ht_v1) · [Companion site](/meditation-diary-2026/) · [Publication summary](/publications/2026-meditation-self-compassion-diary.html) · [Code and protocol](https://github.com/mjmonnot/selfcompassion-diary-preprint)
 
 ---
 
