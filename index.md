@@ -21,7 +21,7 @@ permalink: /
       <li>
         <div>
           <p class="pub-title"><a href="/publications/2026-recovery-training.html">Active Recovery Is Not Just for Athletes: Employees Need to Train for Recovery to Enhance Work</a></p>
-          <p class="pub-journal">PsyArXiv (preprint)</p>
+          <p class="pub-journal">SocArXiv (preprint)</p>
         </div>
       </li>
       <li>
@@ -89,7 +89,7 @@ permalink: /
       <div class="feature-carousel-track">
         <article class="feature-card feature-slide is-active" data-slide="0" aria-hidden="false">
           <p class="feature-title"><a href="/recovery-training-2026/">Active Recovery Is Not Just for Athletes</a></p>
-          <p class="feature-sub">PsyArXiv preprint: a prespecified reanalysis of a randomized recovery-training trial</p>
+          <p class="feature-sub">SocArXiv preprint: a prespecified reanalysis of a randomized recovery-training trial</p>
           <figure class="feature-figure feature-figure--wide">
             <a class="feature-figure-link" href="{{ "/assets/images/recovery-training-fig2-quantile-effects.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 2: quantile treatment effects on posttest detachment">
               <img src="{{ "/assets/images/recovery-training-fig2-quantile-effects.png" | relative_url }}" alt="Figure 2 from the preprint: differences from control in posttest detachment quantiles at .10, .25, .50, .75, and .90, with pointwise 95% bootstrap confidence intervals." width="1600" height="788" loading="lazy">
@@ -101,7 +101,7 @@ permalink: /
             <span class="stat-value">0.89&nbsp;and&nbsp;0.98</span>
             <span class="stat-note">Both trainings raised detachment at the mean baseline: 0.89 scale points in CBT and 0.98 in MBT</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. PsyArXiv. Preprint: PsyArXiv, <a href="https://osf.io/preprints/psyarxiv/4hvqr_v1">https://osf.io/preprints/psyarxiv/4hvqr_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/recovery-training-2026/">https://mjmonnot.github.io/recovery-training-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. Preprint: SocArXiv, <a href="https://osf.io/preprints/socarxiv/cz5g4_v1">https://osf.io/preprints/socarxiv/cz5g4_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/recovery-training-2026/">https://mjmonnot.github.io/recovery-training-2026/</a></p>
         </article>
         <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/stress-turnover-headstart/">Stress and Turnover in Head Start</a></p>
