@@ -6,7 +6,7 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** All eight posted preprints are listed below with companion links. Newest: [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
+> **Latest update:** All seven posted preprints are listed below with companion links. Newest: [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
