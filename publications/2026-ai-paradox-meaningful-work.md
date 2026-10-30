@@ -8,6 +8,7 @@ permalink: /publications/2026-ai-paradox-meaningful-work.html
 
 **Authors:** Matthew J. Monnot & Isaac Thompson  
 **Outlet:** *PsyArXiv preprint*  
+**DOI:** 10.31234/osf.io/jzngq_v1  
 **Link:** [Read the preprint →](https://osf.io/preprints/psyarxiv/jzngq_v1)  
 **Companion site:** [Poster, figures, methods, readings, and code →](https://mjmonnot.github.io/lec-2026/)
 
@@ -86,5 +87,5 @@ It does this in three steps:
 
 ## 6 · Endnotes (APA Style)
 
-1. Monnot, M. J., & Thompson, I. (2026). The AI paradox: How optimization may undermine meaningful work in helping professions [Preprint]. PsyArXiv. https://osf.io/preprints/psyarxiv/jzngq_v1  
+1. Monnot, M. J., & Thompson, I. (2026). The AI paradox: How optimization may undermine meaningful work in helping professions [Preprint]. PsyArXiv. https://doi.org/10.31234/osf.io/jzngq_v1  
 2. Rosso, B. D., Dekas, K. H., & Wrzesniewski, A. (2010). On the meaning of work: A theoretical integration and review. *Research in Organizational Behavior, 30*, 91–127. https://doi.org/10.1016/j.riob.2010.09.001

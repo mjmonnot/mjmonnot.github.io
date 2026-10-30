@@ -101,7 +101,7 @@ permalink: /
             <span class="stat-value">0.89&nbsp;and&nbsp;0.98</span>
             <span class="stat-note">Both trainings raised detachment at the mean baseline: 0.89 scale points in CBT and 0.98 in MBT</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. Preprint: SocArXiv, <a href="https://osf.io/preprints/socarxiv/cz5g4_v1">https://osf.io/preprints/socarxiv/cz5g4_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/recovery-training-2026/">https://mjmonnot.github.io/recovery-training-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. Preprint: SocArXiv, <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">https://doi.org/10.31235/osf.io/cz5g4_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/recovery-training-2026/">https://mjmonnot.github.io/recovery-training-2026/</a></p>
         </article>
         <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/stress-turnover-headstart/">Stress and Turnover in Head Start</a></p>
@@ -165,12 +165,12 @@ permalink: /
             <figcaption>Figure 4 &mdash; five prespecified year-ahead coefficients with 95% confidence intervals &middot; Bayes factors favor the null <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A two-wave critical-incident panel of helping-profession workers (<em>N</em> = 307; 144 followed one year later) and 7,695 nursing-forum posts captured 2016&ndash;2026. The six prespecified year-ahead predictions were estimated near zero. One association that was not prespecified survived multiplicity screening: narratives grounding meaning in competence were associated with higher turnover intentions and exhaustion a year later (&beta; = .29 and .30, adjusting for six survey measures). Nurses named AI in seven events; about one post in twenty in every period named an optimization or implementation object instead, and the facet at issue was control over means. <a href="/lec-2026/">Open the digital goody bag &rarr;</a></p>
-          <p class="feature-links"><a href="https://osf.io/preprints/psyarxiv/jzngq_v1">Preprint (PsyArXiv)</a> &middot; <a href="/lec-2026/">Digital goody bag</a> &middot; <a href="/lec-2026/poster.html">Digital poster</a> &middot; <a href="/lec-2026/code.html">Code &amp; deck</a></p>
+          <p class="feature-links"><a href="https://doi.org/10.31234/osf.io/jzngq_v1">Preprint (PsyArXiv)</a> &middot; <a href="/lec-2026/">Digital goody bag</a> &middot; <a href="/lec-2026/poster.html">Digital poster</a> &middot; <a href="/lec-2026/code.html">Code &amp; deck</a></p>
           <div class="feature-stat">
             <span class="stat-value">BF<sub>01</sub>&nbsp;=&nbsp;481.5</span>
             <span class="stat-note">Prespecified next-year meaning block favored the null; concurrent WAMI tracked the codes</span>
           </div>
-          <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em>. PsyArXiv. <a href="https://osf.io/preprints/psyarxiv/jzngq_v1">https://osf.io/preprints/psyarxiv/jzngq_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/jzngq_v1">https://doi.org/10.31234/osf.io/jzngq_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
         </article>
 
         <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">

@@ -8,7 +8,8 @@ permalink: /publications/2026-recovery-training.html
 
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SocArXiv preprint*  
-**Link:** Preprint: SocArXiv, [https://osf.io/preprints/socarxiv/cz5g4_v1](https://osf.io/preprints/socarxiv/cz5g4_v1).  
+**DOI:** 10.31235/osf.io/cz5g4_v1  
+**Link:** Preprint: SocArXiv, [https://doi.org/10.31235/osf.io/cz5g4_v1](https://doi.org/10.31235/osf.io/cz5g4_v1).  
 **Data:** [Trial team's deposit →](https://osf.io/32rhy/)  
 **Companion site:** [Figures and summary →](https://mjmonnot.github.io/recovery-training-2026/)
 
@@ -25,4 +26,4 @@ A prespecified reanalysis of a randomized trial among German employees (*N* = 39
 
 ## Reference
 
-Monnot, M. J. (2026). *Active recovery is not just for athletes: Employees need to train for recovery to enhance work*. SocArXiv. Preprint: SocArXiv, [https://osf.io/preprints/socarxiv/cz5g4_v1](https://osf.io/preprints/socarxiv/cz5g4_v1).
+Monnot, M. J. (2026). *Active recovery is not just for athletes: Employees need to train for recovery to enhance work*. SocArXiv. Preprint: SocArXiv, [https://doi.org/10.31235/osf.io/cz5g4_v1](https://doi.org/10.31235/osf.io/cz5g4_v1).
