@@ -243,6 +243,18 @@ img { max-width: 100%; height: auto; }
   max-width: 640px;
   font-size: 1.125rem;
   color: var(--ink);
+  margin-bottom: 1.1em;
+}
+
+.hero .focus {
+  max-width: 720px;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin: 0 0 0.2em;
+}
+
+.hero .focus strong {
+  color: var(--navy);
 }
 
 .gold-rule {
@@ -635,6 +647,32 @@ body.feature-lightbox-open {
   .feature-slide {
     transition: none;
   }
+}
+
+/* --------------------------------------------------------------------------
+   Homepage background (research areas + technical skills)
+   -------------------------------------------------------------------------- */
+
+.home-background {
+  margin-top: 56px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+}
+
+.home-background .section-label {
+  margin-top: 28px;
+}
+
+.home-background .section-label:first-child {
+  margin-top: 18px;
+}
+
+.home-background .research-areas,
+.home-background .skills {
+  max-width: 860px;
+  font-size: 0.98rem;
+  color: var(--muted);
+  margin: 0 0 8px;
 }
 
 /* --------------------------------------------------------------------------
