@@ -8,7 +8,8 @@ permalink: /publications/2026-meditation-self-compassion-diary.html
 
 **Authors:** Matthew J. Monnot  
 **Outlet:** *PsyArXiv preprint*  
-**Link:** Preprint: PsyArXiv, [https://osf.io/preprints/psyarxiv/986ht_v1](https://osf.io/preprints/psyarxiv/986ht_v1).  
+**DOI:** 10.31234/osf.io/986ht_v1  
+**Link:** [Read the preprint →](https://doi.org/10.31234/osf.io/986ht_v1)  
 **Code and protocol:** [Project repository →](https://github.com/mjmonnot/selfcompassion-diary-preprint)  
 **Data:** [Original study's deposit (Li, 2021) →](https://osf.io/pqf6v/)  
 **Companion site:** [Figures and summary →](https://mjmonnot.github.io/meditation-diary-2026/)
@@ -26,4 +27,4 @@ A secondary analysis of an archival 28-day diary of 65 employees in a two-week o
 
 ## Reference
 
-Monnot, M. J. (2026). *Does daily meditation increase self-compassion? A Bayesian multilevel diary study*. PsyArXiv. Preprint: PsyArXiv, [https://osf.io/preprints/psyarxiv/986ht_v1](https://osf.io/preprints/psyarxiv/986ht_v1).
+Monnot, M. J. (2026). *Does daily meditation increase self-compassion? A Bayesian multilevel diary study*. PsyArXiv. [https://doi.org/10.31234/osf.io/986ht_v1](https://doi.org/10.31234/osf.io/986ht_v1).

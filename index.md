@@ -107,7 +107,7 @@ permalink: /
             <span class="stat-value">0.00&nbsp;SD</span>
             <span class="stat-note">Within-person difference in same-day self-compassion between meditation and nonmeditation days; 95% CrI [&minus;0.09, 0.09], P(b &gt; 0) = .48</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. Preprint: PsyArXiv, <a href="https://osf.io/preprints/psyarxiv/986ht_v1">https://osf.io/preprints/psyarxiv/986ht_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/meditation-diary-2026/">https://mjmonnot.github.io/meditation-diary-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/986ht_v1">https://doi.org/10.31234/osf.io/986ht_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/meditation-diary-2026/">https://mjmonnot.github.io/meditation-diary-2026/</a></p>
         </article>
         <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/recovery-training-2026/">Active Recovery Is Not Just for Athletes</a></p>
