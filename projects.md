@@ -6,12 +6,31 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** All eight posted preprints are listed below with companion links. Newest: [Does Daily Meditation Increase Self-Compassion?](/meditation-diary-2026/) (PsyArXiv), [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
+> **Latest update:** All nine posted preprints are listed below with companion links. Newest: [ChatGPT Access and Writing Skill](/chatgpt-writing-2026/) (SocArXiv), [Does Daily Meditation Increase Self-Compassion?](/meditation-diary-2026/) (PsyArXiv), [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
 
 Several of these projects extend my research themes in [leadership, well-being, and organizational effectiveness](/themes/leadership-and-wellbeing.html): measuring personality and well-being at scale (2019, MIDUS profiles), keeping selection systems fair (2021), and understanding human skills alongside AI in the future of work (2026).
+
+---
+
+## ChatGPT Access and Writing Skill
+
+[Companion site →](/chatgpt-writing-2026/)
+
+<figure class="project-figure">
+  <a href="https://doi.org/10.31235/osf.io/y2p75_v1">
+    <img src="/assets/images/chatgpt-writing-fig2-effects-forest.png" alt="Figure 2 from the preprint: forest plot of ChatGPT access effects on grades, ratings, and adoption with 95% credible intervals and P(direction)." width="1600" height="1444">
+  </a>
+  <figcaption>Figure 2 from the preprint: effects of ChatGPT access on grades, ratings, and adoption, with 95% credible intervals and <em>P</em>(direction).</figcaption>
+</figure>
+
+A SocArXiv preprint: a Bayesian reanalysis of an online randomized experiment (Noy &amp; Zhang, 2023a) among college-educated professionals in six writing-intensive occupations. Under ChatGPT access, second-task writing grades depended less on first-task grades (−0.159 [−0.317, −0.002], *P*(direction) = .976). Access was associated with higher enjoyment (0.44 [0.29, 0.60]). Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
+
+<p class="apa-cite">Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a></p>
+
+🔗 [Preprint (SocArXiv)](https://doi.org/10.31235/osf.io/y2p75_v1) · [Companion site](/chatgpt-writing-2026/) · [Publication summary](/publications/2026-chatgpt-writing.html)
 
 ---
 
