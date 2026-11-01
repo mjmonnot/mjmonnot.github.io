@@ -7,9 +7,8 @@ permalink: /
 <section class="hero">
   <h1>Matthew J. Monnot, PhD</h1>
   <p class="tagline">Industrial-Organizational Psychologist <span class="sep">&middot;</span> People Scientist <span class="sep">&middot;</span> OD Consultant</p>
-  <p class="lede">I partner with leaders and organizations to enhance performance, culture, and well-being &mdash; drawing on experience in academia, executive education, and corporate people analytics.</p>
-  <p class="research-areas"><strong>Research areas.</strong> Employee well-being and occupational stress; personality profiles and future-of-work skills; turnover, retention, and helping professions; self-compassion; AI-related workplace change and meaningful work; personnel selection and faking; leadership and supervisor relationships; organizational change; recovery and mindfulness-based interventions.</p>
-  <p class="skills"><strong>Technical skills.</strong> Statistical modeling — Mplus (Combination Add-On: mixture, multilevel, Bayesian, DSEM, LMS). Bayesian — Stan; brms; cmdstanr. Other modeling — lavaan; LMest; mclust; quantreg; qte; sandwich; mice; PROCESS for SPSS. Machine learning — scikit-learn (elastic-net and related learners); statsmodels. Programming and reproducibility — R; Python (pandas, NumPy, SciPy, matplotlib); Alteryx; ggplot2; renv; Git and GitHub Pages; Jekyll; HTML, CSS, and JavaScript. AI agent orchestration — designing and coordinating role-specific AI agents across an end-to-end ML workflow (data stewardship, modeling, blind evaluation, leakage audit, verification).</p>
+  <p class="lede">I am an industrial-organizational psychologist and people scientist. I partner with leaders and organizations to strengthen performance, culture, and well-being &mdash; drawing on experience in academia, executive education, and corporate people analytics.</p>
+  <p class="focus"><strong>What I help with.</strong> Burnout and occupational stress. Turnover and retention, including in helping professions. Employee well-being across disruption, remote work, and digital demands. Recovery and mindfulness-based interventions. Self-compassion at work. Meaningful work under AI-related workplace change. Personnel selection and applicant faking. Leadership, supervisor relationships, and organizational change. Personality profiles and future-of-work skills.</p>
   <hr class="gold-rule">
 </section>
 
@@ -281,3 +280,14 @@ permalink: /
     </div>
   </section>
 </div>
+
+<section class="home-background">
+  <p class="section-label">Research Areas</p>
+  <hr class="label-rule">
+  <p class="research-areas">Employee well-being and occupational stress; personality profiles and future-of-work skills; turnover, retention, and helping professions; self-compassion; AI-related workplace change and meaningful work; personnel selection and faking; leadership and supervisor relationships; organizational change; recovery and mindfulness-based interventions.</p>
+
+  <p class="section-label">Technical Skills</p>
+  <hr class="label-rule">
+  <p class="skills">Statistical modeling — Mplus (Combination Add-On: mixture, multilevel, Bayesian, DSEM, LMS). Bayesian — Stan; brms; cmdstanr. Other modeling — lavaan; LMest; mclust; quantreg; qte; sandwich; mice; PROCESS for SPSS. Machine learning — scikit-learn (elastic-net and related learners); statsmodels. Programming and reproducibility — R; Python (pandas, NumPy, SciPy, matplotlib); Alteryx; ggplot2; renv; Git and GitHub Pages; Jekyll; HTML, CSS, and JavaScript. AI agent orchestration — designing and coordinating role-specific AI agents across an end-to-end ML workflow (data stewardship, modeling, blind evaluation, leakage audit, verification).</p>
+</section>
+
