@@ -8,6 +8,7 @@ permalink: /publications/2026-recovery-training.html
 
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SocArXiv preprint*  
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Active_Recovery_SocArXiv_cz5g4.pdf)  
 **DOI:** 10.31235/osf.io/cz5g4_v1  
 **Link:** Preprint: SocArXiv, [https://doi.org/10.31235/osf.io/cz5g4_v1](https://doi.org/10.31235/osf.io/cz5g4_v1).  
 **Data:** [Trial team's deposit →](https://osf.io/32rhy/)  

@@ -8,8 +8,9 @@ permalink: /publications/2026-ai-paradox-meaningful-work.html
 
 **Authors:** Matthew J. Monnot & Isaac Thompson  
 **Outlet:** *PsyArXiv preprint*  
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf)  
 **DOI:** 10.31234/osf.io/jzngq_v1  
-**Link:** [Read the preprint →](https://osf.io/preprints/psyarxiv/jzngq_v1)  
+**Link:** [Read the preprint →](https://doi.org/10.31234/osf.io/jzngq_v1)  
 **Companion site:** [Poster, figures, methods, readings, and code →](https://mjmonnot.github.io/lec-2026/)
 
 <figure>

@@ -30,7 +30,7 @@ A SocArXiv preprint: a Bayesian reanalysis of an online randomized experiment (N
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a></p>
 
-🔗 [Preprint (SocArXiv)](https://doi.org/10.31235/osf.io/y2p75_v1) · [Companion site](/chatgpt-writing-2026/) · [Publication summary](/publications/2026-chatgpt-writing.html)
+🔗 [Preprint (SocArXiv)](https://doi.org/10.31235/osf.io/y2p75_v1) · [PDF](/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf) · [Companion site](/chatgpt-writing-2026/) · [Publication summary](/publications/2026-chatgpt-writing.html)
 
 ---
 
@@ -51,7 +51,7 @@ A preprint (PsyArXiv, with Isaac Thompson) and the board session packet for *Sha
 
 <p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
 
-🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/jzngq_v1) · [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v5.pptx)
+🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/jzngq_v1) · [PDF](/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf) · [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v5.pptx)
 
 ---
 
@@ -70,7 +70,7 @@ A PsyArXiv preprint: a secondary analysis of an archival 28-day diary of 65 empl
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/986ht_v1">https://doi.org/10.31234/osf.io/986ht_v1</a></p>
 
-🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/986ht_v1) · [Companion site](/meditation-diary-2026/) · [Publication summary](/publications/2026-meditation-self-compassion-diary.html) · [Code and protocol](https://github.com/mjmonnot/selfcompassion-diary-preprint)
+🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/986ht_v1) · [PDF](/assets/pdfs/Monnot_2026_Meditation_SelfCompassion_Diary_PsyArXiv_986ht.pdf) · [Companion site](/meditation-diary-2026/) · [Publication summary](/publications/2026-meditation-self-compassion-diary.html) · [Code and protocol](https://github.com/mjmonnot/selfcompassion-diary-preprint)
 
 ---
 
@@ -89,7 +89,7 @@ A SocArXiv preprint: a prespecified reanalysis of a randomized recovery-training
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">https://doi.org/10.31235/osf.io/cz5g4_v1</a></p>
 
-🔗 [Preprint (SocArXiv)](https://doi.org/10.31235/osf.io/cz5g4_v1) · [Companion site](/recovery-training-2026/) · [Publication summary](/publications/2026-recovery-training.html)
+🔗 [Preprint (SocArXiv)](https://doi.org/10.31235/osf.io/cz5g4_v1) · [PDF](/assets/pdfs/Monnot_2026_Active_Recovery_SocArXiv_cz5g4.pdf) · [Companion site](/recovery-training-2026/) · [Publication summary](/publications/2026-recovery-training.html)
 
 ---
 
@@ -275,7 +275,7 @@ R · latent profile analysis (LPA) and latent transition analysis via a joint la
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Afloat or adrift: A longitudinal study of latent personality profiles and future-of-work skills across midlife</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">https://doi.org/10.31234/osf.io/9r6hd_v1</a></p>
 
-🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/9r6hd_v1) · [Companion site](https://mjmonnot.github.io/afloat-or-adrift/) · [Publication summary](/publications/2026-afloat-or-adrift.html)
+🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/9r6hd_v1) · [PDF](/assets/pdfs/Monnot_2026_Afloat_or_Adrift_PsyArXiv_9r6hd.pdf) · [Companion site](https://mjmonnot.github.io/afloat-or-adrift/) · [Publication summary](/publications/2026-afloat-or-adrift.html)
 
 ---
 
