@@ -9,7 +9,7 @@ permalink: /publications/2026-afloat-or-adrift.html
 **Authors:** Matthew J. Monnot  
 **Outlet:** *PsyArXiv preprint*  
 **DOI:** 10.31234/osf.io/9r6hd_v1  
-**Link:** [Read the preprint →](https://osf.io/preprints/psyarxiv/9r6hd)  
+**Link:** [Read the preprint →](https://doi.org/10.31234/osf.io/9r6hd_v1)  
 **Companion site:** [Profiles, transitions, and what to watch →](https://mjmonnot.github.io/afloat-or-adrift/)
 
 ---

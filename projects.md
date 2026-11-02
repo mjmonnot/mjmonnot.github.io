@@ -253,7 +253,7 @@ Python · Pandas · NumPy · scikit-learn pipelines · cross-validation · regul
 [Companion site →](https://mjmonnot.github.io/afloat-or-adrift/)
 
 <figure class="project-figure">
-  <a href="https://osf.io/preprints/psyarxiv/9r6hd">
+  <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">
     <img src="/assets/images/midus-figure-1a.png" alt="Figure 1A from the MIDUS preprint: latent state means on anchored factor scores for four personality profiles across neuroticism, extraversion, openness, agreeableness, conscientiousness, and agency. Resilient 36 percent, Distressed 30 percent, Reserved 29 percent, Antagonistic 5 percent." width="880" height="460">
   </a>
   <figcaption>Figure 1A from the preprint: the four replicated profiles on six anchored trait scores.</figcaption>
