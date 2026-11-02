@@ -8,9 +8,9 @@ permalink: /publications/2026-wellbeing-spirals.html
 
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SSRN preprint*  
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf)
 **DOI:** 10.2139/ssrn.7617538  
 **Link:** [Read the preprint →](https://doi.org/10.2139/ssrn.7617538)  
-**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf)
 **Companion site:** [Spiral explorer, evidence, and what organizations can watch →](https://mjmonnot.github.io/wellbeing-spirals/)
 
 ---

@@ -8,9 +8,9 @@ permalink: /publications/2026-stress-turnover-headstart.html
 
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SSRN preprint*  
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf)
 **DOI:** 10.2139/ssrn.7637538  
 **Link:** [Read the preprint →](https://doi.org/10.2139/ssrn.7637538)  
-**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf)
 **Companion site:** [Predictors, evidence, and what organizations can do →](https://mjmonnot.github.io/stress-turnover-headstart/)
 
 ---

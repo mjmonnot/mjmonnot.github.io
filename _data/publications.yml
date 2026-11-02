@@ -37,6 +37,8 @@
   authors: "Monnot, M. J."
   journal: "SSRN (preprint)"
   summary_url: "/publications/2026-stress-turnover-headstart.html"
+  pdf_url: "/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf"
+  doi_url: "https://doi.org/10.2139/ssrn.7637538"
 
 - key: monnot2026_buffer
   year: 2026
@@ -45,6 +47,8 @@
   authors: "Monnot, M. J."
   journal: "SSRN (preprint)"
   summary_url: "/publications/2026-buffer-or-baseline.html"
+  pdf_url: "/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf"
+  doi_url: "https://doi.org/10.2139/ssrn.7622018"
 
 - key: monnot2026_spirals
   year: 2026
@@ -53,6 +57,8 @@
   authors: "Monnot, M. J."
   journal: "SSRN (preprint)"
   summary_url: "/publications/2026-wellbeing-spirals.html"
+  pdf_url: "/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf"
+  doi_url: "https://doi.org/10.2139/ssrn.7617538"
 
 - key: monnot2026_faking
   year: 2026
@@ -61,6 +67,8 @@
   authors: "Monnot, M. J."
   journal: "SSRN (preprint)"
   summary_url: "/publications/2026-compensatory-faking.html"
+  pdf_url: "/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf"
+  doi_url: "https://doi.org/10.2139/ssrn.7611561"
 
 - key: monnot2026_afloat
   year: 2026

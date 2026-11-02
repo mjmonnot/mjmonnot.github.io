@@ -8,9 +8,9 @@ permalink: /publications/2026-buffer-or-baseline.html
 
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SSRN preprint*  
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf)
 **DOI:** 10.2139/ssrn.7622018  
 **Link:** [Read the preprint →](https://doi.org/10.2139/ssrn.7622018)  
-**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf)
 **Companion site:** [Overview, evidence, and what to watch →](https://mjmonnot.github.io/buffer-or-baseline/)
 
 ---
