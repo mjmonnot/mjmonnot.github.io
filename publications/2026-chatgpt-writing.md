@@ -8,6 +8,7 @@ permalink: /publications/2026-chatgpt-writing.html
 
 **Author:** Matthew J. Monnot  
 **Outlet:** *SocArXiv preprint*  
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf)  
 **DOI:** 10.31235/osf.io/y2p75_v1  
 **Link:** Preprint: SocArXiv, [https://doi.org/10.31235/osf.io/y2p75_v1](https://doi.org/10.31235/osf.io/y2p75_v1).  
 **Data:** [Original OSF deposit →](https://doi.org/10.17605/OSF.IO/XD7QW)  

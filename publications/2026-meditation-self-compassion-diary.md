@@ -8,6 +8,7 @@ permalink: /publications/2026-meditation-self-compassion-diary.html
 
 **Authors:** Matthew J. Monnot  
 **Outlet:** *PsyArXiv preprint*  
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Meditation_SelfCompassion_Diary_PsyArXiv_986ht.pdf)  
 **DOI:** 10.31234/osf.io/986ht_v1  
 **Link:** [Read the preprint →](https://doi.org/10.31234/osf.io/986ht_v1)  
 **Code and protocol:** [Project repository →](https://github.com/mjmonnot/selfcompassion-diary-preprint)  

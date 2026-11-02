@@ -108,11 +108,12 @@ permalink: /
             <figcaption>Figure 2. Effects of ChatGPT access on grades, ratings, and adoption, with 95% credible intervals and <em>P</em>(direction) <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A Bayesian reanalysis of Noy and Zhang&rsquo;s (2023a) online randomized experiment among college-educated professionals in six writing-intensive occupations. Under ChatGPT access, second-task writing grades depended less on first-task grades (&minus;0.159 [&minus;0.317, &minus;0.002], <em>P</em>(direction) = .976). Access was associated with higher enjoyment (0.44 [0.29, 0.60]). Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access. <a href="/chatgpt-writing-2026/">Open the companion site &rarr;</a></p>
+          <p class="feature-links"><a href="/chatgpt-writing-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf">PDF</a> &middot; <a href="https://doi.org/10.31235/osf.io/y2p75_v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">&minus;0.159</span>
             <span class="stat-note">Under access, second-task writing grades depended less on first-task grades; 95% CrI [&minus;0.317, &minus;0.002], <em>P</em>(direction) = .976</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/chatgpt-writing-2026/">https://mjmonnot.github.io/chatgpt-writing-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/chatgpt-writing-2026/">https://mjmonnot.github.io/chatgpt-writing-2026/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf">PDF</a></p>
         </article>
         <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/meditation-diary-2026/">Does Daily Meditation Increase Self-Compassion?</a></p>
@@ -124,11 +125,12 @@ permalink: /
             <figcaption>Figure 2. Posterior distributions of the within-person meditation slope across the primary and sensitivity models, with medians and 95% credible intervals <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A secondary analysis of an archival 28-day diary of 65 employees in a two-week online self-compassion meditation program. The original report compared program phases; this one asks whether a person&rsquo;s meditation days differ from their nonmeditation days. A prespecified Bayesian two-level model treated each person&rsquo;s meditation tendency as latent, because nonmeditation days were few (12 participants had none). Same-day self-compassion on meditation days: 0.00 SD, 95% CrI [&minus;0.09, 0.09]. Next-day emotional exhaustion, adjusting for same-day exhaustion: &minus;0.03 SD, 95% CrI [&minus;0.16, 0.11]. Both intervals spanned zero, and the estimates held across priors, missing-data shifts, and observed versus latent centering. <a href="/meditation-diary-2026/">Open the companion site &rarr;</a></p>
+          <p class="feature-links"><a href="/meditation-diary-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Meditation_SelfCompassion_Diary_PsyArXiv_986ht.pdf">PDF</a> &middot; <a href="https://doi.org/10.31234/osf.io/986ht_v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">0.00&nbsp;SD</span>
             <span class="stat-note">Within-person difference in same-day self-compassion between meditation and nonmeditation days; 95% CrI [&minus;0.09, 0.09], P(b &gt; 0) = .48</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/986ht_v1">https://doi.org/10.31234/osf.io/986ht_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/meditation-diary-2026/">https://mjmonnot.github.io/meditation-diary-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/986ht_v1">https://doi.org/10.31234/osf.io/986ht_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/meditation-diary-2026/">https://mjmonnot.github.io/meditation-diary-2026/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Meditation_SelfCompassion_Diary_PsyArXiv_986ht.pdf">PDF</a></p>
         </article>
         <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
           <p class="feature-title"><a href="/recovery-training-2026/">Active Recovery Is Not Just for Athletes</a></p>
@@ -140,11 +142,12 @@ permalink: /
             <figcaption>Figure 2. Differences from control in posttest detachment quantiles, with pointwise 95% bootstrap confidence intervals <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A prespecified reanalysis of a randomized trial among German employees (<em>N</em> = 393; 247 with posttest data) that compared a wait-list control with 6-week cognitive-behavioral (CBT) and mindfulness-based (MBT) recovery trainings. Both trainings raised detachment at the mean baseline, by 0.89 and 0.98 scale points. The question was who gained: employees who detached least (compensation) or those who already detached well (accumulation). The baseline &times; condition interactions were &minus;0.21 for CBT and 0.04 for MBT, and both 95% intervals included zero. The data support neither account. <a href="/recovery-training-2026/">Open the companion site &rarr;</a></p>
+          <p class="feature-links"><a href="/recovery-training-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Active_Recovery_SocArXiv_cz5g4.pdf">PDF</a> &middot; <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">0.89&nbsp;and&nbsp;0.98</span>
             <span class="stat-note">Both trainings raised detachment at the mean baseline: 0.89 scale points in CBT and 0.98 in MBT</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. Preprint: SocArXiv, <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">https://doi.org/10.31235/osf.io/cz5g4_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/recovery-training-2026/">https://mjmonnot.github.io/recovery-training-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. Preprint: SocArXiv, <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">https://doi.org/10.31235/osf.io/cz5g4_v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/recovery-training-2026/">https://mjmonnot.github.io/recovery-training-2026/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Active_Recovery_SocArXiv_cz5g4.pdf">PDF</a></p>
         </article>
         <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
           <p class="feature-title"><a href="/stress-turnover-headstart/">Stress and Turnover in Head Start</a></p>
@@ -209,12 +212,12 @@ permalink: /
             <figcaption>Figure 4 &mdash; five prespecified year-ahead coefficients with 95% confidence intervals &middot; Bayes factors favor the null <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A two-wave critical-incident panel of helping-profession workers (<em>N</em> = 307; 144 followed one year later) and 7,695 nursing-forum posts captured 2016&ndash;2026. The six prespecified year-ahead predictions were estimated near zero. One association that was not prespecified survived multiplicity screening: narratives grounding meaning in competence were associated with higher turnover intentions and exhaustion a year later (&beta; = .29 and .30, adjusting for six survey measures). Nurses named AI in seven events; about one post in twenty in every period named an optimization or implementation object instead, and the facet at issue was control over means. <a href="/lec-2026/">Open the digital goody bag &rarr;</a></p>
-          <p class="feature-links"><a href="https://doi.org/10.31234/osf.io/jzngq_v1">Preprint (PsyArXiv)</a> &middot; <a href="/lec-2026/">Digital goody bag</a> &middot; <a href="/lec-2026/poster.html">Digital poster</a> &middot; <a href="/lec-2026/code.html">Code &amp; deck</a></p>
+          <p class="feature-links"><a href="https://doi.org/10.31234/osf.io/jzngq_v1">Preprint (PsyArXiv)</a> &middot; <a href="/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf">PDF</a> &middot; <a href="/lec-2026/">Digital goody bag</a> &middot; <a href="/lec-2026/poster.html">Digital poster</a> &middot; <a href="/lec-2026/code.html">Code &amp; deck</a></p>
           <div class="feature-stat">
             <span class="stat-value">BF<sub>01</sub>&nbsp;=&nbsp;481.5</span>
             <span class="stat-note">Prespecified next-year meaning block favored the null; concurrent WAMI tracked the codes</span>
           </div>
-          <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/jzngq_v1">https://doi.org/10.31234/osf.io/jzngq_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
+          <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/jzngq_v1">https://doi.org/10.31234/osf.io/jzngq_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf">PDF</a></p>
         </article>
 
         <article class="feature-card feature-slide" data-slide="7" aria-hidden="true">
@@ -243,11 +246,12 @@ permalink: /
             <figcaption>Figure 1A &mdash; four replicated profiles (Resilient, Distressed, Reserved, Antagonistic) <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A longitudinal study of Big Five profile configurations across midlife &mdash; and whether people move between them over two decades &mdash; linking those patterns to future-of-work skills. Distressed membership fell from 29.5% to 7.2%; purpose predicted recovery-oriented transitions (OR = 1.23). <a href="/afloat-or-adrift/">Open the companion site &rarr;</a></p>
+          <p class="feature-links"><a href="/afloat-or-adrift/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Afloat_or_Adrift_PsyArXiv_9r6hd.pdf">PDF</a> &middot; <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">N&nbsp;=&nbsp;7,108</span>
             <span class="stat-note">Distressed membership shrank from 29.5% to 7.2% across ~20 years</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Afloat or adrift: A longitudinal study of latent personality profiles and future-of-work skills across midlife</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">https://doi.org/10.31234/osf.io/9r6hd_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/afloat-or-adrift/">https://mjmonnot.github.io/afloat-or-adrift/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Afloat or adrift: A longitudinal study of latent personality profiles and future-of-work skills across midlife</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">https://doi.org/10.31234/osf.io/9r6hd_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/afloat-or-adrift/">https://mjmonnot.github.io/afloat-or-adrift/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Afloat_or_Adrift_PsyArXiv_9r6hd.pdf">PDF</a></p>
         </article>
 
         <article class="feature-card feature-slide" data-slide="9" aria-hidden="true">
