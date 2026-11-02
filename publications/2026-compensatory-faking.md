@@ -10,7 +10,7 @@ permalink: /publications/2026-compensatory-faking.html
 **Outlet:** *SSRN preprint*
 **DOI:** 10.2139/ssrn.7611561
 **Link:** [Read the preprint →](https://doi.org/10.2139/ssrn.7611561)
-**PDF:** [Download preprint PDF →](https://github.com/mjmonnot/compensatory-faking/blob/main/manuscript/Monnot_2026_Compensatory_Faking_preprint.pdf)
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf)
 **Companion site:** [Interactive calculator, evidence, and playbook →](https://mjmonnot.github.io/faking-costs/)
 
 ---
