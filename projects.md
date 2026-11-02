@@ -108,7 +108,7 @@ An SSRN preprint from a randomized controlled longitudinal study of Head Start e
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Stress and turnover in helping professions: A randomized controlled longitudinal study of Head Start employees</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7637538">https://doi.org/10.2139/ssrn.7637538</a></p>
 
-🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7637538) · [Companion site](/stress-turnover-headstart/) · [Publication summary](/publications/2026-stress-turnover-headstart.html)
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7637538) · [PDF](/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf) · [Companion site](/stress-turnover-headstart/) · [Publication summary](/publications/2026-stress-turnover-headstart.html)
 
 ---
 
@@ -127,7 +127,7 @@ An SSRN preprint in the GESIS Panel.pop probability sample of German adults empl
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a></p>
 
-🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7622018) · [Companion site](/buffer-or-baseline/) · [Evidence](/buffer-or-baseline/evidence.html) · [Publication summary](/publications/2026-buffer-or-baseline.html)
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7622018) · [PDF](/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf) · [Companion site](/buffer-or-baseline/) · [Evidence](/buffer-or-baseline/evidence.html) · [Publication summary](/publications/2026-buffer-or-baseline.html)
 
 ---
 
@@ -146,7 +146,7 @@ An SSRN preprint following Dutch employees in the LISS panel for 18 years (2008�
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a></p>
 
-🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7617538) · [Spiral explorer](/wellbeing-spirals/) · [Evidence](/wellbeing-spirals/evidence.html) · [Publication summary](/publications/2026-wellbeing-spirals.html)
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7617538) · [PDF](/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf) · [Spiral explorer](/wellbeing-spirals/) · [Evidence](/wellbeing-spirals/evidence.html) · [Publication summary](/publications/2026-wellbeing-spirals.html)
 
 ---
 
@@ -165,7 +165,7 @@ An SSRN preprint combining a second-order meta-analysis with Monte Carlo simulat
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Compensatory faking and the relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven simulations</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7611561">https://doi.org/10.2139/ssrn.7611561</a></p>
 
-🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7611561) · [Interactive calculator](/faking-costs/) · [Evidence](/faking-costs/evidence.html) · [Publication summary](/publications/2026-compensatory-faking.html)
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7611561) · [PDF](/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf) · [Interactive calculator](/faking-costs/) · [Evidence](/faking-costs/evidence.html) · [Publication summary](/publications/2026-compensatory-faking.html)
 
 ---
 

@@ -15,7 +15,7 @@ Below is a selection of publications with short, practitioner-oriented summaries
 **Authors:** {{ pub.authors }}  
 **Journal:** *{{ pub.journal }}*
 
-- 📝 [Summary]({{ pub.summary_url }})
+- 📝 [Summary]({{ pub.summary_url }}){% if pub.pdf_url %} · 📄 [PDF]({{ pub.pdf_url }}){% endif %}{% if pub.doi_url %} · 🔗 [DOI]({{ pub.doi_url }}){% endif %}
 
 ---
 {% endfor %}

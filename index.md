@@ -156,11 +156,12 @@ permalink: /
             <figcaption>Figure 4 &mdash; ROC (a, b) and precision&ndash;recall (c, d) curves on the test partition <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">An 11-predictor intake equation (stress, burnout, anxiety, depressive symptoms, job satisfaction, hope, reappraisal beliefs, demographics) predicted elevated stress six months later better than the base rate (log loss 0.532 vs. 0.596) and predicted low intention to remain (0.386 vs. 0.417), scored once on a held-out test partition of a randomized longitudinal trial. Baseline stress and younger age carried the most weight for stress; lower job satisfaction for intention to remain. <a href="/stress-turnover-headstart/">Open the companion site &rarr;</a></p>
+          <p class="feature-links"><a href="/stress-turnover-headstart/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf">PDF</a> &middot; <a href="https://doi.org/10.2139/ssrn.7637538">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">AUC&nbsp;.72</span>
             <span class="stat-note">Elevated six-month stress on the test partition (462 labeled, 129 events); calibration slope 0.92</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Stress and turnover in helping professions: A randomized controlled longitudinal study of Head Start employees</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7637538">https://doi.org/10.2139/ssrn.7637538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/stress-turnover-headstart/">https://mjmonnot.github.io/stress-turnover-headstart/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Stress and turnover in helping professions: A randomized controlled longitudinal study of Head Start employees</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7637538">https://doi.org/10.2139/ssrn.7637538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/stress-turnover-headstart/">https://mjmonnot.github.io/stress-turnover-headstart/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf">PDF</a></p>
         </article>
         <article class="feature-card feature-slide" data-slide="4" aria-hidden="true">
           <p class="feature-title"><a href="/buffer-or-baseline/">Buffer or Baseline?</a></p>
@@ -172,12 +173,12 @@ permalink: /
             <figcaption>Figure 2 &mdash; Panel A: shared decline &middot; Panel B: higher 2020 level, no reliable disruption slope <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A probability panel of German adults employed in 2018 (<em>N</em> = 3,052). Self-compassion was measured before COVID-19. It marked who was better off later. It did not slow the 2020&ndash;2021 drop in life satisfaction (6.22 points on a 0&ndash;100 metric at the same rate across the trait). The 2018 score was associated with lower 2024 loneliness (<em>r</em> = &minus;.36) and less digital overwhelm, and those associations ran through the self-critical items, not the self-caring ones. <a href="/buffer-or-baseline/">Open the companion site &rarr;</a></p>
-          <p class="feature-links"><a href="/buffer-or-baseline/">Overview</a> &middot; <a href="/buffer-or-baseline/evidence.html">The evidence</a> &middot; <a href="/buffer-or-baseline/playbook.html">What to watch</a> &middot; <a href="/buffer-or-baseline/references.html">Key references</a></p>
+          <p class="feature-links"><a href="/buffer-or-baseline/">Overview</a> &middot; <a href="/buffer-or-baseline/evidence.html">The evidence</a> &middot; <a href="/buffer-or-baseline/playbook.html">What to watch</a> &middot; <a href="/buffer-or-baseline/references.html">Key references</a> &middot; <a href="/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf">PDF</a></p>
           <div class="feature-stat">
             <span class="stat-value"><em>BF</em><sub>01</sub>&nbsp;=&nbsp;51.5</span>
             <span class="stat-note">Against a buffering path on the disruption slope; 2024 loneliness <em>r</em> = &minus;.36 ran through self-critical items (&beta; = &minus;.30)</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a> &middot; Companion site: <a href="https://mjmonnot.github.io/buffer-or-baseline/">https://mjmonnot.github.io/buffer-or-baseline/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a> &middot; Companion site: <a href="https://mjmonnot.github.io/buffer-or-baseline/">https://mjmonnot.github.io/buffer-or-baseline/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf">PDF</a></p>
         </article>
 
         <article class="feature-card feature-slide" data-slide="5" aria-hidden="true">
@@ -190,12 +191,12 @@ permalink: /
             <figcaption>Figure 8 &mdash; Panel A: reciprocal within-person cross-lags &middot; Panel B: model-implied aftermath of a one-time 1-<em>SD</em> change <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">Eighteen annual waves of Dutch employees (<em>N</em> = 72,433 person-waves). The four MIDUS personality profiles re-emerged on a different instrument. Employees who felt replaceable by AI or exhausted by technology-paced work in 2020 reported lower job and life satisfaction in 2025 &mdash; appraised replaceability, not an occupation's exposure score, carried the cost. Among distressed employees, optimism, self-esteem, and work meaning predicted recovery rather than disengagement, and within persons a rise in distress depleted self-esteem more than an equal gain relieved distress. <a href="/wellbeing-spirals/">Open the companion site &rarr;</a></p>
-          <p class="feature-links"><a href="/wellbeing-spirals/">Spiral explorer</a> &middot; <a href="/wellbeing-spirals/evidence.html">The evidence</a> &middot; <a href="/wellbeing-spirals/playbook.html">What to watch</a> &middot; <a href="/wellbeing-spirals/references.html">Key references</a></p>
+          <p class="feature-links"><a href="/wellbeing-spirals/">Spiral explorer</a> &middot; <a href="/wellbeing-spirals/evidence.html">The evidence</a> &middot; <a href="/wellbeing-spirals/playbook.html">What to watch</a> &middot; <a href="/wellbeing-spirals/references.html">Key references</a> &middot; <a href="/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf">PDF</a></p>
           <div class="feature-stat">
             <span class="stat-value">OR&nbsp;=&nbsp;1.6&ndash;1.8&nbsp;per&nbsp;<em>SD</em></span>
             <span class="stat-note">Odds of recovery (Distressed &rarr; Resilient) over disengagement (Distressed &rarr; Reserved) per SD of optimism, self-esteem, or work meaning; loss-primacy asymmetry LR <em>p</em> &lt; .001</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/wellbeing-spirals/">https://mjmonnot.github.io/wellbeing-spirals/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/wellbeing-spirals/">https://mjmonnot.github.io/wellbeing-spirals/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf">PDF</a></p>
         </article>
 
         <article class="feature-card feature-slide" data-slide="6" aria-hidden="true">
@@ -275,12 +276,12 @@ permalink: /
             <figcaption>Panel A: ability-linked inflation &middot; Panel B: rank-order churn at the cutoff &middot; Panel C: the cost of each swapped seat <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A Monte Carlo model whose parameters are solved to reproduce the meta-analytic applicant evidence, then read for hiring consequences. Faking changes a fifth to a third of top-down hiring decisions even where the intercorrelation barely moves &mdash; and under trait-driven faking the applicants who gain seats run 0.2&ndash;0.8 <em>SD</em> lower in integrity than those they displace, while adverse-impact audits see nothing. <a href="/faking-costs/">Open the companion site &rarr;</a></p>
-          <p class="feature-links"><a href="/faking-costs/">Interactive cost calculator</a> &middot; <a href="/faking-costs/evidence.html">The evidence</a> &middot; <a href="/faking-costs/playbook.html">Playbook</a> &middot; <a href="/faking-costs/references.html">Key references</a></p>
+          <p class="feature-links"><a href="/faking-costs/">Interactive cost calculator</a> &middot; <a href="/faking-costs/evidence.html">The evidence</a> &middot; <a href="/faking-costs/playbook.html">Playbook</a> &middot; <a href="/faking-costs/references.html">Key references</a> &middot; <a href="/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf">PDF</a></p>
           <div class="feature-stat">
             <span class="stat-value">22%&ndash;36%&nbsp;of&nbsp;hires&nbsp;change</span>
             <span class="stat-note">Mean hire performance 8%&ndash;19% lower than honest responding in the same applicant pool</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Compensatory faking and the relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven simulations</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7611561">https://doi.org/10.2139/ssrn.7611561</a> &middot; Companion site: <a href="https://mjmonnot.github.io/faking-costs/">https://mjmonnot.github.io/faking-costs/</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Compensatory faking and the relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven simulations</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7611561">https://doi.org/10.2139/ssrn.7611561</a> &middot; Companion site: <a href="https://mjmonnot.github.io/faking-costs/">https://mjmonnot.github.io/faking-costs/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf">PDF</a></p>
         </article>
       </div>
 
