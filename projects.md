@@ -6,12 +6,31 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** All nine posted preprints are listed below with companion links. Newest: [ChatGPT Access and Writing Skill](/chatgpt-writing-2026/) (SocArXiv), [Does Daily Meditation Increase Self-Compassion?](/meditation-diary-2026/) (PsyArXiv), [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
+> **Latest update:** All ten posted preprints are listed below with companion links. Newest: [Does Self-Compassion Precede Lower Burnout in Sports Coaches?](/coach-burnout-2026/) (Preprints.org), [ChatGPT Access and Writing Skill](/chatgpt-writing-2026/) (SocArXiv), [Does Daily Meditation Increase Self-Compassion?](/meditation-diary-2026/) (PsyArXiv), [Active Recovery](/recovery-training-2026/) (SocArXiv) and [The AI Paradox](/lec-2026/) (PsyArXiv + SIOP LEC 2026 goody bag).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
 
 Several of these projects extend my research themes in [leadership, well-being, and organizational effectiveness](/themes/leadership-and-wellbeing.html): measuring personality and well-being at scale (2019, MIDUS profiles), keeping selection systems fair (2021), and understanding human skills alongside AI in the future of work (2026).
+
+---
+
+## Does Self-Compassion Precede Lower Burnout in Sports Coaches?
+
+[Companion site →](/coach-burnout-2026/)
+
+<figure class="project-figure">
+  <a href="https://www.preprints.org/manuscript/202611.0474">
+    <img src="/assets/images/coach-burnout-fig1-riclpm-paths.png" alt="Figure 1 from the preprint: within-person paths between self-compassion and burnout in a three-wave RI-CLPM." width="1600" height="1477">
+  </a>
+  <figcaption>Figure 1 from the preprint: within-person paths between self-compassion and burnout in a three-wave random-intercept cross-lagged panel model.</figcaption>
+</figure>
+
+A Preprints.org preprint: a secondary analysis of a three-wave open panel of Swiss sports coaches (*N* = 422). After longitudinal invariance tests, a random-intercept cross-lagged panel model separated between-person differences from within-person change. Between coaches, self-compassion and burnout were negatively associated, *r* = −.48, 95% CI [−.60, −.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion.
+
+<p class="apa-cite">Monnot, M. J. (2026). <em>Does self-compassion precede lower burnout in sports coaches? A within-person panel study</em>. <em>Preprints</em>. <a href="https://www.preprints.org/manuscript/202611.0474">https://www.preprints.org/manuscript/202611.0474</a></p>
+
+🔗 [Preprint (Preprints.org)](https://www.preprints.org/manuscript/202611.0474) · [PDF](/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf) · [Companion site](/coach-burnout-2026/) · [Publication summary](/publications/2026-coach-burnout.html)
 
 ---
 
