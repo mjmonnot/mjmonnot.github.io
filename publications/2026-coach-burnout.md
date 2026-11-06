@@ -9,8 +9,8 @@ permalink: /publications/2026-coach-burnout.html
 **Author:** Matthew J. Monnot  
 **Outlet:** *Preprints.org preprint*  
 **PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf)  
-**DOI:** 10.20944/preprints202611.0474.v1 (registration pending)  
-**Link:** Preprint: Preprints.org, [manuscript 202611.0474](https://www.preprints.org/manuscript/202611.0474).  
+**DOI:** [10.20944/preprints202611.0474.v1](https://doi.org/10.20944/preprints202611.0474.v1)  
+**Link:** Preprint: Preprints.org, [https://doi.org/10.20944/preprints202611.0474.v1](https://doi.org/10.20944/preprints202611.0474.v1).  
 **Data:** [Original Dryad deposit →](https://doi.org/10.5061/dryad.p5hqbzkrk)  
 **Companion site:** [Figures and summary →](https://mjmonnot.github.io/coach-burnout-2026/)
 
@@ -27,4 +27,4 @@ In a secondary analysis of a three-wave open panel of Swiss sports coaches (*N* 
 
 ## Reference
 
-Monnot, M. J. (2026). *Does self-compassion precede lower burnout in sports coaches? A within-person panel study*. *Preprints*. [manuscript 202611.0474](https://www.preprints.org/manuscript/202611.0474).
+Monnot, M. J. (2026). *Does self-compassion precede lower burnout in sports coaches? A within-person panel study*. *Preprints*. Preprint: Preprints.org, [https://doi.org/10.20944/preprints202611.0474.v1](https://doi.org/10.20944/preprints202611.0474.v1).
