@@ -20,7 +20,7 @@ Several of these projects extend my research themes in [leadership, well-being, 
 [Companion site →](/coach-burnout-2026/)
 
 <figure class="project-figure">
-  <a href="https://www.preprints.org/manuscript/202611.0474">
+  <a href="https://doi.org/10.20944/preprints202611.0474.v1">
     <img src="/assets/images/coach-burnout-fig1-riclpm-paths.png" alt="Figure 1 from the preprint: within-person paths between self-compassion and burnout in a three-wave RI-CLPM." width="1600" height="1477">
   </a>
   <figcaption>Figure 1 from the preprint: within-person paths between self-compassion and burnout in a three-wave random-intercept cross-lagged panel model.</figcaption>
@@ -28,9 +28,9 @@ Several of these projects extend my research themes in [leadership, well-being, 
 
 A Preprints.org preprint: a secondary analysis of a three-wave open panel of Swiss sports coaches (*N* = 422). After longitudinal invariance tests, a random-intercept cross-lagged panel model separated between-person differences from within-person change. Between coaches, self-compassion and burnout were negatively associated, *r* = −.48, 95% CI [−.60, −.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion.
 
-<p class="apa-cite">Monnot, M. J. (2026). <em>Does self-compassion precede lower burnout in sports coaches? A within-person panel study</em>. <em>Preprints</em>. <a href="https://www.preprints.org/manuscript/202611.0474">https://www.preprints.org/manuscript/202611.0474</a></p>
+<p class="apa-cite">Monnot, M. J. (2026). <em>Does self-compassion precede lower burnout in sports coaches? A within-person panel study</em>. <em>Preprints</em>. <a href="https://doi.org/10.20944/preprints202611.0474.v1">https://doi.org/10.20944/preprints202611.0474.v1</a></p>
 
-🔗 [Preprint (Preprints.org)](https://www.preprints.org/manuscript/202611.0474) · [PDF](/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf) · [Companion site](/coach-burnout-2026/) · [Publication summary](/publications/2026-coach-burnout.html)
+🔗 [Preprint (Preprints.org)](https://doi.org/10.20944/preprints202611.0474.v1) · [PDF](/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf) · [Companion site](/coach-burnout-2026/) · [Publication summary](/publications/2026-coach-burnout.html)
 
 ---
 

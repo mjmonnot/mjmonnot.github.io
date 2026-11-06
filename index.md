@@ -114,12 +114,12 @@ permalink: /
             <figcaption>Figure 1. Within-person paths between self-compassion and burnout in a three-wave RI-CLPM <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A secondary analysis of a three-wave open panel of Swiss sports coaches. After longitudinal invariance tests, a random-intercept cross-lagged panel model separated between-person differences from within-person change. Between coaches, self-compassion and burnout were negatively associated, <em>r</em> = &minus;.48, 95% CI [&minus;.60, &minus;.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion. <a href="/coach-burnout-2026/">Open the companion site &rarr;</a></p>
-          <p class="feature-links"><a href="/coach-burnout-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf">PDF</a> &middot; <a href="https://www.preprints.org/manuscript/202611.0474">Preprint</a></p>
+          <p class="feature-links"><a href="/coach-burnout-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf">PDF</a> &middot; <a href="https://doi.org/10.20944/preprints202611.0474.v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value"><em>r</em> = &minus;.48</span>
             <span class="stat-note">Between-coach association of self-compassion and burnout; 95% CI [&minus;.60, &minus;.37]</span>
           </div>
-          <p class="feature-cite">Monnot, M. J. (2026). <em>Does self-compassion precede lower burnout in sports coaches? A within-person panel study</em>. <em>Preprints</em>. <a href="https://www.preprints.org/manuscript/202611.0474">https://www.preprints.org/manuscript/202611.0474</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/coach-burnout-2026/">https://mjmonnot.github.io/coach-burnout-2026/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf">PDF</a></p>
+          <p class="feature-cite">Monnot, M. J. (2026). <em>Does self-compassion precede lower burnout in sports coaches? A within-person panel study</em>. <em>Preprints</em>. <a href="https://doi.org/10.20944/preprints202611.0474.v1">https://doi.org/10.20944/preprints202611.0474.v1</a>. &middot; Companion site: <a href="https://mjmonnot.github.io/coach-burnout-2026/">https://mjmonnot.github.io/coach-burnout-2026/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf">PDF</a></p>
         </article>
 <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/chatgpt-writing-2026/">ChatGPT Access and Writing Skill</a></p>
