@@ -9,7 +9,7 @@ permalink: /publications/2026-compensatory-faking.html
 <div class="key-findings">
 <p class="key-findings-label">Key findings</p>
 <ol>
-<li>Published estimates suggest about three in ten real job applicants inflate their answers on personality tests. This paper&rsquo;s applicant data are consistent with that inflation being larger among lower-ability applicants in the non-U.S. samples; in the U.S. samples, personality and cognitive ability stayed essentially unrelated.</li>
+<li>Published estimates suggest about three in ten real job applicants inflate their answers on personality tests. This paper&rsquo;s applicant data are consistent with that inflation being larger among lower-ability applicants in the non-US samples; in the U.S. samples, personality and cognitive ability stayed essentially unrelated.</li>
 <li>In simulations fitted to that evidence, with four in ten applicants faking, 22% to 36% of hiring decisions changed and the average job performance of those hired fell by 8% to 19%.</li>
 <li>In most of the simulated conditions the statistics used in bias audits barely moved, so an employer watching selection-rate ratios would not see the change in who was hired. Average personality scores did rise; that is how the faking was built into the simulation.</li>
 </ol>

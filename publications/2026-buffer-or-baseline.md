@@ -11,7 +11,7 @@ permalink: /publications/2026-buffer-or-baseline.html
 <ol>
 <li>German employees who were more self-compassionate in 2018 felt less overwhelmed by digital technology in 2024. They were also less lonely in 2024; that loneliness link was not one of the planned tests.</li>
 <li>Self-compassion did not cushion the 2020&ndash;2021 COVID-19 disruption. Life satisfaction fell by about the same amount at every level of self-compassion.</li>
-<li>In an extra analysis, not one of the planned tests, the link was carried by being less self-critical, and being more self-caring added nothing further. The study is observational and did not test whether reducing self-criticism would change later loneliness.</li>
+<li>In an extra analysis, not one of the planned tests, the link was carried by being less self-critical, and the self-caring items added nothing further. The study is observational and did not test whether reducing self-criticism would change later loneliness.</li>
 </ol>
 </div>
 <p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/buffer-or-baseline/">Companion site: overview, evidence, and what to watch &rarr;</a></p>

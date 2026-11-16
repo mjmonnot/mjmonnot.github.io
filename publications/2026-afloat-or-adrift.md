@@ -9,7 +9,7 @@ permalink: /publications/2026-afloat-or-adrift.html
 <div class="key-findings">
 <p class="key-findings-label">Key findings</p>
 <ol>
-<li>In a U.S. study that followed adults for about 20 years, people fell into four personality patterns: Resilient, Distressed, Reserved, and Antagonistic. A second sample again favored four patterns and recovered the Resilient one; the Distressed pattern showed up in the long-run transitions, not as its own group in a single survey.</li>
+<li>In a U.S. study that followed adults for about 20 years, people fell into four personality patterns: Resilient, Distressed, Reserved, and Antagonistic. A second sample again favored four patterns and recovered the Resilient pattern; the Distressed pattern showed up in the long-run transitions, not as its own group in a single wave.</li>
 <li>The share of people in the Distressed pattern fell from about 30% to 7% over the two decades. Some moved toward recovery and others toward a more withdrawn pattern.</li>
 <li>Among those who left the Distressed pattern, people with a stronger sense of purpose in life were somewhat more likely to recover than to withdraw. Knowing which pattern a person fit did not predict skills and outcomes any better than their individual trait scores did.</li>
 </ol>

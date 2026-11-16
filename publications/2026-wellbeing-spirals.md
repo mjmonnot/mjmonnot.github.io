@@ -9,7 +9,7 @@ permalink: /publications/2026-wellbeing-spirals.html
 <div class="key-findings">
 <p class="key-findings-label">Key findings</p>
 <ol>
-<li>In 18 years of annual surveys in a Dutch panel, losses outran gains. A rise in a person&rsquo;s distress was followed at the next survey by a larger drop in self-esteem than an equal rise in self-esteem was followed by a drop in distress.</li>
+<li>In 18 years of annual surveys in a Dutch panel, a rise in distress was followed at the next survey by a larger drop in self-esteem than an equal rise in self-esteem was followed by a drop in distress. This is a link within the same person over time, not a test of a program.</li>
 <li>Employees who felt in 2020 that AI or robots could replace them were less satisfied with their jobs and lives five years later. The feeling of being replaceable carried the cost, not how exposed their occupation was to AI.</li>
 <li>Among adults moving out of a distressed personality pattern, those with more optimism, self-esteem, and sense of meaning in their work more often moved toward recovery than toward withdrawal. These are associations in survey data, not tests of an intervention.</li>
 </ol>
