@@ -6,12 +6,21 @@ permalink: /publications/2026-compensatory-faking.html
 
 # Compensatory Faking and the Relationship Between Cognitive Ability and Personality in Personnel Selection: Meta-Analytic Evidence and Trait-Driven Simulations (2026)
 
-**Authors:** Matthew J. Monnot
-**Outlet:** *SSRN preprint*
-**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf)
-**DOI:** 10.2139/ssrn.7611561
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>Published estimates suggest about three in ten real job applicants inflate their answers on personality tests. This paper&rsquo;s applicant data are consistent with that inflation being larger among lower-ability applicants in the non-U.S. samples; in the U.S. samples, personality and cognitive ability stayed essentially unrelated.</li>
+<li>In simulations fitted to that evidence, with four in ten applicants faking, 22% to 36% of hiring decisions changed and the average job performance of those hired fell by 8% to 19%.</li>
+<li>In most of the simulated conditions the statistics used in bias audits barely moved, so an employer watching selection-rate ratios would not see the change in who was hired. Average personality scores did rise; that is how the faking was built into the simulation.</li>
+</ol>
+</div>
+<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/faking-costs/">Companion site: interactive calculator, evidence, and playbook &rarr;</a></p>
+
+**Authors:** Matthew J. Monnot  
+**Outlet:** *SSRN preprint*  
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf)  
+**DOI:** 10.2139/ssrn.7611561  
 **Link:** [Read the preprint →](https://doi.org/10.2139/ssrn.7611561)
-**Companion site:** [Interactive calculator, evidence, and playbook →](https://mjmonnot.github.io/faking-costs/)
 
 ---
 
@@ -19,7 +28,7 @@ permalink: /publications/2026-compensatory-faking.html
 
 Published within-person estimates suggest roughly **30% of genuine applicants** (±10%, up to one in two) meaningfully inflate their personality-test scores — and the applicants who inflate the most are the **lower-ability** ones.
 
-This two-study paper detects that pattern in meta-analytic data and prices it. The Conscientiousness–cognitive ability correlation **reverses sign** in genuine applicant samples relative to incumbents — a trait-specific signature consistent with **compensatory faking** (weaker applicants inflating to compete) and inconsistent with everyone simply polishing everything. Monte Carlo simulations fit to the published evidence show the consequences: at 40% faking prevalence, **22%–36% of top-down hiring decisions change** and mean hire performance drops **8%–19%** — while the reliabilities, score distributions, and adverse-impact statistics that organizations monitor stay essentially undisturbed. The audit sees nothing.
+This two-study paper detects that pattern in meta-analytic data and prices it. The Conscientiousness–cognitive ability correlation **reverses sign** in genuine applicant samples relative to incumbents — a trait-specific signature consistent with **compensatory faking** (weaker applicants inflating to compete) and inconsistent with everyone simply polishing everything. Monte Carlo simulations fit to the published evidence show the consequences: at 40% faking prevalence, **22%–36% of top-down hiring decisions change** and mean hire performance drops **8%–19%**, while the adverse-impact ratios that organizations monitor stay essentially unchanged in the trait-driven and U.S. conditions (in the non-U.S. condition the ratio moved from 0.37 to 0.52 at a .10 selection ratio). An organization monitoring validity coefficients and four-fifths compliance would see nothing.
 
 ---
 

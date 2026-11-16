@@ -6,6 +6,15 @@ permalink: /publications/2022-goods-life-swb.html
 
 # The Good Life Versus the “Goods Life”: An Investigation of Goal Contents Theory and Employee Subjective Well-Being Across Asian Countries (2022)
 
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>In surveys of about 46,000 people across Asian countries, those who rated health, relationships, community, or personal growth as more important than money and possessions reported more satisfaction with their lives, jobs, and incomes. That pattern did not hold in Central Asia.</li>
+<li>People who put money and possessions ahead of health, relationships, and growth reported less satisfaction, including with their own income. In models that also included earnings, rating income as important still went with being less satisfied with that income.</li>
+<li>More income went with more satisfaction, but each further step up in income added less.</li>
+</ol>
+</div>
+
 **Authors:** Matthew J. Monnot & Terry A. Beehr  
 **Journal:** *Journal of Happiness Studies, 23*(3), 1215–1244  
 **DOI:** 10.1007/s10902-021-00447-5  
@@ -19,7 +28,7 @@ Using data from tens of thousands of respondents across Asian countries, this st
 Findings broadly support **Goal Contents Theory**:
 
 - People who prioritize **intrinsic goals** (health, safety, relationships, community, growth) report higher satisfaction.
-- Strong **materialistic (goods-life) orientation** is associated with lower satisfaction, even when controlling for income.
+- Strong **materialistic (goods-life) orientation** is associated with lower satisfaction. In separate models that included earnings, rating income as important went with lower satisfaction with that income.
 - Income shows **diminishing marginal utility**, and materialism can worsen that flattening.
 
 ---

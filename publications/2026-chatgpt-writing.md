@@ -6,13 +6,22 @@ permalink: /publications/2026-chatgpt-writing.html
 
 # ChatGPT Access and Writing Skill: A Bayesian Reanalysis of an Online Randomized Experiment (2026)
 
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>In a reanalysis of a randomized experiment with working professionals (Noy &amp; Zhang, 2023), people given access to ChatGPT showed a weaker link between the writing quality of a first task and the writing quality of a second. The paper&rsquo;s main model puts the probability that the link weakened at about 98%, but the weakening could be very small, and a simpler check could not rule out no change.</li>
+<li>Professionals given ChatGPT enjoyed the writing task more.</li>
+<li>Two months later, the share who said they had used ChatGPT or a similar chatbot at work in the past week was about 13 percentage points higher among those who had been given access. The plausible range is about 3 to 24 points.</li>
+</ol>
+</div>
+<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/chatgpt-writing-2026/">Companion site: figures and summary &rarr;</a></p>
+
 **Author:** Matthew J. Monnot  
 **Outlet:** *SocArXiv preprint*  
 **PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf)  
 **DOI:** 10.31235/osf.io/y2p75_v1  
 **Link:** Preprint: SocArXiv, [https://doi.org/10.31235/osf.io/y2p75_v1](https://doi.org/10.31235/osf.io/y2p75_v1).  
 **Data:** [Original OSF deposit →](https://doi.org/10.17605/OSF.IO/XD7QW)  
-**Companion site:** [Figures and summary →](https://mjmonnot.github.io/chatgpt-writing-2026/)
 
 <figure>
   <a href="/assets/images/chatgpt-writing-fig2-effects-forest.png"><img src="/assets/images/chatgpt-writing-fig2-effects-forest.png" alt="Figure 2 from the preprint: forest plot of ChatGPT access effects on grades, ratings, and adoption with 95% credible intervals and P(direction)." width="1600" height="1444" style="max-width:100%;height:auto;"></a>

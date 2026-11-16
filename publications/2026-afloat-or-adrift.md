@@ -6,12 +6,21 @@ permalink: /publications/2026-afloat-or-adrift.html
 
 # Afloat or Adrift: A Longitudinal Study of Latent Personality Profiles and Future-of-Work Skills Across Midlife (2026)
 
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>In a U.S. study that followed adults for about 20 years, people fell into four personality patterns: Resilient, Distressed, Reserved, and Antagonistic. A second sample again favored four patterns and recovered the Resilient one; the Distressed pattern showed up in the long-run transitions, not as its own group in a single survey.</li>
+<li>The share of people in the Distressed pattern fell from about 30% to 7% over the two decades. Some moved toward recovery and others toward a more withdrawn pattern.</li>
+<li>Among those who left the Distressed pattern, people with a stronger sense of purpose in life were somewhat more likely to recover than to withdraw. Knowing which pattern a person fit did not predict skills and outcomes any better than their individual trait scores did.</li>
+</ol>
+</div>
+<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/afloat-or-adrift/">Companion site: profiles, transitions, and what to watch &rarr;</a></p>
+
 **Authors:** Matthew J. Monnot  
 **Outlet:** *PsyArXiv preprint*  
 **PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Afloat_or_Adrift_PsyArXiv_9r6hd.pdf)  
 **DOI:** 10.31234/osf.io/9r6hd_v1  
 **Link:** [Read the preprint →](https://doi.org/10.31234/osf.io/9r6hd_v1)  
-**Companion site:** [Profiles, transitions, and what to watch →](https://mjmonnot.github.io/afloat-or-adrift/)
 
 ---
 
@@ -19,7 +28,7 @@ permalink: /publications/2026-afloat-or-adrift.html
 
 Using the MIDUS national panel (*N* = 7,108 over ~20 years) and an independent Refresher sample (*N* = 3,577), this study asks whether workers’ **psychological resource configurations** — person-centered Big Five personality profiles — help explain who develops and retains future-of-work skills during AI-era economic change.
 
-Four profiles emerge and replicate: **Resilient**, **Distressed**, **Reserved**, and **Antagonistic**. Distressed membership shrinks sharply over two decades through two pathways — **recovery** (to Resilient) and **disengagement** (to Reserved). Purpose in life predicts which path people take. Profile membership adds no predictive power beyond continuous traits — an honest null with practical implications for how we use typologies at work.
+Four profiles emerge: **Resilient**, **Distressed**, **Reserved**, and **Antagonistic**. A second sample again favored four profiles and recovered the Resilient pattern; the Distressed profile did not re-emerge as its own cluster in a single wave and is defined by its place in the three-wave transition model. Distressed membership shrinks sharply over two decades through two pathways — **recovery** (to Resilient) and **disengagement** (to Reserved). Purpose in life predicts which path people take. Profile membership adds no predictive power beyond continuous traits — an honest null with practical implications for how we use typologies at work.
 
 ---
 

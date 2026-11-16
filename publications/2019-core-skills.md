@@ -6,6 +6,15 @@ permalink: /publications/2019-core-skills.html
 
 # Getting to the CORE: Putting an End to the Term “Soft Skills” (2019)
 
+<div class="key-findings">
+<p class="key-findings-label">Key points</p>
+<ol>
+<li>The term &ldquo;soft skills&rdquo; undersells abilities such as emotional intelligence, leadership, and teamwork. The essay argues that the label makes those abilities sound less serious than they are for career and organizational success.</li>
+<li>The authors propose calling them CORE skills: Competence in Organizational and Relational Effectiveness.</li>
+<li>The name matters because &ldquo;soft&rdquo; makes these skills sound less essential. The essay argues they can be assessed, and that training, education, and hiring should treat them as core.</li>
+</ol>
+</div>
+
 **Authors:** Jennifer Parlamis & Matthew J. Monnot  
 **Journal:** *Journal of Management Inquiry, 28*(2), 225–227  
 **DOI:** 10.1177/1056492618818023  
@@ -18,17 +27,17 @@ This essay argues that the label **“soft skills”** is misleading and devalue
 
 The authors propose the term **CORE skills – Competence in Organizational and Relational Effectiveness** – to emphasize that these are:
 
-- Critical to performance and leadership,
-- Observable and measurable,
-- Trainable and developable.
+- Essential to career and organizational success,
+- Assessable with modern techniques,
+- A proper focus for training, education, and hiring.
 
 ---
 
 ## 2 · Context and Rationale
 
 - The term “soft skills” has roots in 1970s U.S. Army training language and has long carried an implicit contrast with “hard” technical skills.
-- Contemporary research in **emotional intelligence**, **relational leadership**, and **team effectiveness** consistently shows that these “soft” skills predict performance, retention, and culture outcomes.
-- Employers repeatedly cite these capabilities as top priorities, including in the World Economic Forum’s *Future of Jobs Report 2025*, where analytical thinking, resilience, leadership, and social influence top the list of needed skills.¹
+- The essay treats **emotional intelligence**, **leadership**, and **teamwork** as the content of the “soft skills” label and argues that the label understates their significance for career and organizational success.
+- Since the essay appeared, employers have continued to cite these capabilities as priorities, including in the World Economic Forum’s *Future of Jobs Report 2025*, where analytical thinking, resilience, leadership, and social influence top the list of needed skills.¹
 
 ---
 
