@@ -37,7 +37,7 @@ The authors propose the term **CORE skills – Competence in Organizational and 
 
 - The term “soft skills” has roots in 1970s U.S. Army training language and has long carried an implicit contrast with “hard” technical skills.
 - The essay treats **emotional intelligence**, **leadership**, and **teamwork** as the content of the “soft skills” label and argues that the label understates their significance for career and organizational success.
-- Since the essay appeared, employers have continued to cite these capabilities as priorities, including in the World Economic Forum’s *Future of Jobs Report 2025*, where analytical thinking, resilience, leadership, and social influence top the list of needed skills.¹
+- The essay argues that “core” connotes something essential and fundamental, so reframing these skills as CORE is more likely to increase their legitimacy, broaden research attention, and expand their use.
 
 ---
 
@@ -75,7 +75,6 @@ The authors propose the term **CORE skills – Competence in Organizational and 
 
 ## 5 · Endnotes (APA Style)
 
-1. World Economic Forum. (2025). *The Future of Jobs Report 2025.* Geneva, Switzerland: Author.  
-2. Parlamis, J., & Monnot, M. J. (2019). Getting to the CORE: Putting an end to the term “soft skills.” *Journal of Management Inquiry, 28*(2), 225–227. https://doi.org/10.1177/1056492618818023  
-3. Boyatzis, R. E. (2009). Competencies as a behavioral approach to emotional intelligence. *Journal of Management Development, 28*(9), 749–770.  
-4. Cherniss, C. (2010). Emotional intelligence: Toward clarification of a concept. *Industrial and Organizational Psychology, 3*(2), 110–126.
+1. Parlamis, J., & Monnot, M. J. (2019). Getting to the CORE: Putting an end to the term “soft skills.” *Journal of Management Inquiry, 28*(2), 225–227. https://doi.org/10.1177/1056492618818023  
+2. Boyatzis, R. E. (2009). Competencies as a behavioral approach to emotional intelligence. *Journal of Management Development, 28*(9), 749–770.  
+3. Cherniss, C. (2010). Emotional intelligence: Toward clarification of a concept. *Industrial and Organizational Psychology, 3*(2), 110–126.

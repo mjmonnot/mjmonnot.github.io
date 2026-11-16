@@ -26,9 +26,9 @@ permalink: /publications/2026-compensatory-faking.html
 
 ## 1 · TL;DR
 
-Published within-person estimates suggest roughly **30% of genuine applicants** (±10%, up to one in two) meaningfully inflate their personality-test scores — and the applicants who inflate the most are the **lower-ability** ones.
+Published within-person estimates suggest roughly **30% of genuine applicants** (±10%, up to one in two) meaningfully inflate their personality-test scores, and the data are consistent with the **lower-ability** applicants inflating the most, a pattern seen in the non-U.S. samples.
 
-This two-study paper detects that pattern in meta-analytic data and prices it. The Conscientiousness–cognitive ability correlation **reverses sign** in genuine applicant samples relative to incumbents — a trait-specific signature consistent with **compensatory faking** (weaker applicants inflating to compete) and inconsistent with everyone simply polishing everything. Monte Carlo simulations fit to the published evidence show the consequences: at 40% faking prevalence, **22%–36% of top-down hiring decisions change** and mean hire performance drops **8%–19%**, while the adverse-impact ratios that organizations monitor stay essentially unchanged in the trait-driven and U.S. conditions (in the non-U.S. condition the ratio moved from 0.37 to 0.52 at a .10 selection ratio). An organization monitoring validity coefficients and four-fifths compliance would see nothing.
+This two-study paper detects that pattern in meta-analytic data and prices it. The Conscientiousness–cognitive ability correlation **reverses sign** in genuine applicant samples relative to incumbents, a trait-specific signature consistent with **compensatory faking** (weaker applicants inflating to compete) and inconsistent with everyone simply polishing everything. Monte Carlo simulations fit to the published evidence show the consequences: at 40% faking prevalence, **22%–36% of top-down hiring decisions change** and mean hire performance drops **8%–19%**, while the adverse-impact ratios that organizations monitor stay essentially unchanged in the trait-driven and U.S. conditions (in the non-U.S. condition the ratio moved from 0.37 to 0.52 at a .10 selection ratio). In the trait-driven and U.S. conditions, an organization monitoring four-fifths compliance would see little change.
 
 ---
 
