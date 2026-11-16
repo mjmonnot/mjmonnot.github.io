@@ -10,7 +10,7 @@ permalink: /publications/2026-coach-burnout.html
 <p class="key-findings-label">Key findings</p>
 <ol>
 <li>Sports coaches who were more self-compassionate (kinder to themselves when things go wrong) reported less burnout than coaches who were less so.</li>
-<li>Within the same coach, though, a period of higher-than-usual self-compassion was not reliably followed by lower burnout three months later. The estimate was too uncertain to call in all 32 versions of the analysis.</li>
+<li>Within the same coach, though, a period of higher-than-usual self-compassion was not reliably followed by lower burnout three months later. The estimate of the path from self-compassion to later burnout was too uncertain to call in all 32 versions of the analysis.</li>
 <li>The study surveyed 422 Swiss coaches up to three times over six months, and fewer answered the later surveys. It shows which coaches are less burned out, not that raising a coach&rsquo;s self-compassion would lower burnout.</li>
 </ol>
 </div>
