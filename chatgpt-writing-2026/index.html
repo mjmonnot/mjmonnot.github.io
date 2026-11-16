@@ -3,68 +3,451 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ChatGPT Access and Writing Skill: A Bayesian Reanalysis of an Online Randomized Experiment | Matthew J. Monnot</title>
-  <meta name="description" content="Under access, second-task writing grades depended less on first-task grades (−0.159); access was associated with higher enjoyment (0.44); two-month workplace ChatGPT use was 13.4 percentage points higher.">
+  <title>With ChatGPT, how well someone wrote before mattered less for how well they wrote next | Matthew J. Monnot</title>
+  <meta name="description" content="A reanalysis of a randomized experiment with 359 working professionals: access to ChatGPT weakened the link between earlier and later writing grades, raised enjoyment of the task, and was followed two months later by more chatbot use at work. Interactive companion to the preprint.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mjmonnot.github.io/chatgpt-writing-2026/">
-  <meta property="og:title" content="ChatGPT Access and Writing Skill: A Bayesian Reanalysis of an Online Randomized Experiment">
-  <meta property="og:description" content="Under access, second-task writing grades depended less on first-task grades (−0.159); access was associated with higher enjoyment (0.44); two-month workplace ChatGPT use was 13.4 percentage points higher.">
+  <meta property="og:title" content="With ChatGPT, how well someone wrote before mattered less for how well they wrote next">
+  <meta property="og:description" content="359 professionals, two writing tasks, a randomly chosen half given ChatGPT. The link between earlier and later writing grades weakened, enjoyment rose, and two months later more of them used a chatbot at work.">
   <meta property="og:image" content="https://mjmonnot.github.io/chatgpt-writing-2026/assets/figure2_effects_forest.png">
   <meta property="og:site_name" content="Matthew J. Monnot">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ChatGPT Access and Writing Skill: A Bayesian Reanalysis of an Online Randomized Experiment">
-  <meta name="twitter:description" content="Under access, second-task writing grades depended less on first-task grades (−0.159); access was associated with higher enjoyment (0.44); two-month workplace ChatGPT use was 13.4 percentage points higher.">
-  <meta name="twitter:image" content="https://mjmonnot.github.io/chatgpt-writing-2026/assets/figure2_effects_forest.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&amp;family=Source+Serif+4:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/bag.css">
+  <link rel="stylesheet" href="/assets/companion/companion.css">
 </head>
 <body>
-<header class="hero wrap">
-  <p class="kicker">SocArXiv preprint</p>
-  <h1>ChatGPT Access and Writing Skill: A Bayesian Reanalysis of an Online Randomized Experiment</h1>
-  <ul class="headlines">
-    <li>Under access, second-task writing grades depended less on first-task grades, −0.159 [−0.317, −0.002], with <em>P</em>(direction) = .976.</li>
-    <li>Access was associated with higher enjoyment, 0.44 [0.29, 0.60], with <em>P</em>(direction) = 1.000.</li>
-    <li>Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.</li>
-  </ul>
-  <hr class="rule">
-  <p>Matthew J. Monnot, Vocentive. Contact: matt@vocentive.com.</p>
+<main>
+
+<p class="backlink"><a href="/publications/2026-chatgpt-writing.html">&larr; Publication page</a> &nbsp;&middot;&nbsp; <a href="/">mjmonnot.github.io</a></p>
+
+<header class="masthead">
+  <p class="kicker">Generative AI at work &middot; Research companion</p>
+  <h1>With ChatGPT, how well someone wrote before mattered less for how well they wrote next. People enjoyed the task more, and more of them used a chatbot at work two months later.</h1>
+  <p class="dek">A reanalysis of a published randomized experiment (Noy &amp; Zhang, 2023). College-educated professionals completed two paid writing tasks, and a randomly chosen half were given access to ChatGPT before the second. The original study reported that the ChatGPT group wrote faster and received higher grades. This reanalysis asks a different question: did access change <em>who</em> wrote well, and how people felt about the work?</p>
+  <div class="masthead-actions">
+    <a class="btn primary" href="/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf">Download the preprint PDF</a>
+    <a class="btn ghost" href="https://doi.org/10.31235/osf.io/y2p75_v1">DOI / SocArXiv</a>
+    <a class="btn ghost" href="https://doi.org/10.17605/OSF.IO/XD7QW">Original data (OSF)</a>
+  </div>
+  <nav class="audience-nav" aria-label="Jump to the part written for you">
+    <span class="lead">Start where it suits you:</span>
+    <a href="#plain">In plain words</a>
+    <a href="#practice">In practice</a>
+    <a href="#writers">For writers</a>
+    <a href="#evidence">The evidence</a>
+    <a href="#specialists">For specialists</a>
+  </nav>
 </header>
 
-<main class="wrap">
-  <h2>Summary</h2>
-  <p>Generative writing tools are entering professional work, and their effects differ across people. I reanalyze a published online randomized experiment in which college-educated professionals in six writing-intensive occupations completed two incentivized writing tasks, and a randomly assigned half were given access to ChatGPT before the second task (Noy &amp; Zhang, 2023a). I ask whether access weakens the link between first-task and second-task writing grades, whether that weakening is stronger for writing than for content, whether access narrows differences between people more for originality than for writing quality, and how access relates to felt effectiveness and enjoyment on the task. Two-month workplace use of ChatGPT is a secondary outcome.</p>
-  <p>I fit Bayesian regression models with weakly informative priors to the linear and convex incentive conditions. Each estimate is a posterior median with a 95% equal-tailed credible interval and the posterior probability of the predicted direction, <em>P</em>(direction), with no decision cutoffs. Under access, second-task writing grades depended less on first-task grades, −0.159 [−0.317, −0.002], with <em>P</em>(direction) = .976. Access was associated with higher enjoyment, 0.44 [0.29, 0.60], with <em>P</em>(direction) = 1.000. After a disclosed code correction, two-month workplace use of ChatGPT was 13.4 [3.0, 23.5] percentage points higher under access, with <em>P</em>(difference &gt; 0) = .994.</p>
+<section id="plain" aria-labelledby="s-find">
+  <p class="section-label" id="s-find">Three findings</p>
+  <ol class="headlines" id="headlines">
+    <li>In a reanalysis of a randomized experiment with working professionals (Noy &amp; Zhang, 2023), people given access to ChatGPT showed a weaker link between the writing quality of a first task and the writing quality of a second. The paper&rsquo;s main model puts the probability that the link weakened at about 98%, but the weakening could be very small, and a simpler check could not rule out no change.</li>
+    <li>Professionals given ChatGPT enjoyed the writing task more.</li>
+    <li>Two months later, the share who said they had used ChatGPT or a similar chatbot at work in the past week was about 13 percentage points higher among those who had been given access. The plausible range is about 3 to 24 points.</li>
+  </ol>
+</section>
 
-  <h2>Methods</h2>
-  <p>Participants were college-educated professionals recruited on Prolific in marketing, grant writing, consulting, data analysis, human resources, and management. Of the 453 randomized participants (218 with ChatGPT access and 235 in the comparison condition), 359 were in the primary sample (the linear and convex incentive conditions: 172 access, 187 comparison), and 94 were in the exact-time condition. Access condition was assigned after the first task. Graders who were not told the writer’s condition rated each essay on a 1–7 scale for overall quality, writing quality, content quality, and originality.</p>
-  <p>I fit confirmatory analyses with Bayesian multilevel, multivariate, and distributional models in brms. This is a secondary analysis of the original authors’ archival files on the Open Science Framework (<a href="https://doi.org/10.17605/OSF.IO/XD7QW">10.17605/OSF.IO/XD7QW</a>). This reanalysis was not registered. Design label: online randomized experiment.</p>
+<section aria-labelledby="s0">
+  <p class="section-label" id="s0">At a glance</p>
+  <div class="strip">
+    <div class="stat"><span class="stat-value red">359</span><span class="stat-label">Working professionals</span><span class="stat-sub">172 given access to ChatGPT, 187 not; six writing-heavy occupations</span></div>
+    <div class="stat"><span class="stat-value red">&minus;0.159</span><span class="stat-label">Weaker link between first and second writing grade</span><span class="stat-sub">95% credible interval [&minus;0.317, &minus;0.002]; probability the link weakened .976</span></div>
+    <div class="stat"><span class="stat-value red">0.44</span><span class="stat-label">Higher enjoyment of the task</span><span class="stat-sub">In standard deviations; 95% credible interval [0.29, 0.60]</span></div>
+    <div class="stat"><span class="stat-value red">13.4</span><span class="stat-label">Percentage points more chatbot use at work, two months later</span><span class="stat-sub">42.2% against 28.8%; 95% credible interval [3.0, 23.5]</span></div>
+  </div>
+</section>
 
-  <h2>Figures</h2>
-  <figure>
-    <img src="assets/figure1_consort_flow.png" alt="Figure 1: participant flow following CONSORT 2025, from randomization through primary-sample analysis counts." width="3900" height="3000" style="width:100%;height:auto">
-    <figcaption><strong>Figure 1</strong><em> Participant Flow (CONSORT 2025).</em> <em>Note.</em> The flow branches at randomization. Of the 453 randomized participants (218 with ChatGPT access and 235 in the comparison condition), 359 were in the primary sample, the linear and convex incentive conditions (172 access, 187 comparison), and 94 were in the exact-time condition (46 access, 48 comparison), a separate branch that is described but not modeled. From the primary sample, three parallel boxes, not nested in one another, show the participants with each outcome available: writing, content, and originality grades for 353 (167 access, 186 comparison), felt effectiveness and enjoyment for 357 (170 access, 187 comparison), and the two-month adoption item, answered by 289 (139 access, 150 comparison). Below each availability box, an analyzed box gives the participants in each model, those with the outcome and all baseline covariates observed (see Participants): the models for Hypotheses 1 and 2, Hypothesis 3, and Hypotheses 4 and 5, and for adoption the complete-case model (276) and the multiple-imputation model, which uses all 359 participants in the primary sample.</figcaption>
-  </figure>
-  <figure>
-    <img src="assets/figure2_effects_forest.png" alt="Figure 2: forest plot of ChatGPT access effects on grades, ratings, and adoption with 95% credible intervals and P(direction)." width="3900" height="3519" style="width:100%;height:auto">
-    <figcaption><strong>Figure 2</strong><em> Effects of ChatGPT Access on Grades, Ratings, and Adoption.</em> <em>Note.</em> Primary sample (<em>n</em> = 359; the analysis <em>ns</em> for each model are given in Tables 3 and 4 and Figure 1). Values come only from fits that met every convergence and Monte Carlo error criterion in Method; estimates for Hypotheses 1, 2, 4, and 5 are in the standardized units defined in Method, the Hypothesis 3 estimate is a difference of log standard-deviation ratios, and adoption is a risk difference in percentage points from the corrected follow-up analysis (see Appendix, Adoption Analyses Reestimated After a Code Correction). Circles mark posterior medians, horizontal lines mark 95% equal-tailed credible intervals, the dashed vertical line marks zero, and the column at right gives <em>P</em>(direction); an estimand without an estimate is labeled not estimable. <em>P</em>(direction) = posterior probability that the effect is in the predicted direction; CrI = 95% equal-tailed credible interval; <em>SD</em> = standard deviation.</figcaption>
-  </figure>
+<section id="practice" aria-labelledby="s-prac">
+  <p class="section-label" id="s-prac">What this means in practice</p>
+  <div class="brief">
+    <p class="q">The decision</p>
+    <p class="decision">Who should get a generative writing tool first, and how should it be introduced?</p>
+    <p class="answer"><strong>Start with the people whose writing has the most room to grow, and give them one supported first use.</strong> In this experiment the gain from access was largest for writers whose first essays were graded lower. One structured session with the tool was followed by higher enjoyment of the task and, two months later, by more use at work.</p>
+  </div>
+  <div class="cards">
+    <div class="card do">
+      <h3>What was found</h3>
+      <ul>
+        <li>With access, a person&rsquo;s second-task writing grade depended less on their first-task grade. The gap between the two groups was widest for writers whose first essays were graded lower.</li>
+        <li>People given access enjoyed the task more, by a little under half a standard deviation.</li>
+        <li>Two months later, about 42 in 100 of those given access reported using a chatbot at work in the past week, against about 29 in 100 of the others.</li>
+      </ul>
+    </div>
+    <div class="card ask">
+      <h3>What you can do with it</h3>
+      <ul>
+        <li>Put early access and training where the case is strongest: with weaker writers, ahead of the strongest ones.</li>
+        <li>Introduce the tool with a single supported first use. In this experiment one such session was enough to be followed by more use two months on.</li>
+        <li>Track writing quality by starting level, not only on average, so you can see who gains.</li>
+      </ul>
+    </div>
+    <div class="card test">
+      <h3>The study that would take it further</h3>
+      <ul>
+        <li>Run it inside a workplace with current tools, and follow use and work quality beyond two months.</li>
+        <li>Vary how the tool is built into the task, to see which way of using it carries the gain.</li>
+        <li>Measure whether people still feel the work is theirs and that it matters, alongside quality and speed.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="fineprint">The first two action points are the practical points the paper itself states; tracking by starting level follows from its main result. The third card comes from the paper&rsquo;s closing paragraph and its stated limits. The experiment used ChatGPT as it was in early 2023, with professionals recruited online in six occupations, and the weakening of the grade link was estimated with a wide margin. To plan a rollout or a pilot: <a href="mailto:matt@vocentive.com">matt@vocentive.com</a>.</p>
+</section>
 
-  <h2>Links</h2>
-  <ul class="clean">
-    <li>PDF: <a href="/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf">Download preprint PDF</a></li>
-    <li>Preprint: SocArXiv, <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a>.</li>
-    <li>DOI: <a href="https://doi.org/10.31235/osf.io/y2p75_v1">10.31235/osf.io/y2p75_v1</a></li>
-    <li>Data (original deposit): <a href="https://doi.org/10.17605/OSF.IO/XD7QW">https://doi.org/10.17605/OSF.IO/XD7QW</a></li>
+<section id="writers" aria-labelledby="s-writ">
+  <p class="section-label" id="s-writ">For writers and editors</p>
+  <p class="oneline" id="oneline">In a reanalysis of a 2023 randomized experiment with 359 professionals, access to ChatGPT weakened the link between how well people wrote on a first task and how well they wrote on a second, raised their enjoyment of the task, and was followed two months later by more chatbot use at work.</p>
+  <p class="fineprint" style="margin-top:8px"><button type="button" class="copy-btn" id="copy-oneline">Copy this sentence</button></p>
+  <dl class="facts">
+    <dt>Kind of study</dt><dd>A new analysis of a randomized experiment. Access to ChatGPT was assigned at random after the first writing task, so differences between the groups can be attributed to access.</dd>
+    <dt>Status</dt><dd>Preprint on SocArXiv, 2026. It has not been peer reviewed. The reanalysis was not registered in advance.</dd>
+    <dt>Data</dt><dd>The original experiment was run by Noy and Zhang and published in <em>Science</em> in 2023. They shared the data openly. The author of this paper did not collect the data and has no affiliation with them.</dd>
+    <dt>Who was studied</dt><dd>College-educated professionals recruited on the Prolific platform in marketing, grant writing, consulting, data analysis, human resources, and management. Age, gender, and country were not released.</dd>
+    <dt>Funding and interests</dt><dd>No specific funding and no conflicts of interest declared. The paper discloses the use of AI tools in drafting text and checking statistics.</dd>
+  </dl>
+  <div class="say-grid">
+    <div class="say yes">
+      <h3>The study supports</h3>
+      <ul>
+        <li>&ldquo;ChatGPT access helped weaker writers more than stronger ones.&rdquo;<span>Interaction of &minus;0.159, with a 97.6% probability that the link weakened. Add that the size is uncertain.</span></li>
+        <li>&ldquo;People given ChatGPT enjoyed the writing task more.&rdquo;<span>0.44 standard deviations, interval 0.29 to 0.60.</span></li>
+        <li>&ldquo;Two months later, more of them were using a chatbot at work.&rdquo;<span>About 42% against 29%; a difference of 13.4 points, interval 3.0 to 23.5.</span></li>
+      </ul>
+    </div>
+    <div class="say no">
+      <h3>It does not support</h3>
+      <ul>
+        <li>&ldquo;ChatGPT erases differences in writing skill.&rdquo;<span>The link weakened. It did not disappear, and the weakening could be very small.</span></li>
+        <li>&ldquo;ChatGPT made people feel more effective.&rdquo;<span>The estimate leans that way (0.12), but its interval includes zero.</span></li>
+        <li>&ldquo;This is what today&rsquo;s AI tools do.&rdquo;<span>The experiment used ChatGPT in early 2023.</span></li>
+        <li>&ldquo;ChatGPT improves job performance.&rdquo;<span>Two paid writing tasks online, not work on the job. Later use was self-reported.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="cite-box">
+    <p id="cite-text">Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. https://doi.org/10.31235/osf.io/y2p75_v1</p>
+    <button type="button" class="copy-btn" id="copy-cite">Copy citation</button>
+  </div>
+  <p class="fineprint">Questions, or a quote: Matthew J. Monnot, <a href="mailto:matt@vocentive.com">matt@vocentive.com</a>.</p>
+</section>
+
+<section id="evidence" aria-labelledby="s1">
+  <p class="section-label" id="s1">1 &middot; Did the tool change who wrote well?</p>
+  <p class="section-intro">Everyone wrote a first piece without the tool. If skill carries over, people with a better first piece should also write a better second piece. The question is whether that carry-over is weaker when ChatGPT is available. Switch between the two groups.</p>
+  <div class="calc">
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Choose the group" id="q-seg">
+        <button type="button" data-q="comparison" aria-pressed="true">Without ChatGPT</button>
+        <button type="button" data-q="access" aria-pressed="false">With ChatGPT</button>
+      </div>
+      <figure class="chart">
+        <svg id="q-chart" viewBox="0 0 560 330" role="img" aria-labelledby="q-title q-desc">
+          <title id="q-title">Illustration of the link between first-task and second-task writing grades in each group</title>
+          <desc id="q-desc">Two lines. Without ChatGPT, the second-task grade rises steeply with the first-task grade. With ChatGPT, the line is higher and flatter, and the gap between the lines is widest for writers with lower first-task grades.</desc>
+        </svg>
+        <figcaption>Illustration only, not the study&rsquo;s data. The slopes are drawn to show the direction of the published result; the estimate is in the panel beside it and in section 3.</figcaption>
+      </figure>
+    </div>
+    <div class="results" aria-live="polite">
+      <div class="stat">
+        <span class="stat-value red" id="q-value">&nbsp;</span>
+        <span class="stat-label" id="q-label">&nbsp;</span>
+        <span class="stat-sub" id="q-sub">&nbsp;</span>
+      </div>
+      <p class="reading" id="q-reading">&nbsp;</p>
+      <div class="kicker-bar" id="q-bar">
+        <p class="kicker-main" id="q-main">&nbsp;</p>
+        <p class="kicker-sub" id="q-barsub">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="s2">
+  <p class="section-label" id="s2">2 &middot; Did one session change what people did at work?</p>
+  <p class="section-intro">About two months after the experiment, participants were asked whether they had used ChatGPT or a similar chatbot in their job in the past week. Among those who had <em>not</em> been given access during the experiment, about 29 in 100 said yes.</p>
+  <div id="guess"></div>
+  <div id="adopt-wrap" class="guess-target">
+    <h2>About 42 in 100 of those given access were using a chatbot at work two months later, against about 29 in 100 of the others.</h2>
+    <p class="section-intro">The difference is 13.4 percentage points, with a plausible range from 3.0 to 23.5. Each dot is one of 100 professionals.</p>
+    <div id="adopt"></div>
+  </div>
+</section>
+
+<section aria-labelledby="s3">
+  <p class="section-label" id="s3">3 &middot; Read one estimate at a time</p>
+  <p class="section-intro">Each row is a published estimate. The dot is the estimate and the line is its 95% credible interval: the range that holds the true value with 95% probability, given the model. Zero means no difference between the groups. The paper also gives, for each planned test, the probability that the effect runs in the predicted direction.</p>
+  <div id="effects"></div>
+</section>
+
+<section aria-labelledby="s4">
+  <p class="section-label" id="s4">4 &middot; How the experiment ran</p>
+  <ol class="steps">
+    <li><strong>First task</strong>Everyone completed a paid writing task without the tool</li>
+    <li><strong>Random assignment</strong>Of 453 participants, 218 were given access to ChatGPT and 235 were not; 359 of them (172 and 187) are analyzed here</li>
+    <li><strong>Second task</strong>Graders who were not told the group scored each piece from 1 to 7; grades are available for 353 people</li>
+    <li><strong>Two months later</strong>289 answered a question about chatbot use at work</li>
+  </ol>
+</section>
+
+<section aria-labelledby="s5">
+  <p class="section-label" id="s5">5 &middot; What the study found, in order</p>
+  <ul class="todo">
+    <li><strong>Earlier writing quality mattered less with ChatGPT.</strong> The link between first-task and second-task writing grades was weaker in the access group by &minus;0.159, 95% credible interval [&minus;0.317, &minus;0.002], with a .976 probability that it weakened. The gap between the groups was largest for writers whose first essays were graded lower.</li>
+    <li><strong>The size of that weakening is uncertain.</strong> The interval nearly reaches zero. With tighter prior assumptions it was &minus;0.147 [&minus;0.301, 0.004], and an ordinary regression gave &minus;0.17 with a 95% confidence interval of [&minus;0.35, 0.02]. The direction held in every check.</li>
+    <li><strong>People enjoyed the task more with ChatGPT.</strong> Enjoyment was higher by 0.44 standard deviations [0.29, 0.60]. This is the clearest result in the paper.</li>
+    <li><strong>Feeling effective leaned higher but did not settle.</strong> The estimate was 0.12 [&minus;0.06, 0.29], with a .905 probability of being positive.</li>
+    <li><strong>Writing and content were affected alike.</strong> The weakening was no different for content grades than for writing grades (&minus;0.01 [&minus;0.14, 0.11]), and access did not narrow the spread of originality grades more than the spread of writing grades (&minus;0.01 [&minus;0.14, 0.12]).</li>
+    <li><strong>More people used a chatbot at work two months later.</strong> 42.2% against 28.8%, a difference of 13.4 percentage points [3.0, 23.5]. Three ways of handling people who did not answer the follow-up gave differences between 10.1 and 17.2 points.</li>
+    <li><strong>What follows.</strong> The paper draws two practical points: the case for early access and training is strongest for weaker writers, and a single supported first use is a reasonable way to introduce the tool.</li>
   </ul>
+</section>
 
-  <p class="note">Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. Preprint: SocArXiv, <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a>.</p>
+<section aria-labelledby="s6">
+  <p class="section-label" id="s6">6 &middot; The paper&rsquo;s figures, with a reading guide</p>
+  <figure class="paper-figure">
+    <img src="assets/figure2_effects_forest.png" alt="Figure 2 of the preprint: a forest plot of the effects of ChatGPT access on grades, ratings, and adoption, each with a 95% credible interval and the probability of the predicted direction." width="3900" height="3519" loading="lazy">
+    <figcaption><strong>Figure 2. How to read it.</strong> Each row is one planned test. The circle is the estimate, the horizontal line is its 95% credible interval, and the dashed vertical line marks zero. The column at the right gives the probability that the effect runs in the predicted direction. The enjoyment row sits clearly to the right of zero. The first row, the writing-grade link, sits to the left with its interval ending just short of zero. Adoption is in percentage points and the other rows are in standardized units, so the rows are not on one common scale.</figcaption>
+  </figure>
+  <figure class="paper-figure">
+    <img src="assets/figure1_consort_flow.png" alt="Figure 1 of the preprint: participant flow from 453 randomized participants to the 359 in the primary sample and the numbers with each outcome available." width="3900" height="3000" loading="lazy">
+    <figcaption><strong>Figure 1. How to read it.</strong> The flow starts with the 453 people who were randomized and splits by group. The 359 in the two main payment conditions are the sample analyzed here; 94 in a third payment condition are described but not modeled. The three boxes below show how many people have each kind of outcome: grades (353), ratings of the task (357), and the two-month question (289).</figcaption>
+  </figure>
+</section>
+
+<section id="specialists" aria-labelledby="s-spec">
+  <p class="section-label" id="s-spec">For specialists</p>
+  <p class="section-intro">The design, models, and every reported estimate in one place. Estimates are posterior medians with 95% equal-tailed credible intervals; <em>P</em> is the posterior probability of the predicted direction. No decision cutoffs were applied.</p>
+  <table class="spec">
+    <tbody>
+      <tr><th scope="row">Design</th><td>Secondary analysis of an online randomized experiment (Noy &amp; Zhang, 2023, <em>Science, 381</em>(6654), 187&ndash;192; original registration AEARCTR-0010882). Two incentivized writing tasks; access to ChatGPT assigned after the first. Data: authors&rsquo; archival files on OSF (<a href="https://doi.org/10.17605/OSF.IO/XD7QW">10.17605/OSF.IO/XD7QW</a>).</td></tr>
+      <tr><th scope="row">Sample</th><td>453 randomized (218 access, 235 comparison). Primary sample: linear and convex incentive conditions, <em>n</em> = 359 (172, 187); the exact-time condition (<em>n</em> = 94) is described but not modeled. Outcomes available: grades 353, ratings 357, adoption item 289 (139, 150). Complete-case analysis <em>n</em>s: 352 or 353 for Hypotheses 1&ndash;5; 276 for adoption. Age, gender, race or ethnicity, and country were not released.</td></tr>
+      <tr><th scope="row">Measures</th><td>Essay grades for writing, content, originality, and overall quality on 1&ndash;7 scales from graders not told the condition; mean of 2.72 graders per essay; ICC(<em>k</em>) = .63 for writing and .53 for originality. Felt effectiveness and enjoyment: single items, 1&ndash;10. Adoption: used ChatGPT or a similar chatbot at work in the past week, asked at the two-month follow-up.</td></tr>
+      <tr><th scope="row">Scaling</th><td>First-task grades centered at the primary-sample mean and divided by the comparison group&rsquo;s <em>SD</em>; second-task writing and content grades rescaled with the matching first-task mean and <em>SD</em>; originality and the two ratings standardized in the primary sample.</td></tr>
+      <tr><th scope="row">Models</th><td>Bayesian regressions with occupation, task order, and payment condition as covariates. H1: second-task writing grade on condition, centered first-task writing grade, and their product. H2: writing and content modeled jointly with a residual correlation. H3: location-scale model with condition on the mean and the <em>SD</em>, no covariates. H4 and H5: rating on condition, first-task rating, centered first-essay overall grade, and the product. Adoption: logistic model with prior use and awareness of ChatGPT, task order, payment condition, and occupation; risk difference by averaging predictions.</td></tr>
+      <tr><th scope="row">Priors</th><td>Condition: Normal(0, 1), or Normal(0, 1.5) on the log-odds scale for adoption. Condition-by-baseline interactions: Normal(0, 0.5). Covariates: Normal(0, 1). Residual <em>SD</em>s: Exponential(1). Residual correlations: LKJ(2). H3 condition on log <em>SD</em>: Normal(0, 0.5).</td></tr>
+      <tr><th scope="row">Estimation</th><td>R 4.5.2, brms 2.23.0 on rstan 2.32.7; mice 3.19.0 for 50 imputations by chained equations within condition. Every fit for Hypotheses 1&ndash;5 met the convergence and Monte Carlo error criteria on the first attempt; no divergent transitions; largest R-hat 1.001.</td></tr>
+      <tr><th scope="row">Hypothesis 1</th><td>Condition &times; first-task writing grade: &minus;0.159 [&minus;0.317, &minus;0.002], <em>P</em> = .976.</td></tr>
+      <tr><th scope="row">Hypothesis 2</th><td>Content interaction minus writing interaction: &minus;0.01 [&minus;0.14, 0.11], <em>P</em> = .423.</td></tr>
+      <tr><th scope="row">Hypothesis 3</th><td>Originality minus writing, log <em>SD</em> ratio (access to comparison): &minus;0.01 [&minus;0.14, 0.12], <em>P</em> = .576.</td></tr>
+      <tr><th scope="row">Hypothesis 4</th><td>Felt effectiveness: condition 0.12 [&minus;0.06, 0.29], <em>P</em> = .905; condition &times; first-essay overall grade &minus;0.11 [&minus;0.27, 0.06], <em>P</em> = .894.</td></tr>
+      <tr><th scope="row">Hypothesis 5</th><td>Enjoyment (secondary): condition 0.44 [0.29, 0.60], <em>P</em> = 1.000; condition &times; first-essay overall grade 0.04 [&minus;0.11, 0.19], <em>P</em> = .299.</td></tr>
+      <tr><th scope="row">Planned sensitivity</th><td>Prior scales doubled, halved, and diffuse Normal(0, 10): largest change for H1 under halved scales, &minus;0.147 [&minus;0.301, 0.004], <em>P</em> = .972. Ordinary least squares: H1 &minus;0.17, HC3 95% CI [&minus;0.35, 0.02]; enjoyment 0.45 [0.28, 0.61].</td></tr>
+      <tr><th scope="row">Exploratory</th><td>Censored models: H1 &minus;0.18 [&minus;0.34, &minus;0.01], <em>P</em> = .983; H3 &minus;0.03 [&minus;0.24, 0.19], <em>P</em> = .595. Ordinal models, log odds: felt effectiveness 0.38 [0.00, 0.75], enjoyment 1.17 [0.79, 1.57]. Grader-level model &minus;0.09 [&minus;0.18, &minus;0.01]; it pools ratings of both essays and is not a direct check on H1.</td></tr>
+      <tr><th scope="row">Adoption</th><td>Multiple imputation (primary, <em>n</em> = 359): 42.2% versus 28.8%; risk difference 13.4 [3.0, 23.5] percentage points, <em>P</em>(RD &gt; 0) = .994. Complete case (<em>n</em> = 276): 41.8% versus 28.3%; 13.5 [3.1, 23.7], <em>P</em> = .995. Tipping-point range 10.1 to 17.2; Lee (2009) trimming bounds 14.3 to 15.7. Complete-case estimate under the alternative priors: 12.2 to 14.0.</td></tr>
+      <tr><th scope="row">Plan and deviations</th><td>Not registered. The protocol was fixed and time-stamped before the planned analysis, but the hypotheses had been tested once on these outcomes in an earlier analysis (22 October 2026), so the planned analysis is a retest. Adoption was added as a secondary outcome after that first analysis. The five hypotheses form the planned family with no primary outcome and no multiplicity adjustment. The adoption analyses were reestimated after a disclosed correction to the code that averages predictions; no adoption estimate had been saved or seen before the correction. Sampling backend changed from CmdStan to rstan with models, priors, and seeds unchanged. Full record in the preprint&rsquo;s appendix.</td></tr>
+      <tr><th scope="row">Materials</th><td>Data: original authors&rsquo; OSF deposit. Protocol, deviation record, and code: from the author on request. Reporting follows JARS-Quant and CONSORT 2025.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<details class="model-notes">
+  <summary>What this site does and does not show</summary>
+  <ul>
+    <li>No participant-level data are hosted here; every number on this page is a published aggregate from the preprint.</li>
+    <li>The diagram in section 1 is an illustration of the direction of the result. The paper reports the difference between the two slopes, not each slope.</li>
+    <li>The &ldquo;of 100&rdquo; display in section 2 rounds the model-based percentages (42.2% and 28.8%). They are estimates for all 359 participants, including those who did not answer the follow-up, not raw counts.</li>
+    <li>A high probability of direction indicates the sign of an effect, not that an effect of practical size exists.</li>
+    <li>The experiment used ChatGPT as it was in early 2023, with professionals recruited online in six occupations. The results may not carry over to current tools or to work on the job.</li>
+    <li>Enjoyment, felt effectiveness, and later use are single self-report items from people who knew which group they were in.</li>
+  </ul>
+</details>
+
+<section aria-labelledby="tools-used">
+  <p class="section-label" id="tools-used">Tools used</p>
+  <p>R (brms, rstan, mice); Python (pandas, NumPy, DuckDB); HTML, CSS, and JavaScript.</p>
+</section>
+
+<footer>
+  <p>Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a> &middot; <a href="/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf">PDF</a></p>
+  <p><a href="https://mjmonnot.github.io/">mjmonnot.github.io</a> &middot; Contact: matt@vocentive.com</p>
+</footer>
+
 </main>
+<script src="/assets/companion/companion.js"></script>
+<script>
+(function () {
+  "use strict";
 
-  <p class="tools-used wrap"><strong>Tools used.</strong> R (brms); HTML and CSS.</p>
-<footer class="site"><div class="wrap">
-  Matthew J. Monnot · matt@vocentive.com
-</div></footer>
+  /* 1 · Illustration: link between first- and second-task writing grade, by group. */
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("q-chart");
+  function el(n, a, t) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); if (t != null) e.textContent = t; return e; }
+  var CMP = { x1: 92, y1: 250, x2: 508, y2: 74 };
+  var ACC = { x1: 92, y1: 168, x2: 508, y2: 56 };
+  function drawQ(mode) {
+    Array.prototype.slice.call(svg.childNodes).forEach(function (n) { if (n.nodeName !== "title" && n.nodeName !== "desc") svg.removeChild(n); });
+    svg.appendChild(el("line", { x1: 56, x2: 544, y1: 286, y2: 286, "class": "axis" }));
+    svg.appendChild(el("line", { x1: 56, x2: 56, y1: 20, y2: 286, "class": "axis" }));
+    svg.appendChild(el("text", { x: 300, y: 318, "text-anchor": "middle", "class": "lbl" }, "Writing grade on the first task (lower to higher)"));
+    svg.appendChild(el("text", { x: 20, y: 153, "text-anchor": "middle", "class": "lbl", transform: "rotate(-90 20 153)" }, "Writing grade on the second task"));
+    var hot = mode === "access";
+    svg.appendChild(el("line", { x1: CMP.x1, y1: CMP.y1, x2: CMP.x2, y2: CMP.y2, stroke: hot ? "#c9cfd6" : "#22303c", "stroke-width": hot ? 2 : 3 }));
+    svg.appendChild(el("text", { x: 300, y: 196, "class": "lbl", fill: hot ? "#7a8794" : "#22303c" }, "Without ChatGPT"));
+    if (hot) {
+      svg.appendChild(el("line", { x1: ACC.x1, y1: ACC.y1, x2: ACC.x2, y2: ACC.y2, stroke: "#2e6f9e", "stroke-width": 3 }));
+      svg.appendChild(el("text", { x: 100, y: 124, "class": "lbl", fill: "#2e6f9e" }, "With ChatGPT"));
+      svg.appendChild(el("line", { x1: 112, y1: 172, x2: 112, y2: 234, stroke: "#c0392b", "stroke-width": 2, "stroke-dasharray": "4 3" }));
+      svg.appendChild(el("text", { x: 120, y: 268, "class": "lbl", fill: "#c0392b" }, "Wider gap"));
+      svg.appendChild(el("line", { x1: 490, y1: 66, x2: 490, y2: 78, stroke: "#c0392b", "stroke-width": 2, "stroke-dasharray": "4 3" }));
+      svg.appendChild(el("text", { x: 500, y: 104, "text-anchor": "end", "class": "lbl", fill: "#c0392b" }, "Narrower gap"));
+    }
+  }
+  var Q = {
+    comparison: {
+      value: "Steeper", cls: "stat-value ink",
+      label: "Without ChatGPT",
+      sub: "The paper reports the difference between the two groups\u2019 slopes, not each slope, so no number is shown for this group alone.",
+      reading: "Without the tool, the people who wrote the better first piece tended to write the better second piece. Writing skill carried over from one task to the next.",
+      muted: true, main: "This is the starting point.",
+      barsub: "Switch to \u201cWith ChatGPT\u201d to see what changed."
+    },
+    access: {
+      value: "\u22120.159", cls: "stat-value red",
+      label: "Change in the link, with ChatGPT",
+      sub: "Difference in slope between the groups, 95% credible interval [\u22120.317, \u22120.002]; probability that the link weakened .976",
+      reading: "With the tool, the line is flatter: the second-task grade depended less on the first-task grade. The gap between the groups is widest at the left, among people whose first piece was graded lower.",
+      muted: false, main: "The link very probably weakened. By how much is uncertain.",
+      barsub: "The interval runs from a clear weakening to almost none."
+    }
+  };
+  function renderQ(mode) {
+    var q = Q[mode];
+    drawQ(mode);
+    var v = document.getElementById("q-value");
+    v.textContent = q.value; v.className = q.cls;
+    document.getElementById("q-label").textContent = q.label;
+    document.getElementById("q-sub").textContent = q.sub;
+    document.getElementById("q-reading").innerHTML = q.reading;
+    document.getElementById("q-bar").className = "kicker-bar" + (q.muted ? " muted" : "");
+    document.getElementById("q-main").textContent = q.main;
+    document.getElementById("q-barsub").textContent = q.barsub;
+  }
+  Array.prototype.forEach.call(document.querySelectorAll("#q-seg button"), function (b) {
+    b.addEventListener("click", function () {
+      Array.prototype.forEach.call(document.querySelectorAll("#q-seg button"), function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+      renderQ(b.getAttribute("data-q"));
+    });
+  });
+  renderQ("comparison");
+
+  /* Writers' block: copy buttons. */
+  Companion.copy(document.getElementById("copy-oneline"), function () { return document.getElementById("oneline").textContent; });
+  Companion.copy(document.getElementById("copy-cite"), function () { return document.getElementById("cite-text").textContent; });
+
+  /* 2 · Guess first, then the published percentages. */
+  Companion.guess(document.getElementById("guess"), {
+    question: "Before you look: of 100 professionals who had been given ChatGPT for one task during the experiment, how many do you think said yes two months later?",
+    min: 0, max: 100, step: 1, start: 29,
+    format: function (v) { return v + " of 100"; },
+    reveal: document.getElementById("adopt-wrap"),
+    feedback: function (v) {
+      var d = v - 42;
+      if (Math.abs(d) <= 3) return "You guessed <strong>" + v + "</strong>. The study\u2019s estimate is about <strong>42</strong>, so you were close.";
+      if (d < 0) return "You guessed <strong>" + v + "</strong>. The study\u2019s estimate is about <strong>42</strong>: one session was followed by more use than you expected.";
+      return "You guessed <strong>" + v + "</strong>. The study\u2019s estimate is about <strong>42</strong>: more than the 29 in the other group, though fewer than you expected.";
+    }
+  });
+
+  /* 2 · Two-month adoption as counts of 100 (Table 4). */
+  Companion.iconArray(document.getElementById("adopt"), {
+    label: "Choose an estimate",
+    options: [{
+      label: "All 359 participants",
+      panels: [
+        { filled: 42, tone: "blue", text: "used a chatbot at work in the past week", who: "Given access to ChatGPT in the experiment" },
+        { filled: 29, tone: "", text: "used a chatbot at work in the past week", who: "Not given access" }
+      ],
+      note: "Main estimate: 42.2% and 28.8%, rounded to whole dots. A difference of 13.4 percentage points, 95% credible interval [3.0, 23.5], with a .994 probability that it is above zero. Answers from the 70 people who did not respond to the follow-up were filled in by multiple imputation."
+    }, {
+      label: "Only those with complete answers",
+      panels: [
+        { filled: 42, tone: "blue", text: "used a chatbot at work in the past week", who: "Given access to ChatGPT in the experiment" },
+        { filled: 28, tone: "", text: "used a chatbot at work in the past week", who: "Not given access" }
+      ],
+      note: "Complete cases (276 people): 41.8% and 28.3%, rounded to whole dots. A difference of 13.5 percentage points, 95% credible interval [3.1, 23.7]. Two further checks on missing answers gave differences from 10.1 to 17.2 points and from 14.3 to 15.7 points."
+    }]
+  });
+
+  /* 3 · Published estimates (Tables 3 and 4; Results). */
+  Companion.intervals(document.getElementById("effects"), {
+    title: "Effects of ChatGPT access with 95% intervals",
+    groupLabel: "Choose a set of estimates",
+    intervalName: "95% credible interval",
+    includesSub: "The data are compatible with a difference in either direction, or with none.",
+    groups: [
+      { id: "plan", label: "The planned tests", min: -0.4, max: 0.7, ticks: [-0.4, -0.2, 0, 0.2, 0.4, 0.6], tickDigits: 1,
+        axisLabel: "Standardized estimate (0 = no difference)", predicted: null,
+        note: "The seven estimates from the five planned hypotheses. Select a row." },
+      { id: "h1", label: "The main result, checked", min: -0.4, max: 0.1, ticks: [-0.4, -0.3, -0.2, -0.1, 0, 0.1], tickDigits: 1,
+        axisLabel: "Change in the link between first and second writing grade",
+        predicted: { side: "neg", label: "PREDICTED: WEAKER LINK" },
+        note: "The same question under different models. Select a row." },
+      { id: "adopt", label: "Use at work, two months on", min: -5, max: 30, ticks: [0, 10, 20, 30], tickDigits: 0, unit: " points",
+        axisLabel: "Difference in percentage points (0 = no difference)",
+        predicted: null,
+        note: "Difference between the groups in the share using a chatbot at work. Select a row." }
+    ],
+    items: [
+      { id: "a1", group: "plan", short: "Link between first and second writing grade", label: "Change in the link between first-task and second-task writing grade", est: -0.159, lo: -0.317, hi: -0.002, digits: 3,
+        extra: "Probability the link weakened: .976",
+        reading: "For each standard deviation higher on the first-task writing grade, the advantage of the ChatGPT group on the second task was smaller by about 0.16. Stronger writers gained less from access than weaker writers.",
+        verdict: { muted: false, main: "The interval excludes zero, narrowly.", sub: "Its upper end is \u22120.002. The direction is well supported; the size could be anywhere from about a third of a standard deviation to almost nothing." },
+        note: "Hypothesis 1. Condition \u00d7 centered first-task writing grade, <em>n</em> = 352." },
+      { id: "a2", group: "plan", short: "Content compared with writing", label: "Content interaction minus writing interaction", est: -0.01, lo: -0.14, hi: 0.11,
+        extra: "Probability of the predicted direction: .423",
+        reading: "Was the weakening different for the content of the piece than for the writing itself? The estimate is at zero: the data do not distinguish the two.",
+        note: "Hypothesis 2. Writing and content grades modeled jointly, <em>n</em> = 352." },
+      { id: "a3", group: "plan", short: "Spread of originality compared with writing", label: "Originality minus writing, log ratio of spread", est: -0.01, lo: -0.14, hi: 0.12,
+        extra: "Probability of the predicted direction: .576",
+        reading: "Did access pull people closer together on originality more than on writing quality? The estimate is at zero: no difference between the two kinds of grade.",
+        note: "Hypothesis 3. A difference of log standard-deviation ratios from a location-scale model, <em>n</em> = 353. Not on the same scale as the other rows." },
+      { id: "a4", group: "plan", short: "Feeling effective", label: "Felt effectiveness on the second task", est: 0.12, lo: -0.06, hi: 0.29,
+        extra: "Probability the effect is positive: .905",
+        reading: "People given ChatGPT rated themselves as somewhat more effective on the task. The estimate leans positive, and the interval includes zero.",
+        note: "Hypothesis 4, condition effect. Single item rated 1 to 10, standardized; <em>n</em> = 352." },
+      { id: "a5", group: "plan", short: "Feeling effective, by first-essay grade", label: "Felt effectiveness: condition \u00d7 first-essay overall grade", est: -0.11, lo: -0.27, hi: 0.06,
+        extra: "Probability of the predicted direction: .894",
+        reading: "Did weaker writers gain more in feeling effective? The estimate leans that way, and the interval includes zero.",
+        note: "Hypothesis 4, interaction." },
+      { id: "a6", group: "plan", short: "Enjoying the task", label: "Enjoyment of the second task", est: 0.44, lo: 0.29, hi: 0.60,
+        extra: "Probability the effect is positive: 1.000",
+        reading: "People given ChatGPT enjoyed the second task more, by a little under half a standard deviation. The whole interval is well above zero.",
+        verdict: { muted: false, main: "The interval excludes zero.", sub: "This is the clearest effect in the paper. An ordinary regression gave 0.45, with an interval from 0.28 to 0.61." },
+        note: "Hypothesis 5 (secondary), condition effect. Single item rated 1 to 10, standardized; <em>n</em> = 352." },
+      { id: "a7", group: "plan", short: "Enjoying the task, by first-essay grade", label: "Enjoyment: condition \u00d7 first-essay overall grade", est: 0.04, lo: -0.11, hi: 0.19,
+        extra: "Probability of the predicted direction: .299",
+        reading: "Did weaker writers gain more in enjoyment? No sign of it: the estimate is near zero.",
+        note: "Hypothesis 5, interaction." },
+
+      { id: "b1", group: "h1", short: "Main model", label: "Main model", est: -0.159, lo: -0.317, hi: -0.002, digits: 3,
+        extra: "Probability the link weakened: .976",
+        reading: "The paper\u2019s main estimate. The link between first-task and second-task writing grades was weaker with ChatGPT.",
+        verdict: { muted: false, main: "The interval excludes zero, narrowly.", sub: "Its upper end is \u22120.002." },
+        note: "Bayesian regression with weakly informative priors; interaction prior Normal(0, 0.5)." },
+      { id: "b2", group: "h1", short: "Check: tighter prior assumptions", label: "Prior scales halved", est: -0.147, lo: -0.301, hi: 0.004, digits: 3,
+        extra: "Probability the link weakened: .972",
+        reading: "Assuming beforehand that effects are smaller pulls the estimate slightly toward zero, and the interval now just includes it.",
+        note: "The largest change among the three alternative prior settings. Doubled and diffuse priors moved the estimate less." },
+      { id: "b3", group: "h1", short: "Check: ordinary regression", label: "Ordinary least squares", est: -0.17, lo: -0.35, hi: 0.02,
+        reading: "A standard regression with no prior assumptions gives nearly the same estimate. Its confidence interval includes zero.",
+        note: "HC3 95% confidence interval; the person-bootstrap interval is the same to two decimals. This row is a confidence interval, not a credible interval." },
+      { id: "b4", group: "h1", short: "Check: grades capped at 1 and 7 allowed for", label: "Censored model", est: -0.18, lo: -0.34, hi: -0.01,
+        extra: "Probability the link weakened: .983",
+        reading: "Grades cannot go below 1 or above 7, which can flatten a slope mechanically. A model that allows for the caps gives a slightly larger estimate.",
+        note: "Exploratory. Ten of 353 second-task writing grades lay at a bound." },
+
+      { id: "c1", group: "adopt", short: "Main estimate, all 359 participants", label: "Difference in chatbot use at work, two months later", est: 13.4, lo: 3.0, hi: 23.5, digits: 1,
+        extra: "Probability the difference is above zero: .994",
+        reading: "About 42 in 100 of those given access said they had used a chatbot at work in the past week, against about 29 in 100 of the others.",
+        verdict: { muted: false, main: "The interval excludes zero.", sub: "The difference could be as small as 3 points or as large as 24." },
+        note: "Multiple imputation, <em>n</em> = 359. Secondary outcome, added after a first analysis of the data." },
+      { id: "c2", group: "adopt", short: "Check: only people with complete answers", label: "Complete cases", est: 13.5, lo: 3.1, hi: 23.7, digits: 1,
+        extra: "Probability the difference is above zero: .995",
+        reading: "Using only the 276 people who answered the follow-up question and had every background item gives nearly the same answer.",
+        note: "Two further checks give ranges, not intervals: 10.1 to 17.2 points under different assumptions about people who did not answer, and 14.3 to 15.7 points under Lee (2009) trimming bounds." }
+    ]
+  });
+})();
+</script>
 </body>
 </html>
