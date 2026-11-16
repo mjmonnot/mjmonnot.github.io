@@ -274,17 +274,18 @@ legend { font-weight: 700; padding: 0; margin-bottom: 8px; }
 section[id], div[id].anchor { scroll-margin-top: 16px; }
 
 /* --- decision brief (practitioners) --- */
-.brief { background: #fff; border: 1px solid var(--rule); border-left: 5px solid var(--red); border-radius: 4px; padding: 22px 24px; max-width: 46em; }
+.brief { background: #fff; border: 1px solid var(--rule); border-left: 5px solid var(--blue); border-radius: 4px; padding: 22px 24px; max-width: 46em; }
 .brief .q { font-size: 14px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); margin: 0 0 6px; }
 .brief .decision { font-size: 22px; font-weight: 800; line-height: 1.25; margin: 0 0 14px; }
 .brief .answer { font-size: 19px; margin: 0; }
-.brief .answer strong { color: var(--red); }
+.brief .answer strong { color: var(--blue); }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
 @media (max-width: 760px) { .cards { grid-template-columns: 1fr; } }
 .card { background: #fff; border: 1px solid var(--rule); border-top: 4px solid var(--dark); border-radius: 4px; padding: 16px 18px; }
 .card.do { border-top-color: var(--blue); }
 .card.dont { border-top-color: var(--red); }
 .card.ask { border-top-color: var(--gold); }
+.card.test { border-top-color: var(--dark); }
 .card h3 { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 8px; color: var(--gray); }
 .card ul { margin: 0; padding-left: 18px; }
 .card li { margin: 0 0 8px; font-size: 16px; }
