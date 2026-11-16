@@ -6,12 +6,21 @@ permalink: /publications/2026-buffer-or-baseline.html
 
 # Buffer or Baseline? Trait Self-Compassion and Employee Well-Being Across Disruption, Telework, and Digital Demands in a National Probability Panel (2026)
 
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>German employees who were more self-compassionate in 2018 felt less overwhelmed by digital technology in 2024. They were also less lonely in 2024; that loneliness link was not one of the planned tests.</li>
+<li>Self-compassion did not cushion the 2020&ndash;2021 COVID-19 disruption. Life satisfaction fell by about the same amount at every level of self-compassion.</li>
+<li>In an extra analysis, not one of the planned tests, the link was carried by being less self-critical, and being more self-caring added nothing further. The study is observational and did not test whether reducing self-criticism would change later loneliness.</li>
+</ol>
+</div>
+<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/buffer-or-baseline/">Companion site: overview, evidence, and what to watch &rarr;</a></p>
+
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SSRN preprint*  
-**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf)
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf)  
 **DOI:** 10.2139/ssrn.7622018  
 **Link:** [Read the preprint →](https://doi.org/10.2139/ssrn.7622018)  
-**Companion site:** [Overview, evidence, and what to watch →](https://mjmonnot.github.io/buffer-or-baseline/)
 
 ---
 

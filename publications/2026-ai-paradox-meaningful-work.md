@@ -6,12 +6,21 @@ permalink: /publications/2026-ai-paradox-meaningful-work.html
 
 # The AI Paradox: How Optimization May Undermine Meaningful Work in Helping Professions (2026)
 
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>The study&rsquo;s planned predictions did not hold. The kinds of meaning that helping-profession workers described in their work did not forecast how meaningful they found the work, how exhausted they were, or how much they wanted to quit a year later. All six planned estimates were near zero.</li>
+<li>One result that was not planned survived screening: workers whose stories located the meaning of their work in skill and mastery were more exhausted and more inclined to quit a year later. It rests on 17 cases and needs confirmation.</li>
+<li>In a decade of nursing-forum posts, nurses named an AI system only seven times in 7,695 posts. About one post in twenty named staffing ratios, productivity metrics, or documentation load, and in those posts the usual issue was losing control over how the work is done. The study did not measure any worker&rsquo;s own exposure to AI.</li>
+</ol>
+</div>
+<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/lec-2026/">Companion site: poster, figures, methods, readings, and code &rarr;</a></p>
+
 **Authors:** Matthew J. Monnot & Isaac Thompson  
 **Outlet:** *PsyArXiv preprint*  
 **PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf)  
 **DOI:** 10.31234/osf.io/jzngq_v1  
 **Link:** [Read the preprint →](https://doi.org/10.31234/osf.io/jzngq_v1)  
-**Companion site:** [Poster, figures, methods, readings, and code →](https://mjmonnot.github.io/lec-2026/)
 
 <figure>
   <a href="/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png"><img src="/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png" alt="Figure 4 from the preprint: forest plot of the five prespecified year-ahead coefficients with 95% confidence intervals and Bayes factors favoring the null." width="1600" height="775" style="max-width:100%;height:auto;"></a>

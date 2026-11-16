@@ -6,6 +6,15 @@ permalink: /publications/2014-swb-stress-support.html
 
 # Subjective Well-Being at Work: Disentangling Source Effects of Stress and Support on Enthusiasm, Contentment, and Meaningfulness (2014)
 
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>Who the stress comes from matters. Role stress from a supervisor was most strongly tied to a weaker sense that one&rsquo;s work is meaningful.</li>
+<li>Supportive communication from coworkers went with more enthusiasm at work and partly cushioned the effect of supervisor stress.</li>
+<li>Finding work meaningful proved distinct from feeling enthusiastic or content about it, and the study developed a scale to measure it.</li>
+</ol>
+</div>
+
 **Authors:** Matthew J. Monnot & Terry A. Beehr  
 **Journal:** *Journal of Vocational Behavior, 85*(2), 204–218  
 **DOI:** 10.1016/j.jvb.2014.07.005  
@@ -26,9 +35,9 @@ The study also develops and validates a **non-hedonic (meaningfulness) scale** a
 - **Design:** Two linked studies using a large alumni sample from a Midwestern U.S. university.
 - **Participants:**
   - Study 1: scale development sample (n ≈ 500).
-  - Study 2: full structural model sample (n ≈ 1,300+).
+  - Study 2: confirmatory sample (*N* = 1,050 complete cases; 1,342 people finished the survey).
 - **Measures:**
-  - Work stressors by **source** (e.g., supervisor, coworkers, organization, non-work).
+  - Work stressors by **source** (supervisor, coworkers, subordinates).
   - Social support / communication by source.
   - Subjective well-being at work, operationalized as:
     - **Enthusiasm** (positive activation),

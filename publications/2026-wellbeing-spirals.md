@@ -6,12 +6,21 @@ permalink: /publications/2026-wellbeing-spirals.html
 
 # Upward and Downward Spirals in Employee Well-Being: Personality Profiles and Psychological Resources Under AI-Related Workplace Change (2026)
 
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>In 18 years of annual surveys in a Dutch panel, losses outran gains. A rise in a person&rsquo;s distress was followed at the next survey by a larger drop in self-esteem than an equal rise in self-esteem was followed by a drop in distress.</li>
+<li>Employees who felt in 2020 that AI or robots could replace them were less satisfied with their jobs and lives five years later. The feeling of being replaceable carried the cost, not how exposed their occupation was to AI.</li>
+<li>Among adults moving out of a distressed personality pattern, those with more optimism, self-esteem, and sense of meaning in their work more often moved toward recovery than toward withdrawal. These are associations in survey data, not tests of an intervention.</li>
+</ol>
+</div>
+<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/wellbeing-spirals/">Companion site: spiral explorer, evidence, and what organizations can watch &rarr;</a></p>
+
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SSRN preprint*  
-**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf)
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf)  
 **DOI:** 10.2139/ssrn.7617538  
 **Link:** [Read the preprint →](https://doi.org/10.2139/ssrn.7617538)  
-**Companion site:** [Spiral explorer, evidence, and what organizations can watch →](https://mjmonnot.github.io/wellbeing-spirals/)
 
 ---
 
@@ -19,7 +28,7 @@ permalink: /publications/2026-wellbeing-spirals.html
 
 AI is changing how work is assigned, paced, monitored, and rewarded. This study follows Dutch employees in the LISS panel for 18 years (2008–2025; *N* = 72,433 person-waves, 16,862 people) and asks what protects well-being when the job itself starts to feel replaceable.
 
-Three results carry the paper. First, the four personality profiles found in U.S. midlife adults (**Distressed, Antagonistic, Reserved, Resilient**) reappear in a Dutch working-age panel on a different instrument (Tucker congruence = .96). Second, employees who in 2020 felt **replaceable by AI or robots**, or **exhausted** by technology-intensified work, reported lower job and life satisfaction five years later — and it was *perceived* replaceability, not an occupation's exposure score, that carried the cost. Third, among employees leaving the Distressed profile, **optimism, self-esteem, and work meaning** predicted recovery (to Resilient) rather than disengagement (to Reserved), and within persons a one-time rise in distress depleted self-esteem more deeply and durably than an equal gain in self-esteem relieved distress. Losses spiral faster than gains.
+Three results carry the paper. First, the four personality profiles found in U.S. midlife adults (**Distressed, Antagonistic, Reserved, Resilient**) were tested in a Dutch working-age panel on a different instrument (overall Tucker congruence = .96). Antagonistic and Resilient re-emerged; Distressed was a partial shape match (*r* = .69) that did not re-emerge within any single cohort. Second, employees who in 2020 felt **replaceable by AI or robots**, or **exhausted** by technology-intensified work, reported lower job and life satisfaction five years later — and it was *perceived* replaceability, not an occupation's exposure score, that carried the cost. Third, among employees leaving the Distressed profile, **optimism, self-esteem, and work meaning** predicted recovery (to Resilient) rather than disengagement (to Reserved), and within persons a one-time rise in distress depleted self-esteem more deeply and durably than an equal gain in self-esteem relieved distress. Losses spiral faster than gains.
 
 ---
 

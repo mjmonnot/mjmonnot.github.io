@@ -6,12 +6,21 @@ permalink: /publications/2026-stress-turnover-headstart.html
 
 # Stress and Turnover in Helping Professions: A Randomized Controlled Longitudinal Study of Head Start Employees (2026)
 
+<div class="key-findings">
+<p class="key-findings-label">Key findings</p>
+<ol>
+<li>A short set of intake measures (stress, burnout, mood, job satisfaction, hope, and a few demographics) predicted, six months ahead, which Head Start staff would report high stress or little intention to stay in their jobs. Tested on staff whose data had been held back, the equation ranked a staff member who later struggled above one who did not about 7 times in 10: better than guessing and well short of certain.</li>
+<li>Higher stress and younger age at intake carried the most weight for predicting high stress later, and low job satisfaction carried the most for not intending to stay. These are weights in a prediction equation, not tests of cause.</li>
+<li>The study&rsquo;s other question had a negative answer. Knowing whether a staff member had been assigned a brief stress-reappraisal exercise, and how they responded to it, added almost nothing to the six-month predictions.</li>
+</ol>
+</div>
+<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/stress-turnover-headstart/">Companion site: predictors, evidence, and what organizations can do &rarr;</a></p>
+
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SSRN preprint*  
-**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf)
+**PDF:** [Download preprint PDF →](/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf)  
 **DOI:** 10.2139/ssrn.7637538  
 **Link:** [Read the preprint →](https://doi.org/10.2139/ssrn.7637538)  
-**Companion site:** [Predictors, evidence, and what organizations can do →](https://mjmonnot.github.io/stress-turnover-headstart/)
 
 ---
 

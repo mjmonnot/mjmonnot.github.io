@@ -676,6 +676,70 @@ body.feature-lightbox-open {
 }
 
 /* --------------------------------------------------------------------------
+   Publication pages: key findings box and companion-site button
+   -------------------------------------------------------------------------- */
+
+.key-findings {
+  margin: 1.2em 0 1.1em;
+  padding: 20px 26px 12px;
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--gold);
+}
+
+.key-findings-label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin: 0 0 12px;
+}
+
+.key-findings ol {
+  margin: 0;
+  padding-left: 1.3em;
+  font-family: var(--serif);
+  font-size: 1.14rem;
+  line-height: 1.5;
+  color: var(--navy);
+}
+
+.key-findings li {
+  margin-bottom: 0.75em;
+  padding-left: 0.25em;
+}
+
+.key-findings li::marker {
+  color: var(--gold-dark);
+  font-weight: 600;
+}
+
+.companion-cta {
+  margin: 0 0 1.8em;
+}
+
+.companion-btn {
+  display: inline-block;
+  background: var(--navy);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 13px 24px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.companion-btn:hover,
+.companion-btn:focus-visible {
+  background: var(--gold-dark);
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
 
