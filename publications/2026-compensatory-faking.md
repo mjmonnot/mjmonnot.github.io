@@ -14,7 +14,7 @@ permalink: /publications/2026-compensatory-faking.html
 <li>In most of the simulated conditions the statistics used in bias audits barely moved, so an employer watching selection-rate ratios would not see the change in who was hired. Average personality scores did rise; that is how the faking was built into the simulation.</li>
 </ol>
 </div>
-<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/faking-costs/">Companion site: interactive calculator, evidence, and playbook &rarr;</a></p>
+<p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/faking-costs/">Companion site: interactive calculator, evidence, and practice brief &rarr;</a></p>
 
 **Authors:** Matthew J. Monnot  
 **Outlet:** *SSRN preprint*  
@@ -74,7 +74,7 @@ The simulations then work like a flight recorder: build an applicant pool whose 
 
 ### For Selection-System Design
 
-- A full playbook — what to do this quarter and how to structure a selection system around this evidence — is on the [companion site](https://mjmonnot.github.io/faking-costs/playbook.html), with an [interactive calculator](https://mjmonnot.github.io/faking-costs/) for pricing faking in your own hiring funnel.
+- The practice brief on the [companion site](https://mjmonnot.github.io/faking-costs/#practice) sets out what the paper found, what to watch and what would sharpen the answer. Its [interactive calculator](https://mjmonnot.github.io/faking-costs/#calculator) applies the simulated results to your own hire count and salary.
 
 ---
 

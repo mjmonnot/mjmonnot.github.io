@@ -180,11 +180,11 @@ An SSRN preprint following Dutch employees in the LISS panel for 18 years (2008�
   <figcaption>Trait-driven faking mechanism: ability-linked inflation, hiring churn at the cutoff, and the performance cost of swapped seats.</figcaption>
 </figure>
 
-An SSRN preprint combining a second-order meta-analysis with Monte Carlo simulations fit to published applicant evidence. The Conscientiousness–cognitive ability correlation reverses sign in genuine applicant samples relative to incumbents — a trait-specific signature consistent with compensatory faking. At 40% faking prevalence, 22%–36% of top-down hiring decisions change and mean hire performance drops 8%–19%, while monitored psychometric and adverse-impact statistics stay essentially undisturbed.
+An SSRN preprint combining a meta-analysis with Monte Carlo simulations fit to published applicant evidence. The Conscientiousness–cognitive ability correlation reversed sign in genuine applicant samples relative to incumbents, a trait-specific pattern consistent with compensatory faking and concentrated in non-US selection settings. At 40% faking prevalence, 22%–36% of simulated top-down hiring decisions changed and mean hire performance dropped 8%–19%, while adverse-impact ratios were essentially unchanged under trait-driven faking.
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Compensatory faking and the relationship between cognitive ability and personality in personnel selection: Meta-analytic evidence and trait-driven simulations</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7611561">https://doi.org/10.2139/ssrn.7611561</a></p>
 
-🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7611561) · [PDF](/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf) · [Interactive calculator](/faking-costs/) · [Evidence](/faking-costs/evidence.html) · [Publication summary](/publications/2026-compensatory-faking.html)
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7611561) · [PDF](/assets/pdfs/Monnot_2026_Compensatory_Faking_SSRN_7611561.pdf) · [Interactive calculator](/faking-costs/#calculator) · [Evidence](/faking-costs/#evidence) · [Publication summary](/publications/2026-compensatory-faking.html)
 
 ---
 
