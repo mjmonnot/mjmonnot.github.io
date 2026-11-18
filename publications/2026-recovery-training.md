@@ -9,7 +9,7 @@ permalink: /publications/2026-recovery-training.html
 <div class="key-findings">
 <p class="key-findings-label">Key findings</p>
 <ol>
-<li>Two six-week programs, one cognitive-behavioral and one mindfulness-based, each helped employees mentally switch off from work (psychological detachment). Among employees who answered the follow-up survey, the gain over a wait-list group was about 0.9 points on a 7-point scale.</li>
+<li>Two six-week programs, one cognitive-behavioral and one mindfulness-based, each helped employees mentally switch off from work (psychological detachment). Among employees who answered the survey after the training, the gain over a wait-list group was about 0.9 points on a 7-point scale.</li>
 <li>Neither program clearly worked better for employees who struggled most to switch off at the start, or for those who already did it well.</li>
 <li>The trial of 393 German employees was too small to settle who benefits most. Its results limit how large any such difference could be.</li>
 </ol>
