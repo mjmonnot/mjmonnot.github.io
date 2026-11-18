@@ -165,7 +165,7 @@ An SSRN preprint following Dutch employees in the LISS panel for 18 years (2008�
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a></p>
 
-🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7617538) · [PDF](/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf) · [Spiral explorer](/wellbeing-spirals/) · [Evidence](/wellbeing-spirals/evidence.html) · [Publication summary](/publications/2026-wellbeing-spirals.html)
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7617538) · [PDF](/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf) · [Companion site](/wellbeing-spirals/) · [Evidence](/wellbeing-spirals/#evidence) · [Publication summary](/publications/2026-wellbeing-spirals.html)
 
 ---
 
