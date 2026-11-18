@@ -32,7 +32,7 @@ permalink: /publications/2026-coach-burnout.html
 
 ## Summary
 
-In a secondary analysis of a three-wave open panel of Swiss sports coaches (*N* = 422), I separate between-person differences from within-person change with a random-intercept cross-lagged panel model. Between coaches, self-compassion and burnout were negatively associated, *r* = −.48, 95% CI [−.60, −.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion.
+With data from a three-wave open panel of Swiss sports coaches (*N* = 422; Ackeret et al., 2022), I separate between-person differences from within-person change with a random-intercept cross-lagged panel model. Between coaches, self-compassion and burnout were negatively associated, *r* = −.48, 95% CI [−.60, −.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion.
 
 ## Reference
 
