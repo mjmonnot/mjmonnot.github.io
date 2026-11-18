@@ -113,7 +113,7 @@ permalink: /
             </a>
             <figcaption>Figure 1. Within-person paths between self-compassion and burnout in a three-wave RI-CLPM <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A secondary analysis of a three-wave open panel of Swiss sports coaches. After longitudinal invariance tests, a random-intercept cross-lagged panel model separated between-person differences from within-person change. Between coaches, self-compassion and burnout were negatively associated, <em>r</em> = &minus;.48, 95% CI [&minus;.60, &minus;.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion. <a href="/coach-burnout-2026/">Open the companion site &rarr;</a></p>
+          <p class="feature-desc">Data came from a three-wave open panel of Swiss sports coaches (Ackeret et al., 2022). After longitudinal invariance tests, a random-intercept cross-lagged panel model separated between-person differences from within-person change. Between coaches, self-compassion and burnout were negatively associated, <em>r</em> = &minus;.48, 95% CI [&minus;.60, &minus;.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion. <a href="/coach-burnout-2026/">Open the companion site &rarr;</a></p>
           <p class="feature-links"><a href="/coach-burnout-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Coach_SelfCompassion_Preprints_202611_0474.pdf">PDF</a> &middot; <a href="https://doi.org/10.20944/preprints202611.0474.v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value"><em>r</em> = &minus;.48</span>
@@ -123,14 +123,14 @@ permalink: /
         </article>
 <article class="feature-card feature-slide" data-slide="1" aria-hidden="true">
           <p class="feature-title"><a href="/chatgpt-writing-2026/">ChatGPT Access and Writing Skill</a></p>
-          <p class="feature-sub">SocArXiv preprint: a Bayesian reanalysis of an online randomized experiment</p>
+          <p class="feature-sub">SocArXiv preprint: who gains from ChatGPT access, modeled with data from an online randomized experiment</p>
           <figure class="feature-figure feature-figure--wide">
             <a class="feature-figure-link" href="{{ "/assets/images/chatgpt-writing-fig2-effects-forest.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 2: forest plot of ChatGPT access effects">
               <img src="{{ "/assets/images/chatgpt-writing-fig2-effects-forest.png" | relative_url }}" alt="Figure 2 from the preprint: forest plot of ChatGPT access effects on grades, ratings, and adoption with 95% credible intervals and P(direction)." width="1600" height="1444" loading="lazy">
             </a>
             <figcaption>Figure 2. Effects of ChatGPT access on grades, ratings, and adoption, with 95% credible intervals and <em>P</em>(direction) <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A Bayesian reanalysis of Noy and Zhang&rsquo;s (2023a) online randomized experiment among college-educated professionals in six writing-intensive occupations. Under ChatGPT access, second-task writing grades depended less on first-task grades (&minus;0.159 [&minus;0.317, &minus;0.002], <em>P</em>(direction) = .976). Access was associated with higher enjoyment (0.44 [0.29, 0.60]). Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access. <a href="/chatgpt-writing-2026/">Open the companion site &rarr;</a></p>
+          <p class="feature-desc">Bayesian models fit to data from Noy and Zhang&rsquo;s (2023a) online randomized experiment among college-educated professionals in six writing-intensive occupations. Under ChatGPT access, second-task writing grades depended less on first-task grades (&minus;0.159 [&minus;0.317, &minus;0.002], <em>P</em>(direction) = .976). Access was associated with higher enjoyment (0.44 [0.29, 0.60]). Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access. <a href="/chatgpt-writing-2026/">Open the companion site &rarr;</a></p>
           <p class="feature-links"><a href="/chatgpt-writing-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_ChatGPT_Writing_SocArXiv_y2p75.pdf">PDF</a> &middot; <a href="https://doi.org/10.31235/osf.io/y2p75_v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">&minus;0.159</span>
@@ -140,14 +140,14 @@ permalink: /
         </article>
         <article class="feature-card feature-slide" data-slide="2" aria-hidden="true">
           <p class="feature-title"><a href="/meditation-diary-2026/">Does Daily Meditation Increase Self-Compassion?</a></p>
-          <p class="feature-sub">PsyArXiv preprint: a Bayesian multilevel reanalysis of a 28-day employee diary (<em>N</em> = 65; 910 person-days)</p>
+          <p class="feature-sub">PsyArXiv preprint: a Bayesian multilevel study of a 28-day employee diary (<em>N</em> = 65; 910 person-days)</p>
           <figure class="feature-figure feature-figure--wide">
             <a class="feature-figure-link" href="{{ "/assets/images/meditation-diary-fig2-posterior-slopes.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 2: posterior distributions of the within-person meditation slope across models">
               <img src="{{ "/assets/images/meditation-diary-fig2-posterior-slopes.png" | relative_url }}" alt="Figure 2 from the preprint: posterior distributions of the within-person meditation slope for the primary models and each sensitivity model, with medians and 95% credible intervals; every interval spans zero. Panel b shows the implied distribution of person-specific slopes and the random-slope SD." width="1600" height="1034" loading="lazy">
             </a>
             <figcaption>Figure 2. Posterior distributions of the within-person meditation slope across the primary and sensitivity models, with medians and 95% credible intervals <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A secondary analysis of an archival 28-day diary of 65 employees in a two-week online self-compassion meditation program. The original report compared program phases; this one asks whether a person&rsquo;s meditation days differ from their nonmeditation days. A prespecified Bayesian two-level model treated each person&rsquo;s meditation tendency as latent, because nonmeditation days were few (12 participants had none). Same-day self-compassion on meditation days: 0.00 SD, 95% CrI [&minus;0.09, 0.09]. Next-day emotional exhaustion, adjusting for same-day exhaustion: &minus;0.03 SD, 95% CrI [&minus;0.16, 0.11]. Both intervals spanned zero, and the estimates held across priors, missing-data shifts, and observed versus latent centering. <a href="/meditation-diary-2026/">Open the companion site &rarr;</a></p>
+          <p class="feature-desc">Data came from an archival 28-day diary of 65 employees in a two-week online self-compassion meditation program (Li et al., 2021). The original report compared program phases; this study asks whether a person&rsquo;s meditation days differ from their nonmeditation days. A prespecified Bayesian two-level model treated each person&rsquo;s meditation tendency as latent, because nonmeditation days were few (12 participants had none). Same-day self-compassion on meditation days: 0.00 SD, 95% CrI [&minus;0.09, 0.09]. Next-day emotional exhaustion, adjusting for same-day exhaustion: &minus;0.03 SD, 95% CrI [&minus;0.16, 0.11]. Both intervals spanned zero, and the estimates held across priors, missing-data shifts, and observed versus latent centering. <a href="/meditation-diary-2026/">Open the companion site &rarr;</a></p>
           <p class="feature-links"><a href="/meditation-diary-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Meditation_SelfCompassion_Diary_PsyArXiv_986ht.pdf">PDF</a> &middot; <a href="https://doi.org/10.31234/osf.io/986ht_v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">0.00&nbsp;SD</span>
@@ -157,14 +157,14 @@ permalink: /
         </article>
         <article class="feature-card feature-slide" data-slide="3" aria-hidden="true">
           <p class="feature-title"><a href="/recovery-training-2026/">Active Recovery Is Not Just for Athletes</a></p>
-          <p class="feature-sub">SocArXiv preprint: a prespecified reanalysis of a randomized recovery-training trial</p>
+          <p class="feature-sub">SocArXiv preprint: a prespecified test of who gains most in a randomized recovery-training trial</p>
           <figure class="feature-figure feature-figure--wide">
             <a class="feature-figure-link" href="{{ "/assets/images/recovery-training-fig2-quantile-effects.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 2: quantile treatment effects on posttest detachment">
               <img src="{{ "/assets/images/recovery-training-fig2-quantile-effects.png" | relative_url }}" alt="Figure 2 from the preprint: differences from control in posttest detachment quantiles at .10, .25, .50, .75, and .90, with pointwise 95% bootstrap confidence intervals." width="1600" height="788" loading="lazy">
             </a>
             <figcaption>Figure 2. Differences from control in posttest detachment quantiles, with pointwise 95% bootstrap confidence intervals <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A prespecified reanalysis of a randomized trial among German employees (<em>N</em> = 393; 247 with posttest data) that compared a wait-list control with 6-week cognitive-behavioral (CBT) and mindfulness-based (MBT) recovery trainings. Both trainings raised detachment at the mean baseline, by 0.89 and 0.98 scale points. The question was who gained: employees who detached least (compensation) or those who already detached well (accumulation). The baseline &times; condition interactions were &minus;0.21 for CBT and 0.04 for MBT, and both 95% intervals included zero. The data support neither account. <a href="/recovery-training-2026/">Open the companion site &rarr;</a></p>
+          <p class="feature-desc">A prespecified analysis of data from a randomized trial among German employees (<em>N</em> = 393; 247 with posttest data; Peuckmann et al., 2026) that compared a wait-list control with 6-week cognitive-behavioral (CBT) and mindfulness-based (MBT) recovery trainings. Both trainings raised detachment at the mean baseline, by 0.89 and 0.98 scale points. The question was who gained: employees who detached least (compensation) or those who already detached well (accumulation). The baseline &times; condition interactions were &minus;0.21 for CBT and 0.04 for MBT, and both 95% intervals included zero. The data support neither account. <a href="/recovery-training-2026/">Open the companion site &rarr;</a></p>
           <p class="feature-links"><a href="/recovery-training-2026/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Active_Recovery_SocArXiv_cz5g4.pdf">PDF</a> &middot; <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">0.89&nbsp;and&nbsp;0.98</span>

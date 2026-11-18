@@ -26,7 +26,7 @@ Several of these projects extend my research themes in [leadership, well-being, 
   <figcaption>Figure 1 from the preprint: within-person paths between self-compassion and burnout in a three-wave random-intercept cross-lagged panel model.</figcaption>
 </figure>
 
-A Preprints.org preprint: a secondary analysis of a three-wave open panel of Swiss sports coaches (*N* = 422). After longitudinal invariance tests, a random-intercept cross-lagged panel model separated between-person differences from within-person change. Between coaches, self-compassion and burnout were negatively associated, *r* = −.48, 95% CI [−.60, −.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion.
+A Preprints.org preprint with data from a three-wave open panel of Swiss sports coaches (*N* = 422; Ackeret et al., 2022). After longitudinal invariance tests, a random-intercept cross-lagged panel model separated between-person differences from within-person change. Between coaches, self-compassion and burnout were negatively associated, *r* = −.48, 95% CI [−.60, −.37]. Scalar invariance held for burnout and perceived social support; partial scalar invariance held for self-compassion.
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Does self-compassion precede lower burnout in sports coaches? A within-person panel study</em>. <em>Preprints</em>. <a href="https://doi.org/10.20944/preprints202611.0474.v1">https://doi.org/10.20944/preprints202611.0474.v1</a></p>
 
@@ -45,7 +45,7 @@ A Preprints.org preprint: a secondary analysis of a three-wave open panel of Swi
   <figcaption>Figure 2 from the preprint: effects of ChatGPT access on grades, ratings, and adoption, with 95% credible intervals and <em>P</em>(direction).</figcaption>
 </figure>
 
-A SocArXiv preprint: a Bayesian reanalysis of an online randomized experiment (Noy &amp; Zhang, 2023a) among college-educated professionals in six writing-intensive occupations. Under ChatGPT access, second-task writing grades depended less on first-task grades (−0.159 [−0.317, −0.002], *P*(direction) = .976). Access was associated with higher enjoyment (0.44 [0.29, 0.60]). Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
+A SocArXiv preprint: Bayesian models fit to data from an online randomized experiment (Noy &amp; Zhang, 2023a) among college-educated professionals in six writing-intensive occupations. Under ChatGPT access, second-task writing grades depended less on first-task grades (−0.159 [−0.317, −0.002], *P*(direction) = .976). Access was associated with higher enjoyment (0.44 [0.29, 0.60]). Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a></p>
 
@@ -85,7 +85,7 @@ A preprint (PsyArXiv, with Isaac Thompson) and the board session packet for *Sha
   <figcaption>Figure 2 from the preprint: posterior distributions of the within-person meditation slope across the primary and sensitivity models, with medians and 95% credible intervals.</figcaption>
 </figure>
 
-A PsyArXiv preprint: a secondary analysis of an archival 28-day diary of 65 employees in a two-week online self-compassion meditation program (*N* = 65; 910 person-days). The original report compared program phases; this analysis asks whether a person's meditation days differ from their nonmeditation days. A prespecified Bayesian two-level model treated each person's meditation tendency as latent, because nonmeditation days were few. Same-day self-compassion on meditation days: 0.00 SD, 95% CrI [−0.09, 0.09]. Next-day emotional exhaustion, adjusting for same-day exhaustion: −0.03 SD, 95% CrI [−0.16, 0.11]. Both intervals spanned zero, so the program's changes were not concentrated on the days on which employees actually practiced.
+A PsyArXiv preprint with data from an archival 28-day diary of 65 employees in a two-week online self-compassion meditation program (Li et al., 2021; *N* = 65; 910 person-days). The original report compared program phases; this analysis asks whether a person's meditation days differ from their nonmeditation days. A prespecified Bayesian two-level model treated each person's meditation tendency as latent, because nonmeditation days were few. Same-day self-compassion on meditation days: 0.00 SD, 95% CrI [−0.09, 0.09]. Next-day emotional exhaustion, adjusting for same-day exhaustion: −0.03 SD, 95% CrI [−0.16, 0.11]. Both intervals spanned zero, and the estimates gave no indication that the program's changes were concentrated on the days on which employees actually practiced.
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/986ht_v1">https://doi.org/10.31234/osf.io/986ht_v1</a></p>
 
@@ -104,7 +104,7 @@ A PsyArXiv preprint: a secondary analysis of an archival 28-day diary of 65 empl
   <figcaption>Figure 2 from the preprint: quantile treatment effects on posttest detachment, with pointwise 95% bootstrap confidence intervals.</figcaption>
 </figure>
 
-A SocArXiv preprint: a prespecified reanalysis of a randomized recovery-training trial among German employees (*N* = 393; 247 with posttest data). Cognitive-behavioral and mindfulness-based 6-week trainings raised psychological detachment at the mean baseline by 0.89 and 0.98 scale points. The design asked who gained more — employees who detached least (compensation) or those who already detached well (accumulation). The baseline × condition interactions were −0.21 (CBT) and 0.04 (MBT); both 95% intervals included zero, so the data support neither account and bound how large either pattern could be in a trial of this size.
+A SocArXiv preprint: a prespecified analysis of data from a randomized recovery-training trial among German employees (*N* = 393; 247 with posttest data; Peuckmann et al., 2026). Cognitive-behavioral and mindfulness-based 6-week trainings raised psychological detachment at the mean baseline by 0.89 and 0.98 scale points. The design asked who gained more: employees who detached least (compensation) or those who already detached well (accumulation). The baseline × condition interactions were −0.21 (CBT) and 0.04 (MBT); both 95% intervals included zero, so the data support neither account and bound how large either pattern could be in a trial of this size.
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Active recovery is not just for athletes: Employees need to train for recovery to enhance work</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/cz5g4_v1">https://doi.org/10.31235/osf.io/cz5g4_v1</a></p>
 
