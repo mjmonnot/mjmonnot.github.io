@@ -3,68 +3,459 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Does Daily Meditation Increase Self-Compassion? A Bayesian Multilevel Diary Study | Matthew J. Monnot</title>
-  <meta name="description" content="In a 28-day diary of 65 employees in an online self-compassion program, the days on which people meditated did not differ clearly from their nonmeditation days: same-day self-compassion 0.00 SD, 95% CrI [-0.09, 0.09]; next-day emotional exhaustion -0.03 SD, 95% CrI [-0.16, 0.11].">
+  <title>On the days employees meditated, they were no more self-compassionate than on their other days | Matthew J. Monnot</title>
+  <meta name="description" content="A Bayesian analysis of a 28-day diary of 65 employees in a two-week online self-compassion meditation program. Employees were no more self-compassionate on the days they meditated than on their own other days (0.00 SD, 95% credible interval [-0.09, 0.09]). Interactive companion to the preprint.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mjmonnot.github.io/meditation-diary-2026/">
-  <meta property="og:title" content="Does Daily Meditation Increase Self-Compassion? A Bayesian Multilevel Diary Study">
-  <meta property="og:description" content="In a 28-day diary of 65 employees in an online self-compassion program, the days on which people meditated did not differ clearly from their nonmeditation days: same-day self-compassion 0.00 SD, 95% CrI [-0.09, 0.09]; next-day emotional exhaustion -0.03 SD, 95% CrI [-0.16, 0.11].">
+  <meta property="og:title" content="On the days employees meditated, they were no more self-compassionate than on their other days">
+  <meta property="og:description" content="65 employees, 910 person-days of an online self-compassion program. Posterior medians in total (pooled) SD units: 0.00 [-0.09, 0.09] for same-day self-compassion and -0.03 [-0.16, 0.11] for next-day exhaustion, with 95% credible intervals.">
   <meta property="og:image" content="https://mjmonnot.github.io/meditation-diary-2026/assets/figure2_posterior_slopes.png">
   <meta property="og:site_name" content="Matthew J. Monnot">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Does Daily Meditation Increase Self-Compassion? A Bayesian Multilevel Diary Study">
-  <meta name="twitter:description" content="In a 28-day diary of 65 employees in an online self-compassion program, the days on which people meditated did not differ clearly from their nonmeditation days: same-day self-compassion 0.00 SD, 95% CrI [-0.09, 0.09]; next-day emotional exhaustion -0.03 SD, 95% CrI [-0.16, 0.11].">
-  <meta name="twitter:image" content="https://mjmonnot.github.io/meditation-diary-2026/assets/figure2_posterior_slopes.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/bag.css">
+  <link rel="stylesheet" href="assets/companion.css">
 </head>
 <body>
-<header class="hero wrap">
-  <p class="kicker">PsyArXiv preprint</p>
-  <h1>Does Daily Meditation Increase Self-Compassion? A Bayesian Multilevel Diary Study</h1>
-  <ul class="headlines">
-    <li>On the days employees meditated, same-day self-compassion was no higher than on their nonmeditation days: within-person slope 0.00 SD, 95% CrI [&minus;0.09, 0.09], P(b &gt; 0) = .48.</li>
-    <li>Meditating on a given day did not detectably lower the next day&rsquo;s emotional exhaustion, adjusting for same-day exhaustion: &minus;0.03 SD, 95% CrI [&minus;0.16, 0.11], P(b &lt; 0) = .65.</li>
-    <li>The estimate held across priors, missing-data shifts, and observed versus latent centering (0.00 versus 0.02 SD); the largest shift came from how the morning adherence report was aligned to diary days.</li>
-  </ul>
-  <hr class="rule">
-  <p>Matthew J. Monnot, Vocentive, San Francisco, California, United States. Contact: matt@vocentive.com.</p>
+<main>
+
+<p class="backlink"><a href="/publications/2026-meditation-self-compassion-diary.html">&larr; Publication page</a> &nbsp;&middot;&nbsp; <a href="/">mjmonnot.github.io</a></p>
+
+<header class="masthead">
+  <p class="kicker">Employee well-being &middot; Research companion</p>
+  <h1>During a two-week online self-compassion program, employees were no more self-compassionate on the days they meditated than on the days they did not.</h1>
+  <p class="dek">A new analysis of a 28-day diary of 65 employees (Li et al., 2021). The original study compared the weeks of the program. This paper asks a different question: on the days a person practiced, did that person feel more self-compassionate, or less exhausted the next day, than on their own days without practice?</p>
+  <div class="masthead-actions">
+    <a class="btn primary" href="/assets/pdfs/Monnot_2026_Meditation_SelfCompassion_Diary_PsyArXiv_986ht.pdf">Download the preprint PDF</a>
+    <a class="btn ghost" href="https://doi.org/10.31234/osf.io/986ht_v1">DOI / PsyArXiv</a>
+    <a class="btn ghost" href="https://osf.io/pqf6v/">Original data (OSF)</a>
+  </div>
+  <nav class="audience-nav" aria-label="Jump to the part written for you">
+    <span class="lead">Start where it suits you:</span>
+    <a href="#plain">In plain words</a>
+    <a href="#practice">In practice</a>
+    <a href="#writers">For writers</a>
+    <a href="#evidence">The evidence</a>
+    <a href="#specialists">For specialists</a>
+  </nav>
 </header>
 
-<main class="wrap">
-  <h2>Summary</h2>
-  <p>Evaluations of brief self-compassion programs usually compare phases of the program, which leaves open whether a person&rsquo;s meditation days differ from their nonmeditation days. This paper is a secondary analysis of an archival 28-day diary of 65 employees in a two-week online self-compassion meditation program (Li et al., 2021). Each morning of the two intervention weeks, participants reported whether they had meditated in the previous 24 hours, and each evening they rated self-compassion, perceived stress, and emotional exhaustion. The original report used the meditation item to describe compliance, not as a predictor.</p>
-  <p>Across the 14 intervention days (910 person-days), a prespecified Bayesian two-level model treated each person&rsquo;s meditation tendency as latent, so that the within-person contrast between meditation and nonmeditation days was separated from stable differences in how often people meditated. That choice matters here because nonmeditation days were few: 678 meditation reports, 132 nonmeditation reports, and 100 missing reports, with 12 participants who had no nonmeditation day at all. The within-person meditation slope for same-day self-compassion had a posterior median of 0.00 SD, 95% CrI [&minus;0.09, 0.09], P(b &gt; 0) = .48. For next-day emotional exhaustion, adjusting for same-day exhaustion, the slope was &minus;0.03 SD, 95% CrI [&minus;0.16, 0.11], P(b &lt; 0) = .65. Both intervals spanned zero. Within the intervention period, there is little evidence that the program&rsquo;s changes were concentrated on the days on which participants actually meditated.</p>
+<section id="plain" aria-labelledby="s-find">
+  <p class="section-label" id="s-find">Three findings</p>
+  <ol class="headlines" id="headlines">
+    <li>During a two-week online self-compassion meditation program, employees were no more self-compassionate on the days they meditated than on the days they did not.</li>
+    <li>Meditating on a given day did not detectably reduce how emotionally exhausted they felt the next day.</li>
+    <li>This does not show that meditation fails to help. A benefit that builds over days and carries into days without practice would not appear in a day-by-day comparison, and the study had 65 employees and no comparison group.</li>
+  </ol>
+</section>
 
-  <h2>Figures</h2>
-  <figure>
-    <img src="assets/figure1_posterior_predictive_checks.png" alt="Figure 1: posterior predictive checks for the two primary models. For the mean and the standard deviation of each standardized outcome, the observed value sits inside the 95% interval of 400 replicated datasets; for lag-1 autocorrelation, the observed value lies above the replicated interval in both models." width="1600" height="738" style="width:100%;height:auto">
-    <figcaption><em>Figure 1.</em> Posterior predictive checks of the mean, standard deviation, and lag-1 autocorrelation. <em>Note.</em> <em>N</em> = 65 participants (910 person-days); 400 datasets were replicated from each model&rsquo;s posterior. Each row compares the observed statistic of the standardized outcome (&times;) with the median (open circle) and 95% equal-tailed interval (gray bar) of the replicated statistics. ppp = posterior predictive <em>p</em> value, the proportion of replicated statistics greater than or equal to the observed one. H1 = Hypothesis 1 model (same-day self-compassion); H2 = Hypothesis 2 model (next-day emotional exhaustion); both are two-level Bayesian latent-centered models. Mean and SD match by construction; lag-1 autocorrelation is underpredicted. SD = standard deviation.</figcaption>
-  </figure>
-  <figure>
-    <img src="assets/figure2_posterior_slopes.png" alt="Figure 2: posterior distributions of the within-person meditation slope for the primary models and each sensitivity model, with medians and 95% credible intervals; every interval spans zero. Panel b shows the implied distribution of person-specific slopes and the random-slope SD." width="1600" height="1034" style="width:100%;height:auto">
-    <figcaption><em>Figure 2.</em> Posterior distributions of the within-person meditation slope across models and implied variation in person-specific slopes. <em>Note.</em> <em>N</em> = 65 participants; SD units. (a) Within-person slope <em>b</em> (meditation vs. nonmeditation day): medians (points), 95% CrIs (lines), zero (dashed). P(direction) = posterior probability of the prespecified direction. S1 = prior SD &times;2 or &times;0.5; S2 = same-day alignment; S3 = missing values shifted &delta; = &minus;0.25 or &minus;0.50 SD; S4 = H2 checks; S6 = observed person-mean centering. (b) Person-specific slopes, <em>b<sub>i</sub></em> ~ N(<em>b</em><sub>0</sub>, Random-slope SD): median (solid), pointwise 95% band; inset = Random-slope SD. Band truncated = band capped at 1.9 &times; peak median density (dotted line, H1 cap). H1/H2 = Hypothesis 1/2; SD = standard deviation; CrI = credible interval.</figcaption>
-  </figure>
+<section aria-labelledby="s0">
+  <p class="section-label" id="s0">At a glance</p>
+  <div class="strip">
+    <div class="stat"><span class="stat-value red">65</span><span class="stat-label">Employees</span><span class="stat-sub">910 person-days over the 14 days of the program</span></div>
+    <div class="stat"><span class="stat-value red">0.00</span><span class="stat-label">Difference in self-compassion, meditation day against the same person&rsquo;s other days</span><span class="stat-sub">Posterior median in total (pooled) SD units; 95% credible interval [&minus;0.09, 0.09]; posterior probability it is above zero .48</span></div>
+    <div class="stat"><span class="stat-value red">&minus;0.03</span><span class="stat-label">Difference in next-day emotional exhaustion, adjusted for same-day exhaustion</span><span class="stat-sub">Posterior median in total (pooled) SD units; 95% credible interval [&minus;0.16, 0.11]; posterior probability it is below zero .65</span></div>
+    <div class="stat"><span class="stat-value red">132</span><span class="stat-label">Days without meditation</span><span class="stat-sub">Against 678 days with meditation; 12 employees had no day without</span></div>
+  </div>
+</section>
 
-  <h2>What this does not show</h2>
-  <p>Whether practice helps at all. The same-day contrast cannot detect a benefit that accumulates over days and persists on days without practice, and the single-group design cannot separate the program&rsquo;s changes from time, expectation, and self-monitoring. Participants also chose when to practice, so unmeasured daily demands could confound the association; a design that randomizes practice days would be needed to identify day-level effects. The sample was 65 snowball-sampled Chinese employees who met a seven-meditation-day minimum, and the underpredicted lag-1 autocorrelation in Figure 1 means the slope intervals may be too narrow.</p>
+<section id="practice" aria-labelledby="s-prac">
+  <p class="section-label" id="s-prac">What this means in practice</p>
+  <div class="brief">
+    <p class="q">The decision</p>
+    <p class="decision">Should a short online self-compassion program be judged by whether people feel better on the days they practice?</p>
+    <p class="answer"><strong>In this diary, employees were no more self-compassionate on the days they meditated than on their own other days.</strong> The difference was 0.00 standard deviations (95% credible interval &minus;0.09 to 0.09). The estimate for next-day exhaustion was &minus;0.03, with an interval (&minus;0.16 to 0.11) that includes values of both signs. The paper finds little evidence that the changes seen over the program were concentrated on practice days. A same-day comparison cannot detect a benefit that builds across days. To test practice at the day level, analyze the daily practice reports as day-level measures and state which diary day each report refers to.</p>
+  </div>
+  <div class="cards">
+    <div class="card do">
+      <h3>What was found</h3>
+      <ul>
+        <li>On days of meditation, same-day self-compassion did not clearly differ from the same person&rsquo;s days without meditation.</li>
+        <li>The posterior median for next-day exhaustion was &minus;0.03 total (pooled) SD units, slightly below zero, with a 95% credible interval that includes values of both signs.</li>
+        <li>The same-day result held when the prior scale, the reading of the morning report, the assumed values for missing self-compassion scores, and the way each person&rsquo;s usual practice was estimated were changed.</li>
+      </ul>
+    </div>
+    <div class="card ask">
+      <h3>What you can do with it</h3>
+      <ul>
+        <li>Adherence items in an intervention diary can be analyzed as day-level predictors, provided missing reports and days without practice are handled explicitly.</li>
+        <li>State which diary day each report refers to. Here, reading the morning report as describing the same day moved the exhaustion estimate from &minus;0.03 to &minus;0.07.</li>
+        <li>Plan for days without practice. Longer programs, or samples that do not exclude low adherence, give more of them and a more precise answer.</li>
+      </ul>
+    </div>
+    <div class="card test">
+      <h3>The study that would take it further</h3>
+      <ul>
+        <li>Randomize practice days, for example in a microrandomized trial, to identify day-level effects of practice.</li>
+        <li>Measure daily demands, which would address time-varying confounding, because participants chose when to practice.</li>
+        <li>Consider same-day perceived stress as a candidate for a confirmatory test. Its posterior median was &minus;0.10 SD (95% credible interval [&minus;0.25, 0.06]), with posterior probability .90 of being below zero; its timing and sign were set after the first two results were known.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="fineprint">The first card comes from the Results; the second from the paper&rsquo;s Methodological Implications and Future Directions; the third from Future Directions. The sample was 65 snowball-sampled Chinese employees who met a seven-meditation-day minimum, in a program with no comparison group, and people chose when to practice. To talk about evaluating a program: <a href="mailto:matt@vocentive.com">matt@vocentive.com</a>.</p>
+</section>
 
-  <h2>Links</h2>
-  <ul class="clean">
-    <li>PDF: <a href="/assets/pdfs/Monnot_2026_Meditation_SelfCompassion_Diary_PsyArXiv_986ht.pdf">Download preprint PDF</a></li>
-    <li>Preprint (PsyArXiv): <a href="https://doi.org/10.31234/osf.io/986ht_v1">https://doi.org/10.31234/osf.io/986ht_v1</a>.</li>
-    <li>Protocol, Stan model, and analysis code: <a href="https://github.com/mjmonnot/selfcompassion-diary-preprint">https://github.com/mjmonnot/selfcompassion-diary-preprint</a></li>
-    <li>Data (original study&rsquo;s deposit, Li, 2021): <a href="https://osf.io/pqf6v/">https://osf.io/pqf6v/</a></li>
+<section id="writers" aria-labelledby="s-writ">
+  <p class="section-label" id="s-writ">For writers and editors</p>
+  <p class="oneline" id="oneline">In a new analysis of a 28-day diary of 65 employees in an online self-compassion program, people were no more self-compassionate on the days they meditated than on their own days without meditation, and meditating did not detectably lower next-day emotional exhaustion.</p>
+  <p class="fineprint" style="margin-top:8px"><button type="button" class="copy-btn" id="copy-oneline">Copy this sentence</button></p>
+  <dl class="facts">
+    <dt>Kind of study</dt><dd>An analysis of an existing diary from a single-group program with no control group. Nobody was assigned to practice or not practice on a given day; participants chose when to meditate. The estimates are comparisons of each person with themselves across days, not effects of an assignment.</dd>
+    <dt>Status</dt><dd>Preprint on PsyArXiv. It has not been peer reviewed. The analysis protocol (three time-stamped versions, all dated October 24, 2026), the Stan model, and the analysis code were written before any outcome was modeled. The original report does not mention a trial registration, and the preprint does not list one for this analysis.</dd>
+    <dt>Data</dt><dd>The diary was collected by Li and colleagues and published in <em>Applied Psychology: Health and Well-Being</em> in 2021, with the data openly deposited. The author of this paper did not collect the data. The research question was not addressed in the original study, and the prior use of the data is disclosed.</dd>
+    <dt>Who was studied</dt><dd>65 employees in the analytic sample, from 89 recruited by snowball sampling through social networks in China, mean age 35.65 years (<em>SD</em> = 6.19), 63.1% women. Race and ethnicity were not reported. The original study had excluded employees who meditated fewer than seven times.</dd>
+    <dt>Funding and interests</dt><dd>No conflicts of interest and no specific funding for this analysis. The original study was funded by Chinese national, provincial, and university sources. The paper discloses the use of AI tools in drafting text, writing figure code, and checking statistics.</dd>
+  </dl>
+  <div class="say-grid">
+    <div class="say yes">
+      <h3>The study supports</h3>
+      <ul>
+        <li>&ldquo;On days of meditation, same-day self-compassion did not clearly differ from the same people&rsquo;s other days.&rdquo;<span>Posterior median 0.00 total (pooled) SD units, 95% credible interval [&minus;0.09, 0.09].</span></li>
+        <li>&ldquo;Meditating did not detectably lower the next day&rsquo;s emotional exhaustion.&rdquo;<span>Posterior median &minus;0.03 total (pooled) SD units, 95% credible interval [&minus;0.16, 0.11]; the interval includes values of both signs.</span></li>
+        <li>&ldquo;The result held under other reasonable choices.&rdquo;<span>Same-day self-compassion posterior medians stayed between &minus;0.02 and 0.02 across the checks; the largest shift for exhaustion was to &minus;0.07 (95% credible interval [&minus;0.18, 0.04]).</span></li>
+      </ul>
+    </div>
+    <div class="say no">
+      <h3>It does not support</h3>
+      <ul>
+        <li>&ldquo;Meditation does not help.&rdquo;<span>A benefit that builds over days and persists on days without practice would not show in a same-day comparison.</span></li>
+        <li>&ldquo;Meditation does not change self-compassion.&rdquo;<span>There was no comparison group, so the study cannot separate the program&rsquo;s changes from time, expectation, and self-monitoring.</span></li>
+        <li>&ldquo;This holds for all employees.&rdquo;<span>65 snowball-sampled Chinese employees who each meditated at least seven times.</span></li>
+        <li>&ldquo;The intervals are exact.&rdquo;<span>The model underpredicted day-to-day persistence, so the intervals may be too narrow.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="cite-box">
+    <p id="cite-text">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. https://doi.org/10.31234/osf.io/986ht_v1</p>
+    <button type="button" class="copy-btn" id="copy-cite">Copy citation</button>
+  </div>
+  <p class="fineprint">Questions, or a quote: Matthew J. Monnot, <a href="mailto:matt@vocentive.com">matt@vocentive.com</a>.</p>
+</section>
+
+<section id="evidence" aria-labelledby="s1">
+  <p class="section-label" id="s1">1 &middot; Two questions that look like one</p>
+  <p class="section-intro">&ldquo;Did the program work?&rdquo; can mean two things. One is whether outcomes differ between the weeks of the program. The other is whether a person&rsquo;s days of practice differ from that same person&rsquo;s days without practice. The original study asked the first. This paper asks the second. Switch between them.</p>
+  <div class="calc">
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Choose the question" id="q-seg">
+        <button type="button" data-q="phase" aria-pressed="false">Compare weeks</button>
+        <button type="button" data-q="day" aria-pressed="true">Compare a person&rsquo;s days</button>
+      </div>
+      <figure class="chart">
+        <svg id="q-chart" viewBox="0 0 560 300" role="img" aria-labelledby="q-title q-desc">
+          <title id="q-title">Illustration of the two questions on one person&rsquo;s 14 program days</title>
+          <desc id="q-desc">Fourteen circles in a row for the 14 days of the program. In the weeks view, the days are grouped into two weeks. In the days view, circles are filled for days of meditation and open for days without, and the level of self-compassion is the same on both kinds of day.</desc>
+        </svg>
+        <figcaption>Illustration only, not the study&rsquo;s data. The circles show one imagined person&rsquo;s 14 program days. The flat line in the second view draws the published posterior median of 0.00 SD: no clear difference between kinds of day.</figcaption>
+      </figure>
+    </div>
+    <div class="results" aria-live="polite">
+      <div class="stat">
+        <span class="stat-value red" id="q-value">&nbsp;</span>
+        <span class="stat-label" id="q-label">&nbsp;</span>
+        <span class="stat-sub" id="q-sub">&nbsp;</span>
+      </div>
+      <p class="reading" id="q-reading">&nbsp;</p>
+      <div class="kicker-bar" id="q-bar">
+        <p class="kicker-main" id="q-main">&nbsp;</p>
+        <p class="kicker-sub" id="q-barsub">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="s2">
+  <p class="section-label" id="s2">2 &middot; Why a day-by-day comparison is hard here</p>
+  <p class="section-intro">Most days in the program were meditation days. For every employee, the study needs some days without meditation to compare against. Of the days that had a report, how many do you think were days without meditation?</p>
+  <div id="guess"></div>
+  <div id="days-wrap" class="guess-target">
+    <h2>About 16 in 100 reported days were days without meditation, and 12 of the 65 employees had none.</h2>
+    <p class="section-intro">The paper counts 678 days with meditation and 132 days without. Few comparison days is why the paper used a model that estimates each person&rsquo;s usual practice, in place of a simple average. Each dot is one of 100.</p>
+    <div id="days"></div>
+  </div>
+</section>
+
+<section aria-labelledby="s3">
+  <p class="section-label" id="s3">3 &middot; Read one estimate at a time</p>
+  <p class="section-intro">Each row is a published posterior median, in total (pooled) standard deviations of the outcome. The dot is the median and the line is its 95% equal-tailed credible interval: a range that, under the model, contains the true value with 95% probability. Zero means no difference between meditation days and other days. The paper also gives the posterior probability that the estimate runs in the predicted direction. Select a row.</p>
+  <div id="effects"></div>
+</section>
+
+<section aria-labelledby="s4">
+  <p class="section-label" id="s4">4 &middot; How the diary ran</p>
+  <ol class="steps">
+    <li><strong>Recruitment</strong>89 employees recruited; 65 remain after one missing baseline, nine dropouts, six with fewer than seven meditation days, and eight given the wrong materials</li>
+    <li><strong>Control week</strong>7 days of diary only, with no meditation prompts or reports</li>
+    <li><strong>Program</strong>14 days: a body scan in week 1 and self-compassionate breathing in week 2, with a morning report of meditation in the past 24 hours</li>
+    <li><strong>Follow-up week</strong>7 days of diary only. Only the 14 program days enter the models</li>
+  </ol>
+</section>
+
+<section aria-labelledby="s5">
+  <p class="section-label" id="s5">5 &middot; What the study found, in order</p>
+  <ul class="todo">
+    <li><strong>Self-compassion did not clearly differ between meditation days and other days.</strong> The within-person posterior median was 0.00 total (pooled) SD, posterior SD 0.05, 95% credible interval [&minus;0.09, 0.09], with a .48 posterior probability of being above zero. This was the primary test.</li>
+    <li><strong>Next-day exhaustion was not detectably lower after meditation.</strong> The slope, adjusting for the same day&rsquo;s exhaustion, had a posterior median of &minus;0.03 total (pooled) SD, a 95% credible interval of [&minus;0.16, 0.11], and a .65 posterior probability of being below zero. This was the secondary test.</li>
+    <li><strong>The first result held under every check.</strong> Doubling or halving the prior, shifting missing self-compassion values downward, and reading reports as same-day all gave posterior medians between &minus;0.02 and 0.00, and the conventional observed-mean method gave 0.02 (95% credible interval [&minus;0.08, 0.11]).</li>
+    <li><strong>How the morning report was matched to days moved the exhaustion estimate most.</strong> Reading it as describing the same day gave a posterior median of &minus;0.07, with a 95% credible interval of [&minus;0.18, 0.04] and a .90 posterior probability of being below zero.</li>
+    <li><strong>Perceived stress was an additional outcome with timing and direction set after the first two results.</strong> Next day: posterior median 0.06 total (pooled) SD, 95% credible interval [&minus;0.09, 0.22]. Same day: posterior median &minus;0.10, 95% credible interval [&minus;0.25, 0.06], with a .90 posterior probability of being below zero. Both intervals include zero.</li>
+    <li><strong>Day-to-day persistence was present for both outcomes.</strong> The posterior median autoregression coefficient was .37 (95% credible interval [.29, .46]) for self-compassion and .48 ([.39, .56]) for exhaustion.</li>
+    <li><strong>What follows.</strong> The paper reads the result as little evidence that the program&rsquo;s changes were concentrated on practice days. One reading is that the changes reflect being in the program. Another is that practice has a cumulative benefit that persists on days without it.</li>
   </ul>
+</section>
 
-  <p class="note">Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/986ht_v1">https://doi.org/10.31234/osf.io/986ht_v1</a>.</p>
+<section aria-labelledby="s6">
+  <p class="section-label" id="s6">6 &middot; The paper&rsquo;s figures, with a reading guide</p>
+  <figure class="paper-figure">
+    <img src="assets/figure2_posterior_slopes.png" alt="Figure 2 of the preprint: posterior distributions of the within-person meditation slope for the primary models and each sensitivity model, with medians and 95% credible intervals that all span zero. Panel b shows the implied distribution of person-specific slopes." width="1600" height="1034" loading="lazy">
+    <figcaption><strong>Figure 2. How to read it.</strong> Panel (a) shows the slope for each model: the point is the median, the line is the 95% credible interval, and the dashed line marks zero. Every interval crosses zero, for the primary models and for each check. The column of probabilities gives how likely the slope is to run in the predicted direction. Panel (b) shows how much the person-specific slopes are expected to vary around the average slope. Slopes are in standard deviation units.</figcaption>
+  </figure>
+  <figure class="paper-figure">
+    <img src="assets/figure1_posterior_predictive_checks.png" alt="Figure 1 of the preprint: posterior predictive checks of the mean, standard deviation, and lag-1 autocorrelation for the two primary models." width="1600" height="738" loading="lazy">
+    <figcaption><strong>Figure 1. How to read it.</strong> Each row compares a statistic from the data (the cross) with the median (open circle) and 95% equal-tailed interval (gray bar) of that statistic across 400 datasets replicated from the fitted model. The mean and the standard deviation are reproduced well (posterior predictive <em>p</em> values .48 to .55). Day-to-day persistence, the lag-1 autocorrelation, is underpredicted: .88 observed against a simulated median of .80 for self-compassion, and .84 against .73 for exhaustion. For that reason the slope intervals may be too narrow.</figcaption>
+  </figure>
+</section>
+
+<section id="specialists" aria-labelledby="s-spec">
+  <p class="section-label" id="s-spec">For specialists</p>
+  <p class="section-intro">Design, model, and the main reported estimates in one place. Estimates are posterior medians with 95% equal-tailed credible intervals in units of the total (pooled) <em>SD</em> of the outcome; <em>P</em> is the posterior probability of the prespecified direction. Results are reported descriptively, with no decision cutoff.</p>
+  <table class="spec">
+    <tbody>
+      <tr><th scope="row">Design</th><td>Analysis of the archival 28-day diary of a single-group online self-compassion meditation program with no control group (Li et al., 2021, <em>Applied Psychology: Health and Well-Being, 13</em>(4), 906&ndash;921). Diary: 7-day control period, 14-day intervention period (Days 7&ndash;20), 7-day follow-up. Evening diary; morning report of meditation in the previous 24 hours, assigned to the preceding diary day (meditation on day <em>t</em> read from the morning of day <em>t</em> + 1; last intervention day set to missing). Data: <a href="https://osf.io/pqf6v/">osf.io/pqf6v</a>.</td></tr>
+      <tr><th scope="row">Sample</th><td>89 recruited, 65 analyzed (89 &minus; 1 &minus; 9 &minus; 6 &minus; 8). 910 person-days: 678 meditation, 132 nonmeditation, 100 missing meditation reports (65 by design on Day 20). 12 persons with no nonmeditation day, all retained; all 65 had at least seven meditation days. Self-compassion and exhaustion each missing on 50 person-days. Mean age 35.65 (<em>SD</em> = 6.19), 63.1% women. No participants or outliers excluded. Original study approved by the Human Subject Review Board of the Department of Psychology of Sun Yat-sen University.</td></tr>
+      <tr><th scope="row">Measures</th><td>Daily Self-Compassion Scale, six items, 1&ndash;5, sum with Items 2, 4, 6 reversed (range 6&ndash;30; <em>M</em> = 20.82, <em>SD</em> = 3.49, ICC = .80). Emotional exhaustion, five items of the Maslach Burnout Inventory&ndash;General Survey, 0&ndash;6, sum (range 0&ndash;30; <em>M</em> = 10.69, <em>SD</em> = 5.34, ICC = .72). Perceived stress, four items (<em>M</em> = 6.09, <em>SD</em> = 2.33, ICC = .54). Omega within: .60 (self-compassion), .89 (exhaustion); between: .75, .97.</td></tr>
+      <tr><th scope="row">Model</th><td>Two-level Bayesian model in Stan, latent mean centering following dynamic structural equation modeling. Part 1: Bernoulli model of daily meditation with a person-specific latent propensity. Part 2: outcome on the within-person meditation term, latent propensity, weekend, day in program, and previous-day deviation (common autoregressive coefficient); random intercept and random meditation slope with correlation. H1 outcome: same-day self-compassion. H2 outcome: exhaustion on day <em>t</em> + 1 with exhaustion on day <em>t</em> as the autoregressive term (Day 8 not adjusted). Missing reports flagged, not coded as no; missing at random assumed. Outcomes standardized over each model&rsquo;s analysis period.</td></tr>
+      <tr><th scope="row">Priors</th><td>Normal(0, 0.5) on fixed slopes including the within-person slope; weakly informative normal or half-normal priors on intercept, autoregression (bounded &minus;1 to 1), standard deviations, and mean log-odds of meditation; LKJ prior on the intercept&ndash;slope correlation. Exact values are in the time-stamped protocol, except two priors set in the analysis code and not named there: a half-normal prior with scale 1 on the between-person <em>SD</em> of meditation log-odds, and a normal prior with <em>SD</em> 0.5 on one further covariate coefficient. A prior predictive check and sensitivity analyses for the LKJ prior and for priors other than the fixed-slope priors were not conducted.</td></tr>
+      <tr><th scope="row">Estimation</th><td>CmdStan 2.40.0 via cmdstanr 0.9.0, posterior 1.6.1, R 4.5.0. NUTS, four chains of 1,000 warm-up and 1,000 sampling iterations, target acceptance .95, maximum tree depth 12. Criteria: rank-normalized R&#770; below 1.01, bulk and tail ESS above 400, no divergences. Across 14 fits: maximum R&#770; 1.01 when rounded, minimum bulk ESS 602, no divergent transitions. Primary models: ESS minimum 1,209/2,210 (H1) and 680/780 (H2). Reliability by two-level CFA in lavaan 0.7-3 (Geldhof et al., 2014).</td></tr>
+      <tr><th scope="row">Fit</th><td>Posterior predictive checks, 400 replicated datasets per model. Mean and <em>SD</em> reproduced (<em>ppp</em> .48 and .50 for H1, .52 and .55 for H2). Lag-1 autocorrelation underpredicted: observed .88 against a replicated median of .80 [.76, .83] (H1); .84 against .73 [.69, .77] (H2); replicated value reached the observed value in 0 of 400.</td></tr>
+      <tr><th scope="row">Hypothesis 1</th><td>Same-day self-compassion, within-person slope: 0.00 [&minus;0.09, 0.09], posterior <em>SD</em> 0.05, <em>P</em>(<em>b</em> &gt; 0) = .48. In within-person residual <em>SD</em> units: &minus;0.01 [&minus;0.21, 0.21]. Primary.</td></tr>
+      <tr><th scope="row">Hypothesis 2</th><td>Next-day exhaustion, within-person slope: &minus;0.03 [&minus;0.16, 0.11], posterior <em>SD</em> 0.07, <em>P</em>(<em>b</em> &lt; 0) = .65. In within-person residual <em>SD</em> units: &minus;0.06 [&minus;0.33, 0.23]. Secondary.</td></tr>
+      <tr><th scope="row">Planned sensitivity</th><td>H1: prior <em>SD</em> 1.0 and 0.25, 0.00 [&minus;0.10, 0.09], <em>P</em> = .48 and .49; same-day alignment (S2), &minus;0.02 [&minus;0.12, 0.08], <em>P</em> = .33; missing self-compassion shifted &minus;0.25 and &minus;0.50 <em>SD</em> (S3), 0.00 and &minus;0.01 [&minus;0.10, 0.09], <em>P</em> = .47 and .46; observed person-mean centering in brms 2.22.0 (S6), 0.02 [&minus;0.08, 0.11], <em>P</em> = .64. S5 (exclude fewer than seven meditation days) is identical to the primary model because no participant met the criterion. H2 (S4): prior <em>SD</em> 1.0 and 0.25, &minus;0.03 [&minus;0.17, 0.11] and [&minus;0.16, 0.10], <em>P</em> = .66 and .67; same-day alignment, &minus;0.07 [&minus;0.18, 0.04], <em>P</em> = .90; exhaustion shifted +0.50 <em>SD</em>, &minus;0.03 [&minus;0.16, 0.11], <em>P</em> = .65.</td></tr>
+      <tr><th scope="row">Additional analyses</th><td>Perceived stress (prespecified outcome; timing and sign set after H1 and H2 results): next day 0.06 [&minus;0.09, 0.22], <em>P</em>(<em>b</em> &lt; 0) = .21; same day &minus;0.10 [&minus;0.25, 0.06], <em>P</em>(<em>b</em> &lt; 0) = .90. Between-person coefficient <em>g</em>: self-compassion 0.15 [&minus;0.38, 0.73], exhaustion &minus;0.06 [&minus;0.50, 0.39], perceived stress (next-day model) 0.01 [&minus;0.86, 0.93]. Autoregression &phi;: .37 [.29, .46], .48 [.39, .56], perceived stress (next-day model) .17 [.08, .26]. Residual <em>SD</em>: 0.43 [0.41, 0.45], 0.48 [0.45, 0.51], perceived stress (next-day model) 0.65 [0.62, 0.69].</td></tr>
+      <tr><th scope="row">Plan and deviations</th><td>Protocol in three time-stamped versions, all dated October 24, 2026, and specified a priori, except for the timing and sign of the perceived-stress analyses and the later removal of the &plusmn;0.2 <em>SD</em> inconclusive band and of the posterior-probability decision rule (Version 2 raised its cutoff; Version 3 corrected how the sign was applied). The reliability computation was corrected after data release to implement Equation 3 of Geldhof et al. (2014). A sensitivity analysis for missing meditation reports was added after data release, with code locked before any run; its result will be reported in a revision. Two priors were set in the code but not named in the protocol. S6 effective sample sizes were extracted post hoc from a seeded rerun that matched the original byte for byte.</td></tr>
+      <tr><th scope="row">Materials</th><td>Data: original authors&rsquo; OSF deposit (<a href="https://osf.io/pqf6v/">osf.io/pqf6v</a>). Protocol, version history, Stan model, and code: <a href="https://github.com/mjmonnot/selfcompassion-diary-preprint">github.com/mjmonnot/selfcompassion-diary-preprint</a>. Reporting follows JARS-Quant, with CONSORT 2010 and STROBE for participant flow. Counts below 10 are shown as &lt;10, except exact counts for the exclusion flow and for Day 7 and Day 20 missingness.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<details class="model-notes">
+  <summary>What this site does and does not show</summary>
+  <ul>
+    <li>No participant-level data are hosted here. Every number on this page is either a published aggregate from the preprint or a rounded display computed from one, and each computed display is labeled as such.</li>
+    <li>The diagram in section 1 is an illustration. It is not drawn from the study&rsquo;s data.</li>
+    <li>The &ldquo;of 100&rdquo; displays in section 2 round published counts: 132 days without meditation against 678 with meditation (16 and 84 of 100 reported days, leaving out the 100 days with a missing report), and 12 of 65 employees (18 of 100). Dots are rounded to whole numbers.</li>
+    <li>A directional probability is the posterior probability that the slope has the predicted sign. It does not show how large the effect is; the posterior median and 95% credible interval show the estimated size and its uncertainty.</li>
+    <li>The estimates are within-person associations from a single-group program in which people chose when to practice. Unmeasured daily demands could confound them, and the paper notes that a design that randomizes practice days would be needed to identify day-level effects.</li>
+    <li>This page was built with HTML, CSS, and JavaScript; the paper does not cover the build.</li>
+    <li>The sample is 65 snowball-sampled Chinese employees who met a seven-meditation-day minimum, and the model pools the two weeks&rsquo; different meditations.</li>
+  </ul>
+</details>
+
+<section aria-labelledby="tools-used">
+  <p class="section-label" id="tools-used">Tools used</p>
+  <p>R 4.5.0 (Stan via CmdStan 2.40.0, cmdstanr 0.9.0, posterior 1.6.1, brms 2.22.0, lavaan 0.7-3).</p>
+</section>
+
+<footer>
+  <p>Monnot, M. J. (2026). <em>Does daily meditation increase self-compassion? A Bayesian multilevel diary study</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/986ht_v1">https://doi.org/10.31234/osf.io/986ht_v1</a> &middot; <a href="/assets/pdfs/Monnot_2026_Meditation_SelfCompassion_Diary_PsyArXiv_986ht.pdf">PDF</a></p>
+  <p><a href="https://mjmonnot.github.io/">mjmonnot.github.io</a> &middot; Contact: matt@vocentive.com</p>
+</footer>
+
 </main>
+<script src="assets/companion.js"></script>
+<script>
+(function () {
+  "use strict";
 
+  /* 1 · Illustration: one imagined person's 14 program days. */
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("q-chart");
+  function el(n, a, t) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); if (t != null) e.textContent = t; return e; }
+  var MED = [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1];
+  function drawQ(mode) {
+    Array.prototype.slice.call(svg.childNodes).forEach(function (n) { if (n.nodeName !== "title" && n.nodeName !== "desc") svg.removeChild(n); });
+    var i, x;
+    svg.appendChild(el("line", { x1: 30, x2: 540, y1: 240, y2: 240, "class": "axis" }));
+    svg.appendChild(el("text", { x: 285, y: 284, "text-anchor": "middle", "class": "lbl" }, "The 14 days of the program"));
+    if (mode === "phase") {
+      svg.appendChild(el("rect", { x: 30, y: 60, width: 250, height: 8, fill: "#2e6f9e" }));
+      svg.appendChild(el("rect", { x: 290, y: 60, width: 250, height: 8, fill: "#22303c" }));
+      svg.appendChild(el("text", { x: 155, y: 50, "text-anchor": "middle", "class": "lbl", fill: "#2e6f9e" }, "Week 1: body scan"));
+      svg.appendChild(el("text", { x: 415, y: 50, "text-anchor": "middle", "class": "lbl", fill: "#22303c" }, "Week 2: breathing"));
+      for (i = 0; i < 14; i++) {
+        x = 48 + i * 36.5;
+        svg.appendChild(el("circle", { cx: x, cy: 160, r: 11, fill: i < 7 ? "#2e6f9e" : "#22303c" }));
+      }
+      svg.appendChild(el("text", { x: 285, y: 210, "text-anchor": "middle", "class": "lbl" }, "Is one week different from the other?"));
+    } else {
+      svg.appendChild(el("line", { x1: 30, x2: 540, y1: 110, y2: 110, stroke: "#c0392b", "stroke-width": 2, "stroke-dasharray": "5 4" }));
+      svg.appendChild(el("text", { x: 285, y: 92, "text-anchor": "middle", "class": "lbl", fill: "#c0392b" }, "No clear difference in self-compassion between kinds of day"));
+      for (i = 0; i < 14; i++) {
+        x = 48 + i * 36.5;
+        svg.appendChild(el("circle", { cx: x, cy: 110, r: 11, fill: MED[i] ? "#2e6f9e" : "#ffffff", stroke: "#2e6f9e", "stroke-width": 2.5 }));
+      }
+      svg.appendChild(el("circle", { cx: 150, cy: 190, r: 8, fill: "#2e6f9e", stroke: "#2e6f9e", "stroke-width": 2 }));
+      svg.appendChild(el("text", { x: 164, y: 195, "class": "lbl" }, "Meditated"));
+      svg.appendChild(el("circle", { cx: 300, cy: 190, r: 8, fill: "#ffffff", stroke: "#2e6f9e", "stroke-width": 2.5 }));
+      svg.appendChild(el("text", { x: 314, y: 195, "class": "lbl" }, "Did not meditate"));
+    }
+  }
+  var Q = {
+    phase: {
+      value: "Not tested here", cls: "stat-value ink",
+      label: "Question 1: do outcomes differ between the weeks?",
+      sub: "The original study (Li et al., 2021) compared outcome levels and time trends across the control, program, and follow-up weeks. This paper does not re-estimate that comparison.",
+      reading: "This question asks whether the program, as a package, went with changes over time. It cannot say whether the changes were bigger on the days a person actually practiced.",
+      muted: true, main: "This is the original question.",
+      barsub: "Switch to the second question to see what this paper asked."
+    },
+    day: {
+      value: "0.00 SD", cls: "stat-value red",
+      label: "Question 2: meditation day against the same person’s other days",
+      sub: "Posterior median difference in same-day self-compassion, in total (pooled) SD units; 95% credible interval [−0.09, 0.09]; posterior probability it is above zero .48",
+      reading: "Within the program, each person is compared with themselves. On days when they reported meditating, their self-compassion did not clearly differ from their days without meditation. For next-day exhaustion the estimated difference was −0.03 SD, with an interval of [−0.16, 0.11] that includes values of both signs.",
+      muted: false, main: "No clear difference between meditation days and other days.",
+      barsub: "Both 95% intervals include zero. The model underpredicts day-to-day persistence, so the intervals may be too narrow."
+    }
+  };
+  function renderQ(mode) {
+    var q = Q[mode];
+    drawQ(mode);
+    var v = document.getElementById("q-value");
+    v.textContent = q.value; v.className = q.cls;
+    document.getElementById("q-label").textContent = q.label;
+    document.getElementById("q-sub").textContent = q.sub;
+    document.getElementById("q-reading").textContent = q.reading;
+    document.getElementById("q-bar").className = "kicker-bar" + (q.muted ? " muted" : "");
+    document.getElementById("q-main").textContent = q.main;
+    document.getElementById("q-barsub").textContent = q.barsub;
+  }
+  Array.prototype.forEach.call(document.querySelectorAll("#q-seg button"), function (b) {
+    b.addEventListener("click", function () {
+      Array.prototype.forEach.call(document.querySelectorAll("#q-seg button"), function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+      renderQ(b.getAttribute("data-q"));
+    });
+  });
+  renderQ("day");
 
-  <p class="tools-used"><strong>Tools used.</strong> R 4.5.0 (Stan via CmdStan 2.40.0, cmdstanr, posterior, brms); HTML and CSS.</p>
-<footer class="site"><div class="wrap">
-  Matthew J. Monnot · matt@vocentive.com
-</div></footer>
+  /* Writers' block: copy buttons. */
+  Companion.copy(document.getElementById("copy-oneline"), function () { return document.getElementById("oneline").textContent; });
+  Companion.copy(document.getElementById("copy-cite"), function () { return document.getElementById("cite-text").textContent; });
+
+  /* 2 · Guess first, then the published counts (Table 1). */
+  Companion.guess(document.getElementById("guess"), {
+    question: "Before you look: of 100 program days that had a meditation report, how many were days without meditation?",
+    min: 0, max: 100, step: 1, start: 40,
+    format: function (v) { return v + " of 100"; },
+    reveal: document.getElementById("days-wrap"),
+    feedback: function (v) {
+      var d = v - 16;
+      if (Math.abs(d) <= 3) return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation, so you were close.";
+      if (d > 0) return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation: fewer comparison days than you expected.";
+      return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation: more than you expected, though still few.";
+    }
+  });
+
+  Companion.iconArray(document.getElementById("days"), {
+    label: "Choose a count",
+    options: [{
+      label: "Days with a report",
+      panels: [
+        { filled: 84, tone: "blue", text: "were days with meditation", who: "Days with a meditation report" },
+        { filled: 16, tone: "", text: "were days without meditation", who: "Days without meditation" }
+      ],
+      note: "Rounding of published counts: 678 days with meditation and 132 without, out of the 810 days that had a report (the sum of the two counts; 84% and 16%, to whole dots). The 100 days with a missing report are left out. These are person-days across all 65 employees, not days for one person."
+    }, {
+      label: "Employees",
+      panels: [
+        { filled: 18, tone: "", text: "had no day without meditation", who: "Employees with no nonmeditation day" }
+      ],
+      note: "Rounding of a published count: 12 of 65 employees (18 of 100, to whole dots) had no day without meditation. They stayed in the model, where they informed the person-level and day-to-day persistence estimates."
+    }]
+  });
+
+  /* 3 · Published estimates (Tables 2 to 4 and the Supplemental Material). */
+  Companion.intervals(document.getElementById("effects"), {
+    title: "Within-person meditation slopes with 95% credible intervals",
+    groupLabel: "Choose a set of estimates",
+    intervalName: "95% credible interval",
+    includesSub: "The data are compatible with a difference in either direction, or with none.",
+    groups: [
+      { id: "plan", label: "The two planned tests", min: -0.3, max: 0.3, ticks: [-0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3], tickDigits: 1,
+        axisLabel: "Slope in standard deviations (0 = no difference)", predicted: null,
+        note: "Hypothesis 1 predicted a positive slope and Hypothesis 2 a negative slope. Select a row." },
+      { id: "h1", label: "Self-compassion, checked", min: -0.3, max: 0.3, ticks: [-0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3], tickDigits: 1,
+        axisLabel: "Same-day self-compassion slope in standard deviations",
+        predicted: { side: "pos", label: "PREDICTED: HIGHER ON MEDITATION DAYS" },
+        note: "The same question under different assumptions. Select a row." },
+      { id: "h2", label: "Exhaustion, checked", min: -0.3, max: 0.3, ticks: [-0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3], tickDigits: 1,
+        axisLabel: "Next-day exhaustion slope in standard deviations",
+        predicted: { side: "neg", label: "PREDICTED: LOWER AFTER MEDITATION" },
+        note: "The same question under different assumptions. Select a row." },
+      { id: "ps", label: "Perceived stress (additional)", min: -0.3, max: 0.3, ticks: [-0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3], tickDigits: 1,
+        axisLabel: "Perceived stress slope in standard deviations",
+        predicted: { side: "neg", label: "DIRECTION SET AFTER THE FIRST RESULTS: LOWER" },
+        note: "A prespecified additional outcome whose timing and direction were set after the first two results were known. Select a row." }
+    ],
+    items: [
+      { id: "a1", group: "plan", short: "Same-day self-compassion (primary)", label: "Hypothesis 1: self-compassion on meditation days against the same person’s other days", est: 0.00, lo: -0.09, hi: 0.09,
+        extra: "Probability the slope is above zero: .48",
+        reading: "On days when employees meditated, their self-compassion did not clearly differ from their own days without meditation. The 95% interval is centered on zero and includes values of both signs. The model underpredicts day-to-day persistence, so the interval may be too narrow.",
+        verdict: { muted: false, main: "The estimate is at zero.", sub: "The interval runs from −0.09 to 0.09 standard deviations, and includes values of both signs." },
+        note: "Primary test. Posterior SD 0.05. In within-person residual SD units: −0.01 [−0.21, 0.21]." },
+      { id: "a2", group: "plan", short: "Next-day exhaustion (secondary)", label: "Hypothesis 2: next-day emotional exhaustion after a meditation day", est: -0.03, lo: -0.16, hi: 0.11,
+        extra: "Probability the slope is below zero: .65",
+        reading: "The estimate for exhaustion on the day after meditation was \u22120.03 standard deviations, slightly below zero, adjusting for the same day’s exhaustion. The interval includes values of both signs.",
+        note: "Secondary test. Posterior SD 0.07. In within-person residual SD units: −0.06 [−0.33, 0.23]." },
+
+      { id: "b1", group: "h1", short: "Main model", label: "Main model", est: 0.00, lo: -0.09, hi: 0.09,
+        extra: "Probability the slope is above zero: .48",
+        reading: "The paper’s main estimate for same-day self-compassion.",
+        verdict: { muted: false, main: "The estimate is at zero.", sub: "The interval is centered on zero." },
+        note: "Latent-centered two-level model; slope prior Normal(0, 0.5)." },
+      { id: "b2", group: "h1", short: "Check: prior twice as wide", label: "Prior SD 1.0", est: 0.00, lo: -0.10, hi: 0.09,
+        extra: "Probability the slope is above zero: .48",
+        reading: "Letting the prior allow larger effects left the estimate unchanged.",
+        note: "S1. A prior SD of 0.25 gave 0.00 [−0.10, 0.09], probability .49." },
+      { id: "b3", group: "h1", short: "Check: reports read as same-day", label: "Same-day alignment of the morning report", est: -0.02, lo: -0.12, hi: 0.08,
+        extra: "Probability the slope is above zero: .33",
+        reading: "The morning report asked about the previous 24 hours. Reading it instead as describing the same day moved the estimate slightly below zero.",
+        note: "S2." },
+      { id: "b4", group: "h1", short: "Check: missing values shifted down 0.50 SD", label: "Missing self-compassion shifted 0.50 SD below the prediction", est: -0.01, lo: -0.10, hi: 0.09,
+        extra: "Probability the slope is above zero: .46",
+        reading: "This tests whether days with missing self-compassion could be hiding a difference. A shift of 0.25 SD gave 0.00 [−0.10, 0.09], probability .47.",
+        note: "S3, delta-adjusted pattern-mixture model." },
+      { id: "b5", group: "h1", short: "Check: observed-mean centering", label: "Conventional observed person-mean centering", est: 0.02, lo: -0.08, hi: 0.11,
+        extra: "Probability the slope is above zero: .64",
+        reading: "The conventional method, which subtracts each person’s observed average, gives nearly the same answer as the latent-centered model.",
+        note: "S6, brms comparison model. It never replaces the primary model." },
+
+      { id: "c1", group: "h2", short: "Main model", label: "Main model", est: -0.03, lo: -0.16, hi: 0.11,
+        extra: "Probability the slope is below zero: .65",
+        reading: "The paper’s main estimate for next-day emotional exhaustion.",
+        note: "Adjusted for the previous day’s exhaustion." },
+      { id: "c2", group: "h2", short: "Check: prior twice as wide", label: "Prior SD 1.0", est: -0.03, lo: -0.17, hi: 0.11,
+        extra: "Probability the slope is below zero: .66",
+        reading: "A wider prior left the estimate unchanged.",
+        note: "S4. A prior SD of 0.25 gave −0.03 [−0.16, 0.10], probability .67." },
+      { id: "c3", group: "h2", short: "Check: reports read as same-day", label: "Same-day alignment of the morning report", est: -0.07, lo: -0.18, hi: 0.04,
+        extra: "Probability the slope is below zero: .90",
+        reading: "This was the largest shift among the checks. Matching the morning report to a different diary day moved the estimate further below zero, and the interval still includes zero.",
+        note: "S4. The paper concludes that the mapping of an adherence item onto diary days should be stated and tested." },
+      { id: "c4", group: "h2", short: "Check: missing values shifted up 0.50 SD", label: "Missing exhaustion shifted 0.50 SD above the prediction", est: -0.03, lo: -0.16, hi: 0.11,
+        extra: "Probability the slope is below zero: .65",
+        reading: "Assuming days with missing exhaustion were more exhausted left the estimate unchanged.",
+        note: "S4, delta-adjusted pattern-mixture model." },
+
+      { id: "d1", group: "ps", short: "Same-day perceived stress", label: "Perceived stress on the same day as meditation", est: -0.10, lo: -0.25, hi: 0.06,
+        extra: "Probability the slope is below zero: .90",
+        reading: "The estimated change in perceived stress on days of meditation was −0.10 SD (95% credible interval [−0.25, 0.06]), with posterior probability .90 of being negative. The interval includes zero. The paper names this slope as a candidate for a confirmatory test.",
+        note: "Additional outcome, timing and direction set after the Hypothesis 1 and 2 results were known." },
+      { id: "d2", group: "ps", short: "Next-day perceived stress", label: "Perceived stress on the day after meditation", est: 0.06, lo: -0.09, hi: 0.22,
+        extra: "Probability the slope is below zero: .21",
+        reading: "The next-day estimate was slightly above zero, and its interval includes zero.",
+        note: "Additional outcome, timing and direction set after the Hypothesis 1 and 2 results were known." }
+    ]
+  });
+})();
+</script>
 </body>
 </html>
