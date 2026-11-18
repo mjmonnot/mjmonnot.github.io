@@ -32,7 +32,7 @@ permalink: /publications/2026-chatgpt-writing.html
 
 ## Summary
 
-I reanalyze Noy and Zhang’s (2023a) online randomized experiment with Bayesian models in brms and weakly informative priors. Under ChatGPT access, second-task writing grades depended less on first-task grades (−0.159 [−0.317, −0.002], *P*(direction) = .976), access was associated with higher enjoyment (0.44 [0.29, 0.60]), and two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
+I fit Bayesian models in brms, with weakly informative priors, to data from Noy and Zhang’s (2023a) online randomized experiment. Under ChatGPT access, second-task writing grades depended less on first-task grades (−0.159 [−0.317, −0.002], *P*(direction) = .976), access was associated with higher enjoyment (0.44 [0.29, 0.60]), and two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
 
 ## Reference
 
