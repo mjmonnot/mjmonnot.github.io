@@ -32,7 +32,7 @@ permalink: /publications/2026-recovery-training.html
 
 ## Summary
 
-A prespecified reanalysis of a randomized trial among German employees (*N* = 393) tested whether a cognitive-behavioral and a mindfulness-based recovery training raised psychological detachment more for employees who detached least or for those who already detached well. Both trainings raised detachment at the mean baseline by about 0.9 points, but the baseline × condition interactions were −0.21 (95% CI [−0.50, 0.08]) and 0.04 (95% CI [−0.24, 0.33]). The results support neither compensation nor accumulation, and the intervals bound how large either pattern could be in a trial of this size.
+A prespecified analysis of data from a randomized trial among German employees (*N* = 393; Peuckmann et al., 2026) tested whether a cognitive-behavioral and a mindfulness-based recovery training raised psychological detachment more for employees who detached least or for those who already detached well. Both trainings raised detachment at the mean baseline by about 0.9 points, but the baseline × condition interactions were −0.21 (95% CI [−0.50, 0.08]) and 0.04 (95% CI [−0.24, 0.33]). The results support neither compensation nor accumulation, and the intervals bound how large either pattern could be in a trial of this size.
 
 ## Reference
 
