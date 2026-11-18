@@ -55,7 +55,7 @@ It then follows those patterns over about two decades to see:
 1. Whether the same four patterns show up in a separate sample.
 2. Whether knowing someone’s pattern predicts skills and outcomes **above and beyond** knowing their continuous trait scores.
 3. Whether people move out of a strained (Distressed) pattern — and if so, toward recovery or disengagement.
-4. Whether psychological resources from SDT, especially **purpose in life**, were associated with greater odds of a recovery-oriented move compared with a disengagement-oriented move, among people who left the Distressed pattern for Resilient or Reserved.
+4. Whether the SDT basic psychological needs (autonomy, competence and relatedness), and supplementary purpose in life, were associated with greater odds of a recovery-oriented move compared with a disengagement-oriented move, among people who left the Distressed pattern for Resilient or Reserved.
 
 ---
 
@@ -75,7 +75,7 @@ It then follows those patterns over about two decades to see:
 
 ### For Leaders & HR
 
-- Treat personality profiles as interpretive lenses; profile membership added no predictive value beyond continuous traits (p. 16; p. 40).
+- Use personality profiles to describe groups. Profile membership added essentially no predictive value beyond continuous traits (p. 16; p. 40).
 - Support the conditions linked with recovery-oriented moves out of distress, alongside skills training. Purpose in life was the one resource with a significant link to the direction of the move; autonomy and relatedness showed parallel but nonsignificant trends.
 - Watch for **disengagement** that looks like calm stability (Reserved): lower distress is not always the same as regained capacity.
 

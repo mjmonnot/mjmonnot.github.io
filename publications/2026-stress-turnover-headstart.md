@@ -9,9 +9,9 @@ permalink: /publications/2026-stress-turnover-headstart.html
 <div class="key-findings">
 <p class="key-findings-label">Key findings</p>
 <ol>
-<li>A short set of intake measures (stress, burnout, mood, job satisfaction, hope, and a few demographics) predicted, six months ahead, which Head Start staff would report high stress or little intention to stay in their jobs. Tested on staff whose data had been held back, the equation ranked a staff member who later struggled above one who did not about 7 times in 10: better than guessing and well short of certain.</li>
-<li>Higher stress and younger age at intake carried the most weight for predicting high stress later, and low job satisfaction carried the most for not intending to stay. These are weights in a prediction equation, not tests of cause.</li>
-<li>The study&rsquo;s other question had a negative answer. Knowing whether a staff member had been assigned a brief stress-reappraisal exercise, and how they responded to it, added almost nothing to the six-month predictions.</li>
+<li>A short set of intake measures (stress, burnout, anxiety, depressive symptoms, job satisfaction, hope, reappraisal beliefs and intentions, age, education and gender) predicted, six months ahead, which Head Start staff would report high stress or low intention to stay with their organization. Tested on staff whose data had been held back, the equation ranked a staff member who later reported high stress above one who did not about 7 times in 10. It did the same for low intention to stay. The paper describes this as moderate accuracy. The evidence for low intention to stay was weaker than for high stress.</li>
+<li>Higher stress and younger age at intake carried the most weight for predicting high stress later, and low job satisfaction carried the most for not intending to stay. These coefficients describe the fitted equation and are not tests of unique effects.</li>
+<li>The study also asked whether a brief online cognitive reappraisal exercise, given after intake, improved the predictions. Knowing whether a staff member had been assigned the exercise, and the scores they gave right after it, did not clearly improve the six-month stress prediction. That result comes from a check that compared a prediction equation with and without these measures. The paper notes that this check does not show how the measures would behave in the short intake equation the study kept. The check was not designed to show that this information adds nothing.</li>
 </ol>
 </div>
 <p class="companion-cta"><a class="companion-btn" href="https://mjmonnot.github.io/stress-turnover-headstart/">Companion site: predictors, evidence, and what organizations can do &rarr;</a></p>
@@ -28,7 +28,7 @@ permalink: /publications/2026-stress-turnover-headstart.html
 
 Head Start staff report high psychological strain. Drawing on conservation of resources theory, this study tests whether a short intake survey can identify, six months ahead, which staff will report elevated stress or low intention to remain.
 
-It can. An 11-predictor intake equation beat the base rate for both outcomes on a held-out test partition (AUC .72 for elevated stress, .70 for low intention to remain), with a calibration slope of 0.92 for stress. Baseline stress and younger age carried the most weight for stress; lower job satisfaction carried the most for intention to remain.
+It can, with moderate accuracy. For low intention to remain, the evidence was weaker than for elevated stress. Baseline stress and younger age carried the most weight for stress. Lower job satisfaction carried the most for intention to remain.
 
 ---
 
@@ -45,7 +45,7 @@ It can. An 11-predictor intake equation beat the base rate for both outcomes on 
 
 - **Elevated six-month stress:** log loss 0.532 vs. 0.596 (difference −0.064, 95% CI [−0.099, −0.029]); AUC .72 [.67, .77]; calibration slope 0.92 [0.70, 1.19].
 - **Elevated stress, Brier score:** .177 vs. .203 (difference −.026 [−.041, −.010]); AUPRC .52 against an event rate of .28.
-- **Low intention to remain:** log loss 0.386 vs. 0.417 (difference −0.030 [−0.060, −0.002]); AUC .70 [.63, .77]; AUPRC .26 against an event rate of .14.
+- **Low intention to remain:** The equation ranked a staff member who later reported low intention to remain above one who did not about 7 times in 10. In the held-back test group, about 14 in 100 of the staff who answered this item reported the outcome (62 of 430). The evidence for this outcome is weaker than for stress.
 - **Key predictors:** baseline stress and younger age for stress; lower job satisfaction for intention to remain.
 
 ---
