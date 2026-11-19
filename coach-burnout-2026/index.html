@@ -13,6 +13,22 @@
   <meta property="og:site_name" content="Matthew J. Monnot">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/companion/companion.css">
+  <style>
+    #besd-chart { max-width: 620px; border: none; background: none; overflow: visible; }
+    #besd-chart text { font-size: 13px; }
+    .paper-figure a.zoom { display: block; cursor: zoom-in; }
+    .paper-figure a.zoom:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    .zoom-hint { font-size: 14px; color: var(--gray); margin: 6px 0 0; }
+    .lightbox { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1000; background: rgba(20, 26, 33, 0.94); display: flex; flex-direction: column; }
+    .lightbox[hidden] { display: none; }
+    .lightbox-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 16px; color: #fff; font-size: 15px; }
+    .lightbox-bar button { font: inherit; color: #fff; background: none; border: 1px solid #fff; border-radius: 4px; padding: 6px 14px; cursor: pointer; }
+    .lightbox-bar button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .lightbox-buttons { white-space: nowrap; }
+    .lightbox-scroll { flex: 1; overflow: auto; padding: 0 16px 16px; }
+    .lightbox-scroll img { display: block; margin: 0 auto; max-width: none; height: auto; background: #fff; cursor: zoom-in; }
+    .lightbox-scroll img.large { cursor: zoom-out; }
+  </style>
 </head>
 <body>
 <main>
@@ -168,8 +184,15 @@
   <div id="guess"></div>
   <div id="besd-wrap" class="guess-target">
     <h2>A correlation of &minus;.48 translates to about 74 of 100 coaches in the more self-compassionate half landing in the less-burned-out half.</h2>
-    <p class="section-intro">The same translation gives about 26 of 100 for the less self-compassionate half. This is a way of reading the correlation, not a count of coaches. Each dot is one of 100 imagined coaches.</p>
-    <div id="besd"></div>
+    <p class="section-intro">The same translation gives about 26 of 100 for the less self-compassionate half. This is a way of reading the correlation, not a count of coaches.</p>
+    <figure class="chart">
+      <svg id="besd-chart" viewBox="0 0 440 236" role="img" aria-labelledby="besd-title besd-desc">
+        <title id="besd-title">Of 100 imagined coaches in each half on self-compassion, how many land in the less-burned-out half</title>
+        <desc id="besd-desc">Two bars of 100 imagined coaches. In the more self-compassionate half, 74 land in the less-burned-out half and 26 in the more-burned-out half. In the less self-compassionate half, 26 land in the less-burned-out half and 74 in the more-burned-out half. Ticks above and below each bar mark 50, the count if there were no link. A bracket on the first bar runs from 69 to 80, the counts at the ends of the 95% interval.</desc>
+      </svg>
+      <figcaption>Each bar stands for 100 imagined coaches. Blue is the less-burned-out half and grey is the more-burned-out half.</figcaption>
+    </figure>
+    <p class="fineprint" id="besd-note">Translation of <em>r</em> = −.48 by the binomial effect size display (Rosenthal &amp; Rubin, 1982): (0.5 ± <em>r</em>/2) × 100, which assumes both measures are roughly bell-shaped. At the ends of the 95% interval (−.60 and −.37) the first count would be 80 or about 69. The study did not split anyone into halves, and the correlation describes coaches’ stable levels across the six months, not a single survey. Squaring the correlation gives about 23%: the overlap in coaches’ stable levels, not the share of all burnout.</p>
   </div>
 </section>
 
@@ -205,11 +228,13 @@
 <section aria-labelledby="s6">
   <p class="section-label" id="s6">6 &middot; The paper&rsquo;s figures, with a reading guide</p>
   <figure class="paper-figure">
-    <img src="assets/figure1_riclpm_paths.png" alt="Figure 1 of the preprint: diagram of the statistical model, with self-compassion and burnout each measured at three surveys and arrows between consecutive surveys." width="3900" height="3600" loading="lazy">
+    <a class="zoom" href="assets/figure1_riclpm_paths.png" target="_blank" rel="noopener" data-title="Figure 1 of the preprint"><img src="assets/figure1_riclpm_paths.png" alt="Figure 1 of the preprint: diagram of the statistical model, with self-compassion and burnout each measured at three surveys and arrows between consecutive surveys." width="3900" height="3600" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
     <figcaption><strong>Figure 1. How to read it.</strong> The ovals in the top and bottom rows are the three surveys of self-compassion and burnout. The two boxes, above and below the ovals, hold each coach&rsquo;s stable level, which is where the &minus;.48 correlation lives. The arrows between surveys carry what is left after the stable level is removed: a coach&rsquo;s ups and downs around their own average. The thick blue diagonal arrows are the tested prediction, from self-compassion at one survey to burnout at the next. Their estimates are the first two rows of section 3.</figcaption>
   </figure>
   <figure class="paper-figure">
-    <img src="assets/figure2_specification_curve.png" alt="Figure 2 of the preprint: 32 estimates of the path from self-compassion to burnout, sorted from lowest to highest, each with a vertical 95% interval that crosses zero." width="3900" height="3600" loading="lazy">
+    <a class="zoom" href="assets/figure2_specification_curve.png" target="_blank" rel="noopener" data-title="Figure 2 of the preprint"><img src="assets/figure2_specification_curve.png" alt="Figure 2 of the preprint: 32 estimates of the path from self-compassion to burnout, sorted from lowest to highest, each with a vertical 95% interval that crosses zero." width="3900" height="3600" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
     <figcaption><strong>Figure 2. How to read it.</strong> Each point in the top panel is the same question answered under a different set of reasonable analytic choices, 32 in all, sorted from lowest to highest. The vertical lines are 95% intervals. The bottom panel shows which choices each version used. A filled black point would mean an interval that excludes zero. There are none.</figcaption>
   </figure>
 </section>
@@ -351,6 +376,63 @@
   Companion.copy(document.getElementById("copy-oneline"), function () { return document.getElementById("oneline").textContent; });
   Companion.copy(document.getElementById("copy-cite"), function () { return document.getElementById("cite-text").textContent; });
 
+  /* 2 · Between-coach correlation as counts of 100 (binomial effect size display). */
+  function drawBesd(guess) {
+    var svg = document.getElementById("besd-chart");
+    var NS = "http://www.w3.org/2000/svg";
+    var X0 = 20, K = 4;
+    Array.prototype.slice.call(svg.childNodes).forEach(function (n) {
+      if (n.nodeName !== "title" && n.nodeName !== "desc") svg.removeChild(n);
+    });
+    function el(name, attrs, text) {
+      var e = document.createElementNS(NS, name);
+      Object.keys(attrs).forEach(function (k) { e.setAttribute(k, attrs[k]); });
+      if (text !== undefined) e.textContent = text;
+      svg.appendChild(e);
+      return e;
+    }
+    function x(n) { return X0 + K * n; }
+    var BLUE = "#2e6f9e", GREY = "#c9cfd6", MID = "#7a8794", INK = "#22303c", LBL = "#5b6570", RED = "#c0392b";
+    function txt(attrs, text) {
+      var a = { "font-size": "13", "font-family": "inherit" };
+      Object.keys(attrs).forEach(function (k) { a[k] = attrs[k]; });
+      a.style = "fill:" + a.fill;
+      delete a.fill;
+      return el("text", a, text);
+    }
+    var y1 = 64, y2 = 148, H = 28;
+    /* Row 1 */
+    txt({ x: X0, y: 18, fill: INK, "font-weight": "700" }, "More self-compassionate half of coaches");
+    el("rect", { x: x(0), y: y1, width: K * 74, height: H, fill: BLUE });
+    el("rect", { x: x(74), y: y1, width: K * 26, height: H, fill: GREY });
+    /* Row 2 */
+    txt({ x: X0, y: 132, fill: INK }, "Less self-compassionate half of coaches");
+    el("rect", { x: x(0), y: y2, width: K * 26, height: H, fill: BLUE });
+    el("rect", { x: x(26), y: y2, width: K * 74, height: H, fill: GREY });
+    /* No-link line */
+    [y1, y2].forEach(function (yy) {
+      el("line", { x1: x(50), y1: yy - 7, x2: x(50), y2: yy, stroke: MID, "stroke-width": "1.5" });
+      el("line", { x1: x(50), y1: yy + H, x2: x(50), y2: yy + H + 7, stroke: MID, "stroke-width": "1.5" });
+    });
+    txt({ x: x(50), y: y2 + H + 24, "text-anchor": "middle", fill: LBL }, "50 if there were no link");
+    /* Bar labels */
+    txt({ x: x(0) + 8, y: y1 + 19, fill: "#fff" }, "74 in the less-burned-out half");
+    txt({ x: x(87), y: y1 + 19, "text-anchor": "middle", fill: INK }, "26");
+    txt({ x: x(13), y: y2 + 19, "text-anchor": "middle", fill: "#fff" }, "26");
+    txt({ x: x(100) - 8, y: y2 + 19, "text-anchor": "end", fill: INK }, "74 in the more-burned-out half");
+    /* Bracket, 69 to 80 */
+    el("path", { d: "M" + x(69) + " " + (y1 - 2) + "V" + (y1 - 8) + "H" + x(80) + "V" + (y1 - 2), fill: "none", stroke: INK, "stroke-width": "1" });
+    txt({ x: x(100), y: y1 - 14, "text-anchor": "end", fill: LBL }, "69 to 80 at the ends of the 95% interval");
+    /* Guess marker */
+    if (typeof guess === "number" && isFinite(guess)) {
+      var gx = x(guess), ty = y1 + H + 10;
+      el("path", { d: "M" + gx + " " + ty + "L" + (gx + 5) + " " + (ty + 9) + "L" + (gx - 5) + " " + (ty + 9) + "Z", fill: RED });
+      if (guess < 60) txt({ x: gx + 10, y: ty + 10, fill: RED }, "your guess: " + guess);
+      else txt({ x: gx - 10, y: ty + 10, "text-anchor": "end", fill: RED }, "your guess: " + guess);
+    }
+  }
+  drawBesd();
+
   /* 2 · Guess first, then the published translation. */
   Companion.guess(document.getElementById("guess"), {
     question: "Before you look: of 100 coaches in the more self-compassionate half, how many would you expect in the less-burned-out half?",
@@ -358,23 +440,12 @@
     format: function (v) { return v + " of 100"; },
     reveal: document.getElementById("besd-wrap"),
     feedback: function (v) {
+      drawBesd(v);
       var d = v - 74;
       if (Math.abs(d) <= 3) return "You guessed <strong>" + v + "</strong>. The study\u2019s correlation translates to about <strong>74</strong>, so you were close.";
       if (d < 0) return "You guessed <strong>" + v + "</strong>. The study\u2019s correlation translates to about <strong>74</strong>: the difference between coaches is larger than you expected.";
       return "You guessed <strong>" + v + "</strong>. The study\u2019s correlation translates to about <strong>74</strong>: a clear difference between coaches, though smaller than you expected.";
     }
-  });
-
-  /* 2 · Between-coach correlation as counts of 100 (binomial effect size display). */
-  Companion.iconArray(document.getElementById("besd"), {
-    options: [{
-      label: "r = \u2212.48",
-      panels: [
-        { filled: 74, tone: "blue", text: "in the less-burned-out half", who: "More self-compassionate half of coaches" },
-        { filled: 26, tone: "", text: "in the less-burned-out half", who: "Less self-compassionate half of coaches" }
-      ],
-      note: "Translation of <em>r</em> = \u2212.48 by the binomial effect size display (Rosenthal &amp; Rubin, 1982): (0.5 \u00b1 <em>r</em>/2) \u00d7 100, which assumes both measures are roughly bell-shaped. At the ends of the 95% interval (\u2212.60 and \u2212.37) the first count would be 80 or about 69. The study did not split anyone into halves, and the correlation describes coaches\u2019 stable levels across the six months, not a single survey. Squaring the correlation gives about 23%: the overlap in coaches\u2019 stable levels, not the share of all burnout."
-    }]
   });
 
   /* 3 · Published within-coach paths (Tables 4 and 5; Robustness section). */
@@ -429,6 +500,76 @@
         note: "Exploratory: specified after the analysis plan was frozen. Same model, and the same estimation problem, as the uncompassionate row." }
     ]
   });
+})();
+</script>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+  <div class="lightbox-bar"><span id="lightbox-title"></span><span class="lightbox-buttons"><button type="button" id="lightbox-size">Larger</button> <button type="button" id="lightbox-close">Close</button></span></div>
+  <div class="lightbox-scroll" id="lightbox-scroll"></div>
+</div>
+<script>
+/* Paper figures: enlarge on click. Without script the link opens the image file. */
+(function () {
+  "use strict";
+  var links = document.querySelectorAll(".paper-figure a.zoom");
+  var box = document.getElementById("lightbox");
+  if (!links.length || !box) return;
+  var scroller = document.getElementById("lightbox-scroll");
+  var img = document.createElement("img");
+  img.id = "lightbox-img"; img.alt = "";
+  var title = document.getElementById("lightbox-title");
+  var closeBtn = document.getElementById("lightbox-close");
+  var sizeBtn = document.getElementById("lightbox-size");
+  var last = null, large = false;
+  /* Two sizes. Fitted: the figure's full width inside the window. Larger: 1.8 times the window, at most twice the file's own width. */
+  function fit() {
+    var nat = img.naturalWidth || 0;
+    if (!nat) return;
+    var avail = scroller.clientWidth - 32;
+    var w = large ? Math.min(nat * 2, Math.max(Math.round(avail * 1.8), Math.min(nat, 1300))) : Math.min(avail, nat * 2);
+    img.style.width = w + "px";
+    img.className = large ? "large" : "";
+    sizeBtn.textContent = large ? "Fit to window" : "Larger";
+  }
+  function toggle() { large = !large; fit(); scroller.scrollTop = 0; scroller.scrollLeft = 0; }
+  function open(a) {
+    var small = a.querySelector("img");
+    last = a;
+    /* Start fitted on a roomy screen and at the larger size on a narrow one. */
+    img.onload = function () { large = (scroller.clientWidth - 32) < 700; fit(); };
+    img.alt = small ? (small.getAttribute("alt") || "") : "";
+    img.src = a.getAttribute("href");
+    scroller.appendChild(img);
+    title.textContent = a.getAttribute("data-title") || "";
+    box.hidden = false;
+    document.documentElement.style.overflow = "hidden";
+    scroller.scrollTop = 0; scroller.scrollLeft = 0;
+    if (img.complete && img.naturalWidth) img.onload();
+    closeBtn.focus();
+  }
+  function close() {
+    box.hidden = true;
+    document.documentElement.style.overflow = "";
+    if (img.parentNode) img.parentNode.removeChild(img);
+    img.removeAttribute("src");
+    if (last) last.focus();
+  }
+  Array.prototype.forEach.call(links, function (a) {
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+      e.preventDefault();
+      open(a);
+    });
+  });
+  closeBtn.addEventListener("click", close);
+  sizeBtn.addEventListener("click", toggle);
+  img.addEventListener("click", toggle);
+  box.addEventListener("click", function (e) { if (e.target === box || e.target === scroller) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (box.hidden) return;
+    if (e.key === "Escape" || e.key === "Esc") { close(); }
+    else if (e.key === "Tab") { e.preventDefault(); (document.activeElement === closeBtn ? sizeBtn : closeBtn).focus(); }
+  });
+  window.addEventListener("resize", function () { if (!box.hidden) fit(); });
 })();
 </script>
 </body>
