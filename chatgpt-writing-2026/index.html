@@ -13,6 +13,24 @@
   <meta property="og:site_name" content="Matthew J. Monnot">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/companion/companion.css">
+  <style>
+    .multiples { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    @media (max-width: 640px) { .multiples { grid-template-columns: 1fr; } }
+    .multiples figure { margin: 0; }
+    .multiples svg text { font-family: inherit; font-size: 13px; }
+    .paper-figure a.zoom { display: block; cursor: zoom-in; }
+    .paper-figure a.zoom:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    .zoom-hint { font-size: 14px; color: var(--gray); margin: 6px 0 0; }
+    .lightbox { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1000; background: rgba(20, 26, 33, 0.94); display: flex; flex-direction: column; }
+    .lightbox[hidden] { display: none; }
+    .lightbox-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 16px; color: #fff; font-size: 15px; }
+    .lightbox-bar button { font: inherit; color: #fff; background: none; border: 1px solid #fff; border-radius: 4px; padding: 6px 14px; cursor: pointer; }
+    .lightbox-bar button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .lightbox-buttons { white-space: nowrap; }
+    .lightbox-scroll { flex: 1; overflow: auto; padding: 0 16px 16px; }
+    .lightbox-scroll img { display: block; margin: 0 auto; max-width: none; height: auto; background: #fff; cursor: zoom-in; }
+    .lightbox-scroll img.large { cursor: zoom-out; }
+  </style>
 </head>
 <body>
 <main>
@@ -168,8 +186,17 @@
   <div id="guess"></div>
   <div id="adopt-wrap" class="guess-target">
     <h2>An estimated 42 in 100 of those given access reported using a chatbot at work two months later, against an estimated 29 in 100 of the others.</h2>
-    <p class="section-intro">The difference is 13.4 percentage points, with a plausible range from 3.0 to 23.5. Both figures are model estimates that include people who did not answer the follow-up. Each dot is one of 100 professionals.</p>
-    <div id="adopt"></div>
+    <p class="section-intro">The difference is 13.4 percentage points, with a plausible range from 3.0 to 23.5. Both figures are model estimates that include people who did not answer the follow-up. The second panel repeats the comparison for people with complete answers.</p>
+    <div class="multiples" id="adopt-multiples">
+      <figure class="chart">
+        <svg id="adopt-all" viewBox="0 0 300 168" role="img" aria-labelledby="adopt-all-title adopt-all-desc" style="border:none;background:none;overflow:visible;width:100%;height:auto"><title id="adopt-all-title">Share who said, two months later, that they had used a chatbot at work in the past week: all 359 participants</title><desc id="adopt-all-desc">Two bars from zero on a scale of 0 to 100%. Given access to ChatGPT in the experiment: 42.2%. Not given access: 28.8%. The bars are 13.4 percentage points apart.</desc><g class="adopt-g"></g></svg>
+        <figcaption>Main estimate: 42.2% and 28.8%. A difference of 13.4 percentage points, 95% credible interval [3.0, 23.5], with a .994 probability that it is above zero. Answers from the 70 people who did not respond to the follow-up were filled in by multiple imputation.</figcaption>
+      </figure>
+      <figure class="chart">
+        <svg id="adopt-cc" viewBox="0 0 300 168" role="img" aria-labelledby="adopt-cc-title adopt-cc-desc" style="border:none;background:none;overflow:visible;width:100%;height:auto"><title id="adopt-cc-title">Share who said, two months later, that they had used a chatbot at work in the past week: people with complete answers</title><desc id="adopt-cc-desc">Two bars from zero on a scale of 0 to 100%. Given access to ChatGPT in the experiment: 41.8%. Not given access: 28.3%. The bars are 13.5 percentage points apart.</desc><g class="adopt-g"></g></svg>
+        <figcaption>Complete cases (276 people): 41.8% and 28.3%. A difference of 13.5 percentage points, 95% credible interval [3.1, 23.7]. Two further checks on missing answers gave differences from 10.1 to 17.2 points and from 14.3 to 15.7 points.</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -205,11 +232,13 @@
 <section aria-labelledby="s6">
   <p class="section-label" id="s6">6 &middot; The paper&rsquo;s figures, with a reading guide</p>
   <figure class="paper-figure">
-    <img src="assets/figure2_effects_forest.png" alt="Figure 2 of the preprint: a forest plot of the effects of ChatGPT access on grades, ratings, and adoption, each with a 95% credible interval and the probability of the predicted direction." width="3900" height="3519" loading="lazy">
+    <a class="zoom" href="assets/figure2_effects_forest.png" target="_blank" rel="noopener" data-title="Figure 2 of the preprint"><img src="assets/figure2_effects_forest.png" alt="Figure 2 of the preprint: a forest plot of the effects of ChatGPT access on grades, ratings, and adoption, each with a 95% credible interval and the probability of the predicted direction." width="3900" height="3519" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
     <figcaption><strong>Figure 2. How to read it.</strong> Panel (a) holds the seven estimates from the five planned hypotheses. Panel (b) holds later chatbot use, a secondary outcome; its rows are marked &ldquo;second read&rdquo; because they were reestimated after a correction to the code. The circle is the estimate, the horizontal line is its 95% credible interval, and the dashed vertical line marks zero. The column at the right gives the probability that the effect runs in the predicted direction. The enjoyment row sits clearly to the right of zero. The first row, the writing-grade link, sits to the left with its interval ending just short of zero. Panel (b) is in percentage points. In panel (a) most rows are in standard-deviation units and the originality row is a comparison of spread, so the rows are not on one common scale.</figcaption>
   </figure>
   <figure class="paper-figure">
-    <img src="assets/figure1_consort_flow.png" alt="Figure 1 of the preprint: participant flow from 453 randomized participants to the 359 in the primary sample and the numbers with each outcome available." width="3900" height="3000" loading="lazy">
+    <a class="zoom" href="assets/figure1_consort_flow.png" target="_blank" rel="noopener" data-title="Figure 1 of the preprint"><img src="assets/figure1_consort_flow.png" alt="Figure 1 of the preprint: participant flow from 453 randomized participants to the 359 in the primary sample and the numbers with each outcome available." width="3900" height="3000" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
     <figcaption><strong>Figure 1. How to read it.</strong> The flow starts with the 453 people who were randomized. It then splits by payment condition: the 359 people in the two main conditions are analyzed here, and 94 in a third condition are shown but not modeled. Three boxes give how many people have each outcome: grades (353), ratings of the task (357), and the two-month question (289). The bottom row gives who entered each model: 352 or 353 for the grade and rating tests, 276 with complete follow-up answers, and all 359 when missing answers are filled in.</figcaption>
   </figure>
 </section>
@@ -245,7 +274,7 @@
   <ul>
     <li>No participant-level data are hosted here; every number on this page is a published aggregate from the preprint.</li>
     <li>The diagram in section 1 is an illustration of the direction of the result. The paper reports the difference between the two slopes, not each slope.</li>
-    <li>The &ldquo;of 100&rdquo; display in section 2 rounds the model-based percentages (42.2% and 28.8%). They are estimates for all 359 participants, including those who did not answer the follow-up, not raw counts.</li>
+    <li>The bars in the first panel of section 2 show model-based percentages (42.2% and 28.8%). They are estimates for all 359 participants, including those who did not answer the follow-up, not raw counts. The second panel uses the 276 people with complete answers.</li>
     <li>A high probability of direction indicates the sign of an effect, not that an effect of practical size exists.</li>
     <li>The experiment used ChatGPT as it was in early 2023, with professionals recruited online in six occupations. The results may not carry over to current tools or to work on the job.</li>
     <li>Enjoyment, felt effectiveness, and later use are single self-report items from people who knew which group they were in.</li>
@@ -341,6 +370,7 @@
     format: function (v) { return v + " of 100"; },
     reveal: document.getElementById("adopt-wrap"),
     feedback: function (v) {
+      drawAdopt(v);
       var d = v - 42;
       if (Math.abs(d) <= 3) return "You guessed <strong>" + v + "</strong>. The study\u2019s estimate is about <strong>42</strong>, so you were close.";
       if (d < 0) return "You guessed <strong>" + v + "</strong>. The study\u2019s estimate is about <strong>42</strong>: one session was followed by more reported use than you expected.";
@@ -348,25 +378,53 @@
     }
   });
 
-  /* 2 · Two-month adoption as counts of 100 (Table 4). */
-  Companion.iconArray(document.getElementById("adopt"), {
-    label: "Choose an estimate",
-    options: [{
-      label: "All 359 participants",
-      panels: [
-        { filled: 42, tone: "blue", text: "used a chatbot at work in the past week", who: "Given access to ChatGPT in the experiment" },
-        { filled: 29, tone: "", text: "used a chatbot at work in the past week", who: "Not given access" }
-      ],
-      note: "Main estimate: 42.2% and 28.8%, rounded to whole dots. A difference of 13.4 percentage points, 95% credible interval [3.0, 23.5], with a .994 probability that it is above zero. Answers from the 70 people who did not respond to the follow-up were filled in by multiple imputation."
-    }, {
-      label: "Only those with complete answers",
-      panels: [
-        { filled: 42, tone: "blue", text: "used a chatbot at work in the past week", who: "Given access to ChatGPT in the experiment" },
-        { filled: 28, tone: "", text: "used a chatbot at work in the past week", who: "Not given access" }
-      ],
-      note: "Complete cases (276 people): 41.8% and 28.3%, rounded to whole dots. A difference of 13.5 percentage points, 95% credible interval [3.1, 23.7]. Two further checks on missing answers gave differences from 10.1 to 17.2 points and from 14.3 to 15.7 points."
-    }]
-  });
+  /* 2 · Two-month adoption as bars from zero (Table 4). */
+  function drawAdopt(guess) {
+    var NS = "http://www.w3.org/2000/svg", X0 = 10, K = 2.8;
+    function el(p, n, a, t) {
+      var e = document.createElementNS(NS, n);
+      for (var k in a) e.setAttribute(k, a[k]);
+      if (t !== undefined) e.textContent = t;
+      p.appendChild(e); return e;
+    }
+    var panels = [
+      { id: "adopt-all", head: "All 359 participants", a: 42.2, b: 28.8, gap: "13.4", g: true },
+      { id: "adopt-cc", head: "Only those with complete answers", a: 41.8, b: 28.3, gap: "13.5", g: false }
+    ];
+    panels.forEach(function (p) {
+      var g = document.getElementById(p.id).querySelector(".adopt-g");
+      while (g.firstChild) g.removeChild(g.firstChild);
+      var ink = "#22303c", lab = "#5b6570";
+      el(g, "text", { x: 0, y: 14, fill: ink, "font-weight": "bold", "font-size": 13 }, p.head);
+      var rows = [
+        { y: 41, v: p.a, c: "#2e6f9e", t: "Given access to ChatGPT in the experiment" },
+        { y: 97, v: p.b, c: "#7a8794", t: "Not given access" }
+      ];
+      rows.forEach(function (r) {
+        el(g, "text", { x: X0, y: r.y - 5, fill: lab, "font-size": 13 }, r.t);
+        el(g, "rect", { x: X0, y: r.y, width: r.v * K, height: 18, fill: r.c });
+        el(g, "text", { x: X0 + r.v * K + 5, y: r.y + 14, fill: ink, "font-size": 13 }, r.v.toFixed(1) + "%");
+      });
+      el(g, "line", { x1: X0, x2: 290, y1: 119, y2: 119, stroke: "#c9cfd6", "stroke-width": 1 });
+      [[0, "0", "start"], [50, "50", "middle"], [100, "100%", "end"]].forEach(function (t) {
+        el(g, "line", { x1: X0 + t[0] * K, x2: X0 + t[0] * K, y1: 119, y2: 123, stroke: "#c9cfd6" });
+        el(g, "text", { x: X0 + t[0] * K, y: 138, fill: lab, "font-size": 13, "text-anchor": t[2] }, t[1]);
+      });
+      var hasG = p.g && guess !== undefined && guess !== null;
+      /* with a guess shown, panel 1 has no bracket; the words move down only if the guess label would run into them */
+      var right = hasG && guess < 30, gx = hasG ? X0 + guess * K : 0;
+      var gl = hasG ? (right ? gx + 7 : gx - 7 - 92) : 0, gr = hasG ? gl + 92 : 0;
+      var clash = hasG && gr > 184 && gl < 258;
+      if (!hasG) el(g, "path", { d: "M176 50 H181 V106 H176", fill: "none", stroke: "#7a8794", "stroke-width": 1 });
+      el(g, "text", { x: 187, y: clash ? 94 : 74, fill: ink, "font-size": 13 }, p.gap + " points");
+      el(g, "text", { x: 187, y: clash ? 109 : 90, fill: ink, "font-size": 13 }, "apart");
+      if (hasG) {
+        el(g, "path", { d: "M" + gx + " 61 L" + (gx + 4) + " 68 L" + (gx - 4) + " 68 Z", fill: "#c0392b" });
+        el(g, "text", { x: right ? gx + 7 : gx - 7, y: 70, fill: "#c0392b", "font-size": 13, "text-anchor": right ? "start" : "end" }, "your guess: " + guess);
+      }
+    });
+  }
+  drawAdopt();
 
   /* 3 · Published estimates (Tables 3 and 4; Results). */
   Companion.intervals(document.getElementById("effects"), {
@@ -447,6 +505,76 @@
         note: "Two further checks give ranges, not intervals: 10.1 to 17.2 points under different assumptions about people who did not answer, and 14.3 to 15.7 points under Lee (2009) trimming bounds." }
     ]
   });
+})();
+</script>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+  <div class="lightbox-bar"><span id="lightbox-title"></span><span class="lightbox-buttons"><button type="button" id="lightbox-size">Larger</button> <button type="button" id="lightbox-close">Close</button></span></div>
+  <div class="lightbox-scroll" id="lightbox-scroll"></div>
+</div>
+<script>
+/* Paper figures: enlarge on click. Without script the link opens the image file. */
+(function () {
+  "use strict";
+  var links = document.querySelectorAll(".paper-figure a.zoom");
+  var box = document.getElementById("lightbox");
+  if (!links.length || !box) return;
+  var scroller = document.getElementById("lightbox-scroll");
+  var img = document.createElement("img");
+  img.id = "lightbox-img"; img.alt = "";
+  var title = document.getElementById("lightbox-title");
+  var closeBtn = document.getElementById("lightbox-close");
+  var sizeBtn = document.getElementById("lightbox-size");
+  var last = null, large = false;
+  /* Two sizes. Fitted: the figure's full width inside the window. Larger: 1.8 times the window, at most twice the file's own width. */
+  function fit() {
+    var nat = img.naturalWidth || 0;
+    if (!nat) return;
+    var avail = scroller.clientWidth - 32;
+    var w = large ? Math.min(nat * 2, Math.max(Math.round(avail * 1.8), Math.min(nat, 1300))) : Math.min(avail, nat * 2);
+    img.style.width = w + "px";
+    img.className = large ? "large" : "";
+    sizeBtn.textContent = large ? "Fit to window" : "Larger";
+  }
+  function toggle() { large = !large; fit(); scroller.scrollTop = 0; scroller.scrollLeft = 0; }
+  function open(a) {
+    var small = a.querySelector("img");
+    last = a;
+    /* Start fitted on a roomy screen and at the larger size on a narrow one. */
+    img.onload = function () { large = (scroller.clientWidth - 32) < 700; fit(); };
+    img.alt = small ? (small.getAttribute("alt") || "") : "";
+    img.src = a.getAttribute("href");
+    scroller.appendChild(img);
+    title.textContent = a.getAttribute("data-title") || "";
+    box.hidden = false;
+    document.documentElement.style.overflow = "hidden";
+    scroller.scrollTop = 0; scroller.scrollLeft = 0;
+    if (img.complete && img.naturalWidth) img.onload();
+    closeBtn.focus();
+  }
+  function close() {
+    box.hidden = true;
+    document.documentElement.style.overflow = "";
+    if (img.parentNode) img.parentNode.removeChild(img);
+    img.removeAttribute("src");
+    if (last) last.focus();
+  }
+  Array.prototype.forEach.call(links, function (a) {
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+      e.preventDefault();
+      open(a);
+    });
+  });
+  closeBtn.addEventListener("click", close);
+  sizeBtn.addEventListener("click", toggle);
+  img.addEventListener("click", toggle);
+  box.addEventListener("click", function (e) { if (e.target === box || e.target === scroller) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (box.hidden) return;
+    if (e.key === "Escape" || e.key === "Esc") { close(); }
+    else if (e.key === "Tab") { e.preventDefault(); (document.activeElement === closeBtn ? sizeBtn : closeBtn).focus(); }
+  });
+  window.addEventListener("resize", function () { if (!box.hidden) fit(); });
 })();
 </script>
 </body>
