@@ -20,6 +20,7 @@
     #days-chart .bold { font-weight: 700; }
     #days-chart .red { fill: #c0392b; }
     #days-chart .white { fill: #fff; }
+    @media (max-width: 600px) { #days-seg { display: grid; grid-template-columns: 1fr 1fr; } #days-seg button { border-right: none; border-bottom: 1px solid var(--gray); } #days-seg button:nth-child(odd) { border-right: 1px solid var(--gray); } #days-seg button:nth-child(n+3) { border-bottom: none; } }
     .paper-figure a.zoom { display: block; cursor: zoom-in; }
     .paper-figure a.zoom:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
     .zoom-hint { font-size: 14px; color: var(--gray); margin: 6px 0 0; }
@@ -184,11 +185,17 @@
 
 <section aria-labelledby="s2">
   <p class="section-label" id="s2">2 &middot; Why a day-by-day comparison is hard here</p>
-  <p class="section-intro">Most days in the program were meditation days. For every employee, the study needs some days without meditation to compare against. Of the days that had a report, how many do you think were days without meditation?</p>
-  <div id="guess"></div>
-  <div id="days-wrap" class="guess-target">
+  <p class="section-intro">Most days in the program were meditation days. For every employee, the study needs some days without meditation to compare against. Follow the count in four steps.</p>
+  <div id="days-wrap">
     <h2>About 16 in 100 reported days were days without meditation, and 12 of the 65 employees had none.</h2>
     <p class="section-intro">The paper counts 678 days with meditation and 132 days without. Few comparison days is why the paper used a model that estimates each person&rsquo;s usual practice, in place of a simple average.</p>
+    <div class="seg" role="group" aria-label="Follow the count in four steps" id="days-seg">
+      <button type="button" aria-pressed="false">1 All program days</button>
+      <button type="button" aria-pressed="false">2 Days with a report</button>
+      <button type="button" aria-pressed="false">3 Days without meditation</button>
+      <button type="button" aria-pressed="false">4 Employees</button>
+    </div>
+    <p class="reading" id="days-reading" aria-live="polite">Select a step to follow the count.</p>
     <figure class="chart">
       <svg id="days-chart" viewBox="0 0 440 208" role="img" aria-labelledby="days-title days-desc">
         <title id="days-title">Program days with and without meditation, and employees with and without a day without meditation</title>
@@ -372,47 +379,51 @@
 
   /* Section 2 chart: two part-to-whole bars, each to its own total. */
   var dsvg = document.getElementById("days-chart");
-  function drawDays(guess) {
+  function drawDays(step) {
     Array.prototype.slice.call(dsvg.childNodes).forEach(function (n) { if (n.nodeName !== "title" && n.nodeName !== "desc") dsvg.removeChild(n); });
     var X0 = 20, W = 400, H = 26;
+    var LG = "#c9cfd6", MG = "#7a8794", RED = "#c0392b", BLUE = "#2e6f9e";
     var w132 = 132 / 910 * W, w678 = 678 / 910 * W, w100 = 100 / 910 * W;
     var w53 = 53 / 65 * W, w12 = 12 / 65 * W;
+    var f132 = RED, f678 = LG, fOpen = MG, f53 = RED, f12 = LG, t678 = "ink", t53 = "white";
+    if (step === 1) { f132 = BLUE; f678 = BLUE; fOpen = BLUE; f53 = LG; t678 = "white"; t53 = "ink"; }
+    if (step === 2) { f132 = BLUE; f678 = BLUE; f53 = LG; t678 = "white"; t53 = "ink"; }
+    if (step === 3) { f53 = LG; t53 = "ink"; }
+    if (step === 4) { f132 = LG; }
     dsvg.appendChild(el("text", { x: X0, y: 16, "class": "ink bold" }, "The 910 program days of the 65 employees"));
     var y1 = 56;
-    dsvg.appendChild(el("rect", { x: X0, y: y1, width: w132, height: H, fill: "#c0392b" }));
-    dsvg.appendChild(el("rect", { x: X0 + w132, y: y1, width: w678, height: H, fill: "#c9cfd6" }));
-    dsvg.appendChild(el("rect", { x: X0 + w132 + w678 + 0.75, y: y1 + 0.75, width: w100 - 1.5, height: H - 1.5, fill: "none", stroke: "#7a8794", "stroke-width": 1.5 }));
-    dsvg.appendChild(el("text", { x: X0 + w132 + 8, y: y1 + 18, "class": "ink" }, "678 with meditation"));
-    dsvg.appendChild(el("text", { x: X0, y: y1 + H + 18, "class": "red" }, "132 without meditation, the comparison days"));
+    dsvg.appendChild(el("rect", { x: X0, y: y1, width: w132, height: H, fill: f132, stroke: "#fff", "stroke-width": step ? 1 : 0 }));
+    dsvg.appendChild(el("rect", { x: X0 + w132, y: y1, width: w678, height: H, fill: f678, stroke: "#fff", "stroke-width": step ? 1 : 0 }));
+    dsvg.appendChild(el("rect", { x: X0 + w132 + w678 + 0.75, y: y1 + 0.75, width: w100 - 1.5, height: H - 1.5, fill: "none", stroke: fOpen, "stroke-width": 1.5 }));
+    dsvg.appendChild(el("text", { x: X0 + w132 + 8, y: y1 + 18, "class": t678 }, "678 with meditation"));
+    dsvg.appendChild(el("text", { x: X0, y: y1 + H + 18, "class": (step === 0 || step === 3) ? "red" : "" }, "132 without meditation, the comparison days"));
     dsvg.appendChild(el("text", { x: X0 + W, y: y1 + H + 18, "text-anchor": "end" }, "100 no report"));
     var y2 = 156;
     dsvg.appendChild(el("text", { x: X0, y: 148, "class": "ink" }, "The 65 employees"));
-    dsvg.appendChild(el("rect", { x: X0, y: y2, width: w53, height: H, fill: "#c0392b" }));
-    dsvg.appendChild(el("rect", { x: X0 + w53, y: y2, width: w12, height: H, fill: "#c9cfd6" }));
-    dsvg.appendChild(el("text", { x: X0 + 8, y: y2 + 18, "class": "white" }, "53 had at least one day without meditation"));
+    dsvg.appendChild(el("rect", { x: X0, y: y2, width: w53, height: H, fill: f53, stroke: "#fff", "stroke-width": step ? 1 : 0 }));
+    dsvg.appendChild(el("rect", { x: X0 + w53, y: y2, width: w12, height: H, fill: f12, stroke: "#fff", "stroke-width": step ? 1 : 0 }));
+    dsvg.appendChild(el("text", { x: X0 + 8, y: y2 + 18, "class": t53 }, "53 had at least one day without meditation"));
     dsvg.appendChild(el("text", { x: X0 + W, y: y2 + H + 18, "text-anchor": "end" }, "12 had none"));
-    if (guess != null) {
-      var gx = X0 + (guess / 100) * (810 / 910) * W;
-      dsvg.appendChild(el("path", { d: "M" + (gx - 5) + " " + (y1 - 11) + " L" + (gx + 5) + " " + (y1 - 11) + " L" + gx + " " + (y1 - 2) + " Z", fill: "#22303c" }));
-      var left = guess >= 45;
-      dsvg.appendChild(el("text", { x: left ? gx - 9 : gx + 9, y: y1 - 3, "text-anchor": left ? "end" : "start", "class": "ink" }, "your guess: " + guess + " of 100 reported days"));
-    }
   }
-  drawDays();
+  drawDays(0);
 
-  /* 2 · Guess first, then the published counts (Table 1). */
-  Companion.guess(document.getElementById("guess"), {
-    question: "Before you look: of 100 program days that had a meditation report, how many were days without meditation?",
-    min: 0, max: 100, step: 1, start: 40,
-    format: function (v) { return v + " of 100"; },
-    reveal: document.getElementById("days-wrap"),
-    feedback: function (v) {
-      drawDays(v);
-      var d = v - 16;
-      if (Math.abs(d) <= 3) return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation, so you were close.";
-      if (d > 0) return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation: fewer comparison days than you expected.";
-      return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation: more than you expected, though still few.";
-    }
+  /* 2 · Follow the count in four steps (Table 1). */
+  var DAYS_READ = [
+    "Select a step to follow the count.",
+    "<strong>910 program days.</strong> These are the days of all 65 employees taken together.",
+    "<strong>810 days had a report.</strong> On the other 100 days the meditation report is missing, 65 of them on Day 20 by design. Those days are left out of the percentages.",
+    "<strong>132 of the 810 reported days</strong> were days without meditation, about 16 in 100. The day-by-day comparison contrasts these 132 days with the 678 meditation days.",
+    "<strong>53 of the 65 employees</strong> had at least one day without meditation. The other 12 had none. They stayed in the model."
+  ];
+  var dayBtns = Array.prototype.slice.call(document.querySelectorAll("#days-seg button"));
+  dayBtns.forEach(function (b, i) {
+    b.addEventListener("click", function () {
+      var on = b.getAttribute("aria-pressed") === "true";
+      var step = on ? 0 : i + 1;
+      dayBtns.forEach(function (o) { o.setAttribute("aria-pressed", o === b && !on ? "true" : "false"); });
+      drawDays(step);
+      document.getElementById("days-reading").innerHTML = DAYS_READ[step];
+    });
   });
 
   /* 3 · Published estimates (Tables 2 to 4 and the Supplemental Material). */

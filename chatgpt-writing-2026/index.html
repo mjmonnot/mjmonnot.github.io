@@ -369,6 +369,12 @@
     min: 0, max: 100, step: 1, start: 29,
     format: function (v) { return v + " of 100"; },
     reveal: document.getElementById("adopt-wrap"),
+    answer: "About <strong>42 of 100</strong> in the group given access are estimated to have used ChatGPT or a similar chatbot at work in the past week, against about 29 of 100 in the other group.",
+    explain: [
+      { label: "What the number counts", html: "A yes meant the participant had used ChatGPT or a similar chatbot in their job in the past week, asked about two months after the experiment. The question was answered by 139 of the 172 access-group participants in the primary sample of 359, and by 150 of the 187 comparison-group participants." },
+      { label: "Where the 42 comes from", html: "Access was assigned after the first task; the original study describes the assignment as random. The 42 and 29 are model estimates for all 359 participants, with missing answers imputed. The difference was 13.4 percentage points, with a 95% interval from 3.0 to 23.5." },
+      { label: "If your experience says otherwise", html: "It is one yes-or-no answer from participants who could not be blinded to their group, and it was imputed for those who did not answer the follow-up. The paper limits its claims to early-2023 ChatGPT among the occupations sampled, and says they may not generalize to current tools or workplaces." }
+    ],
     feedback: function (v) {
       drawAdopt(v);
       var d = v - 42;

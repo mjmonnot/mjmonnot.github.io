@@ -16,6 +16,7 @@
   <style>
     #besd-chart { max-width: 620px; border: none; background: none; overflow: visible; }
     #besd-chart text { font-size: 13px; }
+    @media (max-width: 600px) { #besd-seg { display: grid; grid-template-columns: 1fr 1fr; } #besd-seg button { border-right: none; border-bottom: 1px solid var(--gray); } #besd-seg button:nth-child(odd) { border-right: 1px solid var(--gray); } #besd-seg button:nth-child(n+3) { border-bottom: none; } }
     .paper-figure a.zoom { display: block; cursor: zoom-in; }
     .paper-figure a.zoom:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
     .zoom-hint { font-size: 14px; color: var(--gray); margin: 6px 0 0; }
@@ -181,14 +182,21 @@
 <section aria-labelledby="s2">
   <p class="section-label" id="s2">2 &middot; How strong is the difference between coaches?</p>
   <p class="section-intro">Imagine splitting coaches at the midpoint on each measure: a more and a less self-compassionate half, and a more and a less burned-out half. The study did not split anyone; this is a way of reading its correlation. If self-compassion had nothing to do with burnout, 50 of every 100 coaches in the more self-compassionate half would land in the less-burned-out half.</p>
-  <div id="guess"></div>
-  <div id="besd-wrap" class="guess-target">
+  <div id="besd-wrap">
     <h2>A correlation of &minus;.48 translates to about 74 of 100 coaches in the more self-compassionate half landing in the less-burned-out half.</h2>
     <p class="section-intro">The same translation gives about 26 of 100 for the less self-compassionate half. This is a way of reading the correlation, not a count of coaches.</p>
+    <p class="section-intro">The study reports an estimate with its 95% confidence interval. Step through the range.</p>
+    <div class="seg" role="group" aria-label="Choose a value of the correlation" id="besd-seg">
+      <button type="button" data-b="0" aria-pressed="false">No link</button>
+      <button type="button" data-b="1" aria-pressed="false">Weak end of the range</button>
+      <button type="button" data-b="2" aria-pressed="true">The estimate</button>
+      <button type="button" data-b="3" aria-pressed="false">Strong end of the range</button>
+    </div>
+    <p class="reading" id="besd-reading" aria-live="polite"></p>
     <figure class="chart">
       <svg id="besd-chart" viewBox="0 0 440 236" role="img" aria-labelledby="besd-title besd-desc">
         <title id="besd-title">Of 100 imagined coaches in each half on self-compassion, how many land in the less-burned-out half</title>
-        <desc id="besd-desc">Two bars of 100 imagined coaches. In the more self-compassionate half, 74 land in the less-burned-out half and 26 in the more-burned-out half. In the less self-compassionate half, 26 land in the less-burned-out half and 74 in the more-burned-out half. Ticks above and below each bar mark 50, the count if there were no link. A bracket on the first bar runs from 69 to 80, the counts at the ends of the 95% interval.</desc>
+        <desc id="besd-desc">Two bars of 100 imagined coaches, redrawn for the value of the correlation chosen above. At the study’s estimate, 74 of the more self-compassionate half land in the less-burned-out half and 26 in the more-burned-out half; in the less self-compassionate half the counts are 26 and 74. At the weak end of the 95% interval the first count is about 69, and at the strong end it is 80. With no link it would be 50. Ticks above and below each bar mark 50, and a bracket on the first bar runs from 69 to 80.</desc>
       </svg>
       <figcaption>Each bar stands for 100 imagined coaches. Blue is the less-burned-out half and grey is the more-burned-out half.</figcaption>
     </figure>
@@ -377,7 +385,14 @@
   Companion.copy(document.getElementById("copy-cite"), function () { return document.getElementById("cite-text").textContent; });
 
   /* 2 · Between-coach correlation as counts of 100 (binomial effect size display). */
-  function drawBesd(guess) {
+  var BESD = [
+    { n: 50, pre: "", read: "<strong>50 of 100.</strong> If self-compassion had nothing to do with burnout, each half would split evenly." },
+    { n: 69, pre: "about ", read: "<strong>About 69 of 100.</strong> This is the weak end of the 95% interval (<em>r</em> = \u2212.37). It is still well above the 50 that no link would give." },
+    { n: 74, pre: "", read: "<strong>About 74 of 100.</strong> This is the study\u2019s estimate (<em>r</em> = \u2212.48)." },
+    { n: 80, pre: "", read: "<strong>80 of 100.</strong> This is the strong end of the 95% interval (<em>r</em> = \u2212.60)." }
+  ];
+  function drawBesd(state) {
+    var A = BESD[state].n, B = 100 - A, P = BESD[state].pre;
     var svg = document.getElementById("besd-chart");
     var NS = "http://www.w3.org/2000/svg";
     var X0 = 20, K = 4;
@@ -403,12 +418,12 @@
     var y1 = 64, y2 = 148, H = 28;
     /* Row 1 */
     txt({ x: X0, y: 18, fill: INK, "font-weight": "700" }, "More self-compassionate half of coaches");
-    el("rect", { x: x(0), y: y1, width: K * 74, height: H, fill: BLUE });
-    el("rect", { x: x(74), y: y1, width: K * 26, height: H, fill: GREY });
+    el("rect", { x: x(0), y: y1, width: K * A, height: H, fill: BLUE });
+    el("rect", { x: x(A), y: y1, width: K * B, height: H, fill: GREY });
     /* Row 2 */
     txt({ x: X0, y: 132, fill: INK }, "Less self-compassionate half of coaches");
-    el("rect", { x: x(0), y: y2, width: K * 26, height: H, fill: BLUE });
-    el("rect", { x: x(26), y: y2, width: K * 74, height: H, fill: GREY });
+    el("rect", { x: x(0), y: y2, width: K * B, height: H, fill: BLUE });
+    el("rect", { x: x(B), y: y2, width: K * A, height: H, fill: GREY });
     /* No-link line */
     [y1, y2].forEach(function (yy) {
       el("line", { x1: x(50), y1: yy - 7, x2: x(50), y2: yy, stroke: MID, "stroke-width": "1.5" });
@@ -416,37 +431,22 @@
     });
     txt({ x: x(50), y: y2 + H + 24, "text-anchor": "middle", fill: LBL }, "50 if there were no link");
     /* Bar labels */
-    txt({ x: x(0) + 8, y: y1 + 19, fill: "#fff" }, "74 in the less-burned-out half");
-    txt({ x: x(87), y: y1 + 19, "text-anchor": "middle", fill: INK }, "26");
-    txt({ x: x(13), y: y2 + 19, "text-anchor": "middle", fill: "#fff" }, "26");
-    txt({ x: x(100) - 8, y: y2 + 19, "text-anchor": "end", fill: INK }, "74 in the more-burned-out half");
+    txt({ x: x(0) + 8, y: y1 + 19, fill: "#fff" }, P + A + " in the less-burned-out half");
+    txt({ x: x((A + 100) / 2), y: y1 + 19, "text-anchor": "middle", fill: INK }, P + B);
+    txt({ x: x(B / 2), y: y2 + 19, "text-anchor": "middle", fill: "#fff" }, P + B);
+    txt({ x: A > 50 ? x(100) - 8 : x((B + 100) / 2), y: y2 + 19, "text-anchor": A > 50 ? "end" : "middle", fill: INK }, P + A + " in the more-burned-out half");
     /* Bracket, 69 to 80 */
     el("path", { d: "M" + x(69) + " " + (y1 - 2) + "V" + (y1 - 8) + "H" + x(80) + "V" + (y1 - 2), fill: "none", stroke: INK, "stroke-width": "1" });
     txt({ x: x(100), y: y1 - 14, "text-anchor": "end", fill: LBL }, "69 to 80 at the ends of the 95% interval");
-    /* Guess marker */
-    if (typeof guess === "number" && isFinite(guess)) {
-      var gx = x(guess), ty = y1 + H + 10;
-      el("path", { d: "M" + gx + " " + ty + "L" + (gx + 5) + " " + (ty + 9) + "L" + (gx - 5) + " " + (ty + 9) + "Z", fill: RED });
-      if (guess < 60) txt({ x: gx + 10, y: ty + 10, fill: RED }, "your guess: " + guess);
-      else txt({ x: gx - 10, y: ty + 10, "text-anchor": "end", fill: RED }, "your guess: " + guess);
-    }
+    document.getElementById("besd-reading").innerHTML = BESD[state].read;
   }
-  drawBesd();
-
-  /* 2 · Guess first, then the published translation. */
-  Companion.guess(document.getElementById("guess"), {
-    question: "Before you look: of 100 coaches in the more self-compassionate half, how many would you expect in the less-burned-out half?",
-    min: 0, max: 100, step: 1, start: 50,
-    format: function (v) { return v + " of 100"; },
-    reveal: document.getElementById("besd-wrap"),
-    feedback: function (v) {
-      drawBesd(v);
-      var d = v - 74;
-      if (Math.abs(d) <= 3) return "You guessed <strong>" + v + "</strong>. The study\u2019s correlation translates to about <strong>74</strong>, so you were close.";
-      if (d < 0) return "You guessed <strong>" + v + "</strong>. The study\u2019s correlation translates to about <strong>74</strong>: the difference between coaches is larger than you expected.";
-      return "You guessed <strong>" + v + "</strong>. The study\u2019s correlation translates to about <strong>74</strong>: a clear difference between coaches, though smaller than you expected.";
-    }
+  Array.prototype.forEach.call(document.querySelectorAll("#besd-seg button"), function (b) {
+    b.addEventListener("click", function () {
+      Array.prototype.forEach.call(document.querySelectorAll("#besd-seg button"), function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+      drawBesd(+b.getAttribute("data-b"));
+    });
   });
+  drawBesd(2);
 
   /* 3 · Published within-coach paths (Tables 4 and 5; Robustness section). */
   var inc = "The interval includes zero.";

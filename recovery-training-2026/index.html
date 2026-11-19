@@ -16,6 +16,13 @@
   <meta name="twitter:description" content="At the average starting level, both trainings raised detachment by about 0.9 points on a 7-point scale, and neither detectably favored employees who started low or high.">
   <meta name="twitter:image" content="https://mjmonnot.github.io/recovery-training-2026/assets/figure2_quantile_effects.png">
   <link rel="stylesheet" href="assets/companion.css">
+  <style>
+    #scale-chart { max-width: 620px; border: none; background: none; overflow: visible; }
+    #scale-chart .sc-guide { stroke: #c9cfd6; stroke-width: 1; }
+    #scale-chart .sc-txt { font-size: 13px; fill: #5b6570; }
+    #scale-chart .sc-name { font-size: 13px; fill: #22303c; font-weight: 400; }
+    #scale-chart .sc-val { font-size: 13px; font-weight: 700; paint-order: stroke; stroke: #fff; stroke-width: 3px; }
+  </style>
 </head>
 <body>
 <main>
@@ -169,11 +176,15 @@
 <section aria-labelledby="s2">
   <p class="section-label" id="s2">2 &middot; How much did the programs raise detachment?</p>
   <p class="section-intro">Detachment was scored from 1 (does not apply at all) to 7 (fully applies), from four items such as &ldquo;I didn&rsquo;t think about work at all.&rdquo; Starting detachment was low, an average of 2.72.</p>
-  <div id="guess"></div>
-  <div id="gain-wrap" class="guess-target">
+  <div id="gain-wrap">
     <h2>Both programs raised detachment by about 0.9 points over the wait list: 0.89 for the cognitive-behavioral program and 0.98 for the mindfulness program.</h2>
     <p class="section-intro">These are the gains for an employee at the average starting level, among the 247 who gave a score after the training. The average scores after the training, in the same group, were 3.46 on the wait list, 4.55 in the cognitive-behavioral program and 4.49 in the mindfulness program.</p>
     <p class="reading"><strong>0.89</strong> for the cognitive-behavioral program (95% confidence interval [0.47, 1.30]) and <strong>0.98</strong> for the mindfulness program ([0.57, 1.39]).</p>
+    <figure class="chart">
+      <svg id="scale-chart" viewBox="0 0 440 282" role="img" aria-labelledby="scale-t scale-d"><title id="scale-t">Average detachment before and after the training, on the 1 to 7 answer scale</title><desc id="scale-d">Three rows on a scale from 1, does not apply at all, to 7, fully applies. Wait list: 2.53 before and 3.46 after. Cognitive-behavioral program: 3.00 before and 4.55 after. Mindfulness program: 2.63 before and 4.49 after. A guide marks 4, the middle of the scale.</desc><line class="sc-guide" x1="220.0" y1="32" x2="220.0" y2="234"/><text class="sc-txt" x="220.0" y="22" text-anchor="middle">4, the middle of the scale</text><line class="axis" x1="30.0" y1="234" x2="410.0" y2="234"/><line class="axis" x1="30.0" y1="234" x2="30.0" y2="240"/><text class="sc-txt" x="30.0" y="256" text-anchor="middle">1</text><line class="axis" x1="93.3" y1="234" x2="93.3" y2="240"/><text class="sc-txt" x="93.3" y="256" text-anchor="middle">2</text><line class="axis" x1="156.7" y1="234" x2="156.7" y2="240"/><text class="sc-txt" x="156.7" y="256" text-anchor="middle">3</text><line class="axis" x1="220.0" y1="234" x2="220.0" y2="240"/><text class="sc-txt" x="220.0" y="256" text-anchor="middle">4</text><line class="axis" x1="283.3" y1="234" x2="283.3" y2="240"/><text class="sc-txt" x="283.3" y="256" text-anchor="middle">5</text><line class="axis" x1="346.7" y1="234" x2="346.7" y2="240"/><text class="sc-txt" x="346.7" y="256" text-anchor="middle">6</text><line class="axis" x1="410.0" y1="234" x2="410.0" y2="240"/><text class="sc-txt" x="410.0" y="256" text-anchor="middle">7</text><text class="sc-txt" x="30.0" y="274" text-anchor="start">1 does not apply at all</text><text class="sc-txt" x="410.0" y="274" text-anchor="end">7 fully applies</text><text class="sc-name" x="30" y="62">Wait list</text><text class="sc-txt" x="126.9" y="82" text-anchor="middle">before</text><text class="sc-txt" x="185.8" y="82" text-anchor="middle">after</text><line x1="126.9" y1="96" x2="185.8" y2="96" stroke="#7a8794" stroke-width="2"/><circle cx="126.9" cy="96" r="6" fill="#fff" stroke="#7a8794" stroke-width="2"/><circle cx="185.8" cy="96" r="6" fill="#7a8794"/><text class="sc-val" x="114.9" y="101" text-anchor="end" fill="#7a8794">2.53</text><text class="sc-val" x="197.8" y="101" text-anchor="start" fill="#7a8794">3.46</text><text class="sc-name" x="30" y="128">Cognitive-behavioral program</text><line x1="156.7" y1="156" x2="254.8" y2="156" stroke="#2e6f9e" stroke-width="2"/><circle cx="156.7" cy="156" r="6" fill="#fff" stroke="#2e6f9e" stroke-width="2"/><circle cx="254.8" cy="156" r="6" fill="#2e6f9e"/><text class="sc-val" x="144.7" y="161" text-anchor="end" fill="#2e6f9e">3.00</text><text class="sc-val" x="266.8" y="161" text-anchor="start" fill="#2e6f9e">4.55</text><text class="sc-name" x="30" y="188">Mindfulness program</text><line x1="133.2" y1="216" x2="251.0" y2="216" stroke="#2e6f9e" stroke-width="2"/><circle cx="133.2" cy="216" r="6" fill="#fff" stroke="#2e6f9e" stroke-width="2"/><circle cx="251.0" cy="216" r="6" fill="#2e6f9e"/><text class="sc-val" x="121.2" y="221" text-anchor="end" fill="#2e6f9e">2.63</text><text class="sc-val" x="263.0" y="221" text-anchor="start" fill="#2e6f9e">4.49</text></svg>
+      <figcaption>Open circles are the averages before the training and filled circles the averages after it. After the training, both program groups averaged above the middle of the scale; the wait list averaged 3.46.</figcaption>
+    </figure>
+    <p class="fineprint">Averages from Table 1 of the preprint. The averages before the training cover everyone assigned to each group; the averages after it cover the 247 employees who gave a score then (92 on the wait list, 79 and 76 in the programs). The 0.89 and 0.98 above are model estimates of the difference from the wait list for an employee at the average starting level, so they are not the gaps between these circles.</p>
   </div>
 </section>
 
@@ -330,19 +341,7 @@
   Companion.copy(document.getElementById("copy-oneline"), function () { return document.getElementById("oneline").textContent; });
   Companion.copy(document.getElementById("copy-cite"), function () { return document.getElementById("cite-text").textContent; });
 
-  /* 2 · Guess first, then the published gains (Table 2). */
-  Companion.guess(document.getElementById("guess"), {
-    question: "Before you look: by how many points on the 7-point scale do you think a six-week recovery training raised detachment from work, compared with the wait list?",
-    min: 0, max: 2, step: 0.1, start: 0.5,
-    format: function (v) { return v.toFixed(1) + " points"; },
-    reveal: document.getElementById("gain-wrap"),
-    feedback: function (v) {
-      var d = v - 0.9;
-      if (Math.abs(d) <= 0.2) return "You guessed <strong>" + v.toFixed(1) + "</strong>. The study’s estimates are <strong>0.89</strong> and <strong>0.98</strong>, so you were close.";
-      if (d < 0) return "You guessed <strong>" + v.toFixed(1) + "</strong>. The study’s estimates are <strong>0.89</strong> and <strong>0.98</strong>: larger than you expected.";
-      return "You guessed <strong>" + v.toFixed(1) + "</strong>. The study’s estimates are <strong>0.89</strong> and <strong>0.98</strong>: a clear gain, though smaller than you expected.";
-    }
-  });
+  /* 2 · Gains (Table 2) and averages (Table 1): static chart in the markup. */
 
   /* 3 · Published estimates (Tables 2 to 5; Results). */
   Companion.intervals(document.getElementById("effects"), {
