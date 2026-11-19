@@ -3,119 +3,775 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Digital goody bag — The AI Paradox | SIOP LEC 2026</title>
-  <meta name="description" content="Skill and mastery went with exhaustion and quitting a year later. Humans agreed at .93; six model setups scored .750–.798. Nurses’ posts show loss of control over the work. SIOP LEC 2026.">
+  <title>Among helping-profession workers, the six planned links between the meaning in their work stories and their outcomes a year later came out near zero | Matthew J. Monnot</title>
+  <meta name="description" content="A one-year panel of helping-profession workers tested six planned predictions from the kinds of meaning in their work stories; every estimate came out near zero. A decade of nurses&rsquo; forum posts named an AI system in seven coded events. Research companion to the preprint.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mjmonnot.github.io/lec-2026/">
-  <meta property="og:title" content="The AI Paradox: How Optimization May Undermine Meaningful Work">
-  <meta property="og:description" content="Skill and mastery went with exhaustion and quitting a year later. Two humans agreed at .93; six model setups scored .750–.798. In nurses’ posts, loss of control over the work rose.">
-  <meta property="og:image" content="https://mjmonnot.github.io/lec-2026/assets/og_card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:title" content="Among helping-profession workers, the six planned links between the meaning in their work stories and their outcomes a year later came out near zero">
+  <meta property="og:description" content="144 helping-profession workers were followed for about a year. Six planned predictions from the kinds of meaning in their work stories came out near zero. One of four unplanned results that survived screening, resting on 17 stories, was that stories grounded in competence were associated with higher turnover intentions a year later, compared with stories without that code.">
+  <meta property="og:image" content="https://mjmonnot.github.io/lec-2026/assets/paper-figure4-prespecified-estimates.png">
   <meta property="og:site_name" content="Matthew J. Monnot">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The AI Paradox: How Optimization May Undermine Meaningful Work">
-  <meta name="twitter:description" content="Skill and mastery went with exhaustion and quitting a year later. Two humans agreed at .93; six model setups scored .750–.798. In nurses’ posts, loss of control over the work rose.">
-  <meta name="twitter:image" content="https://mjmonnot.github.io/lec-2026/assets/og_card.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,650;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/bag.css">
+  <link rel="stylesheet" href="assets/companion.css">
+  <style>
+    .chart svg { border: none; background: none; overflow: visible; }
+    #pp-chart text, #cp-to text, #cp-ee text { font-size: 14px; }
+    #lm-chart text, #fm-chart text { font-size: 13px; }
+    .chart g.pick { cursor: pointer; }
+    .chart g.pick:focus-visible { outline: 2px solid #2e6f9e; outline-offset: 2px; }
+    .multiples { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    @media (max-width: 640px) { .multiples { grid-template-columns: 1fr; } }
+    .paper-figure a.zoom { display: block; cursor: zoom-in; }
+    .paper-figure a.zoom:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    .zoom-hint { font-size: 14px; color: var(--gray); margin: 6px 0 0; }
+    .lightbox { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1000; background: rgba(20, 26, 33, 0.94); display: flex; flex-direction: column; }
+    .lightbox[hidden] { display: none; }
+    .lightbox-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 16px; color: #fff; font-size: 15px; }
+    .lightbox-bar button { font: inherit; color: #fff; background: none; border: 1px solid #fff; border-radius: 4px; padding: 6px 14px; cursor: pointer; }
+    .lightbox-bar button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .lightbox-buttons { white-space: nowrap; }
+    .lightbox-scroll { flex: 1; overflow: auto; padding: 0 16px 16px; }
+    .lightbox-scroll img { display: block; margin: 0 auto; max-width: none; height: auto; background: #fff; cursor: zoom-in; }
+    .lightbox-scroll img.large { cursor: zoom-out; }
+  </style>
 </head>
 <body>
-<nav class="nav"><div class="wrap">
-  <a class="here" href="index.html">Start here</a>
-  <a href="poster.html">Digital resource</a>
-  <a href="explainers.html">Plain-English glossary</a>
-  <a href="methodology.html">Methods &amp; lessons</a>
-  <a href="references.html">Reading list</a>
-  <a href="practice.html">Try this quarter</a>
-  <a href="design.html">Design notes</a>
-  <a href="code.html">Code &amp; deck</a>
-</div></nav>
+<main>
 
-<header class="hero wrap">
-  <p class="kicker">SIOP Leading Edge Consortium 2026 · Digital goody bag</p>
-  <h1>The AI Paradox</h1>
-  <ul class="headlines">
-    <li>People who located meaning in skill and mastery were more exhausted, and more ready to quit, a year later.</li>
-    <li>Two trained humans agreed on agency at .93. Six locked setups scored .750–.798 against their standard of .910.</li>
-    <li><a href="poster.html#trend">Nurses are talking about losing control of their own work.</a></li>
-  </ul>
-  <p class="lede">Key findings from the digital resource.</p>
-  <hr class="rule">
-  <p>Matthew J. Monnot (Vocentive) and Isaac Thompson (Amazon). Board session: Shaping the Future of People Analytics. Contact: matt@vocentive.com.</p>
-  <p>PDF: <a href="/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf">Download preprint PDF</a></p>
-  <p>Preprint: <a href="https://doi.org/10.31234/osf.io/jzngq_v1">https://doi.org/10.31234/osf.io/jzngq_v1</a> (PsyArXiv).</p>
+<p class="backlink"><a href="https://mjmonnot.github.io/publications/2026-ai-paradox-meaningful-work.html">&larr; Publication page</a> &nbsp;&middot;&nbsp; <a href="https://mjmonnot.github.io/">mjmonnot.github.io</a></p>
+
+<header class="masthead">
+  <p class="kicker">Meaningful work and automation in helping professions &middot; Research companion</p>
+  <h1>Among helping-profession workers, the six planned links between the meaning in their work stories and their outcomes a year later came out near zero.</h1>
+  <p class="dek">Study 1 asked 307 helping-profession workers, recruited online in March 2016, to write about the work episodes they found most meaningful, and followed 144 of them about a year later. Two human coders sorted each story into kinds of meaning. The paper then tested whether those kinds forecast felt meaningfulness, emotional exhaustion and turnover intentions at the second survey. Studies 2 and 3 coded 7,695 nurses&rsquo; forum posts captured from 2016 to 2026 with one language model. No study measured any worker&rsquo;s own exposure to AI.</p>
+  <div class="masthead-actions">
+    <a class="btn primary" href="https://mjmonnot.github.io/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf">Download the preprint PDF</a>
+    <a class="btn ghost" href="https://doi.org/10.31234/osf.io/jzngq_v1">DOI on PsyArXiv</a>
+  </div>
+  <nav class="audience-nav" aria-label="Jump to the part written for you">
+    <span class="lead">Start where it suits you:</span>
+    <a href="#plain">In plain words</a>
+    <a href="#practice">In practice</a>
+    <a href="#writers">For writers</a>
+    <a href="#evidence">The evidence</a>
+    <a href="#specialists">For specialists</a>
+  </nav>
 </header>
 
-<main class="wrap">
-  <h2>Key findings</h2>
-  <ul class="clean">
-    <li>People who narrated meaning as skill and mastery were more exhausted and more ready to quit at the second measurement (turnover intentions <em>b</em> = 1.40, exhaustion <em>b</em> = 0.95; held after the full Time 1 survey set).</li>
-    <li>Two trained humans agreed at .93 on agency and .84 on others-directed meaning (communion .48, self-directed meaning .52). Six locked setups scored .750–.798 on agency against the human standard of .910.</li>
-    <li>The same codes tracked self-reported meaningfulness at the same time (<em>r</em> = .20–.24). Felt meaning rose with the number of pathways narrated, up to two, then leveled.</li>
-    <li>One model coded 7,695 nurses’ posts across ten archive years. About one post in twenty named ratios, metrics, and charting. Posts flagged for lack of control rose from 10.5% to 14.5% (+4.0 points). Those posts also carried quit flags more often.</li>
+<section id="plain" aria-labelledby="s-find">
+  <p class="section-label" id="s-find">Three findings</p>
+  <ol class="headlines" id="headlines">
+    <li>All six planned predictions, from the kinds of meaning in workers&rsquo; stories to how they fared a year later, came out near zero.</li>
+    <li>One of four unplanned results that survived screening was that stories that grounded meaning in competence or mastery were associated with higher turnover intentions and emotional exhaustion a year later. It rests on 17 coded stories.</li>
+    <li>In 7,695 nurses&rsquo; forum posts captured from 2016 to 2026, a named AI system was the object of 7 of 5,429 coded meaning events. About one post in twenty named an optimization practice or a system rollout, such as staffing ratios or documentation load.</li>
+  </ol>
+</section>
+
+<section aria-labelledby="s0">
+  <p class="section-label" id="s0">At a glance</p>
+  <div class="strip">
+    <div class="stat"><span class="stat-value ink">&Delta;R&sup2; = .012</span><span class="stat-label">Added prediction of felt meaningfulness a year later from the three coded meaning dimensions</span><span class="stat-sub">Over Time 1 self-reported meaning and covariates; robust Wald <em>p</em> = .534; 136 workers (Table 2)</span></div>
+    <div class="stat"><span class="stat-value red">b = 1.40</span><span class="stat-label">Higher turnover intentions a year later when the story grounded meaning in competence</span><span class="stat-sub">95% CI [0.58, 2.22], 100 workers, against stories without the competence code, adjusted for age, work centrality and occupation block; exploratory (Table 4)</span></div>
+    <div class="stat"><span class="stat-value red">.750 to .798</span><span class="stat-label">Agreement with the human codes for agency, six language-model prompt setups</span><span class="stat-sub">Acceptance standard .910; 55 development cases; none met it, so humans coded every predictor (Table S1)</span></div>
+    <div class="stat"><span class="stat-value red">7 of 5,429</span><span class="stat-label">Coded meaning events in nurses&rsquo; forum posts whose object was a named AI system</span><span class="stat-sub">7,695 posts captured 2016 to 2026; all seven in pages captured in 2020 and 2021 (page 44)</span></div>
+  </div>
+</section>
+
+<section id="practice" aria-labelledby="s-prac">
+  <p class="section-label" id="s-prac">What this means in practice</p>
+  <div class="brief">
+    <p class="q">The decision</p>
+    <p class="decision">Helping professions are adopting AI to automate documentation, monitoring and coordination, on the premise that offloading routine tasks frees workers for meaningful care. The paper notes that this premise assumes managers already know which tasks are routine and which are meaningful.</p>
+    <p class="answer"><strong>Screen a planned deployment for what it does to the task and to workers&rsquo; discretion over how the work is done.</strong> The paper states that this screen is consistent with the pattern in nurses&rsquo; posts, where the objects named were optimization practices, such as staffing ratios or documentation load, and system implementations or rollouts. Where automation removes work that people do not find meaningful, the paper states that the efficiency case is intact. Its forum results are same-post co-occurrences in a self-selected venue, so the paper draws implications for measurement and does not test any intervention.</p>
+  </div>
+  <div class="cards">
+    <div class="card do">
+      <h3>What was found</h3>
+      <ul>
+        <li>The six planned predictions came out near zero. The three coded dimensions added &Delta;R&sup2; = .012 to later felt meaningfulness (<em>p</em> = .534; 136 workers).</li>
+        <li>In the Time 1 survey wave, the codes did track self-reported meaningfulness (others-directed meaning <em>r</em> = .24; agency <em>r</em> = .20; 272 workers).</li>
+        <li>Stories grounded in competence or mastery were associated with higher turnover intentions (<em>b</em> = 1.40, 95% CI [0.58, 2.22]) and emotional exhaustion (<em>b</em> = 0.95, 95% CI [0.20, 1.70]) a year later.</li>
+      </ul>
+    </div>
+    <div class="card ask">
+      <h3>What to watch, as named in the paper</h3>
+      <ul>
+        <li>What a deployment does to the task. The paper&rsquo;s forum codes record what became of the task involved: taken, added, reconfigured or unchanged.</li>
+        <li>Where to look in workplace text. The paper states that exposure to algorithmic management in occupational text must be sought through the artefacts and practices themselves; AI vocabulary appeared in under 1% of nurses&rsquo; posts in any year (pages 44 and 50).</li>
+        <li>Meaning still in use. Competence and relational connection were still being enacted in nurses&rsquo; posts, and the paper states that deployments that displace skill or compress patient contact would act on those parts of the job.</li>
+      </ul>
+    </div>
+    <div class="card test">
+      <h3>What would sharpen the answer</h3>
+      <ul>
+        <li>A designed study that tries to falsify the competence result.</li>
+        <li>A within-account design over the 1,494 forum accounts with two or more posts, using posted dates.</li>
+        <li>An independent coding panel judged against later well-being and retention.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="fineprint">The cards follow the paper&rsquo;s Results (including p. 44), Discussion (p. 48 to p. 52), Practical Implications, Strengths and Limitations, and Conclusion (p. 54). To discuss a deployment review: <a href="mailto:matt@vocentive.com">matt@vocentive.com</a>.</p>
+</section>
+
+<section id="writers" aria-labelledby="s-writ">
+  <p class="section-label" id="s-writ">For writers and editors</p>
+  <p class="oneline" id="oneline">Among helping-profession workers, the six planned links between the meaning in their work stories and their outcomes a year later came out near zero.</p>
+  <p class="fineprint" style="margin-top:8px"><button type="button" class="copy-btn" id="copy-oneline">Copy this sentence</button></p>
+  <dl class="facts">
+    <dt>Paper</dt><dd>&ldquo;The AI Paradox: How Optimization May Undermine Meaningful Work in Helping Professions,&rdquo; by Matthew J. Monnot (Vocentive) and Isaac Thompson (Amazon).</dd>
+    <dt>Kind of study</dt><dd>Three studies. Study 1 is a two-wave panel built on critical-incident narratives. Study 2 coded nurses&rsquo; forum posts for meaning events with one language model. Study 3 compared those codes between capture periods.</dd>
+    <dt>Status</dt><dd>Preprint posted on PsyArXiv (2026), doi.org/10.31234/osf.io/jzngq_v1.</dd>
+    <dt>Data</dt><dd>Study 1: 307 helping-profession workers recruited through Amazon Mechanical Turk (Time 1, March 10 to 16, 2016) and 144 longitudinal cases at Time 2 (February 14 to March 30, 2017), roughly 55% in health care. Studies 2 and 3: Internet Archive snapshots of allnurses.com captured from 1 January 2016 to 8 September 2026. No narrative or post text is shown on this page.</dd>
+    <dt>What was studied</dt><dd>Whether the kinds of meaning in workers&rsquo; stories forecast felt meaningfulness, emotional exhaustion and turnover intentions about a year later, and what nurses name when meaning is frustrated in their posts.</dd>
+    <dt>AI use</dt><dd>The preprint carries no statement on AI use in preparing the manuscript. It reports language models as research instruments: claude-sonnet-5 in the Study 1 coding test and as the single Study 2 coder, and gpt-5-2025-08-07 in a single non-voting pass used only for salience reliability on the development cases. On a 65-case test subsplit, gpt-5 ran non-voting and completed 65 cases under the decision-first prompt but 22 of 65 under the per-facet prompt, so its per-facet pass is incomplete and is not tabled.</dd>
+  </dl>
+  <div class="say-grid">
+    <div class="say yes">
+      <h3>The study supports</h3>
+      <ul>
+        <li>&ldquo;In this panel, the kinds of meaning in workers&rsquo; stories did not clearly forecast their outcomes a year later.&rdquo;<span>No interval excluded zero in the predicted direction; for the three-dimension block, &Delta;R&sup2; = .012 and the Bayes factor favoring the null was 481.5 (Tables 2 and 3).</span></li>
+        <li>&ldquo;Stories grounded in competence or mastery were associated with higher turnover intentions a year later.&rdquo;<span>Exploratory: <em>b</em> = 1.40, 95% CI [0.58, 2.22], 100 workers, against stories without the competence code; 17 of 140 matched stories carried the code (Table 4).</span></li>
+        <li>&ldquo;Nurses&rsquo; forum posts rarely named an AI system.&rdquo;<span>7 of 5,429 coded meaning events in 7,695 posts captured 2016 to 2026, none in the 2023 to 2026 window (pages 44 and 49).</span></li>
+      </ul>
+    </div>
+    <div class="say no">
+      <h3>It does not support</h3>
+      <ul>
+        <li>&ldquo;AI is eroding meaning at work.&rdquo;<span>The paper states that it does not claim this from its data. No study measured any worker&rsquo;s exposure to AI (pages 2 and 50).</span></li>
+        <li>&ldquo;Frustration in nurses&rsquo; posts rose over the decade.&rdquo;<span>The paper reports a rise in the lack-of-control flag with a site template change attached, and states that it does not describe rising frustration (page 47).</span></li>
+        <li>&ldquo;Talk of staffing ratios and metrics leads nurses to quit.&rdquo;<span>Quit-intent flags and optimization talk were coded together within single posts by one model. The paper states this is not a temporal ordering, and 85% of posts naming an optimization object carried no quit flag (page 45).</span></li>
+        <li>&ldquo;A language model can stand in for human coders on this scheme.&rdquo;<span>None of the six prompt setups met the agency standard. The paper treats this as a result about this codebook and prompt set and does not treat it as a ceiling on machine coding (pages 26 and 52).</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="cite-box">
+    <p id="cite-text">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em> [Preprint]. PsyArXiv. https://doi.org/10.31234/osf.io/jzngq_v1</p>
+    <button type="button" class="copy-btn" id="copy-cite">Copy citation</button>
+  </div>
+  <p class="fineprint">Questions, or a quote: Matthew J. Monnot, <a href="mailto:matt@vocentive.com">matt@vocentive.com</a>.</p>
+</section>
+
+<section id="evidence" aria-labelledby="s1">
+  <p class="section-label" id="s1">1 &middot; The six planned predictions came out near zero</p>
+  <p class="section-intro">Each planned prediction tied one coded kind of meaning in a worker&rsquo;s Time 1 story to one Time 2 outcome. Every model was an ordinary least squares regression with HC3 standard errors, adjusted for age, work centrality, occupation block and, for felt meaningfulness, its Time 1 level. A coefficient near zero means the coded meaning carried little information about the later outcome. Pick a prediction.</p>
+  <div class="calc">
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Choose a planned prediction" id="pp-seg">
+        <button type="button" data-k="p1" aria-pressed="true">P1</button>
+        <button type="button" data-k="p2" aria-pressed="false">P2</button>
+        <button type="button" data-k="p3" aria-pressed="false">P3</button>
+        <button type="button" data-k="p4" aria-pressed="false">P4</button>
+        <button type="button" data-k="p5" aria-pressed="false">P5</button>
+      </div>
+      <figure class="chart">
+        <svg id="pp-chart" viewBox="0 0 440 270" role="img" aria-labelledby="pp-title pp-desc">
+          <title id="pp-title">Standardized planned coefficients with 90% intervals against equivalence bands of ±.20 and ±.30</title>
+          <desc id="pp-desc">Five rows, one per planned prediction, each a dot with a 90% interval line on a standardized scale from −.50 to .50. Dashed lines mark ±.20 and dotted lines mark ±.30. The intervals for P1, P4 and P5 lie inside ±.30 and have filled dots. No interval lies inside ±.20. The selected prediction is drawn in red.</desc>
+        </svg>
+        <figcaption>Standardized coefficients with 90% intervals from Table 3 of the preprint (P3: 128 workers; the others: 136). A filled dot means the interval lies inside ±.30. The unstandardized coefficients with 95% intervals are in the results panel and in the paper&rsquo;s Figure 4 below. The sixth planned test, the joint block, has no single coefficient and is described in the text below.</figcaption>
+      </figure>
+    </div>
+    <div class="results" aria-live="polite">
+      <div class="stat">
+        <span class="stat-value red" id="pp-value">&nbsp;</span>
+        <span class="stat-label" id="pp-label">&nbsp;</span>
+        <span class="stat-sub" id="pp-sub">&nbsp;</span>
+      </div>
+      <p class="reading" id="pp-reading">&nbsp;</p>
+      <div class="kicker-bar" id="pp-bar">
+        <p class="kicker-main" id="pp-main">&nbsp;</p>
+        <p class="kicker-sub" id="pp-barsub">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+  <p>The sixth planned test asked whether the three coded dimensions together added to Time 1 self-reported meaning in forecasting felt meaningfulness. They added &Delta;R&sup2; = .012 (robust Wald <em>F</em>(3, 126) = 0.73, <em>p</em> = .534; 136 workers), and the Bayes factor favoring the null was 481.5. After the primary tests, the authors added equivalence tests (two one-sided tests) and Bayes factors, with interpretation criteria fixed before the numbers were computed. With all three dimensions entered together, the test against a band of &plusmn;.30 in standardized units was significant for three of the five coefficients (P1, P4 and P5), and the test against &plusmn;.20 was significant for none. Two further planned questions could not be tested: only 16 workers carried both agency and communion, and only 4 of 276 narrated three or more pathways.</p>
+  <figure class="paper-figure">
+    <a class="zoom" href="assets/paper-figure4-prespecified-estimates.png" target="_blank" rel="noopener" data-title="Figure 4 of the preprint"><img src="assets/paper-figure4-prespecified-estimates.png" alt="Figure 4 of the preprint: dot-and-interval plot of the five planned coefficients, P1 to P5, with 95% confidence intervals around a dashed zero line and a Bayes factor printed beside each row." width="1299" height="629" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
+    <figcaption><strong>Figure 4. How to read it.</strong> Each row is one planned prediction, and the dot is its unstandardized coefficient. The bars are 95% confidence intervals, and the dashed vertical line is zero. Every bar crosses zero. The number at the right of each row is the Bayes factor favoring the null over that predictor (Table 3); values above 1 favor the null.</figcaption>
+  </figure>
+</section>
+
+<section aria-labelledby="s2">
+  <p class="section-label" id="s2">2 &middot; One of four unplanned results that survived screening: stories grounded in competence were associated with higher strain a year later</p>
+  <p class="section-intro">The paper screened about 1,700 unplanned associations with Benjamini-Hochberg control at <em>q</em> = .10, and four survived. The first concerns workers whose Time 1 story grounded meaning in competence or mastery, compared with workers whose story did not carry that code. Neither outcome was measured at Time 1. Pick an outcome.</p>
+  <div class="calc">
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Choose a Time 2 outcome" id="cp-seg">
+        <button type="button" data-k="to" aria-pressed="true">Turnover intentions</button>
+        <button type="button" data-k="ee" aria-pressed="false">Emotional exhaustion</button>
+      </div>
+      <figure class="chart">
+        <div class="multiples" id="cp-multiples">
+          <svg id="cp-to" viewBox="0 0 300 150" role="img" aria-labelledby="cp-to-title cp-to-desc">
+            <title id="cp-to-title">Turnover intentions at Time 2: competence code, unadjusted and adjusted</title>
+            <desc id="cp-to-desc">Two dots with 95% confidence interval lines from Table 4 of the preprint: the unadjusted correlation and the standardized coefficient adjusted for six Time 1 survey measures and age.</desc>
+          </svg>
+          <svg id="cp-ee" viewBox="0 0 300 150" role="img" aria-labelledby="cp-ee-title cp-ee-desc">
+            <title id="cp-ee-title">Emotional exhaustion at Time 2: competence code, unadjusted and adjusted</title>
+            <desc id="cp-ee-desc">Two dots with 95% confidence interval lines from Table 4 of the preprint: the unadjusted correlation and the standardized coefficient adjusted for six Time 1 survey measures and age.</desc>
+          </svg>
+        </div>
+        <figcaption>Values from Table 4 of the preprint. Lines are 95% confidence intervals. Both rows are on a standardized scale; the results panel gives the unstandardized coefficient from the model adjusted for age, work centrality and occupation block.</figcaption>
+      </figure>
+    </div>
+    <div class="results" aria-live="polite">
+      <div class="stat">
+        <span class="stat-value red" id="cp-value">&nbsp;</span>
+        <span class="stat-label" id="cp-label">&nbsp;</span>
+        <span class="stat-sub" id="cp-sub">&nbsp;</span>
+      </div>
+      <p class="reading" id="cp-reading">&nbsp;</p>
+      <div class="kicker-bar" id="cp-bar">
+        <p class="kicker-main" id="cp-main">&nbsp;</p>
+        <p class="kicker-sub" id="cp-barsub">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+  <p>The competence code was present in 17 of 140 matched stories (12 coded present by both coders and 5 settled in the disagreement pass). The association held under the composite codes and under the second coder&rsquo;s codes (<em>r</em> = .26), and it did not hold under the first coder&rsquo;s unfiltered codes (<em>r</em> = .02). Its sign matched in all 200 random split-half re-estimates. The code records that competence appeared as a source of meaning; it does not tell satisfied competence from frustrated competence. The paper calls it a candidate effect awaiting a designed test. The other three screened results are listed in section 6.</p>
+  <figure class="paper-figure">
+    <a class="zoom" href="assets/paper-figure5-competence-strain.png" target="_blank" rel="noopener" data-title="Figure 5 of the preprint"><img src="assets/paper-figure5-competence-strain.png" alt="Figure 5 of the preprint: two bar charts of Time 2 turnover intentions and emotional exhaustion for stories without the competence code (123 and 115 workers) and with it (17 workers), with 95% confidence intervals." width="1279" height="575" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
+    <figcaption><strong>Figure 5. How to read it.</strong> Panel A is turnover intentions and Panel B is emotional exhaustion, both at Time 2. The light bar is workers whose story lacked the competence code; the dark bar is the 17 whose story carried it. Bar height is the unadjusted mean, and the black lines are 95% confidence intervals. The dark bars&rsquo; wide intervals reflect their 17 cases. Adjusted estimates are in Table 4.</figcaption>
+  </figure>
+</section>
+
+<section aria-labelledby="s3">
+  <p class="section-label" id="s3">3 &middot; No language-model prompt setup met the human-agreement standard for agency, so humans coded every predictor</p>
+  <p class="section-intro">Before any substantive analysis, the authors tested whether a language model could stand in for the two human coders. Six prompt setups were fixed by hash and scored once on a 55-case development partition with claude-sonnet-5, run three times each. Agreement is the proportion of specific agreement with the human composite codes. A setup was accepted only if it reached the lower end of the human pair&rsquo;s own 95% interval. Pick a dimension.</p>
+  <div class="calc">
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Choose a coded dimension" id="lm-seg">
+        <button type="button" data-k="ag" aria-pressed="true">Agency</button>
+        <button type="button" data-k="ot" aria-pressed="false">Others-directed meaning</button>
+      </div>
+      <figure class="chart">
+        <svg id="lm-chart" viewBox="0 0 440 380" role="img" aria-labelledby="lm-title lm-desc">
+          <title id="lm-title">Agreement with the human codes for six prompt setups and the two human coders, on agency and on others-directed meaning</title>
+          <desc id="lm-desc">A slopegraph. Each line joins a prompt setup&rsquo;s agreement on agency, at the left, to its agreement on others-directed meaning, at the right, from Table S1 of the preprint. All six setups fall below the agency pass mark of .910; the best, .798, is .11 below it. Two decision-first setups reach the others-directed pass mark of .805. The two human coders agree at .935 and .844, shown with their 95% intervals.</desc>
+        </svg>
+        <figcaption>Values from Table S1 and page 26 of the preprint. Agreement is the proportion of specific agreement. Each pass mark (red tick) is the lower end of the human pair&rsquo;s bootstrap 95% interval (blue vertical line). The vertical scale runs from .70 to 1.00.</figcaption>
+      </figure>
+    </div>
+    <div class="results" aria-live="polite">
+      <div class="stat">
+        <span class="stat-value red" id="lm-value">&nbsp;</span>
+        <span class="stat-label" id="lm-label">&nbsp;</span>
+        <span class="stat-sub" id="lm-sub">&nbsp;</span>
+      </div>
+      <p class="reading" id="lm-reading">&nbsp;</p>
+      <div class="kicker-bar" id="lm-bar">
+        <p class="kicker-main" id="lm-main">&nbsp;</p>
+        <p class="kicker-sub" id="lm-barsub">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+  <p>Human agreement was itself low for communion (.48, 95% CI [.34, .60]) and self-directed meaning (.52, 95% CI [.43, .59]), so those dimensions carried no acceptance standard, and communion was left out of the planned tests. Later, under a hashed protocol, the two highest-ranked setups were scored once on a prespecified 65-case subsplit of the held-out cases. Agency agreement was .81 and .80; the screen for scoring the remaining 128 cases was not met, and the paper does not report a separately authorized pass over them. Because the human codes were used, the design-based supervised learning correction that the authors had specified for machine labels was not applied.</p>
+  <figure class="paper-figure">
+    <a class="zoom" href="assets/paper-figure3-human-coding.png" target="_blank" rel="noopener" data-title="Figure 3 of the preprint"><img src="assets/paper-figure3-human-coding.png" alt="Figure 3 of the preprint: flow chart of two-tier human coding, from 276 written responses through two independent coders, tier 1 agreement and tier 2 disagreement resolution, to composite codes at facet, pathway and dimension level." width="1299" height="919" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
+    <figcaption><strong>Figure 3. How to read it.</strong> Read from top to bottom. Two coders, the first author and a trained research assistant, each coded 13 facets for 276 people. Where they agreed (87% of 3,588 facet cells), the code stood. Tier 2 holds the 482 disagreed cells: the first author resolved disagreements blind to which coder had assigned each label, and cells still unresolved (9.3%) were coded absent. The composite codes at the bottom were rolled up from facets to pathways to the 2 &times; 2 dimensions.</figcaption>
+  </figure>
+</section>
+
+<section aria-labelledby="s4">
+  <p class="section-label" id="s4">4 &middot; Nurses&rsquo; posts named an AI system in 7 of 5,429 coded meaning events</p>
+  <p class="section-intro">Study 2 coded 7,695 allnurses.com posts of at least 200 characters, captured by the Internet Archive from 2016 to 2026, with one pass of one language model (claude-sonnet-5). No forum post was coded by a person, so every rate is a rate of model-assigned codes. Study 3 compared the 2023 to 2026 capture window with 2016 to 2019, using thread-clustered intervals and permutation tests as descriptive screens. Pick a post-level code.</p>
+  <div class="calc">
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Choose a post-level code" id="fm-seg">
+        <button type="button" data-k="ob" aria-pressed="true">Optimization or implementation object</button>
+        <button type="button" data-k="lc" aria-pressed="false">Lack-of-control flag</button>
+        <button type="button" data-k="fr" aria-pressed="false">Any frustrated event</button>
+        <button type="button" data-k="qi" aria-pressed="false">Quit-intent flag</button>
+      </div>
+      <figure class="chart">
+        <svg id="fm-chart" viewBox="0 0 440 300" role="img" aria-labelledby="fm-title fm-desc">
+          <title id="fm-title">Share of posts with each code in 2016 to 2019 and in 2023 to 2026</title>
+          <desc id="fm-desc">A slopegraph. Each line joins a code&rsquo;s share of posts in the 2016 to 2019 captures, at the left, to its share in the 2023 to 2026 captures, at the right, from Table S3 of the preprint: an optimization or implementation object 4.8% to 5.2%; the lack-of-control flag 10.5% to 14.5%; any frustrated event 16.2% to 19.8%; the quit-intent flag 2.2% to 2.7%. The selected code is drawn in red.</desc>
+        </svg>
+        <figcaption>Values from Table S3 of the preprint. Each line runs from a code&rsquo;s share of posts in the 2016 to 2019 captures to its share in the 2023 to 2026 captures. The 95% intervals for the changes are thread-clustered bootstrap intervals; the selected code&rsquo;s interval is written beside its line and in the results panel. Shares are rounded to one decimal, so a change can differ by 0.1 from the difference between the two shares shown.</figcaption>
+      </figure>
+    </div>
+    <div class="results" aria-live="polite">
+      <div class="stat">
+        <span class="stat-value red" id="fm-value">&nbsp;</span>
+        <span class="stat-label" id="fm-label">&nbsp;</span>
+        <span class="stat-sub" id="fm-sub">&nbsp;</span>
+      </div>
+      <p class="reading" id="fm-reading">&nbsp;</p>
+      <div class="kicker-bar" id="fm-bar">
+        <p class="kicker-main" id="fm-main">&nbsp;</p>
+        <p class="kicker-sub" id="fm-barsub">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+  <p>The model coded 629 events with a named object. Of these, 73% concerned an optimization practice and 26% a system implementation or rollout. Nearly half (49%) targeted the facet the paper calls Control/Autonomy. Attribution went to management in 51% of object events, to staffing in 22% and to the tool itself in 13%. Competence was the most frequently enacted facet in every capture period. The site moved to new forum software between 2019 and 2021, which shortened posts and reduced codable events; the paper states that this change conditions every trend statement in Study 3.</p>
+  <figure class="paper-figure">
+    <a class="zoom" href="assets/paper-figureS3-forum-by-capture-year.png" target="_blank" rel="noopener" data-title="Figure S3 of the preprint"><img src="assets/paper-figureS3-forum-by-capture-year.png" alt="Figure S3 of the preprint: line chart of the share of posts by capture year from 2016 to 2026 with a frustrated meaning event, with an optimization or implementation object, and naming AI, with shaded intervals and a shaded band for 2019 to 2021." width="1299" height="829" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
+    <figcaption><strong>Figure S3. How to read it.</strong> Each line is the share of posts in a capture year, with its 95% interval as a grey band; post counts sit under each year. The solid line is posts with any frustrated meaning event, the dashed line posts naming an optimization or implementation object, and the dotted line at the bottom posts naming AI. The tall grey band marks the 2019 to 2021 template change. Capture year stands in for posting year.</figcaption>
+  </figure>
+</section>
+
+<section aria-labelledby="s5">
+  <p class="section-label" id="s5">5 &middot; What the paradox claim rests on</p>
+  <p class="section-intro">The paper&rsquo;s title claim is an argument built by placing its own results beside published work on which tasks are being automated. None of its studies measured AI exposure.</p>
+  <h2>The paper locates the risk of optimization in the tasks that workers name as meaningful.</h2>
+  <p class="section-intro">The paper names the relevant exposure in nursing as the manner in which a system arrives, for example as a metric or a management mandate. In nurses&rsquo; posts, the objects named were optimization practices, such as staffing ratios or documentation load, and system implementations or rollouts; a named AI system was the object in 7 of 5,429 events.</p>
+  <p class="fineprint">How to read this. The Time 1 stories were written in March 2016, before public release of contemporary generative-AI systems, so the paper reads the paradox by juxtaposition. It lists boundary conditions: a task that is meaningful for one worker may be routine for another, and where automation removes work of low meaning, the efficiency case is intact. Capture year on the forum is a proxy for posting year, and the posters chose to post on one professional forum.</p>
+</section>
+
+<section aria-labelledby="s6">
+  <p class="section-label" id="s6">6 &middot; What the study found, in order</p>
+  <ul class="todo">
+    <li><strong>Planned predictions (Study 1).</strong> All five planned coefficients had 95% intervals that included zero, and none excluded zero in the predicted direction; the three-dimension block added &Delta;R&sup2; = .012 to later felt meaningfulness (<em>p</em> = .534), with a Bayes factor of 481.5 favoring the null.</li>
+    <li><strong>Two planned questions that could not be tested.</strong> Only 16 workers carried both agency and communion, so the interaction was not estimable. Only 4 of 276 narrated three or more pathways, so the curvilinear density tests had no interior turning point (page 33).</li>
+    <li><strong>Same-wave convergence.</strong> In 272 coded workers, others-directed meaning correlated <em>r</em> = .24 with Time 1 self-reported meaningfulness, and agency <em>r</em> = .20; the coded dimensions together accounted for &Delta;R&sup2; = .08.</li>
+    <li><strong>Competence and later strain (exploratory).</strong> Turnover intentions <em>b</em> = 1.40, 95% CI [0.58, 2.22]; emotional exhaustion <em>b</em> = 0.95, 95% CI [0.20, 1.70]; standardized &beta; = .29 and .30 with six Time 1 survey measures and age entered jointly.</li>
+    <li><strong>Espoused but not narrated meaning (exploratory).</strong> Meaning claimed in the abstract answer but absent from the story was associated with higher Time 2 turnover intentions (<em>b</em> = 0.80, 95% CI [0.27, 1.33]). Coder disagreement was higher when concurrent meaningfulness was lower (<em>b</em> = &minus;0.21, <em>p</em> = .004).</li>
+    <li><strong>Language-model coding.</strong> Agency agreement .750 to .798 for the six prompt setups against a standard of .910.</li>
+    <li><strong>Forum posts (Study 2).</strong> 5,429 coded meaning events in 7,695 posts; a named AI system was the object in 7; about one post in twenty carried an optimization or implementation object in each capture period.</li>
+    <li><strong>Change over the decade (Study 3).</strong> The share of posts with such an object went from 4.8% to 5.2% (0.4 points, 95% CI [&minus;1.8, 2.5]). The lack-of-control flag went from 10.5% to 14.5% (4.0 points, 95% CI [1.2, 6.7]), the one post-level contrast that survived screening, reported with the template-change caveat.</li>
   </ul>
-  <p>The full page, with the figures, is the <a href="poster.html">digital resource</a>.</p>
+</section>
 
-  <h2>Start here</h2>
-  <p>The digital resource is one scrolling page. After that: what to try at work this quarter, a plain-English glossary, and the methods and readings. Everything works offline once downloaded. Five minutes: <a href="poster.html">the digital resource</a>. One minute: <a href="practice.html">Try this quarter</a>.</p>
-
-  <h2>What is inside</h2>
-  <table class="toc">
-    <thead>
-      <tr><th>Page</th><th>What you get</th><th>Time</th></tr>
-    </thead>
+<section id="specialists" aria-labelledby="s-spec">
+  <p class="section-label" id="s-spec">For specialists</p>
+  <p class="section-intro">The study design and the main reported estimates in one place. Sources are the preprint&rsquo;s Method and Results sections, Tables 1 to 4, Tables S1 to S3 and Figures 3 to 5 and S3.</p>
+  <table class="spec">
     <tbody>
-      <tr>
-        <td><a href="poster.html">Digital resource</a></td>
-        <td>The whole story on one page with the result figures: how well humans agree, what the models did, the competence result, and ten years of nurses’ posts coded by one model. The print deck is linked at the bottom.</td>
-        <td>8–10 min</td>
-      </tr>
-      <tr>
-        <td><a href="explainers.html">Plain-English glossary</a></td>
-        <td>Every term from the board and the paper in one plain sentence each, plus why it mattered here and one thing to read if you want more. Dip in; no need to read it straight through.</td>
-        <td>dip in</td>
-      </tr>
-      <tr>
-        <td><a href="methodology.html">Methods and lessons</a></td>
-        <td>What we ran, what the numbers were, and what we would do differently next time.</td>
-        <td>15–20 min</td>
-      </tr>
-      <tr>
-        <td><a href="references.html">Reading list</a></td>
-        <td>A short list, not a dump. Each entry says in a sentence why a practitioner might open it.</td>
-        <td>keep</td>
-      </tr>
-      <tr>
-        <td><a href="practice.html">Try this quarter</a></td>
-        <td>Two tracks: before you score employee text with a model, and before you automate part of a helping job. A twelve-week plan, vendor questions for both, and a one-page worksheet for a staff meeting. Grounded in the work-design and algorithmic-management literature.</td>
-        <td>use at work</td>
-      </tr>
-      <tr>
-        <td><a href="design.html">Design notes</a></td>
-        <td>Why the charts look the way they do, keyed to the data-visualization books they borrow from.</td>
-        <td>optional</td>
-      </tr>
-      <tr>
-        <td><a href="code.html">Code &amp; deck</a></td>
-        <td>The print deck as a download, and annotated code excerpts for the parts that set this study apart: building a ten-year time axis from the Internet Archive, scoring posts with one frozen instruction and a closed vocabulary, thread-clustered inference with a page-template check, and the holdout gate. A starting-point list for your own longitudinal text analysis.</td>
-        <td>15 min</td>
-      </tr>
-
+      <tr><th scope="row">Study 1 design</th><td>Two-wave critical-incident panel; Amazon Mechanical Turk. Time 1 March 10 to 16, 2016 (<em>N</em> = 307); Time 2 February 14 to March 30, 2017 (144 longitudinal cases); wave interval 11.1 to 12.6 months (<em>M</em> = 11.58). Completers older than noncompleters (<em>d</em> = 0.43) and higher in work centrality (<em>d</em> = 0.25). Roughly 55% health care.</td></tr>
+      <tr><th scope="row">Measures</th><td>Time 1: three-part critical-incident narratives (context, event, outcome) and an abstract job-meaning answer; WAMI (&alpha; = .92); SWB-M; work centrality (1 item). Time 2: SWB-M meaningfulness (Hypothesis 1d outcome); WAMI (&alpha; = .93); MBI emotional exhaustion; eight-item turnover intention composite (not given at Time 1).</td></tr>
+      <tr><th scope="row">Coding</th><td>13 binary facets adapted from Rosso et al. (2010), rolled up by logical OR to four pathways and the 2 &times; 2 dimensions. Two coders plus a blinded resolution pass by the first author; 9.3% of cells unresolved and coded absent. Dimension prevalence: agency 64%, others 56%, self 23%, communion 11%. Human PSA: agency .935 [.910, .956]; others .844 [.805, .879]; self .52; communion .48.</td></tr>
+      <tr><th scope="row">Planned tests</th><td>Table 2. OLS, HC3 standard errors; covariates age, work centrality, occupation block, plus the Time 1 baseline in the meaningfulness models; directional tests one-tailed at &alpha; = .05. P1 Others &rarr; felt meaningfulness <em>b</em> = &minus;0.02 [&minus;0.53, 0.49]; P2 Others &rarr; turnover 0.22 [&minus;0.65, 1.09]; P3 Agency &rarr; exhaustion &minus;0.29 [&minus;1.20, 0.62] (<em>n</em> = 128); P4 Agency &rarr; felt meaningfulness 0.05 [&minus;0.47, 0.57]; P5 Self &rarr; felt meaningfulness &minus;0.31 [&minus;0.73, 0.12]; P6 block &Delta;R&sup2; = .012, <em>F</em>(3, 126) = 0.73, <em>p</em> = .534 (full-model <em>R</em>&sup2; = .35). Power: |<em>r</em>| &ge; .23 at 80% with 144 cases.</td></tr>
+      <tr><th scope="row">Equivalence and Bayes</th><td>Table 3 (post hoc; criteria fixed before computation). TOST at &plusmn;.20: <em>p</em> = .055 to .328, none significant; at &plusmn;.30: P1 .008, P4 .008, P5 .017, P2 .086, P3 .164. BF<sub>01</sub> 4.7 to 11.6 per dimension; 481.5 for the block. With each dimension entered alone, the equivalence test was significant at &plusmn;.20 for four predictions and at &plusmn;.30 for all five; agency and others co-occur (&phi; = .71).</td></tr>
+      <tr><th scope="row">Robustness of the nulls</th><td>High-confidence (<em>n</em> = 67) and flag-excluded (<em>n</em> = 101) re-estimates kept intervals covering zero. Recoding unresolved cells as present: block &Delta;R&sup2; = .003. Huber re-estimation reproduced all five coefficients.</td></tr>
+      <tr><th scope="row">Screening</th><td>About 1,700 unplanned tests, Benjamini-Hochberg <em>q</em> = .10 within family; four survived. No moderation (249 tests) and no job-satisfaction, affective well-being or work-life association (0 of 35) survived. Six of 13 facets occurred in five or fewer of 276 stories and could not be tested.</td></tr>
+      <tr><th scope="row">Competence result</th><td>Table 4. Adjusted OLS (age, work centrality, occupation block; HC3): turnover <em>b</em> = 1.40 [0.58, 2.22], <em>n</em> = 100; exhaustion <em>b</em> = 0.95 [0.20, 1.70], <em>n</em> = 94. Ordered logit (5 bins): OR = 5.47 [1.94, 15.42], <em>n</em> = 136. Unadjusted <em>r</em> = .28 [.12, .43] (<em>n</em> = 140) and .28 [.11, .43] (<em>n</em> = 132). Full Time 1 survey battery plus age: &beta; = .29 [.04, .54] and .30 [.06, .55]. Code present in 17 of 140 matched cases. Implied latent biserial .44 to .46 under a normal liability model, labeled illustrative (Figure S8).</td></tr>
+      <tr><th scope="row">Language-model test</th><td>Table S1. Primary model claude-sonnet-5, run 2026-09-22, three runs per setup, provider default temperature; gpt-5-2025-08-07 ran a single non-voting pass used only for salience reliability on the 55-case development partition (p. 26). On the 65-case test subsplit, gpt-5 ran non-voting and completed 65 cases under the decision-first prompt but 22 of 65 under the per-facet prompt, so its per-facet pass is incomplete and is not tabled (Table S2). Development partition, case-cluster bootstrap (<em>B</em> = 10,000). Agency PSA .750 to .798 (standard &ge; .910); others-directed .761 to .819 (standard &ge; .805; met by two decision-first setups). Disqualifiers: any false positive on communion facets or on sparse facets over cells both human coders had coded absent, and a structured-output error rate above .10. Test subsplit (Table S2, 65 cases): agency .81 and .80; others-directed .746 and .77; the screen for scoring the remaining 128 cases (both &ge; .75) was not met.</td></tr>
+      <tr><th scope="row">Study 2 corpus</th><td>Internet Archive snapshots of allnurses.com, 1 January 2016 to 8 September 2026 (2026 partial, 147 posts): 7,695 posts of at least 200 characters, 1,453 threads, 4,442 hashed accounts. Capture windows 2016 to 2019, 2020 to 2022 and 2023 to 2026. Thread-resampling bootstrap (<em>B</em> = 2,000).</td></tr>
+      <tr><th scope="row">Study 2 instrument</th><td>claude-sonnet-5, one pass at the API default temperature (the protocol&rsquo;s temperature lock was not applied; recorded as a deviation); prompt frozen and hashed. Events carry facet, polarity (enacted, frustrated or wished for), object, stance, task outcome, emotion and attribution; four post-level flags. No human coding of posts; no second-model, perturbation or negative-control check.</td></tr>
+      <tr><th scope="row">Study 2 results</th><td>5,429 events (0.71 per post); 66% of posts with no event. Named AI 7 events, all in 2020 to 2021 captures. 629 object events: 73% optimization practice, 26% implementation; 49% Control/Autonomy, 21% Competence; 74% frustrated. Quit-intent in object posts 13.8%, 14.9% and 15.9% against 1.6%, 1.7% and 1.9% in other posts; among the 1,317 posts with a frustrated event, pooled difference 7.5 points [1.9, 12.9], and did not exclude zero within any single period (p. 45). Reverse conditional: 30% of quit-flagged posts named an object [21, 39].</td></tr>
+      <tr><th scope="row">Study 3 contrasts</th><td>Table S3, 2023 to 2026 against 2016 to 2019; permutation tests (<em>B</em> = 4,000), Benjamini-Hochberg within family; descriptive screens. Object share 4.8% to 5.2%, 0.4 [&minus;1.8, 2.5], <em>q</em> = .971; lack-of-control 10.5% to 14.5%, 4.0 [1.2, 6.7], <em>q</em> = .028; any frustrated event 16.2% to 19.8%, 3.5 [0.2, 6.6], <em>q</em> = .138; quit-intent 2.2% to 2.7%, 0.4 [&minus;0.9, 1.8], <em>q</em> = .971. Frustrated Control/Autonomy 9.6 to 12.7 per 100 posts, 3.1 [0.5, 6.0], <em>q</em> = .272.</td></tr>
+      <tr><th scope="row">Limits</th><td>Time 1 data predate the automation wave; online panel, majority health care. Forum codes from one model applied once, with an unknown false-present rate on forum prose. Template change in 2019 to 2021. Capture period is not posting period. Badge coverage depends on template. Within-account design over 1,494 accounts not run.</td></tr>
+      <tr><th scope="row">Materials</th><td>Analyses in Python (pandas, statsmodels, SciPy). Narratives, post text and model instructions are not hosted on this page.</td></tr>
     </tbody>
   </table>
+</section>
 
-  <h2>What is deliberately not here</h2>
-  <p>No respondent narratives, no StudyIDs, no model instructions that would let someone rerun the rejected setups on new employee data, no forum post text, and no numbers from the 128 held-out cases (the one 65-case look is reported as descriptive). The live allnurses site was not crawled. Forum material is Internet Archive snapshots.</p>
+<details class="model-notes">
+  <summary>What this site does and does not show</summary>
+  <ul>
+    <li>No respondent narrative, forum post text or model instruction is hosted here. Every estimate and interval on this page is a published aggregate from the preprint. Nothing is estimated in the browser.</li>
+    <li>No estimate from the 128 held-out cases is shown; the preprint does not report one.</li>
+    <li>No deployment or intervention is evaluated. The paper draws measurement implications and tests no intervention.</li>
+  </ul>
+</details>
 
-  <p class="note">Monnot, M. J., &amp; Thompson, I. (2026, September 30–October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Digital resource]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
+<section aria-labelledby="more-pages">
+  <p class="section-label" id="more-pages">Earlier companion pages</p>
+  <p>Earlier companion pages for this paper are no longer linked from this page.</p>
+</section>
+
+<section aria-labelledby="tools-used">
+  <p class="section-label" id="tools-used">Tools used</p>
+  <p>Analyses: Python (pandas, statsmodels, SciPy), as reported in the preprint. Language-model coding: claude-sonnet-5, with gpt-5-2025-08-07 in a single non-voting pass used only for salience reliability on the development cases. On a 65-case test subsplit, gpt-5 ran non-voting and completed 65 cases under the decision-first prompt but 22 of 65 under the per-facet prompt, so its per-facet pass is incomplete and is not tabled.</p>
+</section>
+
+<footer>
+  <p>Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em> [Preprint]. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/jzngq_v1">https://doi.org/10.31234/osf.io/jzngq_v1</a> &middot; <a href="https://mjmonnot.github.io/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf">PDF</a></p>
+  <p><a href="https://mjmonnot.github.io/">mjmonnot.github.io</a> &middot; Contact: matt@vocentive.com</p>
+</footer>
+
 </main>
+<script src="assets/companion.js"></script>
+<script>
+(function () {
+  "use strict";
+  var NS = "http://www.w3.org/2000/svg";
+  function el(n, a, t) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); if (t != null) e.textContent = t; return e; }
+  function clear(svg) { Array.prototype.slice.call(svg.childNodes).forEach(function (n) { if (n.nodeName !== "title" && n.nodeName !== "desc") svg.removeChild(n); }); }
+  function fmt(v, d) { var a = Math.abs(v).toFixed(d == null ? 2 : d); if (a.charAt(0) === "0" && d !== 0 && Math.abs(v) < 1) a = a.slice(1); return (v < 0 ? "\u2212" : (v > 0 && d === -1 ? "+" : "")) + a; }
+  function sgn(v) { return (v < 0 ? "\u2212" : "+") + Math.abs(v).toFixed(2); }
+  function seg(id, render) {
+    var bs = document.querySelectorAll("#" + id + " button");
+    Array.prototype.forEach.call(bs, function (b) {
+      b.addEventListener("click", function () {
+        Array.prototype.forEach.call(bs, function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+        render(b.getAttribute("data-k"));
+      });
+    });
+  }
+  function fill(prefix, o) {
+    var v = document.getElementById(prefix + "-value");
+    v.textContent = o.value; v.className = "stat-value " + (o.muted ? "ink" : "red");
+    document.getElementById(prefix + "-label").innerHTML = o.label;
+    document.getElementById(prefix + "-sub").innerHTML = o.sub;
+    document.getElementById(prefix + "-reading").innerHTML = o.reading;
+    document.getElementById(prefix + "-bar").className = "kicker-bar" + (o.muted ? " muted" : "");
+    document.getElementById(prefix + "-main").innerHTML = o.main;
+    document.getElementById(prefix + "-barsub").innerHTML = o.barsub;
+  }
+  var RED = "#c0392b", GREY = "#9aa3ad", BLUE = "#4a6a8a";
+  function axis(svg, x, ticks, y1, y2, ty, d) {
+    ticks.forEach(function (t) {
+      svg.appendChild(el("line", { x1: x(t), x2: x(t), y1: y1, y2: y2, "class": t === 0 ? "zero" : "grid" }));
+      svg.appendChild(el("text", { x: x(t), y: ty, "text-anchor": "middle" }, t === 0 ? "0" : fmt(t, d)));
+    });
+  }
+  function dotRows(svg, rows, x, top, step, L) {
+    rows.forEach(function (r, i) {
+      var y = top + i * step, c = r.c;
+      svg.appendChild(el("text", { x: 8, y: y + 5, "class": "lbl" }, r.n));
+      if (r.v == null) { svg.appendChild(el("text", { x: L + 4, y: y + 5, fill: "#5b6570" }, "not reported")); return; }
+      if (r.ci) svg.appendChild(el("line", { x1: x(r.ci[0]), x2: x(r.ci[1]), y1: y, y2: y, stroke: c, "stroke-width": r.hl ? 4 : 2 }));
+      svg.appendChild(el("circle", { cx: x(r.v), cy: y, r: r.hl ? 8 : 6, fill: r.sig ? c : "#fff", stroke: c, "stroke-width": 2 }));
+      var tx = r.ci ? x(r.ci[1]) + 8 : x(r.v) + 12;
+      svg.appendChild(el("text", { x: tx, y: y + 5 }, r.t));
+    });
+  }
 
+  function axis0(svg, x, ticks, y1, y2, ty, d) {
+    ticks.forEach(function (t) {
+      svg.appendChild(el("line", { x1: x(t), x2: x(t), y1: y1, y2: y2, "class": t === 0 ? "zero" : "grid" }));
+      svg.appendChild(el("text", { x: x(t), y: ty, "text-anchor": "middle" }, t === 0 ? "0" : (t < 0 ? "\u2212" : "") + Math.abs(t).toFixed(d)));
+    });
+  }
+  function dash(svg, x, v, y1, y2) { svg.appendChild(el("line", { x1: x(v), x2: x(v), y1: y1, y2: y2, stroke: "#5b6570", "stroke-dasharray": "4 4", "stroke-width": 1.5 })); }
 
-  <p class="tools-used"><strong>Tools used.</strong> Python (NumPy, pandas, Anthropic SDK); HTML, CSS, and JavaScript.</p>
-<footer class="site"><div class="wrap">
-  Digital goody bag · SIOP LEC 2026 · For participants. Questions: matt@vocentive.com
-</div></footer>
+  /* Chart pass helpers. */
+  var INK = "#22303c", LAB = "#5b6570", MID = "#7a8794", LIGHT = "#c9cfd6", PBLUE = "#2e6f9e", PRED = "#c0392b";
+  function mn(v, d) { return (v < 0 ? "−" : "") + Math.abs(v).toFixed(d).replace(/^0\./, "."); }
+  function txt(p, x, y, s, col, bold, anchor) {
+    var a = { x: x, y: y, style: "fill:" + col + (bold ? ";font-weight:700" : "") };
+    if (anchor) a["text-anchor"] = anchor;
+    var t = el("text", a, s); p.appendChild(t); return t;
+  }
+  function choose(segId, k, render, root) {
+    var bs = document.querySelectorAll("#" + segId + " button");
+    Array.prototype.forEach.call(bs, function (o) { o.setAttribute("aria-pressed", o.getAttribute("data-k") === k ? "true" : "false"); });
+    var had = root.contains(document.activeElement);
+    render(k);
+    if (had) { var n = root.querySelector('g.pick[data-k="' + k + '"]'); if (n) n.focus(); }
+  }
+  function pickG(parent, segId, k, label, render, root, on) {
+    var g = el("g", { "class": "pick", tabindex: "0", role: "button", "aria-label": label, "aria-pressed": on ? "true" : "false", "data-k": k });
+    var go = function () { choose(segId, k, render, root); };
+    g.addEventListener("click", go);
+    g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") { e.preventDefault(); go(); } });
+    parent.appendChild(g); return g;
+  }
+
+  /* 1 . Table 2 and Table 3: planned predictions P1 to P5. */
+  var PP = {
+    p1: { n: "P1 Others \u2192 felt meaningfulness", b: -0.02, ci: [-0.53, 0.49], p: ".537", N: 136, beta: "\u2212.011, 90% CI [\u2212.205, .183]", t20: ".055", t30: ".008", bf: "11.6", dir: "positive" },
+    p2: { n: "P2 Others \u2192 turnover intentions", b: 0.22, ci: [-0.65, 1.09], p: ".688", N: 136, beta: ".079, 90% CI [\u2212.188, .345]", t20: ".226", t30: ".086", bf: "9.9", dir: "negative" },
+    p3: { n: "P3 Agency \u2192 emotional exhaustion", b: -0.29, ci: [-1.20, 0.62], p: ".268", N: 128, beta: "\u2212.116, 90% CI [\u2212.427, .195]", t20: ".328", t30: ".164", bf: "8.2", dir: "negative" },
+    p4: { n: "P4 Agency \u2192 felt meaningfulness", b: 0.05, ci: [-0.47, 0.57], p: ".428", N: 136, beta: ".021, 90% CI [\u2212.169, .211]", t20: ".061", t30: ".008", bf: "11.5", dir: "positive" },
+    p5: { n: "P5 Self \u2192 felt meaningfulness", b: -0.31, ci: [-0.73, 0.12], p: ".921", N: 136, beta: "\u2212.119, 90% CI [\u2212.259, .021]", t20: ".171", t30: ".017", bf: "4.7", dir: "positive" }
+  };
+  var PPK = ["p1", "p2", "p3", "p4", "p5"];
+  var ppSvg = document.getElementById("pp-chart");
+  function f2(v) { return (v < 0 ? "\u2212" : "") + Math.abs(v).toFixed(2); }
+  function ci2(c) { return "[" + f2(c[0]) + ", " + f2(c[1]) + "]"; }
+  function drawPp(k) {
+    var d = PP[k]; clear(ppSvg);
+    var x = function (v) { return 20 + 400 * (v + 0.5); };
+    var ty = 14, y1 = 22, y2 = 222;
+    [-0.3, -0.2, 0, 0.2, 0.3].forEach(function (t) {
+      var a = { x1: x(t), x2: x(t), y1: y1, y2: y2 };
+      if (t === 0) { a.stroke = INK; a["stroke-width"] = 1; }
+      else if (Math.abs(t) === 0.2) { a.stroke = MID; a["stroke-width"] = 1.2; a["stroke-dasharray"] = "5 4"; }
+      else { a.stroke = MID; a["stroke-width"] = 1.5; a["stroke-dasharray"] = "1 3.5"; a["stroke-linecap"] = "round"; }
+      ppSvg.appendChild(el("line", a));
+      txt(ppSvg, x(t), ty, t === 0 ? "0" : mn(t, 2), LAB, false, "middle");
+    });
+    var first = null;
+    PPK.forEach(function (kk, i) {
+      var r = PP[kk], sel = kk === k, ly = 40 + i * 40, y = 53 + i * 40, c = sel ? PRED : MID;
+      var nums = r.beta.match(/\u2212?\.\d+/g).map(function (q) { return parseFloat(q.replace("\u2212", "-")); });
+      var filled = parseFloat(r.t30) < 0.05;
+      if (filled && first === null) first = { y: ly };
+      var g = pickG(ppSvg, "pp-seg", kk, r.n + ", standardized coefficient " + mn(nums[0], 3) + ", 90% interval " + mn(nums[1], 3) + " to " + mn(nums[2], 3) + (filled ? ", inside plus or minus .30" : ", not inside plus or minus .30"), drawPp, ppSvg, sel);
+      g.appendChild(el("rect", { x: 0, y: ly - 16, width: 440, height: 36, fill: "transparent" }));
+      var lt = txt(g, 20, ly, r.n, sel ? INK : LAB, sel); lt.setAttribute("style", lt.getAttribute("style") + ";paint-order:stroke;stroke:#faf7f2;stroke-width:5px;stroke-linejoin:round");
+      g.appendChild(el("line", { x1: x(nums[1]), x2: x(nums[2]), y1: y, y2: y, stroke: c, "stroke-width": sel ? 3.5 : 2 }));
+      g.appendChild(el("circle", { cx: x(nums[0]), cy: y, r: sel ? 7 : 5, fill: filled ? c : "#fff", stroke: c, "stroke-width": 2 }));
+    });
+    if (first) {
+      var a = txt(ppSvg, 348, first.y, "filled: ", LAB, false);
+      a.appendChild(el("tspan", { x: 348, y: first.y + 16 }, "interval "));
+      a.appendChild(el("tspan", { x: 348, y: first.y + 32 }, "inside \u00b1.30"));
+      a.setAttribute("pointer-events", "none");
+    }
+    txt(ppSvg, 220, 250, "Standardized coefficient with 90% interval", LAB, false, "middle");
+    fill("pp", { value: "b = " + f2(d.b) + " " + ci2(d.ci),
+      label: d.n + ", Time 1 code to Time 2 outcome, " + d.N + " workers",
+      sub: "OLS with HC3 standard errors; one-tailed <em>p</em> = " + d.p + "; predicted sign " + d.dir + "; workers whose story carried the code against those whose story did not (Table 2)",
+      reading: "The 95% interval included zero. Standardized, &beta; = " + d.beta + ". The post hoc equivalence test against &plusmn;.20 gave <em>p</em> = " + d.t20 + " and against &plusmn;.30 gave <em>p</em> = " + d.t30 + ". The BIC-approximated Bayes factor favoring the null was " + d.bf + " (Table 3).",
+      main: "No planned interval excluded zero in the predicted direction.",
+      barsub: "Sixth planned test, the joint block: &Delta;R&sup2; = .012, <em>p</em> = .534, Bayes factor favoring the null 481.5.", muted: true });
+  }
+  seg("pp-seg", drawPp);
+  drawPp("p1");
+
+  /* 2 . Table 4: competence code and Time 2 strain. */
+  var CP = {
+    to: { o: "turnover intentions", b: "1.40", ci: "[0.58, 2.22]", p: "&lt; .001", N: 100, r: [0.28, 0.12, 0.43, 140], be: [0.29, 0.04, 0.54, ".021"],
+          extra: "Treating turnover intentions as ordered (5 bins), the adjusted ordered-logit odds ratio was 5.47, 95% CI [1.94, 15.42], 136 workers." },
+    ee: { o: "emotional exhaustion", b: "0.95", ci: "[0.20, 1.70]", p: ".014", N: 94, r: [0.28, 0.11, 0.43, 132], be: [0.30, 0.06, 0.55, ".015"],
+          extra: "Emotional exhaustion was not measured at Time 1, so the estimate could not be adjusted for an earlier level." }
+  };
+  var cpMul = document.getElementById("cp-multiples");
+  var cpSvgs = { to: document.getElementById("cp-to"), ee: document.getElementById("cp-ee") };
+  var CPN = { to: "Turnover intentions", ee: "Emotional exhaustion" };
+  function drawCp(k) {
+    ["to", "ee"].forEach(function (kk) {
+      var d = CP[kk], svg = cpSvgs[kk], sel = kk === k; clear(svg);
+      var x = function (v) { return 10 + 280 * (v + 0.1) / 0.8; };
+      var g = pickG(svg, "cp-seg", kk, "Select " + CPN[kk].toLowerCase(), drawCp, cpMul, sel);
+      g.setAttribute("opacity", sel ? "1" : "0.45");
+      g.appendChild(el("rect", { x: 0, y: 0, width: 300, height: 150, fill: "transparent" }));
+      txt(g, 10, 16, CPN[kk], INK, true);
+      [0, 0.2, 0.4, 0.6].forEach(function (t) {
+        g.appendChild(el("line", { x1: x(t), x2: x(t), y1: 30, y2: 116, stroke: t === 0 ? INK : LIGHT, "stroke-width": t === 0 ? 1.2 : 1 }));
+        txt(g, x(t), 134, t === 0 ? "0" : mn(t, 2), LAB, false, "middle");
+      });
+      var rows = [
+        { n: "Unadjusted r (" + d.r[3] + ")", v: d.r[0], ci: [d.r[1], d.r[2]], c: PBLUE },
+        { n: "\u03b2, six T1 measures + age (" + d.N + ")", v: d.be[0], ci: [d.be[1], d.be[2]], c: PRED }
+      ];
+      rows.forEach(function (r, i) {
+        var ly = 42 + i * 48, y = 56 + i * 48;
+        var rt = txt(g, 10, ly, r.n, LAB, false); rt.setAttribute("style", rt.getAttribute("style") + ";paint-order:stroke;stroke:#faf7f2;stroke-width:5px;stroke-linejoin:round");
+        g.appendChild(el("line", { x1: x(r.ci[0]), x2: x(r.ci[1]), y1: y, y2: y, stroke: r.c, "stroke-width": 3 }));
+        g.appendChild(el("circle", { cx: x(r.v), cy: y, r: 6, fill: r.c, stroke: r.c, "stroke-width": 2 }));
+        txt(g, x(r.ci[1]) + 8, y + 5, fmt(r.v), INK, false);
+      });
+    });
+    var d = CP[k];
+    fill("cp", { value: "b = " + d.b + " " + d.ci,
+      label: "Time 2 " + d.o + ", stories with the competence code against stories without it, " + d.N + " workers",
+      sub: "Adjusted OLS with HC3 standard errors (age, work centrality, occupation block); <em>p</em> = " + d.p + " (Table 4)",
+      reading: "Workers whose Time 1 story grounded meaning in competence reported higher " + d.o + " about a year later. With six Time 1 survey measures and age entered jointly, &beta; = " + fmt(d.be[0]) + ", 95% CI [" + fmt(d.be[1]) + ", " + fmt(d.be[2]) + "], <em>p</em> = " + d.be[3] + ". " + d.extra,
+      main: "Exploratory: one of four associations that survived screening of about 1,700 tests.",
+      barsub: "The code was present in 17 of 140 matched stories, and the association did not hold under the first coder&rsquo;s codes alone (<em>r</em> = .02).", muted: false });
+  }
+  seg("cp-seg", drawCp);
+  drawCp("to");
+
+  /* 3 . Table S1: six prompt setups against the human benchmark. */
+  var PN = ["Decision-first", "Per-facet", "Reason-first", "Decision-first, revised", "Decision plus evidence", "Alternate codebook"];
+  var LM = {
+    ag: { o: "agency", v: [0.798, 0.780, 0.781, 0.755, 0.751, 0.750], th: 0.910, h: [0.935, 0.910, 0.956], met: 0,
+          main: "None of the six setups met the agency standard; the human codes were kept." },
+    ot: { o: "others-directed meaning", v: [0.819, 0.800, 0.793, 0.806, 0.777, 0.761], th: 0.805, h: [0.844, 0.805, 0.879], met: 2,
+          main: "Two decision-first setups met the others-directed standard; agency did not, so the human codes were kept." }
+  };
+  var lmSvg = document.getElementById("lm-chart");
+  function f3(v) { return v.toFixed(3).slice(1); }
+  function nudge(items, gap) {
+    items.sort(function (a, b) { return a.y - b.y; });
+    for (var i = 1; i < items.length; i++) if (items[i].y < items[i - 1].y + gap) items[i].y = items[i - 1].y + gap;
+  }
+  function drawLm(k) {
+    var d = LM[k]; clear(lmSvg);
+    var CL = 120, CR = 225, A = LM.ag, O = LM.ot;
+    var Y = function (v) { return 336 - (v - 0.70) / 0.30 * 270; };
+    var sw = A.v.map(function (v, i) { return { i: i, a: v, o: O.v[i], pass: O.v[i] >= O.th }; });
+    function line(q, col, w) { lmSvg.appendChild(el("line", { x1: CL, x2: CR, y1: Y(q.a), y2: Y(q.o), stroke: col, "stroke-width": w })); }
+    function dots(q, col, r) {
+      lmSvg.appendChild(el("circle", { cx: CL, cy: Y(q.a), r: r, fill: col }));
+      lmSvg.appendChild(el("circle", { cx: CR, cy: Y(q.o), r: r, fill: col }));
+    }
+    sw.filter(function (q) { return !q.pass; }).forEach(function (q) { line(q, LIGHT, 1.5); dots(q, LIGHT, 3.5); });
+    sw.filter(function (q) { return q.pass; }).forEach(function (q) { line(q, INK, 2); dots(q, INK, 3.5); });
+    var H = { a: A.h[0], o: O.h[0] };
+    lmSvg.appendChild(el("line", { x1: CL, x2: CL, y1: Y(A.h[1]), y2: Y(A.h[2]), stroke: PBLUE, "stroke-width": 1.5 }));
+    lmSvg.appendChild(el("line", { x1: CR, x2: CR, y1: Y(O.h[1]), y2: Y(O.h[2]), stroke: PBLUE, "stroke-width": 1.5 }));
+    line(H, PBLUE, 3); dots(H, PBLUE, 5);
+    /* pass marks */
+    [[CL, A.th], [CR, O.th]].forEach(function (m) {
+      lmSvg.appendChild(el("line", { x1: m[0] - 9, x2: m[0] + 9, y1: Y(m[1]), y2: Y(m[1]), stroke: PRED, "stroke-width": 2 }));
+    });
+    /* left labels */
+    var best = sw.reduce(function (m, q) { return q.a > m.a ? q : m; }, sw[0]);
+    var left = [
+      { y: Y(H.a) + 4, s: f3(H.a), col: PBLUE, b: true },
+      { y: Y(A.th) + 4, s: "pass mark " + f3(A.th), col: k === "ag" ? PRED : LAB, b: k === "ag", pm: true },
+      { y: Y(best.a) + 4, s: f3(best.a), col: INK, b: false }
+    ];
+    nudge(left, 15);
+    left.forEach(function (q) { txt(lmSvg, CL - (q.pm ? 14 : 10), q.y, q.s, q.col, q.b, "end"); });
+    var an = txt(lmSvg, CL - 14, (Y(best.a) + Y(A.th)) / 2 - 2, ".11 below ", LAB, false, "end");
+    an.appendChild(el("tspan", { x: CL - 14, y: (Y(best.a) + Y(A.th)) / 2 + 12 }, "the pass mark"));
+    /* right labels */
+    var right = [{ y: Y(H.o) + 4, s: f3(H.o) + "  two human coders", col: PBLUE, b: true }];
+    sw.filter(function (q) { return q.pass; }).forEach(function (q) { right.push({ y: Y(q.o) + 4, s: f3(q.o) + "  " + PN[q.i], col: INK, b: false }); });
+    right.push({ y: Y(O.th) + 4, s: "pass mark " + f3(O.th), col: k === "ot" ? PRED : LAB, b: k === "ot", pm: true, ty: Y(O.th) });
+    nudge(right, 15);
+    right.forEach(function (q) {
+      var t = txt(lmSvg, CR + 16, q.y, q.s, q.col, q.b); t.setAttribute("style", t.getAttribute("style") + ";white-space:pre");
+      if (q.pm && Math.abs(q.y - 4 - q.ty) > 3) lmSvg.appendChild(el("path", { d: "M" + (CR + 9) + " " + q.ty + " H" + (CR + 13) + " V" + (q.y - 4) + " H" + (CR + 15), fill: "none", stroke: PRED, "stroke-width": 1 }));
+    });
+    /* headings */
+    var ga = pickG(lmSvg, "lm-seg", "ag", "Select agency", drawLm, lmSvg, k === "ag");
+    ga.appendChild(el("rect", { x: CL - 50, y: 2, width: 100, height: 38, fill: "transparent" }));
+    txt(ga, CL, 32, "Agency", k === "ag" ? INK : LAB, k === "ag", "middle");
+    var go = pickG(lmSvg, "lm-seg", "ot", "Select others-directed meaning", drawLm, lmSvg, k === "ot");
+    go.appendChild(el("rect", { x: CR - 60, y: 2, width: 120, height: 38, fill: "transparent" }));
+    var ht = txt(go, CR, 16, "Others-directed ", k === "ot" ? INK : LAB, k === "ot", "middle");
+    ht.appendChild(el("tspan", { x: CR, y: 32 }, "meaning"));
+    txt(lmSvg, 0, 372, "Scale from .70 to 1.00", LAB, false);
+    var mx = Math.max.apply(null, d.v);
+    fill("lm", { value: f3(Math.min.apply(null, d.v)) + " to " + f3(mx),
+      label: "Agreement of claude-sonnet-5 with the human composite codes on " + d.o + ", six prompt setups, 55 development cases",
+      sub: "Standard &ge; " + f3(d.th) + ", the lower end of the human pair&rsquo;s bootstrap 95% interval; human agreement " + f3(d.h[0]) + " [" + f3(d.h[1]) + ", " + f3(d.h[2]) + "] (Table S1)",
+      reading: (d.met === 0 ? "None" : d.met) + " of the six setups reached the standard for " + d.o + ". The highest setup scored " + f3(mx) + ", " + (mx >= d.th ? "at or above" : "below") + " the pass mark. Each setup ran three times on the 55 cases.",
+      main: d.main,
+      barsub: "A second model, gpt-5-2025-08-07, ran one non-voting pass used only for salience reliability.", muted: d.met === 0 });
+  }
+  seg("lm-seg", drawLm);
+  drawLm("ag");
+
+  /* 4 . Table S3: 2023 to 2026 against 2016 to 2019, post-level shares. */
+  var FM = {
+    ob: { n: "Optimization or implementation object", a: "4.8", z: "5.2", v: 0.4, ci: [-1.8, 2.5], p: ".745", q: ".971", sv: 0,
+          main: "The share of posts with an optimization or implementation object was about one in twenty in both windows.",
+          barsub: "A named AI system was the object in 7 of 5,429 events, all in 2020 to 2021 captures." },
+    lc: { n: "Lack-of-control flag", a: "10.5", z: "14.5", v: 4.0, ci: [1.2, 6.7], p: ".003", q: ".028", sv: 1,
+          main: "The one post-level share that survived screening; the paper attaches the template-change caveat.",
+          barsub: "Linear slope 0.49 points per year, 95% CI [0.13, 0.89]." },
+    fr: { n: "Any frustrated event", a: "16.2", z: "19.8", v: 3.5, ci: [0.2, 6.6], p: ".034", q: ".138", sv: 0,
+          main: "The paper reads this as recovery from the 2019 to 2021 trough and does not describe rising frustration.",
+          barsub: "Linear slope 0.35 points per year, 95% CI [&minus;0.11, 0.79]." },
+    qi: { n: "Quit-intent flag", a: "2.2", z: "2.7", v: 0.4, ci: [-0.9, 1.8], p: ".539", q: ".971", sv: 0,
+          main: "The 95% interval for the quit-intent change included zero.",
+          barsub: "Within each period, posts naming an object carried the quit-intent flag in 13.8% to 15.9% of cases, against 1.6% to 1.9% of other posts; this is same-post co-occurrence." }
+  };
+  var FMK = ["ob", "lc", "fr", "qi"];
+  var fmSvg = document.getElementById("fm-chart");
+  function m1(v) { return (v < 0 ? "\u2212" : "") + Math.abs(v).toFixed(1); }
+  function wrapName(n) {
+    var ws = n.split(" "), out = [], cur = "";
+    ws.forEach(function (w) { if (cur && (cur + " " + w).length > 22) { out.push(cur); cur = w; } else cur = cur ? cur + " " + w : w; });
+    out.push(cur); return out;
+  }
+  function drawFm(k) {
+    var d = FM[k]; clear(fmSvg);
+    var CL = 56, CR = 150, LH = 14;
+    var Y = function (v) { return 268 - v * 10.5; };
+    fmSvg.appendChild(el("line", { x1: 30, x2: 176, y1: 268, y2: 268, stroke: MID, "stroke-width": 1 }));
+    txt(fmSvg, 26, 272, "0%", LAB, false, "end");
+    txt(fmSvg, CL, 20, "2016 to 2019", LAB, false, "middle");
+    txt(fmSvg, CR, 20, "2023 to 2026", LAB, false, "middle");
+    var blocks = [];
+    FMK.forEach(function (kk) {
+      var r = FM[kk], sel = kk === k, a = parseFloat(r.a), z = parseFloat(r.z), c = sel ? PRED : MID, tc = sel ? INK : LAB;
+      var lines = wrapName(r.n);
+      if (sel) lines.push("change " + m1(r.v) + " points, 95% CI [" + m1(r.ci[0]) + ", " + m1(r.ci[1]) + "]");
+      if (kk === "lc") lines.push("survived screening");
+      var g = pickG(fmSvg, "fm-seg", kk, r.n + ", " + r.a + " percent to " + r.z + " percent of posts", drawFm, fmSvg, sel);
+      g.appendChild(el("line", { x1: CL, x2: CR, y1: Y(a), y2: Y(z), stroke: "rgba(0,0,0,0)", "stroke-width": 18 }));
+      g.appendChild(el("line", { x1: CL, x2: CR, y1: Y(a), y2: Y(z), stroke: c, "stroke-width": sel ? 3.5 : 2 }));
+      g.appendChild(el("circle", { cx: CL, cy: Y(a), r: sel ? 6 : 4, fill: c }));
+      g.appendChild(el("circle", { cx: CR, cy: Y(z), r: sel ? 6 : 4, fill: c }));
+      txt(g, CL - 9, Y(a) + 4, a.toFixed(1) + "%", tc, sel, "end");
+      blocks.push({ g: g, y: Y(z) + 4 - (lines.length - 1) * LH / 2, z: z, lines: lines, sel: sel, tc: tc, kk: kk });
+    });
+    blocks.sort(function (p, q) { return p.y - q.y; });
+    for (var i = 1; i < blocks.length; i++) { var m = blocks[i - 1].y + blocks[i - 1].lines.length * LH; if (blocks[i].y < m) blocks[i].y = m; }
+    blocks.forEach(function (b) {
+      txt(b.g, CR + 10, b.y, b.z.toFixed(1) + "%", b.tc, b.sel);
+      b.lines.forEach(function (ln, j) {
+        var isNote = ln === "survived screening";
+        txt(b.g, CR + 58, b.y + j * LH, ln, isNote ? LAB : b.tc, b.sel && !isNote && ln.indexOf("change ") !== 0);
+      });
+    });
+    fill("fm", { value: d.a + "% to " + d.z + "%",
+      label: d.n + ", share of allnurses.com posts, 2016 to 2019 against 2023 to 2026 captures",
+      sub: "Difference " + fmt(d.v, 1) + " points, 95% CI [" + fmt(d.ci[0], 1) + ", " + fmt(d.ci[1], 1) + "]; thread-cluster bootstrap; permutation <em>p</em> = " + d.p + ", Benjamini-Hochberg <em>q</em> = " + d.q + " (Table S3)",
+      reading: (d.sv ? "This difference survived Benjamini-Hochberg screening at <em>q</em> = .10." : "This difference did not survive Benjamini-Hochberg screening at <em>q</em> = .10.") + " All codes came from one pass of claude-sonnet-5, and capture year stands in for posting year.",
+      main: d.main, barsub: d.barsub, muted: !d.sv });
+  }
+  seg("fm-seg", drawFm);
+  drawFm("ob");
+
+  /* Writers' block: copy buttons. */
+  Companion.copy(document.getElementById("copy-oneline"), function () { return document.getElementById("oneline").textContent; });
+  Companion.copy(document.getElementById("copy-cite"), function () { return document.getElementById("cite-text").textContent; });
+})();
+</script>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+  <div class="lightbox-bar"><span id="lightbox-title"></span><span class="lightbox-buttons"><button type="button" id="lightbox-size">Larger</button> <button type="button" id="lightbox-close">Close</button></span></div>
+  <div class="lightbox-scroll" id="lightbox-scroll"></div>
+</div>
+<script>
+/* Paper figures: enlarge on click. Without script the link opens the image file. */
+(function () {
+  "use strict";
+  var links = document.querySelectorAll(".paper-figure a.zoom");
+  var box = document.getElementById("lightbox");
+  if (!links.length || !box) return;
+  var scroller = document.getElementById("lightbox-scroll");
+  var img = document.createElement("img");
+  img.id = "lightbox-img"; img.alt = "";
+  var title = document.getElementById("lightbox-title");
+  var closeBtn = document.getElementById("lightbox-close");
+  var sizeBtn = document.getElementById("lightbox-size");
+  var last = null, large = false;
+  /* Two sizes. Fitted: the figure's full width inside the window. Larger: 1.8 times the window, at most twice the file's own width. */
+  function fit() {
+    var nat = img.naturalWidth || 0;
+    if (!nat) return;
+    var avail = scroller.clientWidth - 32;
+    var w = large ? Math.min(nat * 2, Math.max(Math.round(avail * 1.8), Math.min(nat, 1300))) : Math.min(avail, nat * 2);
+    img.style.width = w + "px";
+    img.className = large ? "large" : "";
+    sizeBtn.textContent = large ? "Fit to window" : "Larger";
+  }
+  function toggle() { large = !large; fit(); scroller.scrollTop = 0; scroller.scrollLeft = 0; }
+  function open(a) {
+    var small = a.querySelector("img");
+    last = a;
+    /* Start fitted on a roomy screen and at the larger size on a narrow one. */
+    img.onload = function () { large = (scroller.clientWidth - 32) < 700; fit(); };
+    img.alt = small ? (small.getAttribute("alt") || "") : "";
+    img.src = a.getAttribute("href");
+    scroller.appendChild(img);
+    title.textContent = a.getAttribute("data-title") || "";
+    box.hidden = false;
+    document.documentElement.style.overflow = "hidden";
+    scroller.scrollTop = 0; scroller.scrollLeft = 0;
+    if (img.complete && img.naturalWidth) img.onload();
+    closeBtn.focus();
+  }
+  function close() {
+    box.hidden = true;
+    document.documentElement.style.overflow = "";
+    if (img.parentNode) img.parentNode.removeChild(img);
+    img.removeAttribute("src");
+    if (last) last.focus();
+  }
+  Array.prototype.forEach.call(links, function (a) {
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+      e.preventDefault();
+      open(a);
+    });
+  });
+  closeBtn.addEventListener("click", close);
+  sizeBtn.addEventListener("click", toggle);
+  img.addEventListener("click", toggle);
+  box.addEventListener("click", function (e) { if (e.target === box || e.target === scroller) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (box.hidden) return;
+    if (e.key === "Escape" || e.key === "Esc") { close(); }
+    else if (e.key === "Tab") { e.preventDefault(); (document.activeElement === closeBtn ? sizeBtn : closeBtn).focus(); }
+  });
+  window.addEventListener("resize", function () { if (!box.hidden) fit(); });
+})();
+</script>
 </body>
 </html>
