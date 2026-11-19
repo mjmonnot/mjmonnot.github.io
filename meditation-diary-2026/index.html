@@ -13,6 +13,26 @@
   <meta property="og:site_name" content="Matthew J. Monnot">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="assets/companion.css">
+  <style>
+    #days-chart { border: none; background: none; overflow: visible; max-width: 620px; }
+    #days-chart text { font-size: 13px; fill: #5b6570; }
+    #days-chart .ink { fill: #22303c; }
+    #days-chart .bold { font-weight: 700; }
+    #days-chart .red { fill: #c0392b; }
+    #days-chart .white { fill: #fff; }
+    .paper-figure a.zoom { display: block; cursor: zoom-in; }
+    .paper-figure a.zoom:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    .zoom-hint { font-size: 14px; color: var(--gray); margin: 6px 0 0; }
+    .lightbox { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1000; background: rgba(20, 26, 33, 0.94); display: flex; flex-direction: column; }
+    .lightbox[hidden] { display: none; }
+    .lightbox-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 16px; color: #fff; font-size: 15px; }
+    .lightbox-bar button { font: inherit; color: #fff; background: none; border: 1px solid #fff; border-radius: 4px; padding: 6px 14px; cursor: pointer; }
+    .lightbox-bar button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .lightbox-buttons { white-space: nowrap; }
+    .lightbox-scroll { flex: 1; overflow: auto; padding: 0 16px 16px; }
+    .lightbox-scroll img { display: block; margin: 0 auto; max-width: none; height: auto; background: #fff; cursor: zoom-in; }
+    .lightbox-scroll img.large { cursor: zoom-out; }
+  </style>
 </head>
 <body>
 <main>
@@ -168,8 +188,16 @@
   <div id="guess"></div>
   <div id="days-wrap" class="guess-target">
     <h2>About 16 in 100 reported days were days without meditation, and 12 of the 65 employees had none.</h2>
-    <p class="section-intro">The paper counts 678 days with meditation and 132 days without. Few comparison days is why the paper used a model that estimates each person&rsquo;s usual practice, in place of a simple average. Each dot is one of 100.</p>
-    <div id="days"></div>
+    <p class="section-intro">The paper counts 678 days with meditation and 132 days without. Few comparison days is why the paper used a model that estimates each person&rsquo;s usual practice, in place of a simple average.</p>
+    <figure class="chart">
+      <svg id="days-chart" viewBox="0 0 440 208" role="img" aria-labelledby="days-title days-desc">
+        <title id="days-title">Program days with and without meditation, and employees with and without a day without meditation</title>
+        <desc id="days-desc">Two bars, each drawn to its own total. The 910 program days: 132 without meditation, 678 with meditation, and 100 with no report, drawn as an open segment. The 65 employees: 53 had at least one day without meditation and 12 had none.</desc>
+      </svg>
+      <figcaption>Each bar is drawn to its own total. Red marks where the day-by-day comparison comes from: the days without meditation, and the employees who had at least one such day.</figcaption>
+    </figure>
+    <p class="fineprint">Published counts: 678 days with meditation and 132 without, out of the 810 days that had a report (the sum of the two counts; that is 84% and 16%). The 100 days with a missing report are drawn as an open bar and are left out of the percentages. These are person-days across all 65 employees, not days for one person.</p>
+    <p class="fineprint">Published count: 12 of 65 employees (about 18 in 100) had no day without meditation. They stayed in the model, where they informed the person-level and day-to-day persistence estimates.</p>
   </div>
 </section>
 
@@ -205,11 +233,13 @@
 <section aria-labelledby="s6">
   <p class="section-label" id="s6">6 &middot; The paper&rsquo;s figures, with a reading guide</p>
   <figure class="paper-figure">
-    <img src="assets/figure2_posterior_slopes.png" alt="Figure 2 of the preprint: posterior distributions of the within-person meditation slope for the primary models and each sensitivity model, with medians and 95% credible intervals that all span zero. Panel b shows the implied distribution of person-specific slopes." width="1600" height="1034" loading="lazy">
+    <a class="zoom" href="assets/figure2_posterior_slopes.png" target="_blank" rel="noopener" data-title="Figure 2 of the preprint"><img src="assets/figure2_posterior_slopes.png" alt="Figure 2 of the preprint: posterior distributions of the within-person meditation slope for the primary models and each sensitivity model, with medians and 95% credible intervals that all span zero. Panel b shows the implied distribution of person-specific slopes." width="1600" height="1034" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
     <figcaption><strong>Figure 2. How to read it.</strong> Panel (a) shows the slope for each model: the point is the median, the line is the 95% credible interval, and the dashed line marks zero. Every interval crosses zero, for the primary models and for each check. The column of probabilities gives how likely the slope is to run in the predicted direction. Panel (b) shows how much the person-specific slopes are expected to vary around the average slope. Slopes are in standard deviation units.</figcaption>
   </figure>
   <figure class="paper-figure">
-    <img src="assets/figure1_posterior_predictive_checks.png" alt="Figure 1 of the preprint: posterior predictive checks of the mean, standard deviation, and lag-1 autocorrelation for the two primary models." width="1600" height="738" loading="lazy">
+    <a class="zoom" href="assets/figure1_posterior_predictive_checks.png" target="_blank" rel="noopener" data-title="Figure 1 of the preprint"><img src="assets/figure1_posterior_predictive_checks.png" alt="Figure 1 of the preprint: posterior predictive checks of the mean, standard deviation, and lag-1 autocorrelation for the two primary models." width="1600" height="738" loading="lazy"></a>
+    <p class="zoom-hint">Select the figure to enlarge it.</p>
     <figcaption><strong>Figure 1. How to read it.</strong> Each row compares a statistic from the data (the cross) with the median (open circle) and 95% equal-tailed interval (gray bar) of that statistic across 400 datasets replicated from the fitted model. The mean and the standard deviation are reproduced well (posterior predictive <em>p</em> values .48 to .55). Day-to-day persistence, the lag-1 autocorrelation, is underpredicted: .88 observed against a simulated median of .80 for self-compassion, and .84 against .73 for exhaustion. For that reason the slope intervals may be too narrow.</figcaption>
   </figure>
 </section>
@@ -241,7 +271,7 @@
   <ul>
     <li>No participant-level data are hosted here. Every number on this page is either a published aggregate from the preprint or a rounded display computed from one, and each computed display is labeled as such.</li>
     <li>The diagram in section 1 is an illustration. It is not drawn from the study&rsquo;s data.</li>
-    <li>The &ldquo;of 100&rdquo; displays in section 2 round published counts: 132 days without meditation against 678 with meditation (16 and 84 of 100 reported days, leaving out the 100 days with a missing report), and 12 of 65 employees (18 of 100). Dots are rounded to whole numbers.</li>
+    <li>The bars in section 2 show published counts: 132 days without meditation against 678 with meditation (about 16 and 84 of 100 reported days, leaving out the 100 days with a missing report), and 12 of 65 employees (about 18 of 100).</li>
     <li>A directional probability is the posterior probability that the slope has the predicted sign. It does not show how large the effect is; the posterior median and 95% credible interval show the estimated size and its uncertainty.</li>
     <li>The estimates are within-person associations from a single-group program in which people chose when to practice. Unmeasured daily demands could confound them, and the paper notes that a design that randomizes practice days would be needed to identify day-level effects.</li>
     <li>This page was built with HTML, CSS, and JavaScript; the paper does not cover the build.</li>
@@ -340,6 +370,36 @@
   Companion.copy(document.getElementById("copy-oneline"), function () { return document.getElementById("oneline").textContent; });
   Companion.copy(document.getElementById("copy-cite"), function () { return document.getElementById("cite-text").textContent; });
 
+  /* Section 2 chart: two part-to-whole bars, each to its own total. */
+  var dsvg = document.getElementById("days-chart");
+  function drawDays(guess) {
+    Array.prototype.slice.call(dsvg.childNodes).forEach(function (n) { if (n.nodeName !== "title" && n.nodeName !== "desc") dsvg.removeChild(n); });
+    var X0 = 20, W = 400, H = 26;
+    var w132 = 132 / 910 * W, w678 = 678 / 910 * W, w100 = 100 / 910 * W;
+    var w53 = 53 / 65 * W, w12 = 12 / 65 * W;
+    dsvg.appendChild(el("text", { x: X0, y: 16, "class": "ink bold" }, "The 910 program days of the 65 employees"));
+    var y1 = 56;
+    dsvg.appendChild(el("rect", { x: X0, y: y1, width: w132, height: H, fill: "#c0392b" }));
+    dsvg.appendChild(el("rect", { x: X0 + w132, y: y1, width: w678, height: H, fill: "#c9cfd6" }));
+    dsvg.appendChild(el("rect", { x: X0 + w132 + w678 + 0.75, y: y1 + 0.75, width: w100 - 1.5, height: H - 1.5, fill: "none", stroke: "#7a8794", "stroke-width": 1.5 }));
+    dsvg.appendChild(el("text", { x: X0 + w132 + 8, y: y1 + 18, "class": "ink" }, "678 with meditation"));
+    dsvg.appendChild(el("text", { x: X0, y: y1 + H + 18, "class": "red" }, "132 without meditation, the comparison days"));
+    dsvg.appendChild(el("text", { x: X0 + W, y: y1 + H + 18, "text-anchor": "end" }, "100 no report"));
+    var y2 = 156;
+    dsvg.appendChild(el("text", { x: X0, y: 148, "class": "ink" }, "The 65 employees"));
+    dsvg.appendChild(el("rect", { x: X0, y: y2, width: w53, height: H, fill: "#c0392b" }));
+    dsvg.appendChild(el("rect", { x: X0 + w53, y: y2, width: w12, height: H, fill: "#c9cfd6" }));
+    dsvg.appendChild(el("text", { x: X0 + 8, y: y2 + 18, "class": "white" }, "53 had at least one day without meditation"));
+    dsvg.appendChild(el("text", { x: X0 + W, y: y2 + H + 18, "text-anchor": "end" }, "12 had none"));
+    if (guess != null) {
+      var gx = X0 + (guess / 100) * (810 / 910) * W;
+      dsvg.appendChild(el("path", { d: "M" + (gx - 5) + " " + (y1 - 11) + " L" + (gx + 5) + " " + (y1 - 11) + " L" + gx + " " + (y1 - 2) + " Z", fill: "#22303c" }));
+      var left = guess >= 45;
+      dsvg.appendChild(el("text", { x: left ? gx - 9 : gx + 9, y: y1 - 3, "text-anchor": left ? "end" : "start", "class": "ink" }, "your guess: " + guess + " of 100 reported days"));
+    }
+  }
+  drawDays();
+
   /* 2 · Guess first, then the published counts (Table 1). */
   Companion.guess(document.getElementById("guess"), {
     question: "Before you look: of 100 program days that had a meditation report, how many were days without meditation?",
@@ -347,29 +407,12 @@
     format: function (v) { return v + " of 100"; },
     reveal: document.getElementById("days-wrap"),
     feedback: function (v) {
+      drawDays(v);
       var d = v - 16;
       if (Math.abs(d) <= 3) return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation, so you were close.";
       if (d > 0) return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation: fewer comparison days than you expected.";
       return "You guessed <strong>" + v + "</strong>. About <strong>16</strong> in 100 reported days were days without meditation: more than you expected, though still few.";
     }
-  });
-
-  Companion.iconArray(document.getElementById("days"), {
-    label: "Choose a count",
-    options: [{
-      label: "Days with a report",
-      panels: [
-        { filled: 84, tone: "blue", text: "were days with meditation", who: "Days with a meditation report" },
-        { filled: 16, tone: "", text: "were days without meditation", who: "Days without meditation" }
-      ],
-      note: "Rounding of published counts: 678 days with meditation and 132 without, out of the 810 days that had a report (the sum of the two counts; 84% and 16%, to whole dots). The 100 days with a missing report are left out. These are person-days across all 65 employees, not days for one person."
-    }, {
-      label: "Employees",
-      panels: [
-        { filled: 18, tone: "", text: "had no day without meditation", who: "Employees with no nonmeditation day" }
-      ],
-      note: "Rounding of a published count: 12 of 65 employees (18 of 100, to whole dots) had no day without meditation. They stayed in the model, where they informed the person-level and day-to-day persistence estimates."
-    }]
   });
 
   /* 3 · Published estimates (Tables 2 to 4 and the Supplemental Material). */
@@ -455,6 +498,76 @@
         note: "Additional outcome, timing and direction set after the Hypothesis 1 and 2 results were known." }
     ]
   });
+})();
+</script>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+  <div class="lightbox-bar"><span id="lightbox-title"></span><span class="lightbox-buttons"><button type="button" id="lightbox-size">Larger</button> <button type="button" id="lightbox-close">Close</button></span></div>
+  <div class="lightbox-scroll" id="lightbox-scroll"></div>
+</div>
+<script>
+/* Paper figures: enlarge on click. Without script the link opens the image file. */
+(function () {
+  "use strict";
+  var links = document.querySelectorAll(".paper-figure a.zoom");
+  var box = document.getElementById("lightbox");
+  if (!links.length || !box) return;
+  var scroller = document.getElementById("lightbox-scroll");
+  var img = document.createElement("img");
+  img.id = "lightbox-img"; img.alt = "";
+  var title = document.getElementById("lightbox-title");
+  var closeBtn = document.getElementById("lightbox-close");
+  var sizeBtn = document.getElementById("lightbox-size");
+  var last = null, large = false;
+  /* Two sizes. Fitted: the figure's full width inside the window. Larger: 1.8 times the window, at most twice the file's own width. */
+  function fit() {
+    var nat = img.naturalWidth || 0;
+    if (!nat) return;
+    var avail = scroller.clientWidth - 32;
+    var w = large ? Math.min(nat * 2, Math.max(Math.round(avail * 1.8), Math.min(nat, 1300))) : Math.min(avail, nat * 2);
+    img.style.width = w + "px";
+    img.className = large ? "large" : "";
+    sizeBtn.textContent = large ? "Fit to window" : "Larger";
+  }
+  function toggle() { large = !large; fit(); scroller.scrollTop = 0; scroller.scrollLeft = 0; }
+  function open(a) {
+    var small = a.querySelector("img");
+    last = a;
+    /* Start fitted on a roomy screen and at the larger size on a narrow one. */
+    img.onload = function () { large = (scroller.clientWidth - 32) < 700; fit(); };
+    img.alt = small ? (small.getAttribute("alt") || "") : "";
+    img.src = a.getAttribute("href");
+    scroller.appendChild(img);
+    title.textContent = a.getAttribute("data-title") || "";
+    box.hidden = false;
+    document.documentElement.style.overflow = "hidden";
+    scroller.scrollTop = 0; scroller.scrollLeft = 0;
+    if (img.complete && img.naturalWidth) img.onload();
+    closeBtn.focus();
+  }
+  function close() {
+    box.hidden = true;
+    document.documentElement.style.overflow = "";
+    if (img.parentNode) img.parentNode.removeChild(img);
+    img.removeAttribute("src");
+    if (last) last.focus();
+  }
+  Array.prototype.forEach.call(links, function (a) {
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+      e.preventDefault();
+      open(a);
+    });
+  });
+  closeBtn.addEventListener("click", close);
+  sizeBtn.addEventListener("click", toggle);
+  img.addEventListener("click", toggle);
+  box.addEventListener("click", function (e) { if (e.target === box || e.target === scroller) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (box.hidden) return;
+    if (e.key === "Escape" || e.key === "Esc") { close(); }
+    else if (e.key === "Tab") { e.preventDefault(); (document.activeElement === closeBtn ? sizeBtn : closeBtn).focus(); }
+  });
+  window.addEventListener("resize", function () { if (!box.hidden) fit(); });
 })();
 </script>
 </body>
