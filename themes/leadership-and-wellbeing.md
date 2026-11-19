@@ -103,6 +103,6 @@ Together the studies show a stable difference between people. Neither within-per
 
 ---
 
-For methods and applied implications, see the [publication summaries](/publications.html) and the [projects page](/projects.html). The 2026 statistical analyses were run in R, Python, and Mplus. Language models and AI agents are further tools in that workflow, as in the [SIOP Machine Learning Competitions](/projects.html#siop-machine-learning-competitions) project.
+For methods and applied implications, see the [publication summaries](/publications.html) and the [projects page](/projects.html). The 2026 statistical analyses were run in R, Python, and Mplus. Agentic AI is a further tool in that workflow: multi-agent orchestration, model routing, independent verification, and human-in-the-loop controls. The 2026 entry in the [SIOP Machine Learning Competitions](/projects.html#siop-machine-learning-competitions) project was built with AI agents.
 
 <p class="theme-updated">Last updated November 2026.</p>
