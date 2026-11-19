@@ -146,7 +146,7 @@ An SSRN preprint in the GESIS Panel.pop probability sample of German adults empl
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a></p>
 
-🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7622018) · [PDF](/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf) · [Companion site](/buffer-or-baseline/) · [Evidence](/buffer-or-baseline/evidence.html) · [Publication summary](/publications/2026-buffer-or-baseline.html)
+🔗 [Preprint (SSRN)](https://doi.org/10.2139/ssrn.7622018) · [PDF](/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf) · [Companion site](/buffer-or-baseline/) · [Evidence](/buffer-or-baseline/#evidence) · [Publication summary](/publications/2026-buffer-or-baseline.html)
 
 ---
 
