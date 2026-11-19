@@ -43,12 +43,6 @@ permalink: /
       </li>
       <li>
         <div>
-          <p class="pub-title"><a href="/publications/2026-ai-paradox-meaningful-work.html">The AI Paradox: How Optimization May Undermine Meaningful Work in Helping Professions</a></p>
-          <p class="pub-journal">PsyArXiv (preprint)</p>
-        </div>
-      </li>
-      <li>
-        <div>
           <p class="pub-title"><a href="/publications/2026-stress-turnover-headstart.html">Stress and Turnover in Helping Professions: A Randomized Controlled Longitudinal Study of Head Start Employees</a></p>
           <p class="pub-journal">SSRN (preprint)</p>
         </div>
@@ -225,25 +219,8 @@ permalink: /
           <p class="feature-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a> &middot; Companion site: <a href="https://mjmonnot.github.io/wellbeing-spirals/">https://mjmonnot.github.io/wellbeing-spirals/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf">PDF</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="7" aria-hidden="true">
-          <p class="feature-title"><a href="/lec-2026/">The AI Paradox</a></p>
-          <p class="feature-sub">PsyArXiv preprint &amp; SIOP Leading Edge Consortium 2026 digital goody bag</p>
-          <figure class="feature-figure feature-figure--wide">
-            <a class="feature-figure-link" href="{{ "/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 4: prespecified year-ahead estimates and Bayes factors">
-              <img src="{{ "/assets/images/mow-ai-paradox-fig4-prespecified-estimates.png" | relative_url }}" alt="Figure 4 from the preprint: forest plot of the five prespecified year-ahead coefficients with 95% confidence intervals; every interval includes zero. Others-directed meaning to felt meaningfulness: b = minus 0.02, interval minus 0.53 to 0.49, BF01 = 11.6. Others-directed meaning to turnover intentions: b = 0.22, interval minus 0.65 to 1.09, BF01 = 9.9. Agency to emotional exhaustion: b = minus 0.29, interval minus 1.20 to 0.62, BF01 = 8.2. Agency to felt meaningfulness: b = 0.05, interval minus 0.47 to 0.57, BF01 = 11.5. Self-directed meaning to felt meaningfulness: b = minus 0.31, interval minus 0.73 to 0.12, BF01 = 4.7." width="1600" height="775" loading="lazy">
-            </a>
-            <figcaption>Figure 4 &mdash; five prespecified year-ahead coefficients with 95% confidence intervals &middot; Bayes factors favor the null <span class="feature-figure-hint">· click to enlarge</span></figcaption>
-          </figure>
-          <p class="feature-desc">A two-wave critical-incident panel of helping-profession workers (<em>N</em> = 307; 144 followed one year later) and 7,695 nursing-forum posts captured 2016&ndash;2026. The six prespecified year-ahead predictions were estimated near zero. One of four unplanned associations that survived multiplicity screening was that narratives grounding meaning in competence were associated with higher turnover intentions and exhaustion a year later (&beta; = .29 and .30, adjusting for six survey measures). In nurses&rsquo; forum posts, about one post in twenty in every period named an optimization or implementation object, and the facet at issue was control over means. <a href="/lec-2026/">Open the digital goody bag &rarr;</a></p>
-          <p class="feature-links"><a href="https://doi.org/10.31234/osf.io/jzngq_v1">Preprint (PsyArXiv)</a> &middot; <a href="/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf">PDF</a> &middot; <a href="/lec-2026/">Digital goody bag</a> &middot; <a href="/lec-2026/poster.html">Digital poster</a> &middot; <a href="/lec-2026/code.html">Code &amp; deck</a></p>
-          <div class="feature-stat">
-            <span class="stat-value">BF<sub>01</sub>&nbsp;=&nbsp;481.5</span>
-            <span class="stat-note">Prespecified next-year meaning block favored the null; concurrent WAMI tracked the codes</span>
-          </div>
-          <p class="feature-cite">Monnot, M. J., &amp; Thompson, I. (2026). <em>The AI paradox: How optimization may undermine meaningful work in helping professions</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/jzngq_v1">https://doi.org/10.31234/osf.io/jzngq_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf">PDF</a></p>
-        </article>
 
-        <article class="feature-card feature-slide" data-slide="8" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="7" aria-hidden="true">
           <p class="feature-title">Predicting Personality from Text</p>
           <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
           <figure class="feature-figure">
@@ -259,7 +236,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="9" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="8" aria-hidden="true">
           <p class="feature-title"><a href="/afloat-or-adrift/">Afloat or Adrift</a></p>
           <p class="feature-sub">Latent personality profiles &amp; future-of-work skills (MIDUS)</p>
           <figure class="feature-figure">
@@ -277,7 +254,7 @@ permalink: /
           <p class="feature-cite">Monnot, M. J. (2026). <em>Afloat or adrift: A longitudinal study of latent personality profiles and future-of-work skills across midlife</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">https://doi.org/10.31234/osf.io/9r6hd_v1</a> &middot; Companion site: <a href="https://mjmonnot.github.io/afloat-or-adrift/">https://mjmonnot.github.io/afloat-or-adrift/</a> &middot; PDF: <a href="/assets/pdfs/Monnot_2026_Afloat_or_Adrift_PsyArXiv_9r6hd.pdf">PDF</a></p>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="10" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="9" aria-hidden="true">
           <p class="feature-title">Automated Meta-Analytic Coding</p>
           <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
@@ -293,7 +270,7 @@ permalink: /
           </div>
         </article>
 
-        <article class="feature-card feature-slide" data-slide="11" aria-hidden="true">
+        <article class="feature-card feature-slide" data-slide="10" aria-hidden="true">
           <p class="feature-title"><a href="/faking-costs/">What Faking Costs a Hiring Funnel</a></p>
           <p class="feature-sub">Monte Carlo simulation fit to meta-analytic applicant estimates</p>
           <figure class="feature-figure feature-figure--wide">
@@ -315,18 +292,17 @@ permalink: /
       
 <div class="feature-carousel-footer">
                 <div class="feature-dots" role="tablist" aria-label="Choose featured project">
-          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 12: Does Self-Compassion Precede Lower Burnout in Sports Coaches?"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 12: ChatGPT Access and Writing Skill"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 12: Does Daily Meditation Increase Self-Compassion?"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 12: Active Recovery Is Not Just for Athletes"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 12: Stress and Turnover in Head Start"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 12: Buffer or Baseline (GESIS Panel.pop)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 7 of 12: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 8 of 12: The AI Paradox (LEC 2026)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 9 of 12: Predicting Personality from Text"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 10 of 12: Afloat or Adrift (MIDUS)"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 11 of 12: SIOP 2026 Meta-Analytic Coding"></button>
-          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 12 of 12: What Faking Costs a Hiring Funnel"></button>
+          <button type="button" class="feature-dot is-active" role="tab" aria-selected="true" aria-label="Show project 1 of 11: Does Self-Compassion Precede Lower Burnout in Sports Coaches?"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 2 of 11: ChatGPT Access and Writing Skill"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 3 of 11: Does Daily Meditation Increase Self-Compassion?"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 4 of 11: Active Recovery Is Not Just for Athletes"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 5 of 11: Stress and Turnover in Head Start"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 6 of 11: Buffer or Baseline (GESIS Panel.pop)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 7 of 11: Upward and Downward Spirals in Employee Well-Being (LISS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 8 of 11: Predicting Personality from Text"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 9 of 11: Afloat or Adrift (MIDUS)"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 10 of 11: SIOP 2026 Meta-Analytic Coding"></button>
+          <button type="button" class="feature-dot" role="tab" aria-selected="false" aria-label="Show project 11 of 11: What Faking Costs a Hiring Funnel"></button>
         </div>
         <a class="view-all" href="/projects.html">View projects &rarr;</a>
       </div>

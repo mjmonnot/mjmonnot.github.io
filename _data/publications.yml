@@ -38,15 +38,6 @@
   pdf_url: "/assets/pdfs/Monnot_2026_Active_Recovery_SocArXiv_cz5g4.pdf"
   doi_url: "https://doi.org/10.31235/osf.io/cz5g4_v1"
 
-- key: monnotthompson2026_aiparadox
-  year: 2026
-  date: 2026-10-25
-  title: "The AI Paradox: How Optimization May Undermine Meaningful Work in Helping Professions"
-  authors: "Monnot, M. J., & Thompson, I."
-  journal: "PsyArXiv (preprint)"
-  summary_url: "/publications/2026-ai-paradox-meaningful-work.html"
-  pdf_url: "/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf"
-  doi_url: "https://doi.org/10.31234/osf.io/jzngq_v1"
 
 - key: monnot2026_headstart
   year: 2026

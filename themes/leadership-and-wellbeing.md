@@ -44,7 +44,7 @@ Three 2026 studies look at AI from the side of the person doing the job.
 - **Nurses over a decade.** In 7,695 nursing-forum posts coded by a language model, about one post in twenty named staffing ratios, productivity metrics, or documentation load, and the usual issue was losing control over how the work is done.
 - **Professionals given ChatGPT.** In data from a published randomized experiment, professionals given access to ChatGPT enjoyed a writing task more. Two months later, the share who had used a chatbot at work in the past week was about 13 percentage points higher among them, with a range of about 3 to 24 points.
 
-**Papers.** [Upward and Downward Spirals in Employee Well-Being](/publications/2026-wellbeing-spirals.html) · [The AI Paradox](/publications/2026-ai-paradox-meaningful-work.html) · [ChatGPT Access and Writing Skill](/publications/2026-chatgpt-writing.html)
+**Papers.** [Upward and Downward Spirals in Employee Well-Being](/publications/2026-wellbeing-spirals.html) · [ChatGPT Access and Writing Skill](/publications/2026-chatgpt-writing.html)
 
 <p class="section-label theme-label" id="stress-and-recovery">Theme 2 &middot; Stress, support, and recovery</p>
 
@@ -86,7 +86,7 @@ Together the studies show a stable difference between people. Neither within-per
 - **Supervisors and meaning.** Communication with a supervisor went with a stronger sense that work is meaningful, most clearly for employees of lower social status.
 - **Incentives.** A study across nations and cultural clusters found no single effect of incentives on intrinsic motivation. The effect depended on how the incentives were structured and understood.
 
-**Papers.** [The Good Life Versus the "Goods Life"](/publications/2022-goods-life-swb.html) (2022) · [The Effect of Incentives on Intrinsic Motivation](/publications/2018-intrinsic-motivation.html) (2018) · [Marginal Utility and Economic Development](/publications/2017-marginal-utility-china.html) (2017) · [Relational-Interdependent Self-Construal With Supervisor](/publications/2016-supervisor-riscs.html) (2016). See also [The AI Paradox](/publications/2026-ai-paradox-meaningful-work.html) on where helping-profession workers find meaning in their work.
+**Papers.** [The Good Life Versus the "Goods Life"](/publications/2022-goods-life-swb.html) (2022) · [The Effect of Incentives on Intrinsic Motivation](/publications/2018-intrinsic-motivation.html) (2018) · [Marginal Utility and Economic Development](/publications/2017-marginal-utility-china.html) (2017) · [Relational-Interdependent Self-Construal With Supervisor](/publications/2016-supervisor-riscs.html) (2016).
 
 <p class="section-label theme-label" id="personality-and-selection">Theme 5 &middot; Personality, skills, and selection</p>
 
