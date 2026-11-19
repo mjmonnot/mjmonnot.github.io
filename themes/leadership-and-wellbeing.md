@@ -41,7 +41,7 @@ In 2026 a line of work on people and AI at work joined them. The five themes bel
 Three 2026 studies look at AI from the side of the person doing the job.
 
 - **Dutch employees over five years.** Those who felt in 2020 that AI or robots could replace them were less satisfied with their jobs and lives in 2025. The feeling of being replaceable carried the cost, not how exposed their occupation was to AI.
-- **Nurses over a decade.** In 7,695 nursing-forum posts coded by a language model, nurses named an AI system seven times. About one post in twenty named staffing ratios, productivity metrics, or documentation load, and the usual issue was losing control over how the work is done.
+- **Nurses over a decade.** In 7,695 nursing-forum posts coded by a language model, about one post in twenty named staffing ratios, productivity metrics, or documentation load, and the usual issue was losing control over how the work is done.
 - **Professionals given ChatGPT.** In data from a published randomized experiment, professionals given access to ChatGPT enjoyed a writing task more. Two months later, the share who had used a chatbot at work in the past week was about 13 percentage points higher among them, with a range of about 3 to 24 points.
 
 **Papers.** [Upward and Downward Spirals in Employee Well-Being](/publications/2026-wellbeing-spirals.html) · [The AI Paradox](/publications/2026-ai-paradox-meaningful-work.html) · [ChatGPT Access and Writing Skill](/publications/2026-chatgpt-writing.html)
