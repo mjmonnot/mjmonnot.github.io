@@ -30,7 +30,7 @@ Conservation of resources theory treats self-compassion as a personal resource t
 
 The second job failed. Life satisfaction fell 6.22 points (0–100) across the 2020–2021 disruption at the same rate across levels of the trait (*BF*<sub>01</sub> = 51.52). A within-person telework test from 2021 to 2025 was also not supported (*BF*<sub>01</sub> = 12.28).
 
-The first job held later, and not where the hypotheses pointed. The 2018 score was associated with lower loneliness in 2024 (*r* = −.36) and with less digital overwhelm (β = −.20). Those associations ran through the reverse-scored self-critical items (β = −.30 and −.21), not the self-caring ones, and they were reduced but not removed by a six-item neuroticism control.
+The first job held. The 2018 score was associated with higher life satisfaction at the start of 2020 (*b* = 2.16 points on the 0 to 100 metric per SD, β = .14) and, as Hypothesis 3 predicted, with less digital overwhelm in 2024 (β = −.20). Its largest association, with lower loneliness in 2024 (*r* = −.36), was not a hypothesized path. In the component-specific models, the reverse-scored self-critical items carried the 2024 loneliness and overwhelm associations (β = −.30 and −.21), and a six-item neuroticism control reduced but did not remove them. The self-caring items added no unique association.
 
 ---
 
@@ -41,7 +41,7 @@ The first job held later, and not where the hypotheses pointed. The 2018 score w
 - **Hypothesis 1:** piecewise growth of life satisfaction (0–100) with a 2020 knot; 2020 loneliness as a separate outcome. Primary unweighted FIML model.
 - **Hypothesis 2:** random-slope multilevel model of within-person telework share (2021–2025) with a cross-level trait interaction.
 - **Hypothesis 3:** multivariate outcomes in 2024 (digital overwhelm, technology favorability, digitalization job-loss belief) plus a binary familiarization model.
-- **Inference added at reporting:** Bayes factors for the buffering paths; repeated nested out-of-fold prediction; two-factor and component-specific models; six-item BFI-2 neuroticism control (2017).
+- **Inference added at reporting:** Bayes factors for every hypothesis-tested path; repeated nested out-of-fold prediction; two-factor and component-specific models; six-item BFI-2 neuroticism control (2017).
 - **What the design cannot say:** observational; the trait was not manipulated; loneliness anchors and the life-satisfaction response format changed across waves.
 
 ---
@@ -58,7 +58,7 @@ Because the scale pairs self-caring items with reverse-scored self-critical item
 
 ## 4 · Key Findings & Nuances
 
-- **Levels, not slopes.** The 2018 trait was associated with higher life satisfaction at the 2020 knot (*b* = 2.16, β = .14) and with a more positive pre-2020 slope. It was not associated with the disruption slope or the recovery slope.
+- **The trait was associated with the 2020 level of life satisfaction and with its pre-2020 slope.** The 2018 trait was associated with higher life satisfaction at the 2020 knot (*b* = 2.16, β = .14) and with a more positive pre-2020 slope, *b* = 0.25, 95% CI [0.05, 0.45], *p* = .015, β = .12. Its associations with the disruption slope (*b* = −0.10, 95% CI [−0.71, 0.51], *p* = .746) and the recovery slope (*b* = −0.29, 95% CI [−0.69, 0.11], *p* = .154) were not statistically significant.
 - **The largest association was not hypothesized.** 2018 self-compassion correlated *r* = −.36 with 2024 loneliness and added out-of-fold Δ*R*² = .036 beyond baseline covariates. 2020 loneliness, measured in the disruption, was unrelated.
 - **Digital overwhelm, not digital behavior.** Lower overwhelm (β = −.20) and slightly more favorable appraisals (β = .10). Unrelated to recently familiarizing oneself with a new tool (OR = 0.98) and to a national job-loss belief.
 - **The total score was the self-critical items.** The trait factor correlated *r* = .98 with the reverse-scored self-critical composite and *r* = .38 with the self-caring composite. Self-caring items added nothing unique. A six-item neuroticism control reduced the loneliness and overwhelm estimates to −.24 and −.17 and did not remove them.
@@ -80,7 +80,7 @@ Because the scale pairs self-caring items with reverse-scored self-critical item
 
 ### For Well-Being Program Design
 
-- The design is correlational. Nothing here says what training the trait would do. The [companion site](https://mjmonnot.github.io/buffer-or-baseline/) stays inside that limit; the [what to watch](https://mjmonnot.github.io/buffer-or-baseline/playbook.html) page is written for that constraint.
+- The design is correlational. Nothing here says what training the trait would do (p. 40). The [companion site](https://mjmonnot.github.io/buffer-or-baseline/) stays inside that limit; its [in practice](https://mjmonnot.github.io/buffer-or-baseline/#practice) section is written for that constraint.
 
 ---
 
