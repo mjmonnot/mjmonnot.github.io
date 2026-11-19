@@ -70,7 +70,7 @@ A preprint (PsyArXiv, with Isaac Thompson) and the board session packet for *Sha
 
 <p class="apa-cite">Monnot, M. J., &amp; Thompson, I. (2026, September 30&ndash;October 1). <em>The AI paradox: How optimization may undermine meaningful work</em> [Poster presentation]. Society for Industrial and Organizational Psychology Leading Edge Consortium, Baltimore, MD, United States. <a href="https://mjmonnot.github.io/lec-2026/">https://mjmonnot.github.io/lec-2026/</a></p>
 
-🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/jzngq_v1) · [PDF](/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf) · [Live packet](/lec-2026/) · [Digital poster](/lec-2026/poster.html) · [Print deck (PPTX)](/lec-2026/assets/Monnot_Poster_v5.pptx)
+🔗 [Preprint (PsyArXiv)](https://doi.org/10.31234/osf.io/jzngq_v1) · [PDF](/assets/pdfs/Monnot_Thompson_2026_AI_Paradox_PsyArXiv_jzngq.pdf) · [Live packet](/lec-2026/)
 
 ---
 
