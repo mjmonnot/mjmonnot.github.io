@@ -6,7 +6,7 @@ permalink: /projects.html
 
 # Projects
 
-> **Latest update:** All ten posted preprints are listed below with companion links. Newest: [Does Self-Compassion Precede Lower Burnout in Sports Coaches?](/coach-burnout-2026/) (Preprints.org), [ChatGPT Access and Writing Skill](/chatgpt-writing-2026/) (SocArXiv), [Does Daily Meditation Increase Self-Compassion?](/meditation-diary-2026/) (PsyArXiv), [Active Recovery](/recovery-training-2026/) (SocArXiv).
+> **Latest update:** The posted preprints are listed below with companion links. Newest: [Does Self-Compassion Precede Lower Burnout in Sports Coaches?](/coach-burnout-2026/) (Preprints.org), [ChatGPT Access and Writing Skill](/chatgpt-writing-2026/) (SocArXiv), [Does Daily Meditation Increase Self-Compassion?](/meditation-diary-2026/) (PsyArXiv), [Active Recovery](/recovery-training-2026/) (SocArXiv).
 
 A selection of analytics and data-science projects connecting organizational psychology, finance, and AI-driven insight.  
 For full code and technical details, visit my [GitHub profile](https://github.com/mjmonnot).
