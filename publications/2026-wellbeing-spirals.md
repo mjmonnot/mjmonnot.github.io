@@ -28,7 +28,7 @@ permalink: /publications/2026-wellbeing-spirals.html
 
 AI is changing how work is assigned, paced, monitored, and rewarded. This study follows Dutch panel adults in the LISS panel for 18 years (2008–2025; *N* = 72,433 person-waves, 16,862 people) and asks what protects well-being when the job itself starts to feel replaceable.
 
-Three results carry the paper. First, the four personality profiles found in U.S. midlife adults (**Distressed, Antagonistic, Reserved, Resilient**) were tested in a Dutch working-age panel on a different instrument (overall Tucker congruence = .96). Antagonistic and Resilient re-emerged; Distressed was a partial shape match (*r* = .69) that did not re-emerge within any single cohort. Second, employees who in 2020 felt **replaceable by AI or robots**, or **exhausted** by technology-intensified work, reported lower job and life satisfaction five years later — and it was *perceived* replaceability, not an occupation's exposure score, that carried the cost. Third, among employees leaving the Distressed profile, **optimism, self-esteem, and work meaning** were associated with recovery (to Resilient) rather than disengagement (to Reserved), and within persons a one-time rise in distress displaces self-esteem more deeply and durably than an equivalent gain in self-esteem displaces distress. The consequences of resource loss ran deeper and longer than the benefits of an equivalent gain.
+Three results carry the paper. First, the four personality profiles found in U.S. midlife adults (**Distressed, Antagonistic, Reserved, Resilient**) were tested in a Dutch working-age panel on a different instrument (overall Tucker congruence = .96). Antagonistic and Resilient re-emerged; Distressed was a partial shape match (*r* = .69) that did not re-emerge within any single cohort. Second, employees who in 2020 felt **replaceable by AI or robots**, or **exhausted** by technology-intensified work, reported lower job and life satisfaction five years later, and it was *perceived* replaceability, not an occupation's exposure score, that carried the cost. Third, among employees leaving the Distressed profile, **optimism, self-esteem, and work meaning** were associated with recovery (to Resilient) rather than disengagement (to Reserved), and within persons a one-time rise in distress displaces self-esteem more deeply and durably than an equivalent gain in self-esteem displaces distress. The consequences of resource loss ran deeper and longer than the benefits of an equivalent gain.
 
 ---
 
@@ -48,11 +48,11 @@ Three results carry the paper. First, the four personality profiles found in U.S
 
 ## 3 · Methods in Plain English
 
-Rather than scoring each personality trait separately, the study sorts people into a small number of **configurations** — four recognizable patterns — and tracks whether they stay in one or move between them over 18 years. That makes it possible to ask not just *how much* distress there is, but *who leaves it and where they go*.
+Rather than scoring each personality trait separately, the study sorts people into a small number of **configurations**, four recognizable patterns, and tracks whether they stay in one or move between them over 18 years. That makes it possible to ask not just *how much* distress there is, but *who leaves it and where they go*.
 
 The AI piece comes from modules fielded in 2020 that asked employees whether their work could be done by new technology, whether their pace was set by a machine, whether their output was digitally logged, and whether work had become more exhausting. Those answers are related to how satisfied the same people were in 2025. Because the stressors were measured before the outcomes, the design establishes temporal order, though not causation.
 
-The spiral test looks *within* each person: when your self-esteem dips below your own usual level this year, is your distress higher next year — and vice versa? Comparing the two directions is consistent with loss primacy, although the lagged contrast does not compare loss against an equivalent gain in the same resource.
+The spiral test looks *within* each person: when your self-esteem dips below your own usual level this year, is your distress higher next year, and vice versa? Comparing the two directions is consistent with loss primacy, although the lagged contrast does not compare loss against an equivalent gain in the same resource.
 
 ---
 
@@ -83,7 +83,7 @@ The spiral test looks *within* each person: when your self-esteem dips below you
 
 ### For Well-Being Program Design
 
-- Among distressed employees, optimism, self-worth, and work meaning distinguished recovery from disengagement. The study does not show that raising them causes recovery, but they are the markers worth watching — and the lost-time and quit-intent costs appeared well before any exit. See the [companion site](https://mjmonnot.github.io/wellbeing-spirals/).
+- Among distressed employees, optimism, self-worth, and work meaning distinguished recovery from disengagement. The study does not show that raising them causes recovery, but they are the markers worth watching, and the lost-time and quit-intent costs appeared well before any exit. See the [companion site](https://mjmonnot.github.io/wellbeing-spirals/).
 
 ---
 

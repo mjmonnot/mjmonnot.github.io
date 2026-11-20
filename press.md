@@ -24,13 +24,13 @@ This article argues that research in psychology and organizational behavior ofte
 
 ### The Goods Life: China’s Wealth and Happiness Paradox (THINK.IAFOR, 2017)
 
-This piece explores why decades of economic growth in China have not led to proportional gains in happiness. It draws on Easterlin’s paradox, Self-Determination Theory, and my research on Chinese employees’ income, aspirations, and well-being—highlighting how materialistic goals can dampen the happiness benefits of higher income.
+This piece explores why decades of economic growth in China have not led to proportional gains in happiness. It draws on Easterlin’s paradox, Self-Determination Theory, and my research on Chinese employees’ income, aspirations, and well-being, highlighting how materialistic goals can dampen the happiness benefits of higher income.
 
 ➡️ [Read on THINK.IAFOR](https://think.iafor.org/chinas-paradox-of-wealth-and-happiness/)
 
 ### How Does Valuing Money Affect Your Happiness? (Greater Good Science Center, 2017)
 
-Written by Jill Suttie, this article synthesizes several studies on money, self-worth, and happiness, and features my work on Chinese employees’ values and well-being. It underscores that:
+Written by Jill Suttie, this article synthesizes several studies on money, self-worth, and happiness, and features my work on Chinese employees’ values and well-being. It reports that:
 
 - People who place a high value on money tend to be *less* satisfied with their income, even when they earn more.
 - Intrinsic values like relationships, community, and growth are more reliable paths to well-being than materialistic goals.

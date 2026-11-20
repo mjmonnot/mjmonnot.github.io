@@ -51,10 +51,10 @@ The simulations then work like a flight recorder: build an applicant pool whose 
 
 ## 4 · Key Findings & Nuances
 
-- The Conscientiousness–GMA correlation **reversed sign** in applicant samples (+.03 → −.07); the other Big Five factors did not move — a trait-specific pattern consistent with compensatory faking.
+- The Conscientiousness–GMA correlation **reversed sign** in applicant samples (+.03 → −.07); the other Big Five factors did not move: a trait-specific pattern consistent with compensatory faking.
 - The reversal was concentrated in **non-US selection settings**; US applicant and incumbent means did not differ.
 - At 40% faking prevalence, **22%–36% of top-down hiring decisions changed** and mean hire performance fell **8%–19%** relative to honest responding in the same pool.
-- The meta-analytic evidence **rejected desirability-proportional (trait-general) inflation** — the data are not consistent with everyone inflating everything proportionally.
+- The meta-analytic evidence **rejected desirability-proportional (trait-general) inflation**. The data are not consistent with everyone inflating everything proportionally.
 - Applicants who gained hiring slots through modeled faking averaged **0.2–0.4 SD lower in honesty-humility** than the applicants they displaced (0.3–0.7 SD under overt integrity-test correlations).
 - In the trait-driven simulations (Study 2) and the U.S. condition of Study 1, adverse-impact ratios moved by 0.03 or less; in the Study 1 non-US condition the ratio rose from 0.37 to 0.52 at a .10 selection ratio, and in the Study 1 pooled condition it moved from 0.39 to 0.44 at the same ratio (Table 4). A passed bias audit does not show whether the assessment was undistorted.
 
@@ -70,7 +70,7 @@ The simulations then work like a flight recorder: build an applicant pool whose 
 ### For People Analytics
 
 - Don't port research-setting predictor intercorrelations into operational selection models; applicant-pool correlations are setting-specific.
-- Measure integrity directly rather than inferring it from the personality composite — the composite is exactly the channel faking corrupts.
+- Measure integrity directly rather than inferring it from the personality composite. The composite is exactly the channel faking corrupts.
 
 ### For Selection-System Design
 

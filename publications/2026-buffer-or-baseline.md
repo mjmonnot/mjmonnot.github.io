@@ -50,7 +50,7 @@ The first job held. The 2018 score was associated with higher life satisfaction 
 
 The study asks whether a self-compassion score taken in 2018, before anyone had heard of COVID-19, tells you two different things about later well-being: who is better off, and who is hurt less when a demand arrives. Those are separable. Personality research on marriage, unemployment, and widowhood has already shown that the Big Five often mark the first and not the second.
 
-The first test is the 2020–2021 drop in life satisfaction — a population-wide disruption. The second is telework share from 2021 to 2025, compared within the same person over time. The third is how people appraised digital technology in 2024, including whether they felt overwhelmed by it.
+The first test is the 2020–2021 drop in life satisfaction: a population-wide disruption. The second is telework share from 2021 to 2025, compared within the same person over time. The third is how people appraised digital technology in 2024, including whether they felt overwhelmed by it.
 
 Because the scale pairs self-caring items with reverse-scored self-critical items, the paper also asks which item set actually carries any association. That scoring question is what a total “self-compassion” effect means.
 

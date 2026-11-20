@@ -7,7 +7,7 @@ permalink: /
 <section class="hero">
   <h1>Matthew J. Monnot, PhD</h1>
   <p class="tagline">Industrial-Organizational Psychologist <span class="sep">&middot;</span> People Scientist <span class="sep">&middot;</span> OD Consultant</p>
-  <p class="lede">I am an industrial-organizational psychologist and people scientist. I partner with leaders and organizations to strengthen performance, culture, and well-being &mdash; drawing on experience in academia, executive education, and corporate people analytics.</p>
+  <p class="lede">I am an industrial-organizational psychologist and people scientist. I partner with leaders and organizations to strengthen performance, culture, and well-being, drawing on experience in academia, executive education, and corporate people analytics.</p>
   <p class="focus"><strong>What I help with.</strong> Burnout and occupational stress. Turnover and retention, including in helping professions. Employee well-being across disruption, remote work, and digital demands. Recovery and mindfulness-based interventions. Self-compassion at work. Meaningful work under AI-related workplace change. Personnel selection and applicant faking. Leadership, supervisor relationships, and organizational change. Personality profiles and future-of-work skills.</p>
   <hr class="gold-rule">
 </section>
@@ -173,7 +173,7 @@ permalink: /
             <a class="feature-figure-link" href="{{ "/assets/images/headstart-fig4-roc-pr.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 4: test-partition ROC and precision-recall curves">
               <img src="{{ "/assets/images/headstart-fig4-roc-pr.png" | relative_url }}" alt="Figure 4 from the preprint, four panels for the final 11-predictor model on the test partition. Panel a: ROC curve for elevated six-month stress bowing above the diagonal, AUROC .72. Panel b: ROC curve for low six-month intention to remain, AUROC .70. Panel c: precision-recall curve for stress, AUPRC .52, above a base-rate line near .28. Panel d: precision-recall curve for intention to remain, AUPRC .26, above a base-rate line near .14. Grey shading shows pointwise bootstrap 95% bands." width="1166" height="1166" loading="lazy">
             </a>
-            <figcaption>Figure 4 &mdash; ROC (a, b) and precision&ndash;recall (c, d) curves on the test partition <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+            <figcaption>Figure 4. ROC (a, b) and precision&ndash;recall (c, d) curves on the test partition <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">An 11-predictor intake equation (stress, burnout, anxiety, depressive symptoms, job satisfaction, hope, reappraisal beliefs, demographics) predicted elevated stress six months later better than the base rate (log loss 0.532 vs. 0.596) and predicted low intention to remain (0.386 vs. 0.417), scored once on a held-out test partition of a randomized longitudinal trial. Baseline stress and younger age carried the most weight for stress; lower job satisfaction for intention to remain. <a href="/stress-turnover-headstart/">Open the companion site &rarr;</a></p>
           <p class="feature-links"><a href="/stress-turnover-headstart/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Stress_Turnover_HeadStart_SSRN_7637538.pdf">PDF</a> &middot; <a href="https://doi.org/10.2139/ssrn.7637538">DOI</a></p>
@@ -190,7 +190,7 @@ permalink: /
             <a class="feature-figure-link" href="{{ "/assets/images/gesis-fig2-ls-trajectories.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 2: life-satisfaction trajectories and trait coefficients">
               <img src="{{ "/assets/images/gesis-fig2-ls-trajectories.png" | relative_url }}" alt="Figure 2 from the GESIS preprint. Panel A: implied life-satisfaction trajectories at high, average, and low trait self-compassion from 2014 to 2025. The 2020 to 2022 decline is shared. Panel B: trait coefficients. The 2020 level is 2.16; the disruption slope is minus 0.10." width="2280" height="1350" loading="lazy">
             </a>
-            <figcaption>Figure 2 &mdash; Panel A: shared decline &middot; Panel B: higher 2020 level, no reliable disruption slope <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+            <figcaption>Figure 2. Panel A: shared decline &middot; Panel B: higher 2020 level, no reliable disruption slope <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
           <p class="feature-desc">A probability panel of German adults employed in 2018 (<em>N</em> = 3,052). Self-compassion was measured before COVID-19. It marked who was better off later. It did not slow the 2020&ndash;2021 drop in life satisfaction (6.22 points on a 0&ndash;100 metric at the same rate across the trait). The 2018 score was associated with lower 2024 loneliness (<em>r</em> = &minus;.36) and less digital overwhelm, and those associations ran through the self-critical items, not the self-caring ones. <a href="/buffer-or-baseline/">Open the companion site &rarr;</a></p>
           <p class="feature-links"><a href="/buffer-or-baseline/">Overview</a> &middot; <a href="/buffer-or-baseline/#evidence">The evidence</a> &middot; <a href="/buffer-or-baseline/#practice">What to watch</a> &middot; <a href="/buffer-or-baseline/">Key references</a> &middot; <a href="/assets/pdfs/Monnot_2026_Buffer_or_Baseline_SelfCompassion_SSRN_7622018.pdf">PDF</a></p>
@@ -208,9 +208,9 @@ permalink: /
             <a class="feature-figure-link" href="{{ "/assets/images/liss-spirals-figure-8.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 8: within-person resource-distress spirals">
               <img src="{{ "/assets/images/liss-spirals-figure-8.png" | relative_url }}" alt="Figure 8 from the LISS preprint. Panel A: random-intercept cross-lagged paths. Lagged distress to self-esteem is minus 0.14 and self-esteem to distress is minus 0.08, loss-primacy asymmetry p less than .001; lagged negative affect to optimism is minus 0.06 and optimism to negative affect is minus 0.05, asymmetry not supported. Panel B: expected displacement in SD units over five years after a one-time 1-SD change. Self-esteem after a rise in distress peaks near 0.14 and falls more slowly than distress after an equal gain in self-esteem, which peaks near 0.08. Measurement-error-corrected curves run higher." width="3364" height="1347" loading="lazy">
             </a>
-            <figcaption>Figure 8 &mdash; Panel A: reciprocal within-person cross-lags &middot; Panel B: model-implied aftermath of a one-time 1-<em>SD</em> change <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+            <figcaption>Figure 8. Panel A: reciprocal within-person cross-lags &middot; Panel B: model-implied aftermath of a one-time 1-<em>SD</em> change <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">Eighteen annual waves of Dutch employees (<em>N</em> = 72,433 person-waves). The four MIDUS personality profiles re-emerged on a different instrument. Employees who felt replaceable by AI or exhausted by technology-paced work in 2020 reported lower job and life satisfaction in 2025 &mdash; appraised replaceability, not an occupation's exposure score, carried the cost. Among distressed employees, optimism, self-esteem, and work meaning predicted recovery rather than disengagement, and within persons a rise in distress depleted self-esteem more than an equal gain relieved distress. <a href="/wellbeing-spirals/">Open the companion site &rarr;</a></p>
+          <p class="feature-desc">Eighteen annual waves of Dutch employees (<em>N</em> = 72,433 person-waves). The four MIDUS personality profiles re-emerged on a different instrument. Employees who felt replaceable by AI or exhausted by technology-paced work in 2020 reported lower job and life satisfaction in 2025. Appraised replaceability, not an occupation's exposure score, carried the cost. Among distressed employees, optimism, self-esteem, and work meaning predicted recovery rather than disengagement, and within persons a rise in distress depleted self-esteem more than an equal gain relieved distress. <a href="/wellbeing-spirals/">Open the companion site &rarr;</a></p>
           <p class="feature-links"><a href="/wellbeing-spirals/">Companion site</a> &middot; <a href="/wellbeing-spirals/#evidence">The evidence</a> &middot; <a href="/wellbeing-spirals/#practice">What to watch</a> &middot; <a href="/assets/pdfs/Monnot_2026_Upward_Downward_Spirals_SSRN_7617538.pdf">PDF</a></p>
           <div class="feature-stat">
             <span class="stat-value">OR&nbsp;=&nbsp;1.6&ndash;1.8&nbsp;per&nbsp;<em>SD</em></span>
@@ -222,17 +222,17 @@ permalink: /
 
         <article class="feature-card feature-slide" data-slide="7" aria-hidden="true">
           <p class="feature-title">Predicting Personality from Text</p>
-          <p class="feature-sub">SIOP 2019 Machine Learning Competition &mdash; post-hoc winning solution</p>
+          <p class="feature-sub">SIOP 2019 Machine Learning Competition: post-hoc winning solution</p>
           <figure class="feature-figure">
             <a class="feature-figure-link" href="{{ "/assets/images/siop2019-roleplay-steps.png" | relative_url }}" data-lightbox aria-label="Enlarge role-play questionnaire pipeline diagram">
               <img src="{{ "/assets/images/siop2019-roleplay-steps.png" | relative_url }}" alt="Four-step role-play questionnaire pipeline: read five text answers, role-play the persona, answer 30 BFI-2 items in character, then reverse-score and aggregate to OCEAN trait scores." width="900" height="665" loading="lazy">
             </a>
             <figcaption>Role-play pipeline: text &rarr; persona &rarr; BFI-2 items &rarr; OCEAN scores <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A leakage-safe stack of zero-shot LLM extractors and classical models predicting Big Five traits from five short open-ended responses &mdash; beating the original leaderboard by ~23%.</p>
+          <p class="feature-desc">A leakage-safe stack of zero-shot LLM extractors and classical models predicting Big Five traits from five short open-ended responses, beating the original leaderboard by ~23%.</p>
           <div class="feature-stat">
             <span class="stat-value">Test&nbsp;r&nbsp;=&nbsp;0.3215</span>
-            <span class="stat-note">vs. 0.26021 for the 2019 first-place team &mdash; about 2&times; the entire original top-four spread</span>
+            <span class="stat-note">vs. 0.26021 for the 2019 first-place team (about 2&times; the entire original top-four spread)</span>
           </div>
         </article>
 
@@ -243,9 +243,9 @@ permalink: /
             <a class="feature-figure-link" href="{{ "/assets/images/midus-figure-1a.png" | relative_url }}" data-lightbox aria-label="Enlarge Figure 1A from the MIDUS preprint">
               <img src="{{ "/assets/images/midus-figure-1a.png" | relative_url }}" alt="Figure 1A from the MIDUS preprint: latent state means for four personality profiles across Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness, and Agency." width="880" height="464" loading="lazy">
             </a>
-            <figcaption>Figure 1A &mdash; four replicated profiles (Resilient, Distressed, Reserved, Antagonistic) <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+            <figcaption>Figure 1A. Four replicated profiles (Resilient, Distressed, Reserved, Antagonistic) <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">A longitudinal study of Big Five profile configurations across midlife &mdash; and whether people move between them over two decades &mdash; linking those patterns to future-of-work skills. Distressed membership fell from 29.5% to 7.2%; purpose predicted recovery-oriented transitions (OR = 1.23). <a href="/afloat-or-adrift/">Open the companion site &rarr;</a></p>
+          <p class="feature-desc">A longitudinal study of Big Five profile configurations across midlife (and whether people move between them over two decades), linking those patterns to future-of-work skills. Distressed membership fell from 29.5% to 7.2%; purpose predicted recovery-oriented transitions (OR = 1.23). <a href="/afloat-or-adrift/">Open the companion site &rarr;</a></p>
           <p class="feature-links"><a href="/afloat-or-adrift/">Overview</a> &middot; <a href="/assets/pdfs/Monnot_2026_Afloat_or_Adrift_PsyArXiv_9r6hd.pdf">PDF</a> &middot; <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">DOI</a></p>
           <div class="feature-stat">
             <span class="stat-value">N&nbsp;=&nbsp;7,108</span>
@@ -256,14 +256,14 @@ permalink: /
 
         <article class="feature-card feature-slide" data-slide="9" aria-hidden="true">
           <p class="feature-title">Automated Meta-Analytic Coding</p>
-          <p class="feature-sub">SIOP 2026 Machine Learning Competition &mdash; team One Hot Key</p>
+          <p class="feature-sub">SIOP 2026 Machine Learning Competition: team One Hot Key</p>
           <figure class="feature-figure feature-figure--wide">
             <a class="feature-figure-link" href="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" data-lightbox aria-label="Enlarge six-gate pipeline diagram from the SIOP 2026 presentation">
               <img src="{{ "/assets/images/siop2026-six-gates.png" | relative_url }}" alt="Six-gate cascading pipeline from the SIOP 2026 presentation: PDF Acquisition, Layout Extraction, Regex plus phi4 Classifier, Vision Fallback, Structured LLM Extraction, and Imputation." width="2400" height="530" loading="lazy">
             </a>
-            <figcaption>Gates 1&ndash;6 &mdash; cascading fallback from cheap precision to recovery <span class="feature-figure-hint">· click to enlarge</span></figcaption>
+            <figcaption>Gates 1&ndash;6: cascading fallback from cheap precision to recovery <span class="feature-figure-hint">· click to enlarge</span></figcaption>
           </figure>
-          <p class="feature-desc">An end-to-end local-model pipeline that extracts zero-order Pearson <em>r</em> correlations from published I-O PDFs &mdash; a solo-plus-AI-agents experiment against full research teams.</p>
+          <p class="feature-desc">An end-to-end local-model pipeline that extracts zero-order Pearson <em>r</em> correlations from published I-O PDFs: a solo-plus-AI-agents experiment against full research teams.</p>
           <div class="feature-stat">
             <span class="stat-value">MSE&nbsp;0.0136</span>
             <span class="stat-note">Dev-set rank 6th of 24; test set submitted April 2026</span>
@@ -317,6 +317,6 @@ permalink: /
 
   <p class="section-label">Technical Skills</p>
   <hr class="label-rule">
-  <p class="skills">Statistical modeling — Mplus (Combination Add-On: mixture, multilevel, Bayesian, DSEM, LMS). Bayesian — Stan; brms; cmdstanr. Other modeling — lavaan; LMest; mclust; quantreg; qte; sandwich; mice; PROCESS for SPSS. Machine learning — scikit-learn (elastic-net and related learners); statsmodels. Programming and reproducibility — R; Python (pandas, NumPy, SciPy, matplotlib); Alteryx; ggplot2; renv; Git and GitHub Pages; Jekyll; HTML, CSS, and JavaScript. Agentic AI workflows — multi-agent orchestration (orchestrator-worker) of role-specific LLM agents across end-to-end ML and research workflows (data partitioning with sealed dev and test sets, modeling, blind recomputation, leakage and reproducibility audits, verification); parallel task execution on a dependency graph (DAG); model routing by task type and cost; programmatic validation gates; evaluator-optimizer loops with independent verifier agents; human-in-the-loop controls; guardrails and audit trails; prompt engineering; LLM evals, including one checked against an acceptance standard tied to human-coder agreement.</p>
+  <p class="skills">Statistical modeling: Mplus (Combination Add-On: mixture, multilevel, Bayesian, DSEM, LMS). Bayesian: Stan; brms; cmdstanr. Other modeling: lavaan; LMest; mclust; quantreg; qte; sandwich; mice; PROCESS for SPSS. Machine learning: scikit-learn (elastic-net and related learners); statsmodels. Programming and reproducibility: R; Python (pandas, NumPy, SciPy, matplotlib); Alteryx; ggplot2; renv; Git and GitHub Pages; Jekyll; HTML, CSS, and JavaScript. Agentic AI workflows: multi-agent orchestration (orchestrator-worker) of role-specific LLM agents across end-to-end ML and research workflows (data partitioning with sealed dev and test sets, modeling, blind recomputation, leakage and reproducibility audits, verification); parallel task execution on a dependency graph (DAG); model routing by task type and cost; programmatic validation gates; evaluator-optimizer loops with independent verifier agents; human-in-the-loop controls; guardrails and audit trails; prompt engineering; LLM evals, including one checked against an acceptance standard tied to human-coder agreement.</p>
 </section>
 

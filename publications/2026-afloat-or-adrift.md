@@ -26,9 +26,9 @@ permalink: /publications/2026-afloat-or-adrift.html
 
 ## 1 · TL;DR
 
-Using the MIDUS national panel (*N* = 7,108 over ~20 years) and an independent Refresher sample (*N* = 3,577), this study asks whether workers’ **psychological resource configurations** — person-centered personality profiles from Big Five and Agency indicators — help explain who develops and retains future-of-work skills during AI-era economic change.
+Using the MIDUS national panel (*N* = 7,108 over ~20 years) and an independent Refresher sample (*N* = 3,577), this study asks whether workers’ **psychological resource configurations**, person-centered personality profiles from Big Five and Agency indicators, help explain who develops and retains future-of-work skills during AI-era economic change.
 
-Four profiles emerge: **Resilient**, **Distressed**, **Reserved**, and **Antagonistic**. A second sample again favored four profiles and recovered the Resilient pattern; the Distressed profile did not re-emerge as its own cluster in the Refresher sample, or in the core second-survey sample on the same test, and is defined by its place in the three-wave transition model. Distressed membership shrinks sharply over two decades through two pathways — **recovery** (to Resilient) and **disengagement** (to Reserved). Among movers from the Distressed pattern to Resilient or Reserved, a stronger sense of purpose in life was associated with greater odds of a recovery-oriented move compared with a disengagement-oriented move (odds ratio 1.23 per SD). Profile membership adds no predictive power beyond continuous traits — an honest null with practical implications for how we use typologies at work.
+Four profiles emerge: **Resilient**, **Distressed**, **Reserved**, and **Antagonistic**. A second sample again favored four profiles and recovered the Resilient pattern; the Distressed profile did not re-emerge as its own cluster in the Refresher sample, or in the core second-survey sample on the same test, and is defined by its place in the three-wave transition model. Distressed membership shrinks sharply over two decades through two pathways: **recovery** (to Resilient) and **disengagement** (to Reserved). Among movers from the Distressed pattern to Resilient or Reserved, a stronger sense of purpose in life was associated with greater odds of a recovery-oriented move compared with a disengagement-oriented move (odds ratio 1.23 per SD). Profile membership adds no predictive power beyond continuous traits: an honest null with practical implications for how typologies are used at work.
 
 ---
 
@@ -48,13 +48,13 @@ Four profiles emerge: **Resilient**, **Distressed**, **Reserved**, and **Antagon
 
 ## 3 · Methods in Plain English
 
-Rather than treating each personality trait separately, the study asks: do people fall into recognizable **patterns** of traits — and do those patterns change across midlife?
+Rather than treating each personality trait separately, the study asks: do people fall into recognizable **patterns** of traits, and do those patterns change across midlife?
 
 It then follows those patterns over about two decades to see:
 
 1. Whether the same four patterns show up in a separate sample.
 2. Whether knowing someone’s pattern predicts skills and outcomes **above and beyond** knowing their continuous trait scores.
-3. Whether people move out of a strained (Distressed) pattern — and if so, toward recovery or disengagement.
+3. Whether people move out of a strained (Distressed) pattern, and if so, toward recovery or disengagement.
 4. Whether the SDT basic psychological needs (autonomy, competence and relatedness), and supplementary purpose in life, were associated with greater odds of a recovery-oriented move compared with a disengagement-oriented move, among people who left the Distressed pattern for Resilient or Reserved.
 
 ---
