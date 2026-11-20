@@ -26,16 +26,16 @@ permalink: /publications/2026-compensatory-faking.html
 
 ## 1 · TL;DR
 
-Published within-person estimates suggest roughly **30% of genuine applicants** (±10%, up to one in two) meaningfully inflate their personality-test scores, and the data are consistent with the **lower-ability** applicants inflating the most, a pattern seen in the non-U.S. samples.
+Within-person studies of genuine applicants indicate that 30% to 50% meaningfully elevate their personality-test scores relative to how they respond when nothing is at stake, and a synthesis of direct and indirect evidence concludes that roughly **30% of applicants** (±10%) fake; the data are consistent with the **lower-ability** applicants inflating the most, a pattern seen in the non-U.S. samples.
 
-This two-study paper reports that pattern as a context difference in correlations in the meta-analytic data (p. 38) and examines its hiring consequences in simulations. The Conscientiousness and ability correlation reverses sign in non-U.S. applicant samples relative to non-U.S. employees (applicants &minus;.27 versus employees +.05, difference &minus;.33, 95% CI [&minus;.42, &minus;.24]; Table 3, p. 56). Those non-U.S. applicant samples are predominantly UK and Australia-New Zealand selection settings using British occupational inventories (Table 3 note; p. 19). In Monte Carlo simulations fit to the evidence, at 40% faking prevalence, 22% to 36% of top-down hiring decisions changed and mean hire performance dropped 8% to 19%, while adverse-impact ratios stayed essentially unchanged in the trait-driven and U.S. conditions. In the Study 1 non-U.S. condition the ratio moved from 0.37 to 0.52 at a .10 selection ratio, and in the Study 1 pooled condition it moved from 0.39 to 0.44 at the same ratio (Table 4).
+This two-study paper reports that pattern as a context difference in correlations in the meta-analytic data (p. 38) and examines its hiring consequences in simulations. The Conscientiousness and ability correlation reverses sign in non-U.S. applicant samples relative to non-U.S. employees (applicants &minus;.27 versus employees +.05, difference &minus;.33, 95% CI [&minus;.42, &minus;.24]; Table 3, p. 56). Those non-U.S. applicant samples are predominantly UK and Australia-New Zealand selection settings using British occupational inventories (Table 3 note; p. 19). In Monte Carlo simulations fit to the evidence, at 40% faking prevalence, 22% to 36% of top-down hiring decisions changed and mean hire performance dropped 8% to 19%, while adverse-impact ratios stayed essentially unchanged in the Study 1 U.S. condition at a .10 selection ratio (0.40 to 0.39) and in the Study 2 trait-driven simulations. In the Study 1 non-U.S. condition the ratio moved from 0.37 to 0.52 at a .10 selection ratio, and in the Study 1 pooled condition it moved from 0.39 to 0.44 at the same ratio (Table 4).
 
 ---
 
 ## 2 · Methodology (Technical)
 
 - **Study 1:** Bare-bones meta-analysis of correlations from primary studies in the Personality Traits and Cognitive Abilities Relations Database (Stanek and Ones, 2023c), comparing genuine applicant samples (*k* = 11 to 21 independent samples per Big Five trait; *N* = 13,137 to 22,775) against incumbent, student, and community samples (*N* = 130,377 to 188,410), with stakes and regional moderator analyses.
-- **Key contrast:** Conscientiousness–GMA shifts from *r̄* = .03 (incumbents) to −.07 (applicants), Δ = −.11, 95% CI [−.18, −.03], concentrated in non-US selection settings; the other Big Five factors show no applicant–incumbent differences.
+- **Key contrast:** Conscientiousness–GMA shifts from *r̄* = .03 (incumbents) to −.07 (applicants), Δ = −.11, 95% CI [−.18, −.03], concentrated in non-US selection settings; the other Big Five factors show no applicant–incumbent differences in the pooled analysis; within the U.S. only, Agreeableness shows a small positive shift (Δ = +.07, 95% CI [.04, .11]).
 - **Study 1 simulation:** Monte Carlo simulations in which faking parameters (mean inflation and its ability slope) are jointly solved to reproduce two empirical targets: the applicant-incumbent mean shift (*d* = .45; Birkeland et al., 2006) and this paper's applicant correlations for each context (p. 16; Table 4). **Study 2:** Trait-driven variants assign faking from applicant standing on published trait-faking correlates and test competing inflation mechanisms against the meta-analytic evidence.
 - **Outcomes:** changed hiring decisions, mean hire performance, integrity composition of hires (HEXACO honesty-humility and overt integrity-test anchors), and adverse-impact ratios under published subgroup inputs.
 
@@ -43,7 +43,7 @@ This two-study paper reports that pattern as a context difference in correlation
 
 ## 3 · Methods in Plain English
 
-Ability-test scores are hard to inflate; self-rated personality is easy. So the correlation between the two acts like a **tamper seal**: if weaker applicants inflate their personality scores the most, a lower conscientiousness and ability correlation in applicant samples would be the expected pattern. The data showed a lower conscientiousness and ability correlation in applicant samples than in employee samples, concentrated in non-US applicant samples; below the Big Five, ambition also shifted in the same direction. The paper reports this as a context difference in correlations (p. 38).
+Ability-test scores are hard to inflate; self-rated personality is easy. So the correlation between the two acts like a **tamper seal**: if weaker applicants inflate their personality scores the most, a lower conscientiousness and ability correlation in applicant samples would be the expected pattern. The data showed a lower conscientiousness and ability correlation in applicant samples than in employee samples, concentrated in non-US applicant samples; in exploratory contrasts below the Big Five, ambition also shifted in the same direction. The paper reports this as a context difference in correlations (p. 38).
 
 The simulations then work like a flight recorder: build an applicant pool whose statistics match the empirical targets, including this paper's own Study 1 estimates (p. 16; p. 26), run top-down selection on it, and compare who gets hired against who would have been hired if everyone had answered honestly.
 
@@ -51,7 +51,7 @@ The simulations then work like a flight recorder: build an applicant pool whose 
 
 ## 4 · Key Findings & Nuances
 
-- The Conscientiousness–GMA correlation **reversed sign** in applicant samples (+.03 → −.07); the other Big Five factors did not move: a trait-specific pattern consistent with compensatory faking.
+- The Conscientiousness–GMA correlation **reversed sign** in applicant samples (+.03 → −.07); the other Big Five factors showed no pooled applicant–incumbent differences: a trait-specific pattern consistent with compensatory faking.
 - The reversal was concentrated in **non-US selection settings**; US applicant and incumbent means did not differ.
 - At 40% faking prevalence, **22%–36% of top-down hiring decisions changed** and mean hire performance fell **8%–19%** relative to honest responding in the same pool.
 - The meta-analytic evidence **rejected desirability-proportional (trait-general) inflation**. The data are not consistent with everyone inflating everything proportionally.
@@ -64,7 +64,7 @@ The simulations then work like a flight recorder: build an applicant pool whose 
 
 ### For Leaders & HR
 
-- Treat clean psychometric dashboards with suspicion proportional to the stakes: in these simulations, one in five or more hiring decisions changed while every monitored statistic looked normal.
+- Treat clean psychometric dashboards with suspicion proportional to the stakes: in these simulations, one in five or more hiring decisions changed, and in the trait-driven simulations validity coefficients and four-fifths compliance would not reveal that the applicants who gained seats through faking were lower in integrity.
 - Consider the countermeasures the paper names (verification warnings and forced-choice formats, plus measuring integrity directly) even when audit statistics look normal; in the trait-driven simulations, a four-fifths audit would not have shown the change in who was hired.
 
 ### For People Analytics

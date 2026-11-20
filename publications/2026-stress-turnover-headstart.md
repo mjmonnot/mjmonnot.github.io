@@ -35,7 +35,7 @@ It can, with moderate accuracy. For low intention to remain, the evidence was we
 ## 2 · Methodology (Technical)
 
 - **Data:** Randomized controlled longitudinal trial of 4,054 Head Start employees (95% women, mean age 43); median follow-up 184 days.
-- **Partitions:** seeded person-level 60/20/20 split into training, development, and test (*n* = 2,429, 811, and 814); training for fitting, development for one comparison of four pre-declared candidates, test for one pre-specified evaluation.
+- **Partitions:** seeded person-level 60/20/20 split into training, development, and test (*n* = 2,429, 811, and 814); training for fitting, development for one comparison of four pre-declared candidates, test for one prespecified confirmatory evaluation (three later analyses of the test partition were specified after it and returned aggregates only).
 - **Model:** 11-predictor logistic regression on baseline stress, burnout, anxiety, depressive symptoms, job satisfaction, hope, reappraisal beliefs, and demographics.
 - **Evaluation:** log loss and Brier score versus the base rate, AUROC, AUPRC, and calibration, with bootstrap 95% CIs.
 
@@ -45,7 +45,7 @@ It can, with moderate accuracy. For low intention to remain, the evidence was we
 
 - **Elevated six-month stress:** log loss 0.532 vs. 0.596 (difference −0.064, 95% CI [−0.099, −0.029]); AUC .72 [.67, .77]; calibration slope 0.92 [0.70, 1.19].
 - **Elevated stress, Brier score:** .177 vs. .203 (difference −.026 [−.041, −.010]); AUPRC .52 against an event rate of .28.
-- **Low intention to remain:** The equation ranked a staff member who later reported low intention to remain above one who did not about 7 times in 10. In the held-back test group, about 14 in 100 of the staff who answered this item reported the outcome (62 of 430). The evidence for this outcome is weaker than for stress.
+- **Low intention to remain:** The equation ranked a staff member who later reported low intention to remain above one who did not (AUC .70 [.63, .77]). In the held-out test partition, about 14 in 100 of the staff who answered this item reported the outcome (62 of 430). The evidence for this outcome is weaker than for stress: the Brier difference included zero, and the log-loss interval's upper bound sat close to zero (−0.002).
 - **Key predictors:** baseline stress and younger age for stress; lower job satisfaction for intention to remain.
 
 ---

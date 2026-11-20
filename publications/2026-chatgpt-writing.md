@@ -9,7 +9,7 @@ permalink: /publications/2026-chatgpt-writing.html
 <div class="key-findings">
 <p class="key-findings-label">Key findings</p>
 <ol>
-<li>In a randomized experiment with working professionals, people given access to ChatGPT had a weaker link between the writing quality of a first task and the writing quality of a second. Under the paper&rsquo;s Bayesian model that weakening is the likely sign (about a 98% probability), but it could be very small, and a standard confidence interval includes no change.</li>
+<li>In a randomized experiment with working professionals, people given access to ChatGPT had a weaker link between the writing quality of a first task and the writing quality of a second. Under the paper&rsquo;s Bayesian model that weakening is the likely sign (about a 98% probability), but it could be very small, and an ordinary least squares check with HC3 standard errors gave a 95% confidence interval of [−0.35, 0.02] that includes zero.</li>
 <li>Professionals given ChatGPT enjoyed the writing task more.</li>
 <li>Two months later, the share who said they had used ChatGPT or a similar chatbot at work in the past week was about 13 percentage points higher among those given access, with a range of about 3 to 24 points.</li>
 </ol>
@@ -32,7 +32,7 @@ permalink: /publications/2026-chatgpt-writing.html
 
 ## Summary
 
-I fit Bayesian models in brms, with weakly informative priors, to data from Noy and Zhang’s (2023a) online randomized experiment. Under ChatGPT access, second-task writing grades depended less on first-task grades (−0.159 [−0.317, −0.002], *P*(direction) = .976), access was associated with higher enjoyment (0.44 [0.29, 0.60]), and two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
+I fit Bayesian models in brms, with weakly informative priors, to data from Noy and Zhang’s (2023a) online randomized experiment. Under ChatGPT access, second-task writing grades depended less on first-task grades (posterior median −0.159, 95% CrI [−0.317, −0.002], *P*(direction) = .976), access was associated with higher enjoyment (0.44 [0.29, 0.60]), and two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
 
 ## Reference
 

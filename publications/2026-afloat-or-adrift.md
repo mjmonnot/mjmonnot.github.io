@@ -65,8 +65,8 @@ It then follows those patterns over about two decades to see:
 - Resilient members reported the highest psychosocial skills; Antagonistic members reported the highest income, prestige, and analytic performance.
 - Profile membership showed **no incremental predictive validity** beyond continuous traits.
 - Distressed membership declined from **29.5% to 7.2%** across two decades via recovery (to Resilient) and disengagement (to Reserved).
-- Leaving the Distressed profile was associated with lower health-related lost productive time (recovered movers −$3,049 per worker-year, 95% CI [−$5,038, −$1,060]).
-- **Purpose** predicted recovery- versus disengagement-oriented transition (OR = 1.23 per SD, 95% CI [1.01, 1.50]).
+Recovering from the Distressed profile was associated with lower health-related lost productive time (recovered movers −$3,049 per worker-year, 95% CI [−$5,038, −$1,060]); the reduction in impaired days for disengaged movers was smaller and not significant (−0.76 per month, *p* = .15).
+Among movers out of the Distressed profile, **supplementary purpose** was associated with recovery- versus disengagement-oriented transition (OR = 1.23 per SD, 95% CI [1.01, 1.50], *p* = .039)., 95% CI [1.01, 1.50]).
 - Event-sampled diary data corroborated the profile interpretations.
 
 ---

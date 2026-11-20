@@ -9,7 +9,7 @@ permalink: /publications/2026-wellbeing-spirals.html
 <div class="key-findings">
 <p class="key-findings-label">Key findings</p>
 <ol>
-<li>In yearly surveys of the same people in a Dutch panel from 2017 to 2025, a rise in distress was followed at the next survey by a larger drop in self-esteem than an equal rise in self-esteem was followed by a drop in distress. This is a link within the same person over time, not a test of a program.</li>
+<li>In yearly surveys of the same people in a Dutch panel from 2017 to 2025, a rise in distress was followed at the next survey by a larger drop in self-esteem than the drop in distress that followed a rise in self-esteem. This is a link within the same person over time, not a test of a program.</li>
 <li>Employees who felt in 2020 that AI or robots could replace them were less satisfied with their jobs and lives five years later. The feeling of being replaceable carried the cost, not how exposed their occupation was to AI.</li>
 <li>Among adults moving out of a distressed personality pattern, those with more optimism and self-esteem had greater odds of a recovery-oriented exit compared with a disengagement-oriented exit. Those with more sense of meaning in their work did too. These are associations in survey data, not tests of an intervention.</li>
 </ol>
@@ -28,7 +28,7 @@ permalink: /publications/2026-wellbeing-spirals.html
 
 AI is changing how work is assigned, paced, monitored, and rewarded. This study follows Dutch panel adults in the LISS panel for 18 years (2008–2025; *N* = 72,433 person-waves, 16,862 people) and asks what protects well-being when the job itself starts to feel replaceable.
 
-Three results carry the paper. First, the four personality profiles found in U.S. midlife adults (**Distressed, Antagonistic, Reserved, Resilient**) were tested in a Dutch working-age panel on a different instrument (overall Tucker congruence = .96). Antagonistic and Resilient re-emerged; Distressed was a partial shape match (*r* = .69) that did not re-emerge within any single cohort. Second, employees who in 2020 felt **replaceable by AI or robots**, or **exhausted** by technology-intensified work, reported lower job and life satisfaction five years later, and it was *perceived* replaceability, not an occupation's exposure score, that carried the cost. Third, among employees leaving the Distressed profile, **optimism, self-esteem, and work meaning** were associated with recovery (to Resilient) rather than disengagement (to Reserved), and within persons a one-time rise in distress displaces self-esteem more deeply and durably than an equivalent gain in self-esteem displaces distress. The consequences of resource loss ran deeper and longer than the benefits of an equivalent gain.
+Three results carry the paper. First, the four personality profiles found in U.S. midlife adults (**Distressed, Antagonistic, Reserved, Resilient**) were tested in a Dutch working-age panel on a different instrument (overall Tucker congruence = .96). Antagonistic and Resilient re-emerged; Distressed was a partial shape match (*r* = .69) that did not re-emerge within any single cohort. Second, employees who in 2020 felt **replaceable by AI or robots**, or **exhausted** by technology-intensified work, reported lower job and life satisfaction five years later, and it was *perceived* replaceability, not an occupation's exposure score, that carried the cost. Third, among employees leaving the Distressed profile, **optimism, self-esteem, and work meaning** were associated with recovery (to Resilient) rather than disengagement (to Reserved), and within persons a rise in distress was followed at the next survey by a larger drop in self-esteem than the drop in distress that followed a rise in self-esteem. The paper reads this asymmetry as consistent with loss primacy, notes that it does not compare a loss with an equivalent gain in the same resource, and reports p = .080 for it in the measurement-error-corrected model.
 
 ---
 
@@ -58,10 +58,10 @@ The spiral test looks *within* each person: when your self-esteem dips below you
 
 ## 4 · Key Findings & Nuances
 
-- **Profiles replicate across panels and instruments.** Antagonistic and Resilient re-emerged within independently recruited entry cohorts (φ = .88–.97); Distressed is a partial shape match (*r* = .69) recoverable only in the pooled invariant model.
+- **Profiles corresponded to the MIDUS four-profile solution overall (Tucker φ = .96).** Antagonistic and Resilient re-emerged within independently recruited entry cohorts (Antagonistic φ = .95–.97, Resilient φ = .88–.97); Distressed is a partial shape match (*r* = .69) recoverable only in the pooled invariant model.
 - **Perceived displacement and exhaustion carried forward.** Displacement risk in 2020 predicted lower job satisfaction (β = −.11) and life satisfaction (β = −.11) in 2025; exhaustion predicted lower job satisfaction (β = −.22), life satisfaction (β = −.31), and positive affect (β = −.20). Algorithmic management was associated only with lower life satisfaction (β = −.10); technology self-efficacy with higher satisfaction (βs ≈ .10). Ten of 16 focal paths were significant and all survived FDR control.
 - **Distressed membership did not amplify the stressors (H3 not supported).** Exploratory slopes were steepest among Antagonistic members, but this does not rescue the a priori hypothesis.
-- **Resources steer the direction of exit.** Among Distressed leavers, higher optimism (OR = 1.78), self-esteem (OR = 1.62), and work meaning (OR = 1.77) per SD were associated with recovery to Resilient rather than disengagement to Reserved, robust to classification-error sensitivities. Workplace relatedness (OR = 1.34) was frame-sensitive; PsyCap was underpowered (*n* = 44).
+- **Resources went with the direction of exit.** Among Distressed leavers, higher optimism (OR = 1.78), self-esteem (OR = 1.62), and work meaning (OR = 1.77) per SD were associated with recovery to Resilient rather than disengagement to Reserved, robust to classification-error sensitivities. The work meaning estimate is especially order-sensitive. Workplace relatedness (OR = 1.34) was frame-sensitive; PsyCap was underpowered (*n* = 44).
 - **Loss primacy within persons.** Lagged distress → self-esteem (β = −.14) exceeded self-esteem → distress (β = −.08) in the RI-CLPM, with the asymmetry confirmed by likelihood ratio (*p* < .001). The optimism ↔ negative affect pair showed reciprocal paths but no asymmetry.
 - **Appraisal, not occupation title.** Perceived displacement related to lower work meaning, relatedness, and job satisfaction and higher distress; occupation-level AIOE was null on all but one small path. Frey–Osborne automatability failed a pre-trend falsification check, indicating occupational selection rather than disruption.
 - **Costs surface before anyone leaves.** Distressed members reported +65 lost work hours per year versus Resilient members and more than twice the quit-intent rate (17% vs. 8%), but realized exits by 2025 did not differ (9% vs. 9%) and Distressed members reported *more* self-rated effort. Euro translations were partly compositional under the ML counterweight.
@@ -73,7 +73,7 @@ The spiral test looks *within* each person: when your self-esteem dips below you
 
 ### For Leaders & HR
 
-- Treat employees' *appraisal* that their work is replaceable as the signal that matters, not an occupation's exposure score. The psychosocial costs ran through perceived replaceability.
+- Treat employees' *appraisal* that their work is replaceable as the signal that matters, not an occupation's exposure score. rather than with occupation-level AI exposure, which showed only one suggestive path (to work meaning)
 - Exhaustion under technology-intensified work was the broadest predictor of later well-being, including the only consistent hit to positive affect. Pacing and workload under new tools deserve the same attention as the tools themselves.
 
 ### For People Analytics
@@ -83,7 +83,7 @@ The spiral test looks *within* each person: when your self-esteem dips below you
 
 ### For Well-Being Program Design
 
-- Among distressed employees, optimism, self-worth, and work meaning distinguished recovery from disengagement. The study does not show that raising them causes recovery, but they are the markers worth watching, and the lost-time and quit-intent costs appeared well before any exit. See the [companion site](https://mjmonnot.github.io/wellbeing-spirals/).
+- Among employees leaving the Distressed profile, optimism, self-esteem, and work meaning were associated with recovery rather than disengagement (work meaning especially order-sensitive). The study does not show that raising them causes recovery, but they are the markers worth watching, and the lost-time and quit-intent costs appeared well before any exit. See the [companion site](https://mjmonnot.github.io/wellbeing-spirals/).
 
 ---
 

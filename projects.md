@@ -45,7 +45,7 @@ A Preprints.org preprint with data from a three-wave open panel of Swiss sports 
   <figcaption>Figure 2 from the preprint: effects of ChatGPT access on grades, ratings, and adoption, with 95% credible intervals and <em>P</em>(direction).</figcaption>
 </figure>
 
-A SocArXiv preprint: Bayesian models fit to data from an online randomized experiment (Noy &amp; Zhang, 2023a) among college-educated professionals in six writing-intensive occupations. Under ChatGPT access, second-task writing grades depended less on first-task grades (−0.159 [−0.317, −0.002], *P*(direction) = .976). Access was associated with higher enjoyment (0.44 [0.29, 0.60]). Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
+A SocArXiv preprint: Bayesian models fit to data from an online randomized experiment (Noy &amp; Zhang, 2023a) among college-educated professionals in six writing-intensive occupations. Under ChatGPT access, second-task writing grades depended less on first-task grades (posterior median −0.159, 95% CrI [−0.317, −0.002], *P*(direction) = .976). Access was associated with higher enjoyment (0.44 [0.29, 0.60]). Two-month workplace ChatGPT use was 13.4 [3.0, 23.5] percentage points higher under access.
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>ChatGPT access and writing skill: A Bayesian reanalysis of an online randomized experiment</em>. SocArXiv. <a href="https://doi.org/10.31235/osf.io/y2p75_v1">https://doi.org/10.31235/osf.io/y2p75_v1</a></p>
 
@@ -104,7 +104,7 @@ A SocArXiv preprint: a prespecified analysis of data from a randomized recovery-
   <figcaption>Figure 4 from the preprint: ROC and precision–recall curves on the held-out test partition.</figcaption>
 </figure>
 
-An SSRN preprint from a randomized controlled longitudinal study of Head Start employees (*N* = 4,054). An 11-predictor intake equation predicted elevated stress six months later better than the base rate (AUC .72; calibration slope 0.92) and predicted low intention to remain (AUC .70), scored once on a held-out test partition. Baseline stress and younger age carried the most weight for stress; lower job satisfaction for intention to remain.
+An SSRN preprint from a randomized controlled longitudinal study of Head Start employees (*N* = 4,054). An 11-predictor intake equation predicted elevated stress six months later better than the base rate (AUC .72; calibration slope 0.92) and predicted low intention to remain better than the base rate on log loss (AUC .70, although the Brier difference included zero), scored once on a held-out test partition. Baseline stress and younger age carried the most weight for stress; lower job satisfaction for intention to remain.
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Stress and turnover in helping professions: A randomized controlled longitudinal study of Head Start employees</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7637538">https://doi.org/10.2139/ssrn.7637538</a></p>
 
@@ -123,7 +123,7 @@ An SSRN preprint from a randomized controlled longitudinal study of Head Start e
   <figcaption>Figure 2 from the preprint: shared life-satisfaction decline with a higher 2020 level at higher trait scores.</figcaption>
 </figure>
 
-An SSRN preprint in the GESIS Panel.pop probability sample of German adults employed in 2018 (*N* = 3,052). Self-compassion was measured before COVID-19. The 2018 score was associated with lower 2024 loneliness (*r* = −.36) and less digital overwhelm (β = −.20); those associations ran through the self-critical items. Life satisfaction fell 6.22 points (0–100) across the 2020–2021 disruption at the same rate across levels of the trait (*BF*<sub>01</sub> = 51.52 against a buffering path on the disruption slope).
+An SSRN preprint in the GESIS Panel.pop probability sample of German adults employed in 2018 (*N* = 3,052). Self-compassion was measured before COVID-19. The 2018 score was associated with lower 2024 loneliness (*r* = −.36, not one of the planned tests) and less digital overwhelm (β = −.20). In exploratory component-specific models, the self-critical items carried those associations. Life satisfaction fell 6.22 points (0–100) across the 2020–2021 disruption at the same rate across levels of the trait (exploratory *BF*<sub>01</sub> = 51.52 against a buffering path on the disruption slope).
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Buffer or baseline? Trait self-compassion and employee well-being across disruption, telework, and digital demands in a national probability panel</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7622018">https://doi.org/10.2139/ssrn.7622018</a></p>
 
@@ -142,7 +142,7 @@ An SSRN preprint in the GESIS Panel.pop probability sample of German adults empl
   <figcaption>Figure 8 from the preprint: reciprocal within-person cross-lags and the aftermath of a one-time 1-SD change.</figcaption>
 </figure>
 
-An SSRN preprint following Dutch employees in the LISS panel for 18 years (2008–2025; *N* = 72,433 person-waves). The four MIDUS personality profiles reappeared on a different instrument (Tucker congruence = .96). Employees who in 2020 felt replaceable by AI or exhausted by technology-intensified work reported lower job and life satisfaction five years later. Perceived replaceability, not an occupation's exposure score, carried the cost. Among Distressed leavers, optimism, self-esteem, and work meaning predicted recovery rather than disengagement (OR ≈ 1.6–1.8 per SD), and within persons a rise in distress depleted self-esteem more than an equal gain relieved distress.
+An SSRN preprint following Dutch employees in the LISS panel for 18 years (2008–2025; *N* = 72,433 person-waves). The four MIDUS personality profiles corresponded on a different instrument to the MIDUS solution (Tucker congruence = .96), with Distressed the partial shape match. Employees who in 2020 felt replaceable by AI or exhausted by technology-intensified work reported lower job and life satisfaction five years later. Perceived replaceability, not an occupation's exposure score, carried the cost. Among employees leaving the Distressed profile, optimism, self-esteem, and work meaning were associated with recovery rather than disengagement (OR ≈ 1.6–1.8 per SD), and within persons a rise in distress was followed by a larger drop in self-esteem than the drop in distress that followed a rise in self-esteem, a pattern the paper reads as consistent with loss primacy.
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Upward and downward spirals in employee well-being: Personality profiles and psychological resources under AI-related workplace change</em>. SSRN. <a href="https://doi.org/10.2139/ssrn.7617538">https://doi.org/10.2139/ssrn.7617538</a></p>
 
@@ -260,7 +260,7 @@ Python · Pandas · NumPy · scikit-learn pipelines · cross-validation · regul
 </figure>
 
 **Overview:**  
-A fully reproducible, longitudinal study of person-centered Big Five personality profiles and how they relate to future-of-work skills across midlife, using the MIDUS (Midlife in the United States) national panel (*N* = 7,108 over ~20 years) with independent replication in the MIDUS Refresher (*N* = 3,577). Where the SIOP 2019 project predicts traits from text, this project asks what trait *configurations* mean, and whether people move between them over two decades, connecting directly to my research on [well-being and meaningful work](/themes/leadership-and-wellbeing.html). Framed around self-determination theory and the psychological resources workers need to develop and retain AI-era skills.
+A secondary longitudinal analysis of person-centered Big Five personality profiles and how they relate to future-of-work skills across midlife, using the MIDUS (Midlife in the United States) national panel (*N* = 7,108 over ~20 years) with partial replication in the MIDUS Refresher (*N* = 3,577). Where the SIOP 2019 project predicts traits from text, this project asks what trait *configurations* mean, and whether people move between them over two decades, connecting directly to my research on [well-being and meaningful work](/themes/leadership-and-wellbeing.html). Framed around self-determination theory and the psychological resources workers need to develop and retain AI-era skills. Analysis code and derived output tables used to generate this draft are available from the lead author on reasonable request.
 
 **Built With:**  
 R · latent profile analysis (LPA) and latent transition analysis via a joint latent Markov model · BCH / 3-step outcome modeling · Mplus confirmation · GitHub Actions CI · devcontainer for a reproducible environment
@@ -269,8 +269,8 @@ R · latent profile analysis (LPA) and latent transition analysis via a joint la
 - Four replicated profiles: **Resilient** (36.4%), **Distressed** (29.5%), **Reserved** (29.0%), and **Antagonistic** (5.1%). Resilient members reported the highest psychosocial skills; Antagonistic members reported the highest income, prestige, and analytic performance.  
 - An honest **null on incremental validity**: profile membership added no predictive power beyond continuous traits.  
 - The Distressed profile shrank from **29.5% to 7.2%** across two decades through two distinct pathways: *recovery* (movement to Resilient) and *disengagement* (movement to Reserved).  
-- Leaving the Distressed profile was associated with lower health-related lost productive time (recovered movers −$3,049 per worker-year, 95% CI [−$5,038, −$1,060]).  
-- **Purpose in life** predicted recovery- versus disengagement-oriented transitions (OR = 1.23 per SD, 95% CI [1.01, 1.50]).  
+Recovering from the Distressed profile was associated with lower health-related lost productive time (recovered movers −$3,049 per worker-year, 95% CI [−$5,038, −$1,060]); the reduction in impaired days for disengaged movers was smaller and not significant (−0.76 per month, *p* = .15).  
+Among movers out of the Distressed profile, **supplementary purpose in life** was associated with recovery- versus disengagement-oriented transitions (OR = 1.23 per SD, 95% CI [1.01, 1.50], *p* = .039)., 95% CI [1.01, 1.50]).  
 - Event-sampled diary data (*N* = 2,314) corroborated the profile interpretations.  
 
 <p class="apa-cite">Monnot, M. J. (2026). <em>Afloat or adrift: A longitudinal study of latent personality profiles and future-of-work skills across midlife</em>. PsyArXiv. <a href="https://doi.org/10.31234/osf.io/9r6hd_v1">https://doi.org/10.31234/osf.io/9r6hd_v1</a></p>
