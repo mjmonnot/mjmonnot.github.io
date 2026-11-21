@@ -15,17 +15,33 @@ permalink: /cv.html
 <section class="cv-section" aria-labelledby="research-areas">
   <h2 class="section-label" id="research-areas">Research and content areas</h2>
   <hr class="label-rule">
-  <ul class="cv-topics">
-    <li>Employee well-being and occupational stress</li>
-    <li>Personality profiles, psychological resources, and future-of-work skills</li>
-    <li>Turnover, retention, and work in helping professions (including Head Start)</li>
-    <li>Self-compassion</li>
-    <li>AI-related workplace change and meaningful work</li>
-    <li>Personnel selection and applicant faking</li>
-    <li>Leadership and supervisor relationships</li>
-    <li>Organizational change</li>
-    <li>Recovery and mindfulness-based interventions</li>
-  </ul>
+  <div class="skill-stack">
+    <div class="skill-row">
+      <h3>Subjective well-being</h3>
+      <ul class="skill-points">
+        <li>Occupational stress and support</li>
+        <li>Meaning, goals, and intrinsic motivation</li>
+        <li>Recovery and mindfulness-based interventions</li>
+        <li>Turnover and retention, including in helping professions</li>
+        <li>Well-being across disruption, remote work, and AI-related change</li>
+      </ul>
+    </div>
+    <div class="skill-row">
+      <h3>Leadership and organizational change</h3>
+      <ul class="skill-points">
+        <li>Supervisor relationships</li>
+        <li>Change-agent influence</li>
+      </ul>
+    </div>
+    <div class="skill-row">
+      <h3>Personality, selection, and work skills</h3>
+      <ul class="skill-points">
+        <li>Personality profiles</li>
+        <li>Personnel selection and applicant faking</li>
+        <li>Future-of-work skills</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <section class="cv-section" aria-labelledby="technical-skills">
@@ -33,36 +49,32 @@ permalink: /cv.html
   <hr class="label-rule">
   <div class="skill-stack">
     <div class="skill-row">
-      <h3>Statistical modeling</h3>
-      <ul class="skill-chips">
-        <li>Mplus (Combination Add-On: mixture, multilevel, Bayesian, DSEM, LMS)</li>
+      <h3>Statistical expertise</h3>
+      <ul class="skill-points">
+        <li>Latent variable modeling, including mixture models, dynamic SEM, and latent moderated structural equations</li>
+        <li>Multilevel modeling</li>
+        <li>Bayesian modeling</li>
+        <li>Quantile regression and treatment effects</li>
+        <li>Conditional process models</li>
+        <li>Machine learning, including elastic-net and related learners</li>
       </ul>
     </div>
     <div class="skill-row">
-      <h3>Bayesian</h3>
+      <h3>Statistical software and packages</h3>
       <ul class="skill-chips">
-        <li>Stan</li>
-        <li>brms</li>
-        <li>cmdstanr</li>
-      </ul>
-    </div>
-    <div class="skill-row">
-      <h3>Other modeling</h3>
-      <ul class="skill-chips">
+        <li>Mplus (Combination Add-On)</li>
         <li>lavaan</li>
         <li>LMest</li>
         <li>mclust</li>
+        <li>Stan</li>
+        <li>brms</li>
+        <li>cmdstanr</li>
         <li>quantreg</li>
         <li>qte</li>
         <li>sandwich</li>
         <li>mice</li>
         <li>PROCESS for SPSS</li>
-      </ul>
-    </div>
-    <div class="skill-row">
-      <h3>Machine learning</h3>
-      <ul class="skill-chips">
-        <li>scikit-learn (elastic-net and related learners)</li>
+        <li>scikit-learn</li>
         <li>statsmodels</li>
       </ul>
     </div>
