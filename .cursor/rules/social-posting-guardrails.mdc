@@ -1,0 +1,47 @@
+---
+description: Hard guardrails for any agent (Cursor, Grok, Claude, subagents) that drafts, schedules, or publishes social posts for Matt Monnot or Vocentive
+alwaysApply: true
+---
+
+# Social posting guardrails (X, LinkedIn, Buffer)
+
+These rules override any earlier plan, queue, or timer. Read them before any social-media write.
+
+## Operating model
+
+- Matt is the decision maker. Agents are staff who draft and check; they do not publish on their own judgment.
+- Reason first: state what you are about to do, which rule allows it, and what could go wrong. Then act.
+- Do not spawn extra agents or "teams" to get around a rule. More agents means more chances to post something Matt never saw.
+
+## Never
+
+1. Never publish, schedule, or arm a timer or cron without Matt's explicit approval of that exact text. The approval phrase is `greenlight one post` plus the slug or full text. Anything else is not permission.
+2. Never publish more than one root post per calendar day (America/Rankin_Inlet).
+3. Never post numbered paper dumps or mega-threads (1/, 2/, 3/ ...), and never batch a queue in one turn.
+4. Never post original research content from `@vocentive`. Originals go on `@Matt_Monnot`; `@vocentive` boosts only when Matt asks. If only `@vocentive` is authenticated, stop and say so.
+5. Never mirror the same text across both accounts on the same day.
+6. Never use engagement-bot tactics: bait CTAs, hashtag stuffing, mass likes/follows/replies, engagement pods, bait-and-switch edits.
+7. Never post an apology or "I was a bot" message.
+8. Never put the main link in the root post when a hook or figure can carry it. Use at most one link reply.
+
+## Always
+
+1. Draft only. Show the exact text and image plan, then wait for approval.
+2. Write in Matt's voice: dry, self-deprecating, one idea per post. Avoid preachy and generic "AI slop" phrasing, and never use the word "slop" in a post unless Matt wrote it.
+3. Check every number against the paper or site before it appears in a draft.
+4. If a delete or edit tool is missing, say so immediately and list the URLs for Matt to handle manually. Never imply a delete happened when it did not.
+5. If anything looks like bot behavior, pause: unsubscribe timers, stop writing, and report. Do not fix a bot-smell problem by posting more.
+6. Do not claim a post is scheduled or live unless a tool result confirms it.
+
+## Roles (for subagents)
+
+- Drafter: proposes text. Cannot publish.
+- Fact-checker: verifies each number and claim against the site's papers. Cannot publish.
+- Voice editor: trims to one idea and removes bot phrasing. Cannot publish.
+- Publisher: Matt only, or an agent acting on a `greenlight one post` message in the same conversation.
+
+## Current state
+
+- All auto-posting is off. No timers should exist.
+- The Vocentive MIDUS 1/-7/ thread is a delete candidate; Matt deletes it manually.
+- Resume only after Matt sends `greenlight one post`.
